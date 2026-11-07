@@ -1,0 +1,18 @@
+{
+  "name": "paper-reading",
+  "private": true,
+  "type": "commonjs",
+  "scripts": {
+    "build:docs": "node scripts/build-docs.cjs",
+    "check:docs": "node scripts/build-docs.cjs --check",
+    "build:examples": "node scripts/build-examples.cjs",
+    "build:audit": "node scripts/build-reader-audit.cjs",
+    "check:audit": "node scripts/build-reader-audit.cjs --check",
+    "doctor": "node scripts/doctor.cjs",
+    "test": "node --test scripts/test-*.cjs"
+  },
+  "dependencies": {
+    "katex": "0.16.22",
+    "marked": "17.0.5"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "software": "Zotero PDF2zh / pdf2zh_next",
+  "engineVersion": "2.9.0",
+  "model": "gpt-6.1-sol",
+  "sourceLanguage": "en",
+  "targetLanguage": "zh-CN",
+  "input": "/repo/paper-web/RSI/harness-engineering-for-self-improvement-weng-2026/article.pdf",
+  "inputSha256": "4b9cd838aa0e54c2aed0e6c511422297498c479b3e9204e6b875cd64192d362a",
+  "zoteroSourceAttachment": "7LILRI6K",
+  "zoteroModified": false,
+  "startedAt": "2026-10-30T02:33:36.249624+00:00",
+  "status": "completed",
+  "finishedAt": "2026-10-30T02:37:19.092884+00:00",
+  "exitCode": 0,
+  "originalConfigUnchanged": true,
+  "outputs": [
+    {
+      "file": "harness-engineering-for-self-improvement.en-zh.pdf",
+      "bytes": 7094278
+    }
+  ],
+  "removedMonolingualOutput": "article.no_watermark.zh-CN.mono.pdf (removed at user request)"
+}

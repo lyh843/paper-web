@@ -1,0 +1,116 @@
+{
+  "generated_on": "2026-10-17",
+  "zotero_collection_key": "FLT4H9RN",
+  "zotero_item_key": "SAZSYEMX",
+  "zotero_attachment_key": "GDLD54RX",
+  "source_pdf_path": "/home/lyh/Zotero/storage/GDLD54RX/Erickson 等 - 2025 - TabArena A Living Benchmark for Machine Learning on Tabular Data.pdf",
+  "source_pdf_sha256": "8853fd1a1eb09ee7c25bf6f48a194a8e718103774d39af5bcc402b2c41a735e5",
+  "source_pdf_pages": 66,
+  "source_version": "TabArena-v0.1 report, arXiv:2506.16791v4, 2025-11-03, 66 pages",
+  "covered_sections_and_scope": "§01明确冻结v0.1而非实时榜；正文数据/模型/验证协议以及Appendix A.1/A.4、C.3–C.5、D.1/D.2等已读取。",
+  "source_pdf_modified": false,
+  "duplicate_of": null,
+  "standalone_pdf_item": false,
+  "reading_language": "zh-CN",
+  "mode": "DEEP READ",
+  "lens": "understanding-first",
+  "skill_source": "https://github.com/xiaofengShi/paper-reading-skill",
+  "skill_commit": "eadd0cd61d276d082938d80eb0d3fbb85614f2e1",
+  "renderer_sha256": "3ed818344cd402297240d51553c0c6ab7eb599017a51380cb437d37283f5598c",
+  "rebuild_command": "node /repo/paper-web/.opencode/skills/paper-reading/scripts/render-reading.cjs /repo/paper-web/TabFM/tabarena-SAZSYEMX/reading.md /repo/paper-web/TabFM/tabarena-SAZSYEMX/index.html",
+  "audit_source_sha256": "e7d8e05ba16325ab072b6d1053cbd94382fed466107c5e09ec8c3446f84c3b86",
+  "html_sha256": "715637ca670cb4c887fe982c3eb4f183e82645ee8c54b04f114577e6671c3626",
+  "figures": [
+    {
+      "file": "assets/tabarena-fig2-curation.png",
+      "pdf_page_1based": 5,
+      "crop_rectangle_pdf_points": [
+        105,
+        65,
+        510,
+        172
+      ],
+      "render_scale": 2.5,
+      "sha256": "e65b6120fff4bfe5a288895e63c46ba42f9a571947b355343275e6ac807797cc"
+    },
+    {
+      "file": "assets/tabarena-fig4-subsets.png",
+      "pdf_page_1based": 7,
+      "crop_rectangle_pdf_points": [
+        105,
+        60,
+        510,
+        241
+      ],
+      "render_scale": 2.5,
+      "sha256": "9dcf8baf4979de1adcb5dcbe9dcb08bcf1257e1e56be2d5351af49c9a7955d9f"
+    },
+    {
+      "file": "assets/tabarena-fig6-validation.png",
+      "pdf_page_1based": 8,
+      "crop_rectangle_pdf_points": [
+        105,
+        530,
+        510,
+        683
+      ],
+      "render_scale": 2.5,
+      "sha256": "2854d6984cd98b39c7ac30bc4ab819bbb32d2101fb843ff51e1410384f2dbc89"
+    },
+    {
+      "file": "assets/tabarena-fig7-ensemble.png",
+      "pdf_page_1based": 9,
+      "crop_rectangle_pdf_points": [
+        105,
+        393,
+        510,
+        551
+      ],
+      "render_scale": 2.5,
+      "sha256": "d6ffba947575e0a41a59a6a621bf999a8a5c01efc853561307ef138b5ef42d80"
+    },
+    {
+      "file": "assets/tabarena-tableA1-results.png",
+      "pdf_page_1based": 31,
+      "crop_rectangle_pdf_points": [
+        100,
+        75,
+        512,
+        610
+      ],
+      "render_scale": 2.5,
+      "sha256": "1fc5a28e98f2a37000b81bcc1a7d86adb3d1cab6185591b3db50e2d95c806b5c"
+    }
+  ],
+  "validation_scope": "Source-based generator self-check and browser delivery checks; no independent reader study, raw-data audit or experimental reproduction",
+  "skill_base_commit": "eadd0cd61d276d082938d80eb0d3fbb85614f2e1",
+  "skill_revision": "historical-context-v1",
+  "skill_definition_sha256": "a795c8d00b90632ef0eaada455415b555acc6c0e6dc101bce4cddc26de8315a4",
+  "historical_context": {
+    "status": "pass",
+    "horizon": "2025-06-20",
+    "horizon_basis": "first-publication",
+    "date_evidence_url": "https://arxiv.org/abs/2506.16791",
+    "predecessor_rows": 5,
+    "chapter": "00 / 发表时的研究背景",
+    "source_review": "2025-06首发与11月v0.1快照分开；已有公共基准、强NN/TFM与AutoML的贡献和维护缺口具体化。",
+    "review_scope": "Target introduction/background/related work plus selected primary abstracts and official submission histories; not comprehensive full-text review of all predecessors",
+    "source_urls": [
+      "https://arxiv.org/abs/2003.06505",
+      "https://arxiv.org/abs/2305.02997",
+      "https://arxiv.org/abs/2407.04491",
+      "https://arxiv.org/abs/2506.16791"
+    ]
+  },
+  "local_revisions": [
+    {
+      "revision": "historical-context-v1",
+      "date": "2026-10-17",
+      "action": "Insert publication-time background; preserve prior method, evidence, assets and paths",
+      "before": {
+        "audit_source_sha256": "0c0aeccaf81f23dbdde9ff9ef0a9add54b10ea48ae242de7cf552566fd947a9c",
+        "html_sha256": "e0774c9237a8262ccdd6c4d68700634b2c2aa04b14f4bd142a616a43a0f26259"
+      }
+    }
+  ]
+}

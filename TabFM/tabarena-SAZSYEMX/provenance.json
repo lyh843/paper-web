@@ -1,0 +1,280 @@
+{
+  "generated_on": "2026-10-26",
+  "zotero_collection_key": "FLT4H9RN",
+  "zotero_item_key": "SAZSYEMX",
+  "zotero_attachment_key": "GDLD54RX",
+  "source_pdf_path": "/home/lyh/Zotero/storage/GDLD54RX/Erickson 等 - 2025 - TabArena A Living Benchmark for Machine Learning on Tabular Data.pdf",
+  "source_pdf_sha256": "8853fd1a1eb09ee7c25bf6f48a194a8e718103774d39af5bcc402b2c41a735e5",
+  "source_pdf_pages": 66,
+  "source_version": "TabArena-v0.1 report, arXiv:2506.16791v4, 2025-11-03, 66 pages",
+  "covered_sections_and_scope": "本轮按13问重生成；重读本地v4正文与核心A–E附录，核对Table A.1、B.2、F.1说明及相关行；v0.1原结果与2026年后续研究分开。完整访问范围见search-audit.md。",
+  "source_pdf_modified": false,
+  "duplicate_of": null,
+  "standalone_pdf_item": false,
+  "reading_language": "zh-CN",
+  "mode": "DEEP READ",
+  "lens": "understanding-first with mandatory 13-question research extension",
+  "skill_source": "https://github.com/xiaofengShi/paper-reading-skill",
+  "skill_commit": "eadd0cd61d276d082938d80eb0d3fbb85614f2e1",
+  "renderer_sha256": "3ed818344cd402297240d51553c0c6ab7eb599017a51380cb437d37283f5598c",
+  "rebuild_command": "node /repo/paper-web/.opencode/skills/paper-reading/scripts/render-reading.cjs /repo/paper-web/TabFM/tabarena-SAZSYEMX/reading.md /repo/paper-web/TabFM/tabarena-SAZSYEMX/index.html",
+  "audit_source_sha256": "56187f74db976084250cb6ad5c79cac052984deb19ceed8cf7f047c24bbf4f50",
+  "html_sha256": "45159b11c4ff31f07fdfb2447d4df54e8be3f4ee7bea68ff3520a4d09876adc5",
+  "figures": [
+    {
+      "file": "assets/tabarena-fig2-curation.png",
+      "pdf_page_1based": 5,
+      "crop_rectangle_pdf_points": [
+        105,
+        65,
+        510,
+        172
+      ],
+      "render_scale": 2.5,
+      "sha256": "e65b6120fff4bfe5a288895e63c46ba42f9a571947b355343275e6ac807797cc"
+    },
+    {
+      "file": "assets/tabarena-fig4-subsets.png",
+      "pdf_page_1based": 7,
+      "crop_rectangle_pdf_points": [
+        105,
+        60,
+        510,
+        241
+      ],
+      "render_scale": 2.5,
+      "sha256": "9dcf8baf4979de1adcb5dcbe9dcb08bcf1257e1e56be2d5351af49c9a7955d9f"
+    },
+    {
+      "file": "assets/tabarena-fig6-validation.png",
+      "pdf_page_1based": 8,
+      "crop_rectangle_pdf_points": [
+        105,
+        530,
+        510,
+        683
+      ],
+      "render_scale": 2.5,
+      "sha256": "2854d6984cd98b39c7ac30bc4ab819bbb32d2101fb843ff51e1410384f2dbc89"
+    },
+    {
+      "file": "assets/tabarena-fig7-ensemble.png",
+      "pdf_page_1based": 9,
+      "crop_rectangle_pdf_points": [
+        105,
+        393,
+        510,
+        551
+      ],
+      "render_scale": 2.5,
+      "sha256": "d6ffba947575e0a41a59a6a621bf999a8a5c01efc853561307ef138b5ef42d80"
+    },
+    {
+      "file": "assets/tabarena-tableA1-results.png",
+      "pdf_page_1based": 31,
+      "crop_rectangle_pdf_points": [
+        100,
+        75,
+        512,
+        610
+      ],
+      "render_scale": 2.5,
+      "sha256": "1fc5a28e98f2a37000b81bcc1a7d86adb3d1cab6185591b3db50e2d95c806b5c"
+    }
+  ],
+  "validation_scope": "13-question source-based semantic self-check, actual literature/novelty search, strict rendering, static offline-resource/data checks, desktop/narrow-frame browser checks and actual keyboard interaction. Browser pointer tool unavailable (UnknownVizError); no independent reader study or scientific reproduction.",
+  "skill_base_commit": "eadd0cd61d276d082938d80eb0d3fbb85614f2e1",
+  "skill_revision": "research-prompt-v1",
+  "skill_definition_sha256": "14e8ac8e44a931d2cae3213ad4086e61514b35b1268f04fcb5f032d92923fed7",
+  "historical_context": {
+    "status": "pass",
+    "horizon": "2025-06-20",
+    "horizon_basis": "first-publication",
+    "date_evidence_url": "https://arxiv.org/abs/2506.16791",
+    "predecessor_rows": 6,
+    "chapter": "00 / 发表时的研究背景",
+    "source_review": "2025-06首发与11月v0.1快照分开；已有公共基准、强NN/TFM与AutoML的贡献和维护缺口具体化。",
+    "review_scope": "Target introduction/background/related work plus selected primary abstracts and official submission histories; not comprehensive full-text review of all predecessors",
+    "source_urls": [
+      "https://arxiv.org/abs/2003.06505",
+      "https://arxiv.org/abs/2305.02997",
+      "https://arxiv.org/abs/2407.04491",
+      "https://arxiv.org/abs/2506.16791",
+      "https://arxiv.org/abs/2311.02971",
+      "https://arxiv.org/abs/2406.19380"
+    ]
+  },
+  "local_revisions": [
+    {
+      "revision": "historical-context-v1",
+      "date": "2026-10-17",
+      "action": "Insert publication-time background; preserve prior method, evidence, assets and paths",
+      "before": {
+        "audit_source_sha256": "0c0aeccaf81f23dbdde9ff9ef0a9add54b10ea48ae242de7cf552566fd947a9c",
+        "html_sha256": "e0774c9237a8262ccdd6c4d68700634b2c2aa04b14f4bd142a616a43a0f26259"
+      }
+    },
+    {
+      "revision": "narrative-logic-v1",
+      "date": "2026-10-19",
+      "action": "Paper-specific prose refactor: problem/value, prior-only idea reconstruction, intuition, running instance, accessible mathematics, question/test/answer evidence and takeaways; preserve original evidence and visuals",
+      "archive_directory": "revisions/pre-narrative-logic-20261019",
+      "before": {
+        "audit_source_sha256": "e7d8e05ba16325ab072b6d1053cbd94382fed466107c5e09ec8c3446f84c3b86",
+        "html_sha256": "715637ca670cb4c887fe982c3eb4f183e82645ee8c54b04f114577e6671c3626"
+      }
+    },
+    {
+      "revision": "research-prompt-v1",
+      "date": "2026-10-26",
+      "action": "Regenerate the HTML using the updated 13-question paper-reading prompt; deepen the existing explanation, add assumption/reproduction/counterexample/literature/follow-up chapters and meaningful offline interaction; preserve existing outputs in an archive.",
+      "archive_directory": "revisions/pre-research-prompt-20261026",
+      "before": {
+        "audit_source_sha256": "8e0438098e97de2468772ae427662bb7e191870616226b82d5894bf6cec3530c",
+        "html_sha256": "4d9724ec639bf42a00c8d112e70caeea7aacd9f95bab289063793ff6e42bc4d3"
+      }
+    }
+  ],
+  "preserved_skill_extensions": [
+    "historical-context-v1",
+    "narrative-logic-v1"
+  ],
+  "narrative_protocol_sha256": "cbdd037a540292a5f6ed62e188b6797f9805cbee62bdf1ba8fb8d5b29fe9bbab",
+  "quality_check_sha256": "6d29c757ce62cc9219f0be8b7f9f1422278fcc02b87c96acc9663542a3a392fc",
+  "manual_narrative_review_recorded_on": "2026-10-19",
+  "manual_narrative_review": {
+    "title": "TabArena: A Living Benchmark for Machine Learning on Tabular Data",
+    "problem": "§00：完整比较系统怎样核查、更新并复用产物，不是新预测器",
+    "prior_gap": "§00：数据、实现、验证、集成与维护尚需形成可纠错整体",
+    "idea": "§01：由既有统一基准/AutoML和保存预测的价值，形成版本化工作流需求；不以新RealMLP结果作前提",
+    "intuition": "§01：排行榜单位是任务版本×实现×选择×集成×成本",
+    "example": "§02：真实credit-g 1000记录→重复外层3折→内层8折OOF→选择/组合→外层评估与产物保存",
+    "math": "§04–05：两层概率平均、Elo赔率代数与Improvability差距解释，非普适最优模型定理",
+    "evidence": "§06–07：D/T/T+E、兼容子集、holdout/CV和跨家族组合分别回答问题，补齐与版本范围保留",
+    "takeaways": "§08：工作流单位、公开预测与互补性、版本化范围",
+    "source_pages_rechecked": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      40,
+      47,
+      48
+    ],
+    "cautions": [
+      "真实任务流程没有重新拟合模型",
+      "Elo只在本方法池成立",
+      "旧31页表的已核验数值/原图审计保留"
+    ]
+  },
+  "manual_review_type": "Generator source-based semantic self-check; not independent reader study",
+  "source_pages_rechecked_this_revision": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    27,
+    31,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59
+  ],
+  "reused_source_audit": "Unchanged PDF and five original crops retained; Table A.1 numbers and four original figures visually rechecked this revision. Main narrative and relevant appendices reread; not every reference, appendix row or downstream paper was exhaustively reread. No experiments rerun.",
+  "delivery_status": "completed-with-disclosed-validation-limits",
+  "browser_validation_this_revision": {
+    "render_and_functional_checks": "pass",
+    "viewports": [
+      1000,
+      390
+    ],
+    "narrow_test_type": "390px outer iframe, nested interaction viewport 339px; not physical mobile emulation",
+    "images_loaded": 6,
+    "images_total": 6,
+    "math": 44,
+    "math_errors": 0,
+    "sections": 14,
+    "anchors_valid": true,
+    "source_toggle": true,
+    "page_overflow_default_or_sources": false,
+    "figures_have_context": true,
+    "external_resources": 0,
+    "embedded_interactions": 1,
+    "interaction_modes": ["family/protocol comparison", "credit-g data-boundary stages"],
+    "interactive_original_data_rows_checked": 12,
+    "programmatic_control_activation": "pass",
+    "native_keyboard_activation": "pass: Enter changes selected step 4 to step 5, aria-pressed updates",
+    "actual_pointer_tool_activation": "unknown: browser.click returned UnknownVizError, including on standalone interactive asset",
+    "screenshot": "unavailable: tool reported no visible desktop tab despite focus"
+  },
+  "research_extension_review": {
+    "date": "2026-10-26",
+    "assumption": "§09: task-level representativeness/exchangeability, separate from row-level IID and public benchmark adaptation",
+    "reproduction_plan": "§10: CPU-only cached-result analysis with artifact/version gate, matched comparison, task bootstrap, seven-day schedule and fallback; not executed",
+    "counterexamples": "§11: declared deployment-mixture mismatch and OOF selection overfitting; fair scope and falsification conditions; not executed",
+    "subsequent_research": "§12: BeyondArena v1, TabPrep v1, and Oh position paper v3; primary source access and relationship/scope checked",
+    "follow_up": "§13: decision-boundary-driven benchmark maintenance with abstention, deployment-mixture/cost scope and independent task audit",
+    "novelty_status": "provisional/unknown; targeted search and closest-work comparison performed, full systematic novelty proof not claimed",
+    "search_audit_file": "search-audit.md",
+    "search_audit_sha256": "f52b1dcf097f0e742f9dbe834bbede1e25bae78477dd1e9ee5804fe30161df04",
+    "search_queries_executed": 13,
+    "search_cutoff": "2026-10-26",
+    "code_access_reference_commit": "95820a2cec37174fe3e25da4df80e11ae76b8761",
+    "sources": [
+      "https://arxiv.org/html/2606.30410v1",
+      "https://arxiv.org/html/2606.02384v1",
+      "https://arxiv.org/html/2605.17273v3",
+      "https://arxiv.org/abs/2107.07002",
+      "https://github.com/bonaventuredossou/al_rankbald"
+    ]
+  },
+  "new_visual_assets": [
+    {
+      "file": "assets/tabarena-protocol.svg",
+      "type": "source-grounded pedagogical protocol redraw",
+      "source": "PDF §2, Appendix C.1/C.3-C.5; credit-g task Table B.2",
+      "sha256": "8fc522431fa295e759999fe1f81a20a87012cbd4132d62c53c3a3cb266153688"
+    },
+    {
+      "file": "assets/protocol-explorer.html",
+      "type": "self-contained offline interaction, embedded in final HTML",
+      "source": "PDF Table A.1, Table B.2, §2 and Appendix C.1/C.3-C.4",
+      "sha256": "fca6a3d4335e73fe93a754c410ec72dc97152b633f224064b53bd553ee5eb8a8"
+    }
+  ]
+}

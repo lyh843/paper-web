@@ -1,0 +1,104 @@
+{
+  "generated_on": "2026-10-17",
+  "zotero_collection_key": "FLT4H9RN",
+  "zotero_item_key": "BKDZDVHC",
+  "zotero_attachment_key": "KDX7IXKD",
+  "source_pdf_path": "/home/lyh/Zotero/storage/KDX7IXKD/Grinsztajn 等 - Why do tree-based models still outperform deep learning on tabular data.pdf",
+  "source_pdf_sha256": "3baeb241e4f50981deb6e8e81f29192b1a84f1abde990d5fe8df4e594d993d6f",
+  "source_pdf_pages": 33,
+  "source_version": "arXiv:2207.08815v1, 2022-07-18, 33 pages",
+  "covered_sections_and_scope": "reading.md开头明确早期v1与后来的typical标题版本区别；正文§§3–5及Appendix A.1–A.4的筛选、划分、平滑和旋转细节已读取。",
+  "source_pdf_modified": false,
+  "duplicate_of": null,
+  "standalone_pdf_item": false,
+  "reading_language": "zh-CN",
+  "mode": "DEEP READ",
+  "lens": "understanding-first",
+  "skill_source": "https://github.com/xiaofengShi/paper-reading-skill",
+  "skill_commit": "eadd0cd61d276d082938d80eb0d3fbb85614f2e1",
+  "renderer_sha256": "3ed818344cd402297240d51553c0c6ab7eb599017a51380cb437d37283f5598c",
+  "rebuild_command": "node /repo/paper-web/.opencode/skills/paper-reading/scripts/render-reading.cjs /repo/paper-web/TabFM/trees-vs-deep-learning-BKDZDVHC/reading.md /repo/paper-web/TabFM/trees-vs-deep-learning-BKDZDVHC/index.html",
+  "audit_source_sha256": "e49ccfb435ebd2dabb5b68f3fa58da3aa430c74f8a8de94019281a5b449666c5",
+  "html_sha256": "a7aef9a379234371b357931db00370d7868e6c40dcd52325b3c7415f770368ec",
+  "figures": [
+    {
+      "file": "assets/trees-fig1-benchmark.png",
+      "pdf_page_1based": 5,
+      "crop_rectangle_pdf_points": [
+        105,
+        65,
+        510,
+        247
+      ],
+      "render_scale": 2.5,
+      "sha256": "5cef408da0c15a86e11aad4996c234ed9ef587cb17f1760eaf4990daa0397103"
+    },
+    {
+      "file": "assets/trees-fig3-smoothing.png",
+      "pdf_page_1based": 6,
+      "crop_rectangle_pdf_points": [
+        105,
+        65,
+        334,
+        255
+      ],
+      "render_scale": 2.5,
+      "sha256": "32b4d99745468cea20068365380bfca791509297fd34bc543a00a38271e4b26e"
+    },
+    {
+      "file": "assets/trees-fig5-features.png",
+      "pdf_page_1based": 8,
+      "crop_rectangle_pdf_points": [
+        105,
+        255,
+        510,
+        447
+      ],
+      "render_scale": 2.5,
+      "sha256": "8ef85b80be1c408a7894c746d69ebf064a7c7606424debc6d36f6ec13f7a1c77"
+    },
+    {
+      "file": "assets/trees-fig6-rotation.png",
+      "pdf_page_1based": 9,
+      "crop_rectangle_pdf_points": [
+        105,
+        65,
+        510,
+        246
+      ],
+      "render_scale": 2.5,
+      "sha256": "f75fd7dadadc793a5a4b7637e9c06b3d25640d90aef830891dedd10f451de2be"
+    }
+  ],
+  "validation_scope": "Source-based generator self-check and browser delivery checks; no independent reader study, raw-data audit or experimental reproduction",
+  "skill_base_commit": "eadd0cd61d276d082938d80eb0d3fbb85614f2e1",
+  "skill_revision": "historical-context-v1",
+  "skill_definition_sha256": "a795c8d00b90632ef0eaada455415b555acc6c0e6dc101bce4cddc26de8315a4",
+  "historical_context": {
+    "status": "pass",
+    "horizon": "2022-07-18",
+    "horizon_basis": "first-publication",
+    "date_evidence_url": "https://arxiv.org/abs/2207.08815",
+    "predecessor_rows": 4,
+    "chapter": "00 / 发表时的研究背景",
+    "source_review": "以2022-07-18为边界，区分RTDL/SAINT/树基线和当时评估争议；TabPFN作为同月同期补充而非被测基线。",
+    "review_scope": "Target introduction/background/related work plus selected primary abstracts and official submission histories; not comprehensive full-text review of all predecessors",
+    "source_urls": [
+      "https://arxiv.org/abs/2106.01342",
+      "https://arxiv.org/abs/2106.11959",
+      "https://arxiv.org/abs/2207.01848",
+      "https://arxiv.org/abs/2207.08815"
+    ]
+  },
+  "local_revisions": [
+    {
+      "revision": "historical-context-v1",
+      "date": "2026-10-17",
+      "action": "Insert publication-time background; preserve prior method, evidence, assets and paths",
+      "before": {
+        "audit_source_sha256": "792ef00a90bc88903ae94960c489dff0082e9023ae35c2e19de1efeb6c2163fc",
+        "html_sha256": "f6721831bc84697e18d2dc8afed8ec850dee649adbfc1d43d4589e0c08a224af"
+      }
+    }
+  ]
+}

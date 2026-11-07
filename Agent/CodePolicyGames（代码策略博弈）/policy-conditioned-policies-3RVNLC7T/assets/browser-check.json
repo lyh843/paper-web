@@ -1,0 +1,40 @@
+{
+  "paper": "policy-conditioned-policies-3RVNLC7T",
+  "mode": "Chromium headless; file://; HTTP(S) blocked",
+  "errors": [],
+  "desktop": {
+    "lang": "zh-CN",
+    "sections": 12,
+    "math": 18,
+    "images": [
+      {
+        "alt": "三种矩阵游戏，重点看中间 Climbing Game 的11和负30",
+        "width": 1221,
+        "ok": true
+      },
+      {
+        "alt": "PIBR在三种矩阵任务和合作觅食中的社会福利曲线",
+        "width": 1215,
+        "ok": true
+      }
+    ],
+    "nav": true,
+    "overflow": false,
+    "externalAssets": []
+  },
+  "widgetInitial": {
+    "title": "Climbing Game响应检查",
+    "text": "最佳纯响应：动作 0；其单人期望收益 11.000。若双方获得同格收益，总福利为 22.000。",
+    "controls": 7
+  },
+  "widgetChange": "最佳纯响应：动作 1；其单人期望收益 7.000。若双方获得同格收益，总福利为 14.000。",
+  "widgetZero": "至少一个权重须大于0；没有分布时不计算。",
+  "mobile": {
+    "width": 390,
+    "scrollWidth": 390,
+    "overflow": false
+  },
+  "runtimeErrors": [],
+  "network": [],
+  "pass": true
+}

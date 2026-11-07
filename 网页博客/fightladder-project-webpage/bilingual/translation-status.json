@@ -1,0 +1,87 @@
+{
+  "status": "verified-with-source-and-layout-limitations",
+  "source": "/repo/paper-web/网页博客/fightladder-project-webpage/article.pdf",
+  "sourceSha256": "0d07f27add2222873c8ed7cf554e54f4199fce652322b69aa4512d33b94f7115",
+  "software": "Zotero PDF2zh / PDF2zh-next",
+  "service": "openaicompatible",
+  "sourceLanguage": "en",
+  "targetLanguage": "zh-CN",
+  "layout": "lr",
+  "pages": "all",
+  "onlyBilingual": true,
+  "zoteroModified": false,
+  "startedAt": "2026-10-31T08:05:53.279862+00:00",
+  "engineVersionInCurrentPython": "2.9.0",
+  "exitCode": 0,
+  "outputs": [
+    {
+      "file": "article.no_watermark.zh-CN.dual.pdf",
+      "bytes": 339692,
+      "sha256": "647e97940a028132bca7711d7b5fca2862ed834ed6afe910676c8df3360f3bbd"
+    }
+  ],
+  "verification": {
+    "status": "verified-with-source-and-layout-limitations",
+    "sourcePages": 6,
+    "documents": [
+      {
+        "file": "article.no_watermark.zh-CN.dual.pdf",
+        "pages": 6,
+        "chineseCharactersByPage": [
+          590,
+          436,
+          811,
+          602,
+          639,
+          113
+        ],
+        "imagePlacements": 2,
+        "pageCountMatches": true,
+        "originalTextUnchangedByPage": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      }
+    ],
+    "visualReview": {
+      "pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "pageDimensionsPt": [
+        1189.919921875,
+        841.9199829101562
+      ],
+      "layout": "English left, Simplified Chinese right",
+      "sourceImagePreserved": true,
+      "imageInternalTextTranslated": false,
+      "bodyClipping": "No obvious body text clipping observed",
+      "limitations": [
+        "User-approved source archive is missing 23 of 24 original content images; 14 Drive videos remain online links.",
+        "Chinese table of contents and algorithm list are merged into paragraphs, leaving some empty bullets.",
+        "Some Chinese figure/video captions use very small fonts and wrap narrowly.",
+        "Some acronyms are expanded inconsistently; one video filename is translated on the Chinese side. Terminology is not fully human-proofread.",
+        "Citation BibTeX is condensed on the translated side. Original English remains unchanged on all six left pages."
+      ]
+    }
+  },
+  "originalConfigUnchanged": true,
+  "originalPDFUnchanged": true,
+  "finishedAt": "2026-10-31T08:07:36.234935+00:00",
+  "zoteroAttachment": {
+    "status": "verified",
+    "parentItemKey": "ITXN4SQT",
+    "attachmentKey": "75PRSXJJ",
+    "collectionPath": "人工智能/网页博客",
+    "storedSha256": "647e97940a028132bca7711d7b5fca2862ed834ed6afe910676c8df3360f3bbd",
+    "storedFileMatches": true
+  }
+}

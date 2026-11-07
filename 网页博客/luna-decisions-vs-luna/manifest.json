@@ -1,0 +1,485 @@
+{
+  "url": "https://opper.ai/blog/luna-decisions-vs-luna",
+  "requestedUrl": "https://opper.ai/blog/luna-decisions-vs-luna",
+  "title": "GPT-6 Luna vs. GPT-6 Luna Decisions: four times faster",
+  "author": "Jose Sabater",
+  "published": "2026-10-15",
+  "archivedAt": "2026-10-31T06:53:55.725305+00:00",
+  "sourceSha256": "51b2529a3d8a9dfda75a3e4c31b7feedcb80d8fa0d7582254fb8bc35d6f7e3f6",
+  "assets": [
+    {
+      "source": "https://opper.ai/images/control-plane-bg.jpg",
+      "path": "assets/895fb8445372-control-plane-bg.jpg",
+      "bytes": 80639,
+      "sha256": "bc5f931a705d0bb2f3b10ba76297a85759346ba2f210403f4eeefab257ec2480"
+    },
+    {
+      "source": "https://opper.ai/images/bg-story-beatly.jpg",
+      "path": "assets/da2221d7f1fa-bg-story-beatly.jpg",
+      "bytes": 73187,
+      "sha256": "dbb0e7faccb93887ee29406ccc8553736957a70b6661a11f717ba0271d197046"
+    },
+    {
+      "source": "https://opper.ai/images/bg-story-ping.jpg",
+      "path": "assets/9372a59c5c03-bg-story-ping.jpg",
+      "bytes": 50015,
+      "sha256": "35929c22d1b15a5269685806475bad261865be2ac5cb875bbb91e8bba8d558b0"
+    },
+    {
+      "source": "https://opper.ai/images/bg-story-steep.jpg",
+      "path": "assets/69c87540b6d4-bg-story-steep.jpg",
+      "bytes": 51974,
+      "sha256": "26c44724c5142277ffcbf6d5bd151172b9dbed75e68f1765b3e54416b119354e"
+    },
+    {
+      "source": "https://opper.ai/images/bg-story-get-tested.jpg",
+      "path": "assets/03fbb4a214cf-bg-story-get-tested.jpg",
+      "bytes": 53864,
+      "sha256": "f6edcd3c937fda1be1d8dc207b6700f8e9f1f4b449a57e30244208742aab2022"
+    },
+    {
+      "source": "https://opper.ai/images/bg-story-aibob.jpg",
+      "path": "assets/eea3202f2d96-bg-story-aibob.jpg",
+      "bytes": 53565,
+      "sha256": "86882b407ed520d3e2254f646b4b59d0466666c32494beb4987f5e89d4eb8e27"
+    },
+    {
+      "source": "https://opper.ai/images/bg-02@0.5x.jpg",
+      "path": "assets/c1c6b07fe28a-bg-02-0.5x.jpg",
+      "bytes": 48081,
+      "sha256": "2a6fcca21b7b736171d24804695b79e5c5d07b5eb9e612f54fdcfddab355b0d3"
+    },
+    {
+      "source": "https://opper.ai/images/bg-story-svenska-bostader.jpg",
+      "path": "assets/bad161de4d3b-bg-story-svenska-bostader.jpg",
+      "bytes": 41323,
+      "sha256": "e949b619d225a8ad65d3d29b97bc7102728c31b9564a71cb779754ae8e51ee00"
+    },
+    {
+      "source": "https://opper.ai/images/bg-story-njord.jpg",
+      "path": "assets/df004b267790-bg-story-njord.jpg",
+      "bytes": 35453,
+      "sha256": "ed74ac58cdaf19242efc1e05db574701c5d06c90d4c770a76391b5a510ea8150"
+    },
+    {
+      "source": "https://opper.ai/images/bg-05@0.5x.jpg",
+      "path": "assets/aa438c466ec1-bg-05-0.5x.jpg",
+      "bytes": 80465,
+      "sha256": "3c9c8f90658032bfb856780fc11a1594c6b375c162bd35d5983bf38cd42571b2"
+    },
+    {
+      "source": "https://opper.ai/images/bg-03@0.5x.jpg",
+      "path": "assets/4fb14e74f375-bg-03-0.5x.jpg",
+      "bytes": 54048,
+      "sha256": "7ce6250bc2b0b1bc2f84b97c041bebba395bdc429fbec1f87ab4d27a12069147"
+    },
+    {
+      "source": "https://opper.ai/images/bg-task-agent.png",
+      "path": "assets/89cc9eae2b41-bg-task-agent.png",
+      "bytes": 221120,
+      "sha256": "3adb8d82ae127ed9a65f303848e8f1af0f70c719c6ee32f34fc9bdabf9d0e9f9"
+    },
+    {
+      "source": "https://opper.ai/images/bg-task-sql.png",
+      "path": "assets/b92f10081155-bg-task-sql.png",
+      "bytes": 240993,
+      "sha256": "9ac0485bac5df88e50f88c07f83e5bac34fec48437507f23328421328b9d850b"
+    },
+    {
+      "source": "https://opper.ai/images/bg-task-image.png",
+      "path": "assets/af311717d589-bg-task-image.png",
+      "bytes": 291262,
+      "sha256": "f60a990e55e197ddfced606d41ce746c34860a99bbc22e33922c329d664ab247"
+    },
+    {
+      "source": "https://opper.ai/images/bg-capabilities-tasks.png",
+      "path": "assets/68be97169c94-bg-capabilities-tasks.png",
+      "bytes": 1047290,
+      "sha256": "4e2f2ffc5992a44297d09922c92596cd327b3a270aa06cb50978ec1a1e3b721d"
+    },
+    {
+      "source": "https://opper.ai/images/bg-capabilities-models.png",
+      "path": "assets/4c7bd46625d5-bg-capabilities-models.png",
+      "bytes": 1129744,
+      "sha256": "2d452efb43743944cfbad2e9cf1cf1ef92d55a18706c44be3ca38f9503359fb2"
+    },
+    {
+      "source": "https://opper.ai/images/bg-capabilities-feedback.png",
+      "path": "assets/e90173e32ac4-bg-capabilities-feedback.png",
+      "bytes": 773507,
+      "sha256": "f378f46ad609df7e9c4f7ce1cc47cd480b58c0f1cc714588de0b26a2f2b2a167"
+    },
+    {
+      "source": "https://opper.ai/images/bg-capabilities-knowledge.png",
+      "path": "assets/6fd37be5ba4b-bg-capabilities-knowledge.png",
+      "bytes": 1171519,
+      "sha256": "6d4dc4b56b91122bec2f0ad230e3cacde068099ffbf4b7db4cc6991a5b0b498a"
+    },
+    {
+      "source": "https://opper.ai/images/bg-capabilities-observability.png",
+      "path": "assets/e1bbf8f3d882-bg-capabilities-observability.png",
+      "bytes": 672661,
+      "sha256": "f00b7b018017f8bc1f9881d026b05655f863f605527f93d9a41493bae5edfb3a"
+    },
+    {
+      "source": "https://opper.ai/images/bg-01.png",
+      "path": "assets/0603c5d9d3dc-bg-01.png",
+      "bytes": 2277305,
+      "sha256": "f4dc0cc0ae7a54ad53b4129ea5426186ec5459a23da007337146dbee3c25953e"
+    },
+    {
+      "source": "https://opper.ai/images/bg-01@0.5x.jpg",
+      "path": "assets/151998fd4b3c-bg-01-0.5x.jpg",
+      "bytes": 62601,
+      "sha256": "af1b90f51c1c9fd29814f8bdf7b28f98e10a47bd1b667bd6b5b54f8e0d403e46"
+    },
+    {
+      "source": "https://opper.ai/images/bg-01@0.25x.jpg",
+      "path": "assets/00916e0c66fc-bg-01-0.25x.jpg",
+      "bytes": 13965,
+      "sha256": "dfced2e3ba1b561e0e7f18303dd964c9c91d42b32cc7866353534df43374762f"
+    },
+    {
+      "source": "https://opper.ai/images/bg-02.png",
+      "path": "assets/1cc3d9592d27-bg-02.png",
+      "bytes": 1930426,
+      "sha256": "42040c0ee0398f4cfdc4b0e3e58c781877a0b3263b2e70d4529f298cd5131f3a"
+    },
+    {
+      "source": "https://opper.ai/images/bg-02@0.25x.jpg",
+      "path": "assets/215115ab1cf2-bg-02-0.25x.jpg",
+      "bytes": 12537,
+      "sha256": "8f3fceb14dfb329168c3eb29af81b0353d18cf0f801cf7ac67c7e2dd1d5e9cd0"
+    },
+    {
+      "source": "https://opper.ai/images/bg-03.png",
+      "path": "assets/2a94f2ae5bdf-bg-03.png",
+      "bytes": 1992361,
+      "sha256": "7c6ebd46eb2a8ce8bebef425d448c4c2be4507bea9dbf7039646ca22943794f6"
+    },
+    {
+      "source": "https://opper.ai/images/bg-03@0.25x.jpg",
+      "path": "assets/1e5541c18cc9-bg-03-0.25x.jpg",
+      "bytes": 13199,
+      "sha256": "4027872ecc9a187467a0348c3922204f21cfc371b49ca658d723b7aac69e8950"
+    },
+    {
+      "source": "https://opper.ai/images/bg-04.png",
+      "path": "assets/5d267eff103a-bg-04.png",
+      "bytes": 2292930,
+      "sha256": "1df5dca8f626c0aa7bc424be50f1893719d0f058f6ec5eaac1cb92e4ce8a07ed"
+    },
+    {
+      "source": "https://opper.ai/images/bg-04@0.5x.jpg",
+      "path": "assets/f5c2c418e9db-bg-04-0.5x.jpg",
+      "bytes": 88896,
+      "sha256": "5db78a380e40b7ee731fc8c35b1f64d41f3e581aa94e9227d34262d66456afab"
+    },
+    {
+      "source": "https://opper.ai/images/bg-04@0.25x.jpg",
+      "path": "assets/68b7c8f72f3d-bg-04-0.25x.jpg",
+      "bytes": 20656,
+      "sha256": "463137af145711fa948aabc9cfd8918558db44b17965e890c1060aeba563458d"
+    },
+    {
+      "source": "https://opper.ai/images/bg-05.png",
+      "path": "assets/26c43abe978c-bg-05.png",
+      "bytes": 2151995,
+      "sha256": "25af6a190c915bc12113aaf7961e79c039c9eed1247028b689209eecf3bc3cd4"
+    },
+    {
+      "source": "https://opper.ai/images/bg-05@0.25x.jpg",
+      "path": "assets/4f9acc394c5a-bg-05-0.25x.jpg",
+      "bytes": 20256,
+      "sha256": "c379289f980988d935a23a3eeb4ac511cbd6a8999dd83652270143243e162c36"
+    },
+    {
+      "source": "https://opper.ai/images/bg-06.png",
+      "path": "assets/acfb9332b7f9-bg-06.png",
+      "bytes": 2026993,
+      "sha256": "ceca850689ff741f6c93f333de50a7386243a09433fac0f2b54699768f15b9e7"
+    },
+    {
+      "source": "https://opper.ai/images/bg-06@0.5x.jpg",
+      "path": "assets/c7ac6a02681f-bg-06-0.5x.jpg",
+      "bytes": 59727,
+      "sha256": "d2d7555cf08ac49a6707c12c09ff9dad39b1ebd3e0deb9d2a91afa831d49621a"
+    },
+    {
+      "source": "https://opper.ai/images/bg-06@0.25x.jpg",
+      "path": "assets/539e43b2d3e8-bg-06-0.25x.jpg",
+      "bytes": 12982,
+      "sha256": "d7b93f92f41ea0d36ec43004a969ae91aeadb14e9d9b38478940f753fd056b17"
+    },
+    {
+      "source": "https://opper.ai/images/bg-07.png",
+      "path": "assets/ffaec7564b30-bg-07.png",
+      "bytes": 2421477,
+      "sha256": "4d36673a1b6ed183e4d6299ba4621d3822850b9e0c56cb12a0a5eef24a29a48a"
+    },
+    {
+      "source": "https://opper.ai/images/bg-07@0.5x.jpg",
+      "path": "assets/535e1eba6259-bg-07-0.5x.jpg",
+      "bytes": 63753,
+      "sha256": "f3773e04dd9325d41e81029f0e84bbbd2bdecc4eae8eb4dbb9e46c548456a245"
+    },
+    {
+      "source": "https://opper.ai/images/bg-07@0.25x.jpg",
+      "path": "assets/ff212bc1126d-bg-07-0.25x.jpg",
+      "bytes": 13093,
+      "sha256": "143940a3fe9361bc8a47b3f78053c865d11bdab29579d0dff559647524310aa7"
+    },
+    {
+      "source": "https://opper.ai/images/icon-logo-01.png",
+      "path": "assets/6fd6968c9c5a-icon-logo-01.png",
+      "bytes": 5766,
+      "sha256": "ab3963a4b1467a401dedcda903edfbdca9a76154cb69b2c049e8819b3d940fc9"
+    },
+    {
+      "source": "https://opper.ai/images/icon-logo-02.png",
+      "path": "assets/3bd1590ade65-icon-logo-02.png",
+      "bytes": 3356,
+      "sha256": "51da72b2fe77f1e8cc9d4046260ca7781b3599628f4e48d1e6c85977eb12a085"
+    },
+    {
+      "source": "https://opper.ai/images/icon-logo-03.png",
+      "path": "assets/8d1ce679ccbc-icon-logo-03.png",
+      "bytes": 1341,
+      "sha256": "e1d6d3f49f047202f23d426f1bb4d546dc713447060fb8bfa02c24fa6eb6fe9f"
+    },
+    {
+      "source": "https://opper.ai/images/icon-logo-04.png",
+      "path": "assets/e3e66216c8c2-icon-logo-04.png",
+      "bytes": 3912,
+      "sha256": "6b862b8c5aa9cc9135f493aa22a767a24eba7ee032f533e1052ebbc8531651c2"
+    },
+    {
+      "source": "https://opper.ai/images/icon-logo-05.png",
+      "path": "assets/94a8a8f124b3-icon-logo-05.png",
+      "bytes": 4215,
+      "sha256": "178d2997e88464a98039f7d541a55f835c2f34f3fc52049353c37f7e6f7f0dbd"
+    },
+    {
+      "source": "https://opper.ai/images/icon-logo-06.png",
+      "path": "assets/83d98787dcb3-icon-logo-06.png",
+      "bytes": 3184,
+      "sha256": "218eb53c9af0a021975e56d8dcccbe19fadb2b0a7dcf72a2d49270b7ac2dec36"
+    },
+    {
+      "source": "https://opper.ai/images/bg-story-beatly-dark.jpg",
+      "path": "assets/1b5db33d0c3e-bg-story-beatly-dark.jpg",
+      "bytes": 77052,
+      "sha256": "073161230901454a7663def8de24db4e81b4e13c9e9d9f3731aeca792b536c7d"
+    },
+    {
+      "source": "https://opper.ai/images/bg-story-ping-dark.jpg",
+      "path": "assets/2cff1f708a37-bg-story-ping-dark.jpg",
+      "bytes": 56045,
+      "sha256": "ab64242188ebd7404a153d8912a8728dfcbbf0483194d7e81662b4c1cfb77fed"
+    },
+    {
+      "source": "https://opper.ai/images/bg-story-steep-dark.jpg",
+      "path": "assets/1a869b9c2cb2-bg-story-steep-dark.jpg",
+      "bytes": 55522,
+      "sha256": "315670acfd20649aa0180518a71dc1d9e465ea9b46fcf085d41e5b47b3d931a4"
+    },
+    {
+      "source": "https://opper.ai/images/bg-story-get-tested-dark.jpg",
+      "path": "assets/b538e6a66452-bg-story-get-tested-dark.jpg",
+      "bytes": 56347,
+      "sha256": "630a2a355bdbbb053954e5a08559d60c058feb5d686081b1b86c27db903f1f5a"
+    },
+    {
+      "source": "https://opper.ai/images/bg-story-aibob-dark.jpg",
+      "path": "assets/67f0d44fce13-bg-story-aibob-dark.jpg",
+      "bytes": 53131,
+      "sha256": "3c8c78600a188405c65b9539371a6323dd399425a412756357a92af37cf07cc1"
+    },
+    {
+      "source": "https://opper.ai/images/bg-story-svenska-bostader-dark.jpg",
+      "path": "assets/869fa67d30b9-bg-story-svenska-bostader-dark.jpg",
+      "bytes": 39679,
+      "sha256": "ac55e69d85b994bcce03986fcdf5e88ff0360155b80a39435b24b3034d1fd493"
+    },
+    {
+      "source": "https://opper.ai/images/bg-story-njord-dark.jpg",
+      "path": "assets/78e2a402ddf5-bg-story-njord-dark.jpg",
+      "bytes": 35176,
+      "sha256": "6ad3badf601b01e58c53986e1cf71a99a46b6b13ef84fe7f98133ca3506302aa"
+    },
+    {
+      "source": "https://opper.ai/images/bg-task-agent-dark.png",
+      "path": "assets/7bbb4c811a06-bg-task-agent-dark.png",
+      "bytes": 216279,
+      "sha256": "711261dc15d6122f7c9e32d11185c6f2dc8dbdb756238065df7e6a0c122c99d7"
+    },
+    {
+      "source": "https://opper.ai/images/bg-task-sql-dark.png",
+      "path": "assets/852b96c429d8-bg-task-sql-dark.png",
+      "bytes": 238418,
+      "sha256": "3380a98416fb8bd3cf2ab250186f09ab1d4ad9723dc8b5a0f419fc8ea24f0b54"
+    },
+    {
+      "source": "https://opper.ai/images/bg-task-image-dark.png",
+      "path": "assets/f8b495efff02-bg-task-image-dark.png",
+      "bytes": 274504,
+      "sha256": "6d58f980ec22f64c0e0440ee1050770de103903ae49673e9dc6929f80cbe0898"
+    },
+    {
+      "source": "https://opper.ai/images/bg-capabilities-tasks-dark.png",
+      "path": "assets/84b31c6bead3-bg-capabilities-tasks-dark.png",
+      "bytes": 1041132,
+      "sha256": "a35f2f7bd98aeaad491239c598f441c5b3ef377ff01e3da727ada1fa696b5353"
+    },
+    {
+      "source": "https://opper.ai/images/bg-capabilities-models-dark.png",
+      "path": "assets/74e25395ff92-bg-capabilities-models-dark.png",
+      "bytes": 1131750,
+      "sha256": "b777a8ea43d088c8619074b3d878e8329b05bdd2434d10ef0fff84d321da2fd2"
+    },
+    {
+      "source": "https://opper.ai/images/bg-capabilities-feedback-dark.png",
+      "path": "assets/dfcfbf37bc41-bg-capabilities-feedback-dark.png",
+      "bytes": 771666,
+      "sha256": "75f42106cf6135c3a476d762642c860a0ea3c118781591b8bf2dc636ab9ee4f8"
+    },
+    {
+      "source": "https://opper.ai/images/bg-capabilities-knowledge-dark.png",
+      "path": "assets/632253063655-bg-capabilities-knowledge-dark.png",
+      "bytes": 1168612,
+      "sha256": "5e4481c823c3cd62672631ad8099081ea7be0df9268014f22491b6a1ca0c56db"
+    },
+    {
+      "source": "https://opper.ai/images/bg-capabilities-observability-dark.png",
+      "path": "assets/03d900ca20c6-bg-capabilities-observability-dark.png",
+      "bytes": 685751,
+      "sha256": "69723ba7281a1ad492d93ba88121a39cf6477e92a852cbc78c39b90813eaa8d8"
+    },
+    {
+      "source": "https://opper.ai/images/icon-logo-01-dark.png",
+      "path": "assets/f1cb7228638e-icon-logo-01-dark.png",
+      "bytes": 7197,
+      "sha256": "c55f75bff0693331895f3a94e983b078b1976222273f74cfeae65f8b9494adcb"
+    },
+    {
+      "source": "https://opper.ai/images/icon-logo-02-dark.png",
+      "path": "assets/eeff8adec503-icon-logo-02-dark.png",
+      "bytes": 3544,
+      "sha256": "f66afe097f4be22ab6f4de7e8c4291bc125ae4f0e91ba013eb566e48e7729eb5"
+    },
+    {
+      "source": "https://opper.ai/images/icon-logo-03-dark.png",
+      "path": "assets/cb894a97c905-icon-logo-03-dark.png",
+      "bytes": 1470,
+      "sha256": "13e7c6b2fa88439fb26a2a165f0e3c222189cc11f48fb9e7bd0c6ef2cf510609"
+    },
+    {
+      "source": "https://opper.ai/images/icon-logo-04-dark.png",
+      "path": "assets/fb67b55ff73c-icon-logo-04-dark.png",
+      "bytes": 6479,
+      "sha256": "6b1a8dbcd153f97a7405b2575431841d451a00a51ad180b30d640bddc7c19051"
+    },
+    {
+      "source": "https://opper.ai/images/icon-logo-05-dark.png",
+      "path": "assets/0609c934fcf8-icon-logo-05-dark.png",
+      "bytes": 7139,
+      "sha256": "6aade19d7147afc17933e9c15090755ee2deab1483f11fb0273451f2af76a8ee"
+    },
+    {
+      "source": "https://opper.ai/images/icon-logo-06-dark.png",
+      "path": "assets/6067b6079456-icon-logo-06-dark.png",
+      "bytes": 3677,
+      "sha256": "5a1fd0f17b9c9311a4b223c5f67cfe4e4e4a3c80e278350bb7877926a5ccf540"
+    },
+    {
+      "source": "https://opper.ai/_next/static/media/72a5f2ffa4579d42-s.3iynvsw3bteu5.woff2",
+      "path": "assets/1b1942c31159-72a5f2ffa4579d42-s.3iynvsw3bteu5.woff2",
+      "bytes": 1964,
+      "sha256": "59ed34150882ca967f39d9c3467bae2f028cd75a87b35a4251fcac83179554ad"
+    },
+    {
+      "source": "https://opper.ai/_next/static/media/cb1d44047456b6aa-s.0i1vraf21-5wy.woff2",
+      "path": "assets/6c3e30bf3339-cb1d44047456b6aa-s.0i1vraf21-5wy.woff2",
+      "bytes": 13792,
+      "sha256": "c54a0fc890f9cbaf295a1bbcf745351b099182bf87b149cf6eeec856f46750bf"
+    },
+    {
+      "source": "https://opper.ai/_next/static/media/10ae62993a7a5831-s.06iecwgg10c5h.woff2",
+      "path": "assets/41b7d9f0c9d5-10ae62993a7a5831-s.06iecwgg10c5h.woff2",
+      "bytes": 7216,
+      "sha256": "944b2a4cec6ad8eb05af836fa51863f34b968d3991ebccddf6dafe3b43184e6b"
+    },
+    {
+      "source": "https://opper.ai/_next/static/media/6dcb58b56d495945-s.2g_n53c3kutca.woff2",
+      "path": "assets/c1d3a3e94c78-6dcb58b56d495945-s.2g_n53c3kutca.woff2",
+      "bytes": 12440,
+      "sha256": "f82058f24322e24aef0ded5b573409d92f82f4d7946314b9f79e13afe194a34b"
+    },
+    {
+      "source": "https://opper.ai/_next/static/media/a98486ef7c5f003f-s.p.1bkskgm-rm2mh.woff2",
+      "path": "assets/2e5b78042868-a98486ef7c5f003f-s.p.1bkskgm-rm2mh.woff2",
+      "bytes": 20144,
+      "sha256": "fd4c8e65080adbaf0cc819eb67b08ed9300e9274dd0069b382d286b93b9544a0"
+    },
+    {
+      "source": "https://opper.ai/_next/static/media/da4b870ab52b3094-s.2rv_b6cm3-gtx.woff2",
+      "path": "assets/fe155052939d-da4b870ab52b3094-s.2rv_b6cm3-gtx.woff2",
+      "bytes": 42888,
+      "sha256": "b959ec00d64ac7dcf5c3a17641f7d7704c1fedbfe2e8bb0a7e11bd3e9b67ca86"
+    },
+    {
+      "source": "https://opper.ai/_next/static/media/86d70b7c76b6ec6e-s.43yn3v1dnm71_.woff2",
+      "path": "assets/1cf4ea5146da-86d70b7c76b6ec6e-s.43yn3v1dnm71_.woff2",
+      "bytes": 77224,
+      "sha256": "cb0aa78eef73dfb083068a56ba321a4a5cc9841721d261ea8ab5f549db8c7e18"
+    },
+    {
+      "source": "https://opper.ai/_next/static/media/11cc37d7380d16b4-s.27riv1g955cgo.woff2",
+      "path": "assets/a458eb997335-11cc37d7380d16b4-s.27riv1g955cgo.woff2",
+      "bytes": 29528,
+      "sha256": "93b3fdd6ded70837e67eb686a5ed3a896b03d0cd5f7e4be62f07a4efeaebfcfd"
+    },
+    {
+      "source": "https://opper.ai/_next/static/media/a85fe84266768609-s.p.0h6ig86gwutp4.woff2",
+      "path": "assets/be8d6b90eeb4-a85fe84266768609-s.p.0h6ig86gwutp4.woff2",
+      "bytes": 74572,
+      "sha256": "7a0049db01fdd8fc7af7ef36675862a72a5c76d0cb45ae63c9f5b6f1b769dac7"
+    }
+  ],
+  "zoteroImport": {
+    "status": "verified",
+    "itemKey": "7JXP272S",
+    "attachmentKey": "2EPZLMCU",
+    "collectionKey": "3CSJ9YAV",
+    "record": "import-status.json"
+  },
+  "additionalMedia": [
+    {
+      "source": "https://opper.ai/blog/luna-decisions-vs-luna/luna-sbs.mp4",
+      "path": "assets/6889d83fbf71-luna-sbs.mp4",
+      "bytes": 2324532,
+      "sha256": "eb2b5c675751ec315c8925630e7aca690a62a231c7c00cb1ae747228c9a20249"
+    },
+    {
+      "source": "https://opper.ai/blog/luna-decisions-vs-luna/poster.jpg",
+      "path": "assets/00d3ac38db18-poster.jpg",
+      "bytes": 95552,
+      "sha256": "631fe7dc919a1e486e68055d03c6601e828f10ee0b2a01eaee72fb4f84dd9857"
+    }
+  ],
+  "finalFileHashes": {
+    "article.pdf": "79c057a5b7c46b2629a3404cfcfed23fd405eba0a1e7411b1eea3cf8b76f7c39",
+    "article.md": "3b661699136d03a6cc986f883b3476d6c5eba97bc79009f08757e85bd747e2b7",
+    "index.html": "a57c9dfdbc212298849d44a5a1b7113ff53841caabec9ece18441858b9e09a42",
+    "source.html": "51b2529a3d8a9dfda75a3e4c31b7feedcb80d8fa0d7582254fb8bc35d6f7e3f6"
+  },
+  "translation": {
+    "status": "verified-with-layout-limitations",
+    "file": "bilingual/article.no_watermark.zh-CN.dual.pdf",
+    "statusRecord": "bilingual/translation-status.json",
+    "sha256": "33ba0bcd3e962bd056695a38e866c9431ebbfca959fd78ae064f45b46290aba0",
+    "attachedToZotero": true,
+    "attachmentKey": "QNGMMMIU",
+    "parentItemKey": "7JXP272S"
+  }
+}

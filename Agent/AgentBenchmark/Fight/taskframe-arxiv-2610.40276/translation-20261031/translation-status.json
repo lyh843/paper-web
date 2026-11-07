@@ -1,0 +1,93 @@
+{
+  "status": "verified-and-attached",
+  "source": "/repo/paper-web/Agent/AgentBenchmark/Fight/taskframe-arxiv-2610.40276/TaskFrame-2610.40276v1.pdf",
+  "sourceSha256": "291e0d94d6d47676a94615c0f057690b8d684b4d7c68b34cc3508a4bd396e993",
+  "software": "Zotero PDF2zh / PDF2zh-next",
+  "service": "openaicompatible",
+  "sourceLanguage": "en",
+  "targetLanguage": "zh-CN",
+  "layout": "lr",
+  "pages": "all",
+  "onlyBilingual": true,
+  "zoteroModified": true,
+  "zoteroItemKey": "IGN5D6CY",
+  "zoteroTargetCollectionKey": "G2VDMDFY",
+  "zoteroSourceAttachmentKey": "XHNSL6MK",
+  "zoteroBilingualAttachmentKey": "F7TU7CM9",
+  "zoteroOriginalAndBilingualHashesMatch": true,
+  "zoteroImportStatus": "verified-imported-with-bilingual",
+  "visualReview": {
+    "pages": [1, 2, 4, 5, 6, 7, 9, 14, 18, 20],
+    "scope": "首页、正文、架构图、公式、实验表格、附录及末页；非逐句人工校译",
+    "findings": "抽查未见明显整页裁切，图表和公式保留；部分表格中文较小，少量公式邻近英文保留。第20页以游戏截图为主，中文少属正常。图片内部英文不保证翻译。"
+  },
+  "startedAt": "2026-10-31T02:59:47.702097+00:00",
+  "engineVersionInCurrentPython": "2.9.0",
+  "exitCode": 0,
+  "outputs": [
+    {
+      "file": "TaskFrame-2610.40276v1.no_watermark.zh-CN.dual.pdf",
+      "bytes": 5273241,
+      "sha256": "302f35fb657c71f869c8f9b4fd712d05eaab3c346031480ee9bcf2e129752d8b"
+    }
+  ],
+  "verification": {
+    "status": "checked-automatically-needs-visual-review",
+    "sourcePages": 20,
+    "documents": [
+      {
+        "file": "TaskFrame-2610.40276v1.no_watermark.zh-CN.dual.pdf",
+        "pages": 20,
+        "chineseCharactersByPage": [
+          907,
+          1009,
+          1021,
+          612,
+          652,
+          828,
+          848,
+          761,
+          610,
+          476,
+          485,
+          442,
+          465,
+          676,
+          916,
+          739,
+          745,
+          475,
+          589,
+          51
+        ],
+        "imagePlacements": 14,
+        "pageCountMatches": true,
+        "originalTextUnchangedByPage": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      }
+    ]
+  },
+  "originalConfigUnchanged": true,
+  "originalPDFUnchanged": true,
+  "finishedAt": "2026-10-31T03:03:26.138986+00:00"
+}

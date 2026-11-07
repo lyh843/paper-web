@@ -1,0 +1,114 @@
+{
+  "generated_on": "2026-10-17",
+  "zotero_collection_key": "FLT4H9RN",
+  "zotero_item_key": "2PKI4VVL",
+  "zotero_attachment_key": "HU3LBRYN",
+  "source_pdf_path": "/home/lyh/Zotero/storage/HU3LBRYN/Qu 等 - 2026 - TabICLv2 A better, faster, scalable, and open tabular foundation model.pdf",
+  "source_pdf_sha256": "71554be35ba3847a14267912d9738f6049545cf74a30d860de1ed23d14d95246",
+  "source_pdf_pages": 79,
+  "source_version": "TabICLv2, arXiv:2602.11139v2, 2026-09-16, 79 pages",
+  "covered_sections_and_scope": "正文及Appendix A、C、E/F相关生成流程、H资源、I分位输出、J/K评估定义与主结果已读取；不将79页逐表全部重跑。",
+  "source_pdf_modified": false,
+  "duplicate_of": null,
+  "standalone_pdf_item": false,
+  "reading_language": "zh-CN",
+  "mode": "DEEP READ",
+  "lens": "understanding-first",
+  "skill_source": "https://github.com/xiaofengShi/paper-reading-skill",
+  "skill_commit": "eadd0cd61d276d082938d80eb0d3fbb85614f2e1",
+  "renderer_sha256": "3ed818344cd402297240d51553c0c6ab7eb599017a51380cb437d37283f5598c",
+  "rebuild_command": "node /repo/paper-web/.opencode/skills/paper-reading/scripts/render-reading.cjs /repo/paper-web/TabFM/tabicl-v2-2PKI4VVL/reading.md /repo/paper-web/TabFM/tabicl-v2-2PKI4VVL/index.html",
+  "audit_source_sha256": "f03534a6f6f6608277bba14632d4bee118c9594ddf9a862e8862567cb1fd0be7",
+  "html_sha256": "673db35156a4077684c4d85dea7728e6dae9e7bdc2daa45ed67552522edcfdf0",
+  "figures": [
+    {
+      "file": "assets/tabiclv2-fig2-architecture.png",
+      "pdf_page_1based": 3,
+      "crop_rectangle_pdf_points": [
+        303,
+        65,
+        548,
+        314
+      ],
+      "render_scale": 2.5,
+      "sha256": "9896f391764133b18be7a12a3d3868f40c415bfc6eb826eccf8c1cb75aff6536"
+    },
+    {
+      "file": "assets/tabiclv2-fig3-fading.png",
+      "pdf_page_1based": 4,
+      "crop_rectangle_pdf_points": [
+        50,
+        65,
+        548,
+        219
+      ],
+      "render_scale": 2.5,
+      "sha256": "fee0f5c159dda4aefd936d9f148afc57dbfd5e3684ebe5f3db78bae4c26ab372"
+    },
+    {
+      "file": "assets/tabiclv2-fig4-prior.png",
+      "pdf_page_1based": 6,
+      "crop_rectangle_pdf_points": [
+        50,
+        65,
+        548,
+        236
+      ],
+      "render_scale": 2.5,
+      "sha256": "fd900717734e9038c49ac14261c94499de569312a36216cae2e47e1b09e55306"
+    },
+    {
+      "file": "assets/tabiclv2-fig10-ablations.png",
+      "pdf_page_1based": 8,
+      "crop_rectangle_pdf_points": [
+        303,
+        65,
+        548,
+        272
+      ],
+      "render_scale": 2.5,
+      "sha256": "65ca151f37b791d6c347ea03fca3a36f72b837fcd8d7260a5f1fb2012f831461"
+    },
+    {
+      "file": "assets/tabiclv2-figJ1-ranks.png",
+      "pdf_page_1based": 50,
+      "crop_rectangle_pdf_points": [
+        50,
+        265,
+        548,
+        443
+      ],
+      "render_scale": 2.5,
+      "sha256": "1eed2245d6d456fd8140dbfcd88dbc73ce328f52ebb8ab305d795a0b753a3917"
+    }
+  ],
+  "validation_scope": "Source-based generator self-check and browser delivery checks; no independent reader study, raw-data audit or experimental reproduction",
+  "skill_base_commit": "eadd0cd61d276d082938d80eb0d3fbb85614f2e1",
+  "skill_revision": "historical-context-v1",
+  "skill_definition_sha256": "a795c8d00b90632ef0eaada455415b555acc6c0e6dc101bce4cddc26de8315a4",
+  "historical_context": {
+    "status": "pass",
+    "horizon": "2026-02-11",
+    "horizon_basis": "first-publication",
+    "date_evidence_url": "https://arxiv.org/abs/2602.11139v1",
+    "predecessor_rows": 5,
+    "chapter": "00 / 发表时的研究背景",
+    "source_review": "2026-02首次公开与9月本地版本分开；已有TabICL/2.5/Real路线与SSMax/Muon的贡献明确，后文最新细节不声称v1完全相同。",
+    "review_scope": "Target introduction/background/related work plus selected primary abstracts and official submission histories; not comprehensive full-text review of all predecessors",
+    "source_urls": [
+      "https://arxiv.org/abs/2507.03971",
+      "https://arxiv.org/abs/2602.11139v1"
+    ]
+  },
+  "local_revisions": [
+    {
+      "revision": "historical-context-v1",
+      "date": "2026-10-17",
+      "action": "Insert publication-time background; preserve prior method, evidence, assets and paths",
+      "before": {
+        "audit_source_sha256": "f9071df6bbf323f91b482824eae009c7b89a002f48a0da2ef58ee68aabb6c3a0",
+        "html_sha256": "9a7d89cc3485866fb9542a0634b3e182722a52b5f6137459b1644490453c334d"
+      }
+    }
+  ]
+}

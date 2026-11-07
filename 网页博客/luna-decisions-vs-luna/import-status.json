@@ -1,0 +1,38 @@
+{
+  "localConversion": "verified",
+  "zoteroImport": "verified",
+  "collectionPath": "人工智能/网页博客",
+  "collectionKey": "3CSJ9YAV",
+  "itemKey": "7JXP272S",
+  "attachmentKey": "2EPZLMCU",
+  "sourceURL": "https://opper.ai/blog/luna-decisions-vs-luna",
+  "pdfSha256": "79c057a5b7c46b2629a3404cfcfed23fd405eba0a1e7411b1eea3cf8b76f7c39",
+  "storedAttachmentSha256": "79c057a5b7c46b2629a3404cfcfed23fd405eba0a1e7411b1eea3cf8b76f7c39",
+  "storedAttachmentMatches": true,
+  "verifiedMetadata": [
+    "title",
+    "author",
+    "publicationDate",
+    "URL",
+    "blogPost type",
+    "collection membership",
+    "child attachment"
+  ],
+  "deduplication": {
+    "collectionInitiallyEmpty": true,
+    "libraryTitleSearch": "Luna: no matches",
+    "libraryURLSearch": "luna-decisions-vs-luna: no matches"
+  },
+  "bilingualTranslation": {
+    "status": "verified-with-layout-limitations",
+    "outputDirectory": "bilingual",
+    "attachedToZotero": true,
+    "reason": "User explicitly requested attaching the bilingual PDF to the existing Zotero item.",
+    "file": "bilingual/article.no_watermark.zh-CN.dual.pdf",
+    "pages": 4,
+    "sha256": "33ba0bcd3e962bd056695a38e866c9431ebbfca959fd78ae064f45b46290aba0",
+    "attachmentKey": "QNGMMMIU",
+    "storedAttachmentSha256": "33ba0bcd3e962bd056695a38e866c9431ebbfca959fd78ae064f45b46290aba0",
+    "storedAttachmentMatches": true
+  }
+}

@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Token Clock · 动作窗口算例</title>
+  <style>
+    *{box-sizing:border-box}body{margin:0;padding:24px;background:#f5f8fb;color:#19354b;font:15px/1.75 system-ui,-apple-system,sans-serif}
+    main{max-width:920px;margin:auto}h1{font-size:24px;line-height:1.4;margin:0 0 12px}p{margin:8px 0}.muted{color:#526879}.controls{display:grid;grid-template-columns:2fr 1fr 1fr;gap:18px;margin:24px 0}
+    label{display:block;font-weight:650}input,select{width:100%;min-width:0;margin-top:8px;font:inherit}select{padding:8px;background:white;border:1px solid #b8c9d6;border-radius:6px}input[type=range]{accent-color:#24699b}
+    .results{padding:18px;border:1px solid #c5d6e1;border-radius:10px;background:white}.formula{font-size:19px;font-weight:700}.status{font-weight:650}.chart{width:100%;height:auto;display:block;margin:20px 0;background:white;border-radius:8px}
+    .table-wrap{overflow:auto}table{width:100%;border-collapse:collapse;margin:16px 0}th,td{text-align:left;border-bottom:1px solid #cddbe4;padding:8px;white-space:nowrap}th{background:#e8f0f5}details{margin-top:18px}summary{cursor:pointer;font-weight:650}
+    @media(max-width:560px){body{padding:16px}.controls{grid-template-columns:1fr;gap:12px}h1{font-size:21px}}
+    @media print{body{background:white}.controls{display:none}.results{break-inside:avoid}}
+  </style>
+</head>
+<body>
+<main>
+  <h1>同样的200个token，动作是否还赶得上</h1>
+  <p>这是对原论文 Fig. 4 与 Δt = n / (Bf) 的交互算例，不运行真实游戏，也不预测模型成功率。观察率固定为论文的 <strong>f = 1 FPS</strong>。</p>
+  <div class="controls">
+    <div><label for="tokens">动作提交前计费token数 n：<output id="n-value" for="tokens">200</output></label><input id="tokens" type="range" min="0" max="512" step="1" value="200"></div>
+    <div><label for="rate">换算率 B（token/帧）</label><select id="rate"><option value="32">32</option><option value="64" selected>64</option><option value="128">128</option></select></div>
+    <div><label for="scenario">动作窗口</label><select id="scenario"><option value="auction">竞拍：0–5秒</option><option value="snake">Snake：2–2.667秒</option></select></div>
+  </div>
+  <div class="results" aria-live="polite" aria-atomic="true">
+    <div id="formula" class="formula">Δt = 200 / (64 × 1) = 3.125秒</div>
+    <p id="status" class="status">动作提交落在所选时间窗口内；这不保证动作内容正确或任务成功。</p>
+    <p id="window" class="muted">所选窗口：0–5秒。竞拍窗口可能被新的对手出价重置；这里保持窗口固定，仅研究提交时刻。</p>
+  </div>
+  <svg class="chart" viewBox="0 0 900 200" role="img" aria-labelledby="chart-title chart-desc">
+    <title id="chart-title">动作窗口与动作提交时刻</title>
+    <desc id="chart-desc">阴影是固定动作窗口，橙色圆点是按token计算的动作提交时刻。默认200token、B64时为3.125秒。</desc>
+    <g id="plot"></g>
+  </svg>
+  <p class="muted">图为<strong>本文公式算例</strong>，不是重绘实验曲线。窗口内也可能动作错误；更早不一定更好，例如Snake的特定转向窗口要到2秒才开始。这里只比较到达时刻，不模拟对手、动作持续、观察丢帧或游戏物理。</p>
+  <details open>
+    <summary>不依赖脚本的静态对照</summary>
+    <div class="table-wrap"><table>
+      <thead><tr><th>n</th><th>B，f=1</th><th>Δt</th><th>固定竞拍窗0–5秒</th><th>固定Snake窗2–8/3秒</th></tr></thead>
+      <tbody><tr><td>200</td><td>32</td><td>6.25秒</td><td>太晚</td><td>太晚</td></tr><tr><td>200</td><td>64</td><td>3.125秒</td><td>窗内</td><td>晚约0.458秒</td></tr><tr><td>200</td><td>128</td><td>1.5625秒</td><td>窗内</td><td>尚未到指定窗口</td></tr></tbody>
+    </table></div>
+  </details>
+  <p class="muted">来源：Tang等，Realtime-Bench，arXiv:2610.22155v1，§3.2、Fig. 4，PDF pp. 4–5。B32/128是按同一公式代入的教学对照，并非图中另行测得的游戏成绩。</p>
+</main>
+<script>
+  (() => {
+    const tokens=document.getElementById('tokens'),rate=document.getElementById('rate'),scenario=document.getElementById('scenario');
+    const fmt=n=>Number(n.toFixed(4)).toString();
+    function update(){
+      const n=Number(tokens.value),b=Number(rate.value),t=n/b;
+      const snake=scenario.value==='snake',start=snake?2:0,end=snake?8/3:5;
+      document.getElementById('n-value').textContent=n;
+      document.getElementById('formula').textContent=`Δt = ${n} / (${b} × 1) = ${fmt(t)}秒`;
+      const message=t<start?`早于指定窗口约${fmt(start-t)}秒；需要另行判断等待与动作内容。`:t>end?`晚于指定窗口约${fmt(t-end)}秒；即使动作内容合理也可能来不及。`:'动作提交落在所选时间窗口内；这不保证动作内容正确或任务成功。';
+      document.getElementById('status').textContent=message;
+      document.getElementById('window').textContent=snake?'所选窗口：2–8/3秒（约2.667秒）。窗口来自原Fig.4的特定转向示例，不代表所有Snake决策。':'所选窗口：0–5秒。竞拍窗口可能被新的对手出价重置；这里保持窗口固定，仅研究提交时刻。';
+      const max=Math.max(6,Math.ceil(t)+1),x=v=>65+v/max*770;
+      let ticks='';for(let i=0;i<=6;i++){const v=i*max/6;ticks+=`<line x1="${x(v)}" y1="112" x2="${x(v)}" y2="122" stroke="#697f90"/><text x="${x(v)}" y="150" text-anchor="middle" font-size="17">${fmt(v)}</text>`;}
+      document.getElementById('plot').innerHTML=`<rect x="${x(start)}" y="45" width="${x(end)-x(start)}" height="65" fill="#d6ebe5"/><text x="${(x(start)+x(end))/2}" y="32" text-anchor="middle" font-size="17">指定动作窗口</text><line x1="65" y1="112" x2="835" y2="112" stroke="#697f90" stroke-width="2"/>${ticks}<line x1="${x(t)}" y1="55" x2="${x(t)}" y2="112" stroke="#b45b2e" stroke-width="3"/><circle cx="${x(t)}" cy="80" r="8" fill="#b45b2e"/><text x="${x(t)}" y="184" text-anchor="middle" font-size="17">动作 ${fmt(t)}秒</text><text x="870" y="150" text-anchor="end" font-size="17">秒</text>`;
+    }
+    tokens.addEventListener('input',update);rate.addEventListener('change',update);scenario.addEventListener('change',update);update();
+  })();
+</script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+{
+  "localConversion": "partial-user-approved-verified",
+  "collectionPath": "人工智能/网页博客",
+  "collectionKey": "3CSJ9YAV",
+  "zoteroImport": "verified-original-and-bilingual",
+  "itemKey": "ITXN4SQT",
+  "originalAttachmentKey": "9RYAGQ3Y",
+  "originalPDFSha256": "0d07f27add2222873c8ed7cf554e54f4199fce652322b69aa4512d33b94f7115",
+  "storedOriginalPDFMatches": true,
+  "existingPaperKeyNotModified": "QTGVUCDF",
+  "deduplication": "Target collection paginated to completion (2 entries after import); title and URL searches identified only a distinct ICML paper before creation; its metadata and children verified.",
+  "limitations": {
+    "userApproved": true,
+    "missingImages": 23,
+    "totalContentImages": 24,
+    "offlineImages": 1,
+    "onlineOnlyVideos": 14,
+    "layout": "static single-column adaptation"
+  },
+  "bilingualTranslation": {
+    "status": "verified-with-source-and-layout-limitations",
+    "attachToZoteroRequested": true,
+    "attachedToZotero": true,
+    "outputDirectory": "bilingual",
+    "attachmentKey": "75PRSXJJ",
+    "file": "bilingual/article.no_watermark.zh-CN.dual.pdf",
+    "pages": 6,
+    "sha256": "647e97940a028132bca7711d7b5fca2862ed834ed6afe910676c8df3360f3bbd",
+    "storedFileMatches": true
+  }
+}

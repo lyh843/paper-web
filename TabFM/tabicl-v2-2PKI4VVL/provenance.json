@@ -1,0 +1,220 @@
+{
+  "generated_on": "2026-10-26",
+  "zotero_collection_key": "FLT4H9RN",
+  "zotero_item_key": "2PKI4VVL",
+  "zotero_attachment_key": "HU3LBRYN",
+  "source_pdf_path": "/home/lyh/Zotero/storage/HU3LBRYN/Qu 等 - 2026 - TabICLv2 A better, faster, scalable, and open tabular foundation model.pdf",
+  "source_pdf_sha256": "71554be35ba3847a14267912d9738f6049545cf74a30d860de1ed23d14d95246",
+  "source_pdf_pages": 79,
+  "source_version": "TabICLv2, arXiv:2602.11139v2, 2026-09-16, 79 pages",
+  "covered_sections_and_scope": "13问重构：本轮重读正文及A/B/H/I/L相关结构/课程/资源/分位数/新增实验，J/K聚合审计保留；全文可访问，不声称重验所有GP证明或79页表格。新增真实来源的实验追踪、解析交互、脆弱性、方案/反例、后续检索与候选研究。",
+  "source_pdf_modified": false,
+  "duplicate_of": null,
+  "standalone_pdf_item": false,
+  "reading_language": "zh-CN",
+  "mode": "DEEP READ",
+  "lens": "understanding-first with mandatory 13-question research extension",
+  "skill_source": "https://github.com/xiaofengShi/paper-reading-skill",
+  "skill_commit": "eadd0cd61d276d082938d80eb0d3fbb85614f2e1",
+  "renderer_sha256": "3ed818344cd402297240d51553c0c6ab7eb599017a51380cb437d37283f5598c",
+  "rebuild_command": "node /repo/paper-web/.opencode/skills/paper-reading/scripts/render-reading.cjs /repo/paper-web/TabFM/tabicl-v2-2PKI4VVL/reading.md /repo/paper-web/TabFM/tabicl-v2-2PKI4VVL/index.html",
+  "audit_source_sha256": "a9f2363c322bd8baaf820a3c0a4e5c011b142d72d03e1f63693f69c99baca8fc",
+  "html_sha256": "4cec23e650b6fef1d23114f683d38872dc30f4bdd10b50e83e46fa5be8d782b1",
+  "figures": [
+    {
+      "file": "assets/tabiclv2-fig2-architecture.png",
+      "pdf_page_1based": 3,
+      "crop_rectangle_pdf_points": [
+        303,
+        65,
+        548,
+        314
+      ],
+      "render_scale": 2.5,
+      "sha256": "9896f391764133b18be7a12a3d3868f40c415bfc6eb826eccf8c1cb75aff6536"
+    },
+    {
+      "file": "assets/tabiclv2-fig3-fading.png",
+      "pdf_page_1based": 4,
+      "crop_rectangle_pdf_points": [
+        50,
+        65,
+        548,
+        219
+      ],
+      "render_scale": 2.5,
+      "sha256": "fee0f5c159dda4aefd936d9f148afc57dbfd5e3684ebe5f3db78bae4c26ab372"
+    },
+    {
+      "file": "assets/tabiclv2-fig4-prior.png",
+      "pdf_page_1based": 6,
+      "crop_rectangle_pdf_points": [
+        50,
+        65,
+        548,
+        236
+      ],
+      "render_scale": 2.5,
+      "sha256": "fd900717734e9038c49ac14261c94499de569312a36216cae2e47e1b09e55306"
+    },
+    {
+      "file": "assets/tabiclv2-fig10-ablations.png",
+      "pdf_page_1based": 8,
+      "crop_rectangle_pdf_points": [
+        303,
+        65,
+        548,
+        272
+      ],
+      "render_scale": 2.5,
+      "sha256": "65ca151f37b791d6c347ea03fca3a36f72b837fcd8d7260a5f1fb2012f831461"
+    },
+    {
+      "file": "assets/tabiclv2-figJ1-ranks.png",
+      "pdf_page_1based": 50,
+      "crop_rectangle_pdf_points": [
+        50,
+        265,
+        548,
+        443
+      ],
+      "render_scale": 2.5,
+      "sha256": "1eed2245d6d456fd8140dbfcd88dbc73ce328f52ebb8ab305d795a0b753a3917"
+    }
+  ],
+  "validation_scope": "13-question semantic/source self-check, actual literature/novelty search, strict rendering, static offline checks, browser desktop/narrow-frame and keyboard/DOM functionality. No model run, independent reader study or formal novelty proof; true pointer/screenshot acceptance not claimed.",
+  "skill_base_commit": "eadd0cd61d276d082938d80eb0d3fbb85614f2e1",
+  "skill_revision": "research-prompt-v1",
+  "skill_definition_sha256": "14e8ac8e44a931d2cae3213ad4086e61514b35b1268f04fcb5f032d92923fed7",
+  "historical_context": {
+    "status": "pass",
+    "horizon": "2026-02-11",
+    "horizon_basis": "first-publication",
+    "date_evidence_url": "https://arxiv.org/abs/2602.11139v1",
+    "predecessor_rows": 5,
+    "chapter": "00 / 发表时的研究背景",
+    "source_review": "2026-02首次公开与9月本地版本分开；已有TabICL/2.5/Real路线与SSMax/Muon的贡献明确，后文最新细节不声称v1完全相同。",
+    "review_scope": "Target introduction/background/related work plus selected primary abstracts and official submission histories; not comprehensive full-text review of all predecessors",
+    "source_urls": [
+      "https://arxiv.org/abs/2507.03971",
+      "https://arxiv.org/abs/2602.11139v1"
+    ]
+  },
+  "local_revisions": [
+    {
+      "revision": "historical-context-v1",
+      "date": "2026-10-17",
+      "action": "Insert publication-time background; preserve prior method, evidence, assets and paths",
+      "before": {
+        "audit_source_sha256": "f9071df6bbf323f91b482824eae009c7b89a002f48a0da2ef58ee68aabb6c3a0",
+        "html_sha256": "9a7d89cc3485866fb9542a0634b3e182722a52b5f6137459b1644490453c334d"
+      }
+    },
+    {
+      "revision": "narrative-logic-v1",
+      "date": "2026-10-19",
+      "action": "Paper-specific prose refactor: problem/value, prior-only idea reconstruction, intuition, running instance, accessible mathematics, question/test/answer evidence and takeaways; preserve original evidence and visuals",
+      "archive_directory": "revisions/pre-narrative-logic-20261019",
+      "before": {
+        "audit_source_sha256": "f03534a6f6f6608277bba14632d4bee118c9594ddf9a862e8862567cb1fd0be7",
+        "html_sha256": "673db35156a4077684c4d85dea7728e6dae9e7bdc2daa45ed67552522edcfdf0"
+      }
+    },
+    {
+      "revision": "research-prompt-v1",
+      "date": "2026-10-26",
+      "archive_directory": "revisions/pre-research-prompt-20261026",
+      "action": "Refactor all 13 reading questions, add source-qualified research extension, subsequent literature and meaningful offline analytical/mixed-radix interaction; preserve existing evidence.",
+      "before": {
+        "audit_source_sha256": "61be9d98c1fedc3bad0e7df5e28f09028eff8f8311b981d7f9a18c25b81909b9",
+        "html_sha256": "58c9d49d72aa801f75fb1411e55a5bcd71a1b50afaab52a6624341b55f12248c"
+      }
+    }
+  ],
+  "preserved_skill_extensions": [
+    "historical-context-v1",
+    "narrative-logic-v1"
+  ],
+  "narrative_protocol_sha256": "cbdd037a540292a5f6ed62e188b6797f9805cbee62bdf1ba8fb8d5b29fe9bbab",
+  "quality_check_sha256": "c30662ff21a953e343f509126c802d8bfaec8e6842dddb4b453b54aa3d4656fb",
+  "manual_narrative_review_recorded_on": "2026-10-19",
+  "manual_narrative_review": {
+    "title": "TabICLv2: A Better, Faster, Scalable, and Open Tabular Foundation Model",
+    "problem": "§00：任务无关压缩与长context失焦两种限制，小开放模型的精度资源折中",
+    "prior_gap": "§00：更多行不能找回已丢信息，窗口长也不等于softmax有效聚焦",
+    "idea": "§01：既有监督表示、SSMax和query温度提示候选方向，不以本文寻针/消融结果作前提",
+    "intuition": "§01：压缩前利用训练标签，读取时按长度和query调整锐度，先验与优化协同",
+    "example": "§02：沿原Fig3四负簇+单anchor+20固定query追踪分组、早期标签、QASSMax与输出，不编坐标和概率",
+    "math": "§04、06：softmax分母稀释、QASSMax全式、pinball期望导数F(t)-alpha；连续性条件与原子质量区分",
+    "evidence": "§07：reference等步数对照不同于最终checkpoint；TabArena/TALENT与资源图分层，均值rank与胜率保留",
+    "takeaways": "§08：任务信息前移、窗口与有效证据不同、先验架构优化交互",
+    "source_pages_rechecked": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "cautions": [
+      "pinball推导为标准教学补充，不冒充本文新定理",
+      "未重新核验附录全部GP理论证明，不据此新增主张",
+      "首发2月与本地9月版本分开"
+    ]
+  },
+  "manual_review_type": "Generator source-based semantic self-check; not independent reader study",
+  "source_pages_rechecked_this_revision": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "reused_source_audit": "Unchanged PDF and five original crops retained and visually rechecked. Main text and relevant architecture/quantile/resources/Appendix L reread; prior figure/aggregate audits retained. Not all GP proofs or appendix cells independently verified; no model run.",
+  "source_pages_rechecked_this_revision_scope": "Listed main pages plus Appendix A/B/H/I/L selected passages and relevant figure captions, see search-audit.md",
+  "delivery_status": "completed-with-disclosed-validation-limits",
+  "browser_validation_this_revision": {
+    "render_and_functional_checks": "pass",
+    "viewports": [
+      1000,
+      390
+    ],
+    "images_loaded": 5,
+    "images_total": 5,
+    "math": 43,
+    "math_errors": 0,
+    "sections": 14,
+    "anchors_valid": true,
+    "source_toggle": true,
+    "page_overflow_default_or_sources": false,
+    "figures_have_context": true,
+    "external_resources": 0,
+    "embedded_interactions": 1,
+    "interaction_type": "fixed-logit softmax/replication arithmetic and mixed-radix teaching, not learned QASSMax simulation",
+    "interaction_external_resources": 0,
+    "narrow_test_type": "390px outer iframe, 339px inner interaction; no page overflow, not physical mobile",
+    "keyboard": "pass: ArrowUp changed y15 (3,3) to y14 (3,2)",
+    "dom_controls": "pass: n100 gap5 standard59.99%, illustrative scaling21.87%; replication10 keeps standard and changes illustrative length scaling",
+    "actual_pointer_and_screenshot": "not claimed; known desktop visibility/tool limitation"
+  },
+  "research_extension_review": {
+    "date": "2026-10-26",
+    "search_cutoff": "2026-10-26",
+    "search_audit_file": "search-audit.md",
+    "search_audit_sha256": "10bb138f5997d2b590204ccaf04650262cf9f30d4dbb920b7c400c61c7c1c008",
+    "fragile_assumption": "§09: raw length is not effective independent evidence; random-noise evidence in Appendix L retained",
+    "one_week_plan": "§10: source-locked needle diagnostics; inference lesion distinguished from matched pretraining; not executed",
+    "counterexamples": "§11: replication/provenance and targeted corruption with identifiable labels; not executed",
+    "subsequent_sources": ["https://arxiv.org/html/2605.13986v2", "https://arxiv.org/html/2606.30410v1", "https://arxiv.org/html/2606.11473v1", "https://arxiv.org/html/2610.01435v1", "https://arxiv.org/html/2610.05352v1"],
+    "follow_up": "§13: provenance-aware evidence measure, joint duplicate invariance/independent evidence sensitivity/calibration under identifiable sampling semantics",
+    "novelty_status": "provisional/unknown; RefineICL distinct-evidence work acknowledged; DiReCT full text inaccessible"
+  },
+  "new_visual_assets": [{"file": "assets/mechanism-explorer.html", "type": "offline analytical interaction embedded in final HTML", "sha256": "c5aaec813d197fe8905b532cb316d6f5cc3cd8ef1b4357f6b39d241e099bc8d7"}]
+}

@@ -1,0 +1,328 @@
+{
+  "itemKey": "3UP5TTIW",
+  "file": "/repo/paper-web/Agent/CodePolicyGames（代码策略博弈）/can-ai-agents-learn-their-way-to-the-top-3UP5TTIW/bilingual-20261105-191944/arxiv_2610.12341.no_watermark.zh-CN.dual.pdf",
+  "sha256": "5cec4da95b799df729d50385579dc85dc675f4752f747df6ae446ec064eeee35",
+  "samplePages": [
+    1,
+    2,
+    4,
+    14,
+    26
+  ],
+  "manualVisualReview": "completed-with-layout-limitations",
+  "pages": [
+    {
+      "page": 1,
+      "chineseCharactersRight": 756,
+      "leftPixelsMatchOriginal": true,
+      "widthRatio": 2.0,
+      "heightRatio": 1.0,
+      "originalRasterImages": 1,
+      "allOriginalRasterImagesRetainedRight": true
+    },
+    {
+      "page": 2,
+      "chineseCharactersRight": 888,
+      "leftPixelsMatchOriginal": true,
+      "widthRatio": 2.0,
+      "heightRatio": 1.0,
+      "originalRasterImages": 722,
+      "allOriginalRasterImagesRetainedRight": false
+    },
+    {
+      "page": 3,
+      "chineseCharactersRight": 889,
+      "leftPixelsMatchOriginal": true,
+      "widthRatio": 2.0,
+      "heightRatio": 1.0,
+      "originalRasterImages": 19,
+      "allOriginalRasterImagesRetainedRight": true
+    },
+    {
+      "page": 4,
+      "chineseCharactersRight": 676,
+      "leftPixelsMatchOriginal": true,
+      "widthRatio": 2.0,
+      "heightRatio": 1.0,
+      "originalRasterImages": 0,
+      "allOriginalRasterImagesRetainedRight": true
+    },
+    {
+      "page": 5,
+      "chineseCharactersRight": 730,
+      "leftPixelsMatchOriginal": true,
+      "widthRatio": 2.0,
+      "heightRatio": 1.0,
+      "originalRasterImages": 0,
+      "allOriginalRasterImagesRetainedRight": true
+    },
+    {
+      "page": 6,
+      "chineseCharactersRight": 800,
+      "leftPixelsMatchOriginal": true,
+      "widthRatio": 2.0,
+      "heightRatio": 1.0,
+      "originalRasterImages": 0,
+      "allOriginalRasterImagesRetainedRight": true
+    },
+    {
+      "page": 7,
+      "chineseCharactersRight": 702,
+      "leftPixelsMatchOriginal": true,
+      "widthRatio": 2.0,
+      "heightRatio": 1.0,
+      "originalRasterImages": 0,
+      "allOriginalRasterImagesRetainedRight": true
+    },
+    {
+      "page": 8,
+      "chineseCharactersRight": 640,
+      "leftPixelsMatchOriginal": true,
+      "widthRatio": 2.0,
+      "heightRatio": 1.0,
+      "originalRasterImages": 0,
+      "allOriginalRasterImagesRetainedRight": true
+    },
+    {
+      "page": 9,
+      "chineseCharactersRight": 432,
+      "leftPixelsMatchOriginal": false,
+      "widthRatio": 2.0,
+      "heightRatio": 1.0,
+      "originalRasterImages": 0,
+      "allOriginalRasterImagesRetainedRight": true,
+      "pixelDifferenceDetails": {
+        "page": 9,
+        "pixelDifferences": 5,
+        "percent": 0.001833879829522531,
+        "bboxPixels": [
+          231,
+          208,
+          265,
+          211
+        ]
+      }
+    },
+    {
+      "page": 10,
+      "chineseCharactersRight": 667,
+      "leftPixelsMatchOriginal": true,
+      "widthRatio": 2.0,
+      "heightRatio": 1.0,
+      "originalRasterImages": 0,
+      "allOriginalRasterImagesRetainedRight": true
+    },
+    {
+      "page": 11,
+      "chineseCharactersRight": 737,
+      "leftPixelsMatchOriginal": true,
+      "widthRatio": 2.0,
+      "heightRatio": 1.0,
+      "originalRasterImages": 0,
+      "allOriginalRasterImagesRetainedRight": true
+    },
+    {
+      "page": 12,
+      "chineseCharactersRight": 378,
+      "leftPixelsMatchOriginal": true,
+      "widthRatio": 2.0,
+      "heightRatio": 1.0,
+      "originalRasterImages": 0,
+      "allOriginalRasterImagesRetainedRight": true
+    },
+    {
+      "page": 13,
+      "chineseCharactersRight": 633,
+      "leftPixelsMatchOriginal": true,
+      "widthRatio": 2.0,
+      "heightRatio": 1.0,
+      "originalRasterImages": 0,
+      "allOriginalRasterImagesRetainedRight": true
+    },
+    {
+      "page": 14,
+      "chineseCharactersRight": 1036,
+      "leftPixelsMatchOriginal": true,
+      "widthRatio": 2.0,
+      "heightRatio": 1.0,
+      "originalRasterImages": 0,
+      "allOriginalRasterImagesRetainedRight": true
+    },
+    {
+      "page": 15,
+      "chineseCharactersRight": 419,
+      "leftPixelsMatchOriginal": true,
+      "widthRatio": 2.0,
+      "heightRatio": 1.0,
+      "originalRasterImages": 0,
+      "allOriginalRasterImagesRetainedRight": true
+    },
+    {
+      "page": 16,
+      "chineseCharactersRight": 454,
+      "leftPixelsMatchOriginal": true,
+      "widthRatio": 2.0,
+      "heightRatio": 1.0,
+      "originalRasterImages": 0,
+      "allOriginalRasterImagesRetainedRight": true
+    },
+    {
+      "page": 17,
+      "chineseCharactersRight": 741,
+      "leftPixelsMatchOriginal": true,
+      "widthRatio": 2.0,
+      "heightRatio": 1.0,
+      "originalRasterImages": 0,
+      "allOriginalRasterImagesRetainedRight": true
+    },
+    {
+      "page": 18,
+      "chineseCharactersRight": 964,
+      "leftPixelsMatchOriginal": true,
+      "widthRatio": 2.0,
+      "heightRatio": 1.0,
+      "originalRasterImages": 0,
+      "allOriginalRasterImagesRetainedRight": true
+    },
+    {
+      "page": 19,
+      "chineseCharactersRight": 903,
+      "leftPixelsMatchOriginal": true,
+      "widthRatio": 2.0,
+      "heightRatio": 1.0,
+      "originalRasterImages": 0,
+      "allOriginalRasterImagesRetainedRight": true
+    },
+    {
+      "page": 20,
+      "chineseCharactersRight": 444,
+      "leftPixelsMatchOriginal": true,
+      "widthRatio": 2.0,
+      "heightRatio": 1.0,
+      "originalRasterImages": 0,
+      "allOriginalRasterImagesRetainedRight": true
+    },
+    {
+      "page": 21,
+      "chineseCharactersRight": 375,
+      "leftPixelsMatchOriginal": false,
+      "widthRatio": 2.0,
+      "heightRatio": 1.0,
+      "originalRasterImages": 0,
+      "allOriginalRasterImagesRetainedRight": true,
+      "pixelDifferenceDetails": {
+        "page": 21,
+        "pixelDifferences": 14,
+        "percent": 0.005134863522663087,
+        "bboxPixels": [
+          211,
+          406,
+          260,
+          407
+        ]
+      }
+    },
+    {
+      "page": 22,
+      "chineseCharactersRight": 488,
+      "leftPixelsMatchOriginal": true,
+      "widthRatio": 2.0,
+      "heightRatio": 1.0,
+      "originalRasterImages": 0,
+      "allOriginalRasterImagesRetainedRight": true
+    },
+    {
+      "page": 23,
+      "chineseCharactersRight": 302,
+      "leftPixelsMatchOriginal": false,
+      "widthRatio": 2.0,
+      "heightRatio": 1.0,
+      "originalRasterImages": 0,
+      "allOriginalRasterImagesRetainedRight": true,
+      "pixelDifferenceDetails": {
+        "page": 23,
+        "pixelDifferences": 113,
+        "percent": 0.04144568414720921,
+        "bboxPixels": [
+          85,
+          165,
+          364,
+          388
+        ]
+      }
+    },
+    {
+      "page": 24,
+      "chineseCharactersRight": 456,
+      "leftPixelsMatchOriginal": true,
+      "widthRatio": 2.0,
+      "heightRatio": 1.0,
+      "originalRasterImages": 0,
+      "allOriginalRasterImagesRetainedRight": true
+    },
+    {
+      "page": 25,
+      "chineseCharactersRight": 809,
+      "leftPixelsMatchOriginal": true,
+      "widthRatio": 2.0,
+      "heightRatio": 1.0,
+      "originalRasterImages": 0,
+      "allOriginalRasterImagesRetainedRight": true
+    },
+    {
+      "page": 26,
+      "chineseCharactersRight": 100,
+      "leftPixelsMatchOriginal": true,
+      "widthRatio": 2.0,
+      "heightRatio": 1.0,
+      "originalRasterImages": 0,
+      "allOriginalRasterImagesRetainedRight": true
+    }
+  ],
+  "sourcePages": 26,
+  "outputPages": 26,
+  "pageCountMatches": true,
+  "allLeftPixelsMatch": false,
+  "allRasterImagesRetainedRight": false,
+  "manualVisualReviewAt": "2026-11-05T12:05:35.517626+00:00",
+  "manualVisualNotes": [
+    "第2页图内标签部分仍为英文，部分被翻译后位置变化；图像本体仍保留。",
+    "第1页联系信息区、第2页末尾贡献列表有紧凑或零散排版，需与左侧对照。"
+  ],
+  "allOriginalTextUnchangedByPage": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true
+  ],
+  "zeroChinesePages": [],
+  "page2RasterImageInvestigation": {
+    "originalUniqueImageDigests": 18,
+    "uniqueOriginalDigestsFoundRight": 18,
+    "allUniqueOriginalImagesRetainedRight": true,
+    "explanation": "原始栅格图像全部存在；原始XObject出现次数检测不等不代表图像缺失，已结合第2页渲染人工核验。"
+  },
+  "pixelDifferenceInterpretation": "112/117页原文侧低分辨率像素完全相同；另5页局部有5至113个像素差异（单页不足0.05%），文字逐页一致，未发现对应内容缺失。此检查不承诺像素级排版完全一致。"
+}

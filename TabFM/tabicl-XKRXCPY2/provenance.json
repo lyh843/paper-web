@@ -1,0 +1,225 @@
+{
+  "generated_on": "2026-10-19",
+  "zotero_collection_key": "FLT4H9RN",
+  "zotero_item_key": "XKRXCPY2",
+  "zotero_attachment_key": "D8WAEM3H",
+  "source_pdf_path": "/home/lyh/Zotero/storage/D8WAEM3H/Qu 等 - 2025 - TabICL A Tabular Foundation Model for In-Context Learning on Large Data.pdf",
+  "source_pdf_sha256": "0a8b2b370f55a93af346ab889dd699256def80ef967740cfa876277ff9ae8617",
+  "source_pdf_pages": 31,
+  "source_version": "ICML 2025 PMLR PDF, 31 pages, PDF metadata 2025-05-24",
+  "central_source_pages_inspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31
+  ],
+  "source_pdf_modified": false,
+  "duplicate_of": null,
+  "reading_language": "zh-CN",
+  "mode": "DEEP READ",
+  "lens": "understanding-first",
+  "skill_source": "https://github.com/xiaofengShi/paper-reading-skill",
+  "skill_commit": "eadd0cd61d276d082938d80eb0d3fbb85614f2e1",
+  "renderer_sha256": "3ed818344cd402297240d51553c0c6ab7eb599017a51380cb437d37283f5598c",
+  "rebuild_command": "node /repo/paper-web/.opencode/skills/paper-reading/scripts/render-reading.cjs /repo/paper-web/TabFM/tabicl-XKRXCPY2/reading.md /repo/paper-web/TabFM/tabicl-XKRXCPY2/index.html",
+  "audit_source_sha256": "3074bd787017e3baf99dcdecffeed57a8a89d40c78779ac2140e551a53b8a49c",
+  "html_sha256": "9b68ebd66319fb6fe4fedf908eafbfb424994be0babe822612f9fce5ffe9746b",
+  "figures": [
+    {
+      "file": "assets/tabicl-fig1-architecture.png",
+      "pdf_page_1based": 3,
+      "crop_rectangle_pdf_points": [
+        50,
+        45,
+        547,
+        324
+      ],
+      "render_scale": 2.5,
+      "sha256": "a8ac5389b1a7d5e05130b1c55da3004d3e876bced98b1516ca9ea609171b8c63"
+    },
+    {
+      "file": "assets/tabicl-fig2-embedding.png",
+      "pdf_page_1based": 5,
+      "crop_rectangle_pdf_points": [
+        50,
+        45,
+        547,
+        170
+      ],
+      "render_scale": 2.5,
+      "sha256": "9cbc8b7af42dda48255f737529d427aff0b72cd1e64f29611129f266370c5c9a"
+    },
+    {
+      "file": "assets/tabicl-fig4-collapse.png",
+      "pdf_page_1based": 5,
+      "crop_rectangle_pdf_points": [
+        307,
+        207,
+        545,
+        362
+      ],
+      "render_scale": 2.5,
+      "sha256": "4e54c4514140359716679c86446818dba662c2e3d547a7031de7d56d36e8b0cf"
+    },
+    {
+      "file": "assets/tabicl-fig9-tree-ablation.png",
+      "pdf_page_1based": 9,
+      "crop_rectangle_pdf_points": [
+        50,
+        235,
+        293,
+        382
+      ],
+      "render_scale": 2.5,
+      "sha256": "a3b22c6697a34556437a717e1711815b6f3c7850a36f453a04d9a8bba56c77a7"
+    },
+    {
+      "file": "assets/tabicl-fig10-curriculum.png",
+      "pdf_page_1based": 9,
+      "crop_rectangle_pdf_points": [
+        307,
+        60,
+        545,
+        216
+      ],
+      "render_scale": 2.5,
+      "sha256": "5fe38c6073becd9f1a499ea8c4bebcb923de3dce8f4a7f339b728b761cc439f9"
+    },
+    {
+      "file": "assets/tabicl-figE2-curriculum.png",
+      "pdf_page_1based": 21,
+      "crop_rectangle_pdf_points": "whole page",
+      "render_scale": 2.5,
+      "sha256": "0b025dba88fea97ea92f7d8dddcb98cb57a75888429d9a1cbef0890e3c0c9cab"
+    }
+  ],
+  "validation_scope": "Manual narrative and source review plus renderer/browser checks; no independent reader study or scientific reproduction",
+  "skill_base_commit": "eadd0cd61d276d082938d80eb0d3fbb85614f2e1",
+  "skill_revision": "narrative-logic-v1",
+  "skill_definition_sha256": "8d086cb16b69e68d4517e538cc25b651e929a37599e60f0f909794e5a17b267b",
+  "historical_context": {
+    "status": "pass",
+    "horizon": "2025-02-08",
+    "horizon_basis": "first-publication",
+    "date_evidence_url": "https://arxiv.org/abs/2502.05564",
+    "predecessor_rows": 5,
+    "chapter": "00 / 发表时的研究背景",
+    "source_review": "2025-02首发时Nature第二代已经公开；结构压缩与此前context压缩/检索路线分开，排除2026后续模型。",
+    "review_scope": "Target introduction/background/related work plus selected primary abstracts and official submission histories; not comprehensive full-text review of all predecessors",
+    "source_urls": [
+      "https://arxiv.org/abs/2402.06971",
+      "https://arxiv.org/abs/2406.05207",
+      "https://arxiv.org/abs/2410.18164",
+      "https://arxiv.org/abs/2502.05564"
+    ]
+  },
+  "local_revisions": [
+    {
+      "revision": "historical-context-v1",
+      "date": "2026-10-17",
+      "action": "Insert publication-time background; preserve prior method, evidence, assets and paths",
+      "before": {
+        "audit_source_sha256": "27d994cc478f3d7b9f52bce550073fac701a3f607bd86a94b302c01d3edb03a5",
+        "html_sha256": "48a9f6a91e542cba5787403bbae25a73df9842113c4d2164cc5d07887a209e48"
+      }
+    },
+    {
+      "revision": "narrative-logic-v1",
+      "date": "2026-10-19",
+      "action": "Paper-specific prose refactor: problem/value, prior-only idea reconstruction, intuition, running instance, accessible mathematics, question/test/answer evidence and takeaways; preserve original evidence and visuals",
+      "archive_directory": "revisions/pre-narrative-logic-20261019",
+      "before": {
+        "audit_source_sha256": "292cdc13333bee7c697f364410d526fa72962fd8f721a00a09adf7754e99d588",
+        "html_sha256": "dfeec1cf4af2bc5caa7e8bacc3d2c45ed8e2c0b1dced7dc3c93e0d1ceb0e4e6a"
+      }
+    }
+  ],
+  "preserved_skill_extensions": [
+    "historical-context-v1"
+  ],
+  "narrative_protocol_sha256": "25a89f7a1b55037132b049163ecb82d2ea7fa9106bbd729652fcf8a4b124a483",
+  "quality_check_sha256": "165a35b925d2a423ba5cd00c9ef5ed71137d59d2c03471f8e9d2cb5829994769",
+  "manual_narrative_review": {
+    "title": "TabICL: A Tabular Foundation Model for In-Context Learning on Large Data",
+    "problem": "§00：保留更多训练行时避免跨行attention重复乘特征数，统计与资源分别验证",
+    "prior_gap": "§00：完整网格昂贵，截短context丢信息；列身份、交互与行压缩需要同时处理",
+    "idea": "§01：从已知操作计数、集合编码和表征学习走向无标签压缩假设，不以TALENT结果反推",
+    "intuition": "§01：先编码行，再在固定宽度行表示间ICL，二次行计算仍在",
+    "example": "§02：依据真实balance-scale任务构造合法记录(1,2,3,4)/(3,4,1,2)，力矩手算说明身份与压缩，不声称提取原始图中具体行或模型输出",
+    "math": "§04–07：标准attention的Q/K/V、mask、两次ISAB、RoPE、复杂度与层级概率解释",
+    "evidence": "§08：171主分类、53大表、12多类、32视图与TabPFNv2截断协议各有范围",
+    "takeaways": "§09：压缩轴、可区分性和不变性、资源展示不替代质量比较",
+    "source_pages_rechecked": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "cautions": [
+      "任务记录明确为教学构造",
+      "500K资源演示不当精度实验",
+      "保留既有附录与原图来源审计"
+    ]
+  },
+  "manual_review_type": "Generator source-based semantic self-check; not independent reader study",
+  "source_pages_rechecked_this_revision": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "reused_source_audit": "Unchanged PDF and existing equation/figure/number source audits retained from archived reading; full text accessible, not claimed to have independently rerun experiments or read every appendix table anew",
+  "delivery_status": "completed",
+  "browser_validation_this_revision": {
+    "ok": true,
+    "viewports": [
+      1280,
+      390
+    ],
+    "images_loaded": 6,
+    "images_total": 6,
+    "math": 31,
+    "math_errors": 0,
+    "sections": 10,
+    "source_count": 46,
+    "anchors_valid": true,
+    "source_toggle": true,
+    "page_overflow_default_or_sources": false,
+    "figures_have_context": true,
+    "external_resources": 0,
+    "scripts": 0
+  }
+}

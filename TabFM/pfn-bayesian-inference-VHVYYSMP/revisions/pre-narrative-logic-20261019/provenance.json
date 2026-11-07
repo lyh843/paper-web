@@ -1,0 +1,104 @@
+{
+  "generated_on": "2026-10-17",
+  "zotero_collection_key": "FLT4H9RN",
+  "zotero_item_key": "VHVYYSMP",
+  "zotero_attachment_key": "VHVYYSMP",
+  "source_pdf_path": "/home/lyh/Zotero/storage/VHVYYSMP/2112.10510v7.pdf",
+  "source_pdf_sha256": "9736e7789e7f4b7dd7401b6017602be87410eb15c1b11f94065d88ba7fec5a9b",
+  "source_pdf_pages": 24,
+  "source_version": "ICLR 2022 paper, arXiv:2112.10510v7, 2024-08-13, 24 pages",
+  "covered_sections_and_scope": "独立PDF确认为PFN原始论文而非其他条目的子附件；全文核心§§2–7及Appendix A/B/C证明、D/E实现、F比较协议可访问。",
+  "source_pdf_modified": false,
+  "duplicate_of": null,
+  "standalone_pdf_item": true,
+  "reading_language": "zh-CN",
+  "mode": "DEEP READ",
+  "lens": "understanding-first",
+  "skill_source": "https://github.com/xiaofengShi/paper-reading-skill",
+  "skill_commit": "eadd0cd61d276d082938d80eb0d3fbb85614f2e1",
+  "renderer_sha256": "3ed818344cd402297240d51553c0c6ab7eb599017a51380cb437d37283f5598c",
+  "rebuild_command": "node /repo/paper-web/.opencode/skills/paper-reading/scripts/render-reading.cjs /repo/paper-web/TabFM/pfn-bayesian-inference-VHVYYSMP/reading.md /repo/paper-web/TabFM/pfn-bayesian-inference-VHVYYSMP/index.html",
+  "audit_source_sha256": "9c57bec0565a0474eb76bfe401b0f9dae5e29ec36b4fab4ff37c9bb131f6f100",
+  "html_sha256": "552ec0255de22c57c4dc2529fbf1d0e05da17ac61cf99ee568de12beb011255a",
+  "figures": [
+    {
+      "file": "assets/pfn-fig1-overview.png",
+      "pdf_page_1based": 1,
+      "crop_rectangle_pdf_points": [
+        105,
+        565,
+        510,
+        695
+      ],
+      "render_scale": 2.5,
+      "sha256": "804c409b811e8ea3f03206f86ce3404ccc1b475b464459373b20d8485cf35787"
+    },
+    {
+      "file": "assets/pfn-fig2-architecture-density.png",
+      "pdf_page_1based": 4,
+      "crop_rectangle_pdf_points": [
+        105,
+        65,
+        510,
+        201
+      ],
+      "render_scale": 2.5,
+      "sha256": "8e24c9556139fcb84f60b3cbbf9fa475a2707e00e5161d9ff69b8333118e0c7c"
+    },
+    {
+      "file": "assets/pfn-fig3-gp.png",
+      "pdf_page_1based": 5,
+      "crop_rectangle_pdf_points": [
+        105,
+        65,
+        510,
+        228
+      ],
+      "render_scale": 2.5,
+      "sha256": "f611645fc85ae654d377861c3bb2d2825b337b17932d4d7efc7f30e39b9a5844"
+    },
+    {
+      "file": "assets/pfn-table1-small-data.png",
+      "pdf_page_1based": 9,
+      "crop_rectangle_pdf_points": [
+        105,
+        60,
+        510,
+        168
+      ],
+      "render_scale": 2.5,
+      "sha256": "45409dae18cffca828d58187c9ce392ad99d8ebe97d3525350ba255a191b1943"
+    }
+  ],
+  "validation_scope": "Source-based generator self-check and browser delivery checks; no independent reader study, raw-data audit or experimental reproduction",
+  "skill_base_commit": "eadd0cd61d276d082938d80eb0d3fbb85614f2e1",
+  "skill_revision": "historical-context-v1",
+  "skill_definition_sha256": "a795c8d00b90632ef0eaada455415b555acc6c0e6dc101bce4cddc26de8315a4",
+  "historical_context": {
+    "status": "pass",
+    "horizon": "2021-12-20",
+    "horizon_basis": "first-publication",
+    "date_evidence_url": "https://arxiv.org/abs/2112.10510",
+    "predecessor_rows": 4,
+    "chapter": "00 / 发表时的研究背景",
+    "source_review": "2021首发与ICLR2022/2024修订分开；解释GP/BNN、近似推断、CNP/ANP和GPT-3的已有贡献，不把后来的TabPFN倒写成前作。",
+    "review_scope": "Target introduction/background/related work plus selected primary abstracts and official submission histories; not comprehensive full-text review of all predecessors",
+    "source_urls": [
+      "https://arxiv.org/abs/1807.01613",
+      "https://arxiv.org/abs/1901.05761",
+      "https://arxiv.org/abs/2005.14165",
+      "https://arxiv.org/abs/2112.10510"
+    ]
+  },
+  "local_revisions": [
+    {
+      "revision": "historical-context-v1",
+      "date": "2026-10-17",
+      "action": "Insert publication-time background; preserve prior method, evidence, assets and paths",
+      "before": {
+        "audit_source_sha256": "e5d8854531a6d79e9bc9575037e1b32874cbeb4a777631f3ac557911c6cddc8f",
+        "html_sha256": "b6ac4d9c9954e02fe4a5507428079b50ded50a6b70b8b2dd22cda78949a886a5"
+      }
+    }
+  ]
+}

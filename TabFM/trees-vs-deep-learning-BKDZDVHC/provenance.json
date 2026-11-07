@@ -1,0 +1,185 @@
+{
+  "generated_on": "2026-10-19",
+  "zotero_collection_key": "FLT4H9RN",
+  "zotero_item_key": "BKDZDVHC",
+  "zotero_attachment_key": "KDX7IXKD",
+  "source_pdf_path": "/home/lyh/Zotero/storage/KDX7IXKD/Grinsztajn 等 - Why do tree-based models still outperform deep learning on tabular data.pdf",
+  "source_pdf_sha256": "3baeb241e4f50981deb6e8e81f29192b1a84f1abde990d5fe8df4e594d993d6f",
+  "source_pdf_pages": 33,
+  "source_version": "arXiv:2207.08815v1, 2022-07-18, 33 pages",
+  "covered_sections_and_scope": "reading.md开头明确早期v1与后来的typical标题版本区别；正文§§3–5及Appendix A.1–A.4的筛选、划分、平滑和旋转细节已读取。",
+  "source_pdf_modified": false,
+  "duplicate_of": null,
+  "standalone_pdf_item": false,
+  "reading_language": "zh-CN",
+  "mode": "DEEP READ",
+  "lens": "understanding-first",
+  "skill_source": "https://github.com/xiaofengShi/paper-reading-skill",
+  "skill_commit": "eadd0cd61d276d082938d80eb0d3fbb85614f2e1",
+  "renderer_sha256": "3ed818344cd402297240d51553c0c6ab7eb599017a51380cb437d37283f5598c",
+  "rebuild_command": "node /repo/paper-web/.opencode/skills/paper-reading/scripts/render-reading.cjs /repo/paper-web/TabFM/trees-vs-deep-learning-BKDZDVHC/reading.md /repo/paper-web/TabFM/trees-vs-deep-learning-BKDZDVHC/index.html",
+  "audit_source_sha256": "0f470188aa8fa8632ce727d28a94518bf1aba5ed18ba7c33a37b96589b1b8478",
+  "html_sha256": "6665c22377a2d08996dc269e7388a3c31e05cc41295fb65e59a8f529a2648f14",
+  "figures": [
+    {
+      "file": "assets/trees-fig1-benchmark.png",
+      "pdf_page_1based": 5,
+      "crop_rectangle_pdf_points": [
+        105,
+        65,
+        510,
+        247
+      ],
+      "render_scale": 2.5,
+      "sha256": "5cef408da0c15a86e11aad4996c234ed9ef587cb17f1760eaf4990daa0397103"
+    },
+    {
+      "file": "assets/trees-fig3-smoothing.png",
+      "pdf_page_1based": 6,
+      "crop_rectangle_pdf_points": [
+        105,
+        65,
+        334,
+        255
+      ],
+      "render_scale": 2.5,
+      "sha256": "32b4d99745468cea20068365380bfca791509297fd34bc543a00a38271e4b26e"
+    },
+    {
+      "file": "assets/trees-fig5-features.png",
+      "pdf_page_1based": 8,
+      "crop_rectangle_pdf_points": [
+        105,
+        255,
+        510,
+        447
+      ],
+      "render_scale": 2.5,
+      "sha256": "8ef85b80be1c408a7894c746d69ebf064a7c7606424debc6d36f6ec13f7a1c77"
+    },
+    {
+      "file": "assets/trees-fig6-rotation.png",
+      "pdf_page_1based": 9,
+      "crop_rectangle_pdf_points": [
+        105,
+        65,
+        510,
+        246
+      ],
+      "render_scale": 2.5,
+      "sha256": "f75fd7dadadc793a5a4b7637e9c06b3d25640d90aef830891dedd10f451de2be"
+    }
+  ],
+  "validation_scope": "Manual narrative and source review plus renderer/browser checks; no independent reader study or scientific reproduction",
+  "skill_base_commit": "eadd0cd61d276d082938d80eb0d3fbb85614f2e1",
+  "skill_revision": "narrative-logic-v1",
+  "skill_definition_sha256": "8d086cb16b69e68d4517e538cc25b651e929a37599e60f0f909794e5a17b267b",
+  "historical_context": {
+    "status": "pass",
+    "horizon": "2022-07-18",
+    "horizon_basis": "first-publication",
+    "date_evidence_url": "https://arxiv.org/abs/2207.08815",
+    "predecessor_rows": 4,
+    "chapter": "00 / 发表时的研究背景",
+    "source_review": "以2022-07-18为边界，区分RTDL/SAINT/树基线和当时评估争议；TabPFN作为同月同期补充而非被测基线。",
+    "review_scope": "Target introduction/background/related work plus selected primary abstracts and official submission histories; not comprehensive full-text review of all predecessors",
+    "source_urls": [
+      "https://arxiv.org/abs/2106.01342",
+      "https://arxiv.org/abs/2106.11959",
+      "https://arxiv.org/abs/2207.01848",
+      "https://arxiv.org/abs/2207.08815"
+    ]
+  },
+  "local_revisions": [
+    {
+      "revision": "historical-context-v1",
+      "date": "2026-10-17",
+      "action": "Insert publication-time background; preserve prior method, evidence, assets and paths",
+      "before": {
+        "audit_source_sha256": "792ef00a90bc88903ae94960c489dff0082e9023ae35c2e19de1efeb6c2163fc",
+        "html_sha256": "f6721831bc84697e18d2dc8afed8ec850dee649adbfc1d43d4589e0c08a224af"
+      }
+    },
+    {
+      "revision": "narrative-logic-v1",
+      "date": "2026-10-19",
+      "action": "Paper-specific prose refactor: problem/value, prior-only idea reconstruction, intuition, running instance, accessible mathematics, question/test/answer evidence and takeaways; preserve original evidence and visuals",
+      "archive_directory": "revisions/pre-narrative-logic-20261019",
+      "before": {
+        "audit_source_sha256": "e49ccfb435ebd2dabb5b68f3fa58da3aa430c74f8a8de94019281a5b449666c5",
+        "html_sha256": "a7aef9a379234371b357931db00370d7868e6c40dcd52325b3c7415f770368ec"
+      }
+    }
+  ],
+  "preserved_skill_extensions": [
+    "historical-context-v1"
+  ],
+  "narrative_protocol_sha256": "25a89f7a1b55037132b049163ecb82d2ea7fa9106bbd729652fcf8a4b124a483",
+  "quality_check_sha256": "4521c30cf7db7863025aa190ba6af620ba3d25eddb8d0ecf37ce88b80590b501",
+  "manual_narrative_review": {
+    "title": "Why do tree-based models still outperform deep learning on tabular data?",
+    "problem": "§00：建立可比较差距，再解释哪些数据结构改变差距；方法是测量和干预而非新网络",
+    "prior_gap": "§00：既有统一比较与强NN仍未统一任务/搜索/解释，范围固定为2022 v1",
+    "idea": "§01：从已知轴切分、频谱偏好和比较经验提出可干预问题，不倒用排序反转作先验",
+    "intuition": "§01：固定尺子，再改变训练标签或数据几何观察差距响应",
+    "example": "§02：沿真实electricity任务追踪搜索、平滑、噪声和旋转分支，不将干预串成未经研究的新表",
+    "math": "§05、07：核权重归一化与正交距离保持逐步解释，不把经验发现升级为普适性能定理",
+    "evidence": "§04–08：预算、公平性、三个干预各有问题/控制/答案；保留切片与区间语义",
+    "takeaways": "§08：评测工作流、数据干预和列身份；不宣告未来预训练模型必败",
+    "source_pages_rechecked": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      19,
+      26,
+      27
+    ],
+    "cautions": [
+      "不新增electricity模型运行或分数",
+      "45表v1不与47表后版混用",
+      "原图图注与已有来源审计保留"
+    ]
+  },
+  "manual_review_type": "Generator source-based semantic self-check; not independent reader study",
+  "source_pages_rechecked_this_revision": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    19,
+    26,
+    27
+  ],
+  "reused_source_audit": "Unchanged PDF and existing equation/figure/number source audits retained from archived reading; full text accessible, not claimed to have independently rerun experiments or read every appendix table anew",
+  "delivery_status": "completed",
+  "browser_validation_this_revision": {
+    "ok": true,
+    "viewports": [
+      1280,
+      390
+    ],
+    "images_loaded": 4,
+    "images_total": 4,
+    "math": 12,
+    "math_errors": 0,
+    "sections": 9,
+    "source_count": 40,
+    "anchors_valid": true,
+    "source_toggle": true,
+    "page_overflow_default_or_sources": false,
+    "figures_have_context": true,
+    "external_resources": 0,
+    "scripts": 0
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "status": "checked-with-layout-limitations",
+  "source": "/home/lyh/Zotero/storage/HVMXABJ9/arxiv_2512.21024.pdf",
+  "sourceSha256": "653b53b765a30f2ea2bbc5365a70c3fc43eefdc6b8158bb897f5f9887a71a1fc",
+  "software": "Zotero PDF2zh / PDF2zh-next",
+  "service": "openaicompatible",
+  "sourceLanguage": "en",
+  "targetLanguage": "zh-CN",
+  "layout": "lr",
+  "pages": "all",
+  "onlyBilingual": true,
+  "zoteroModified": false,
+  "startedAt": "2026-11-05T11:19:47.063215+00:00",
+  "engineVersionInCurrentPython": "2.9.0",
+  "exitCode": 0,
+  "outputs": [
+    {
+      "file": "arxiv_2512.21024.no_watermark.zh-CN.dual.pdf",
+      "bytes": 1785825,
+      "sha256": "4d0b75df2b0f2d8db7773239a5ab4ba082bcfb03529823ecb8fe67e67244bfd0"
+    }
+  ],
+  "verification": {
+    "status": "checked-automatically-needs-visual-review",
+    "sourcePages": 25,
+    "documents": [
+      {
+        "file": "arxiv_2512.21024.no_watermark.zh-CN.dual.pdf",
+        "pages": 25,
+        "chineseCharactersByPage": [
+          911,
+          1155,
+          819,
+          980,
+          851,
+          1041,
+          1147,
+          1020,
+          467,
+          965,
+          514,
+          548,
+          470,
+          455,
+          370,
+          715,
+          1299,
+          1039,
+          605,
+          313,
+          101,
+          101,
+          59,
+          49,
+          416
+        ],
+        "imagePlacements": 8,
+        "pageCountMatches": true,
+        "originalTextUnchangedByPage": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      }
+    ],
+    "manualVisualReview": {
+      "status": "completed-with-layout-limitations",
+      "samplePages": [
+        1,
+        4,
+        11,
+        20,
+        25
+      ],
+      "notes": [
+        "第20页代码框右侧出现连续文本重排、缩进丢失及代码关键字翻译；代码以左侧原文为准。",
+        "第25页术语表部分表头保留英文。"
+      ],
+      "qualityReport": "quality-check.json",
+      "scope": "逐页自动检查页数、原文文字和中文覆盖；仅列出的页面经过人工视觉抽查，未逐句人工校译。"
+    }
+  },
+  "originalConfigUnchanged": true,
+  "originalPDFUnchanged": true,
+  "finishedAt": "2026-11-05T11:27:27.782910+00:00"
+}

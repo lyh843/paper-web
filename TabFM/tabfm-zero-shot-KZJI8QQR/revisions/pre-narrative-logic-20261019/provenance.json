@@ -1,0 +1,104 @@
+{
+  "generated_on": "2026-10-17",
+  "zotero_collection_key": "FLT4H9RN",
+  "zotero_item_key": "KZJI8QQR",
+  "zotero_attachment_key": "8BSENE3N",
+  "source_pdf_path": "/home/lyh/Zotero/storage/8BSENE3N/Kong 等 - 2026 - TabFM A Zero-Shot Foundation Model for Tabular Data.pdf",
+  "source_pdf_sha256": "73fc755e0a6ce468b023cee6c2e88bbfbf07e69122dfb0abb03cc5154d2a3698",
+  "source_pdf_pages": 15,
+  "source_version": "TabFM, arXiv:2609.37959v1, 2026-09-29, 15 pages",
+  "covered_sections_and_scope": "已用补全后的主条目KZJI8QQR而非子附件8BSENE3N建立目录；全文15页可访问，标题与文件夹通称明确区分。",
+  "source_pdf_modified": false,
+  "duplicate_of": null,
+  "standalone_pdf_item": false,
+  "reading_language": "zh-CN",
+  "mode": "DEEP READ",
+  "lens": "understanding-first",
+  "skill_source": "https://github.com/xiaofengShi/paper-reading-skill",
+  "skill_commit": "eadd0cd61d276d082938d80eb0d3fbb85614f2e1",
+  "renderer_sha256": "3ed818344cd402297240d51553c0c6ab7eb599017a51380cb437d37283f5598c",
+  "rebuild_command": "node /repo/paper-web/.opencode/skills/paper-reading/scripts/render-reading.cjs /repo/paper-web/TabFM/tabfm-zero-shot-KZJI8QQR/reading.md /repo/paper-web/TabFM/tabfm-zero-shot-KZJI8QQR/index.html",
+  "audit_source_sha256": "5183747ff102fd72fd91ddf953e81c14e89062ecacd3e0e36deeeba887aa8528",
+  "html_sha256": "fcec4016dc637ceb3966f4abf2006cabe844f3e88840b1f99c18688f9a94fd5b",
+  "figures": [
+    {
+      "file": "assets/tabfm-fig2-architecture.png",
+      "pdf_page_1based": 2,
+      "crop_rectangle_pdf_points": [
+        57,
+        65,
+        538,
+        373
+      ],
+      "render_scale": 2.5,
+      "sha256": "d850688bc93d88f38dbb9a3a38a30bd77be37e7e6f0ef6c553e1d3d0d98adf80"
+    },
+    {
+      "file": "assets/tabfm-fig3-prior.png",
+      "pdf_page_1based": 6,
+      "crop_rectangle_pdf_points": [
+        57,
+        70,
+        538,
+        231
+      ],
+      "render_scale": 2.5,
+      "sha256": "8e70135256ffb094b59d14273299562a4a51b154f67923ff1c807cb20c0a394f"
+    },
+    {
+      "file": "assets/tabfm-table2-results.png",
+      "pdf_page_1based": 7,
+      "crop_rectangle_pdf_points": [
+        57,
+        85,
+        538,
+        317
+      ],
+      "render_scale": 2.5,
+      "sha256": "fc1595b7e120847e68dd5237b8d0fda25146a667da2f7508e8f2350af225133d"
+    },
+    {
+      "file": "assets/tabfm-fig6-per-dataset.png",
+      "pdf_page_1based": 10,
+      "crop_rectangle_pdf_points": [
+        57,
+        65,
+        538,
+        383
+      ],
+      "render_scale": 2.5,
+      "sha256": "ba9ff013e5a256f7beeb3102969ed89ad64b1f524b794ac6073e16e5e79be206"
+    }
+  ],
+  "validation_scope": "Source-based generator self-check and browser delivery checks; no independent reader study, raw-data audit or experimental reproduction",
+  "skill_base_commit": "eadd0cd61d276d082938d80eb0d3fbb85614f2e1",
+  "skill_revision": "historical-context-v1",
+  "skill_definition_sha256": "a795c8d00b90632ef0eaada455415b555acc6c0e6dc101bce4cddc26de8315a4",
+  "historical_context": {
+    "status": "pass",
+    "horizon": "2026-09-29",
+    "horizon_basis": "first-publication",
+    "date_evidence_url": "https://arxiv.org/abs/2609.37959",
+    "predecessor_rows": 5,
+    "chapter": "00 / 发表时的研究背景",
+    "source_review": "2026-09时已有PFN/TabICL/TabPFN-3、Fourier与LLM特征工程路线；本篇组合与外围搜索不被当成所有组件的首次发明。",
+    "review_scope": "Target introduction/background/related work plus selected primary abstracts and official submission histories; not comprehensive full-text review of all predecessors",
+    "source_urls": [
+      "https://arxiv.org/abs/2003.06505",
+      "https://arxiv.org/abs/2502.05564",
+      "https://arxiv.org/abs/2605.13986",
+      "https://arxiv.org/abs/2609.37959"
+    ]
+  },
+  "local_revisions": [
+    {
+      "revision": "historical-context-v1",
+      "date": "2026-10-17",
+      "action": "Insert publication-time background; preserve prior method, evidence, assets and paths",
+      "before": {
+        "audit_source_sha256": "72685894572fe0ba23599af4bc05a66ea10eee5046527ef70cc2c2b1e174ce17",
+        "html_sha256": "5c07398fd68d993db5bdfdcfe87f548d569c7e85b629ce7e13493479f9fba296"
+      }
+    }
+  ]
+}

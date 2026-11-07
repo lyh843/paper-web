@@ -1,0 +1,23 @@
+{
+  "_protocol": {
+    "checked_on": "2026-10-19",
+    "method": "Browser DOM, explicit image decoding, font readiness, source-toggle open/closed, links and resource checks in same-origin 1280px and 390px iframes",
+    "viewport_widths": [1280, 390],
+    "document_widths_default_and_sources_shown": [1265, 375],
+    "physical_device_test": false,
+    "independent_reader_study": false
+  },
+  "pfn-bayesian-inference-VHVYYSMP": {"ok": true, "viewports": [1280,390], "images_loaded": 4, "images_total": 4, "math": 32, "math_errors": 0, "sections": 9, "source_count": 37, "anchors_valid": true, "source_toggle": true, "page_overflow_default_or_sources": false, "figures_have_context": true, "external_resources": 0, "scripts": 0},
+  "tabpfn-CL7A9HMJ": {"ok": true, "viewports": [1280,390], "images_loaded": 3, "images_total": 3, "math": 24, "math_errors": 0, "sections": 9, "source_count": 41, "anchors_valid": true, "source_toggle": true, "page_overflow_default_or_sources": false, "figures_have_context": true, "external_resources": 0, "scripts": 0},
+  "trees-vs-deep-learning-BKDZDVHC": {"ok": true, "viewports": [1280,390], "images_loaded": 4, "images_total": 4, "math": 12, "math_errors": 0, "sections": 9, "source_count": 40, "anchors_valid": true, "source_toggle": true, "page_overflow_default_or_sources": false, "figures_have_context": true, "external_resources": 0, "scripts": 0},
+  "tabpfn-v2-KGSUGZNB": {"ok": true, "viewports": [1280,390], "images_loaded": 6, "images_total": 6, "math": 24, "math_errors": 0, "sections": 10, "source_count": 51, "anchors_valid": true, "source_toggle": true, "page_overflow_default_or_sources": false, "figures_have_context": true, "external_resources": 0, "scripts": 0},
+  "tabdpt-V7LZ2JEQ": {"ok": true, "viewports": [1280,390], "images_loaded": 4, "images_total": 4, "math": 26, "math_errors": 0, "sections": 11, "source_count": 48, "anchors_valid": true, "source_toggle": true, "page_overflow_default_or_sources": false, "figures_have_context": true, "external_resources": 0, "scripts": 0},
+  "tabicl-XKRXCPY2": {"ok": true, "viewports": [1280,390], "images_loaded": 6, "images_total": 6, "math": 31, "math_errors": 0, "sections": 10, "source_count": 46, "anchors_valid": true, "source_toggle": true, "page_overflow_default_or_sources": false, "figures_have_context": true, "external_resources": 0, "scripts": 0},
+  "tabarena-SAZSYEMX": {"ok": true, "viewports": [1280,390], "images_loaded": 5, "images_total": 5, "math": 8, "math_errors": 0, "sections": 9, "source_count": 44, "anchors_valid": true, "source_toggle": true, "page_overflow_default_or_sources": false, "figures_have_context": true, "external_resources": 0, "scripts": 0},
+  "tabpfn-2-5-SA9FC8Q4": {"ok": true, "viewports": [1280,390], "images_loaded": 5, "images_total": 5, "math": 8, "math_errors": 0, "sections": 9, "source_count": 39, "anchors_valid": true, "source_toggle": true, "page_overflow_default_or_sources": false, "figures_have_context": true, "external_resources": 0, "scripts": 0},
+  "tabicl-v2-2PKI4VVL": {"ok": true, "viewports": [1280,390], "images_loaded": 5, "images_total": 5, "math": 29, "math_errors": 0, "sections": 9, "source_count": 43, "anchors_valid": true, "source_toggle": true, "page_overflow_default_or_sources": false, "figures_have_context": true, "external_resources": 0, "scripts": 0},
+  "tabpfn-3-4ZXDEDKZ": {"ok": true, "viewports": [1280,390], "images_loaded": 6, "images_total": 6, "math": 9, "math_errors": 0, "sections": 11, "source_count": 52, "anchors_valid": true, "source_toggle": true, "page_overflow_default_or_sources": false, "figures_have_context": true, "external_resources": 0, "scripts": 0},
+  "tabdpt-turbo-DFAGC498": {"ok": true, "viewports": [1280,390], "images_loaded": 4, "images_total": 4, "math": 19, "math_errors": 0, "sections": 9, "source_count": 39, "anchors_valid": true, "source_toggle": true, "page_overflow_default_or_sources": false, "figures_have_context": true, "external_resources": 0, "scripts": 0},
+  "tabfm-zero-shot-KZJI8QQR": {"ok": true, "viewports": [1280,390], "images_loaded": 4, "images_total": 4, "math": 20, "math_errors": 0, "sections": 10, "source_count": 44, "anchors_valid": true, "source_toggle": true, "page_overflow_default_or_sources": false, "figures_have_context": true, "external_resources": 0, "scripts": 0},
+  "retrieval-finetuning-5QV5CK9L": {"ok": true, "viewports": [1280,390], "images_loaded": 3, "images_total": 3, "math": 32, "math_errors": 0, "sections": 7, "source_count": 76, "anchors_valid": true, "source_toggle": true, "page_overflow_default_or_sources": false, "figures_have_context": true, "external_resources": 0, "scripts": 0}
+}

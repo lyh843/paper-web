@@ -1,0 +1,183 @@
+{
+  "requestedURL": "http://sites.google.com/view/fightladder/home?utm_source=chatgpt.com",
+  "canonicalURL": "https://sites.google.com/view/fightladder/home",
+  "archivedAt": "2026-10-31T08:04:58.168147+00:00",
+  "sourceSha256": "e9c5e6cfd88a9c7e582728361b1e0908dbe8b558488f7bfd2e4514011ea4cd7f",
+  "assets": [
+    {
+      "source": "https://sites.google.com/sitesv-images-rt/AMxu72tMOiJ_AvCirRH2XghgdF8IfqC_LmTZS5ukL7RRZNIpup-_icyE6rsg4YM7b8S317FRMl5N7Uaww3_iePTAEP4t9dMV3s7_ONx62wm-HlWGTvBU6ChUZlDmRz0sRhO5l20EhyZ6aQne66zOS6NfXJoGWxXweMAzLrdTtforc9v0VCYmDEWecWvcPKwUF0t7EXunxZQhOGxUfaoL-Gel3QkfcM9wr0jexH2x9c65d_Y=w1280",
+      "path": "assets/5d396c8c27b34be3.gif",
+      "bytes": 6842135,
+      "sha256": "a4e348fb6a43ce70d96eba601902e18b492e947cc560f518d81275e9ac76608c",
+      "contentType": "image/gif"
+    },
+    {
+      "source": "https://www.gstatic.com/images/icons/material/product/1x/drive_2026_32dp.png",
+      "path": "assets/22a358b7cebb8eef.png",
+      "bytes": 972,
+      "sha256": "6d368f1e6e077f115f6d7cc3838de9ffb6accb5396e0c29d9dd6609e2984e674",
+      "contentType": "image/png"
+    },
+    {
+      "source": "https://fonts.googleapis.com/css?family=Lato%3A300%2C300italic%2C400%2C400italic%2C700%2C700italic&display=swap",
+      "path": "assets/8fb9b2be1be0d936.css",
+      "bytes": 1186,
+      "sha256": "b891d5b02925e03d5f99ecd941dc9ebfc129f1132870b010ff7ab07bbecd5d5e",
+      "contentType": "text/css"
+    },
+    {
+      "source": "https://fonts.googleapis.com/css?family=Google+Sans:400,500|Roboto:300,400,500,700|Source+Code+Pro:400,700&display=swap",
+      "path": "assets/b688b83af2919bc9.css",
+      "bytes": 2064,
+      "sha256": "f086c328c2f7e44bbf80c869f5c273f546cdef6598302448bb99f836d2eb0d65",
+      "contentType": "text/css"
+    },
+    {
+      "source": "https://fonts.googleapis.com/css?family=Source%20Code%20Pro%3Ai%2Cbi%2C700%2C400&display=swap",
+      "path": "assets/32600909a77ff880.css",
+      "bytes": 988,
+      "sha256": "a54a6b44c604f5199b7c9da0ce95c720bc2751b6be676da9c0ca0f034e8604ae",
+      "contentType": "text/css"
+    },
+    {
+      "source": "https://www.gstatic.com/_/atari/_/ss/k=atari.vw.hdNbrSL836o.L.X.O/am=AAAAGAAI/d=1/rs=AGEqA5n05QRHdOgGRcP9MxVnbw2JEkW1-w",
+      "path": "assets/d2475ec8db5ff773.css",
+      "bytes": 1936404,
+      "sha256": "ef8cb5fa65eb57312090361eea662ca7451e2373653439ea2e4c017d3414aed2",
+      "contentType": "text/css"
+    },
+    {
+      "source": "https://fonts.gstatic.com/s/lato/v25/S6u_w4BMUTPHjxsI9w2_Gwfo.ttf",
+      "path": "assets/b7cdfeb0e3928122.ttf",
+      "bytes": 39264,
+      "sha256": "287f2b0a046343d811ae43312783880cba0e09850886d6dcdd57a73f65147f01",
+      "contentType": "font/ttf"
+    },
+    {
+      "source": "https://fonts.gstatic.com/s/lato/v25/S6u8w4BMUTPHjxsAXC-v.ttf",
+      "path": "assets/beca642c52c1c12a.ttf",
+      "bytes": 60976,
+      "sha256": "218f6f647f83ceec4b0995a5186404d9fc4a5fb5c535d0cdd016bf52afbb5e7e",
+      "contentType": "font/ttf"
+    },
+    {
+      "source": "https://fonts.gstatic.com/s/lato/v25/S6u_w4BMUTPHjxsI5wq_Gwfo.ttf",
+      "path": "assets/5c2474aa9d6f198e.ttf",
+      "bytes": 62348,
+      "sha256": "726beec7cd96f06f5b05b5af54d47321b6270f94e21f4a3bdc80cefc3b79ba69",
+      "contentType": "font/ttf"
+    },
+    {
+      "source": "https://fonts.gstatic.com/s/lato/v25/S6u9w4BMUTPHh7USSwiPHA.ttf",
+      "path": "assets/051c2758ed729e74.ttf",
+      "bytes": 63404,
+      "sha256": "b229d664a58a75e0a438fad204b292b5777e79fafd4b840cce21bac7ad2a7a28",
+      "contentType": "font/ttf"
+    },
+    {
+      "source": "https://fonts.gstatic.com/s/lato/v25/S6uyw4BMUTPHjx4wWw.ttf",
+      "path": "assets/4d3e9082410f2959.ttf",
+      "bytes": 60540,
+      "sha256": "b6e055ad6056d64c89133fd73e9ee935c068d8bd3ac09366d5d99f9eee99e3f4",
+      "contentType": "font/ttf"
+    },
+    {
+      "source": "https://fonts.gstatic.com/s/lato/v25/S6u9w4BMUTPHh6UVSwiPHA.ttf",
+      "path": "assets/04393e6516bf5491.ttf",
+      "bytes": 59048,
+      "sha256": "7e15d8482756e9d79c5b14dde8cd92256fd2afe0307703d825d4e8178d416c41",
+      "contentType": "font/ttf"
+    },
+    {
+      "source": "https://fonts.gstatic.com/s/googlesans/v76/4Ua_rENHsxJlGDuGo1OIlJfC6l_24rlCK1Yo_Iqcsih3SAyH6cAwhX9RFD48TE63OOYKtrwEIJllpyw.ttf",
+      "path": "assets/2cc0854a21182882.ttf",
+      "bytes": 63188,
+      "sha256": "2a07d011004391a05cc50471d63b4446bb196aebbe751a4240c202b7cf71968f",
+      "contentType": "font/ttf"
+    },
+    {
+      "source": "https://fonts.gstatic.com/s/googlesans/v76/4Ua_rENHsxJlGDuGo1OIlJfC6l_24rlCK1Yo_Iqcsih3SAyH6cAwhX9RFD48TE63OOYKtrw2IJllpyw.ttf",
+      "path": "assets/3c9a1d1618401b2c.ttf",
+      "bytes": 63292,
+      "sha256": "59c9f42ce2d20a5daa8b8552c6c34c5266c85da92f671fcc96b4e47756059965",
+      "contentType": "font/ttf"
+    },
+    {
+      "source": "https://fonts.gstatic.com/s/roboto/v51/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWuaabVmUiA8.ttf",
+      "path": "assets/212ed85bd6e1de21.ttf",
+      "bytes": 44792,
+      "sha256": "be5ffcf033d7e69b219d38a9bbf0e35bd6e8fdb7a5b9fc3c3c6ec4224672c017",
+      "contentType": "font/ttf"
+    },
+    {
+      "source": "https://fonts.gstatic.com/s/roboto/v51/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmUiA8.ttf",
+      "path": "assets/98b910f0208e132f.ttf",
+      "bytes": 44724,
+      "sha256": "e9ff3730797df6aaf76d37c48234a6c4875032eaad8f1aaccd7daefa6dca9e7a",
+      "contentType": "font/ttf"
+    },
+    {
+      "source": "https://fonts.gstatic.com/s/roboto/v51/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWub2bVmUiA8.ttf",
+      "path": "assets/3001ffbd8d2d6b85.ttf",
+      "bytes": 44796,
+      "sha256": "2cf4c1c3ffaeee44c1a1027d579edbd15ca137747eadbe90de953c6155477bae",
+      "contentType": "font/ttf"
+    },
+    {
+      "source": "https://fonts.gstatic.com/s/roboto/v51/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWuYjalmUiA8.ttf",
+      "path": "assets/a0ab9869bed1d244.ttf",
+      "bytes": 44864,
+      "sha256": "bbf3e2a2cb10a5a59284f96f97f4083c176798fe709633db019da376b10936e9",
+      "contentType": "font/ttf"
+    },
+    {
+      "source": "https://fonts.gstatic.com/s/sourcecodepro/v32/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMlrSQ.ttf",
+      "path": "assets/f71226c0a04c6daa.ttf",
+      "bytes": 23928,
+      "sha256": "f5e4062dc01ee7a0f2ad5674225f6de998ab9fe865e79a64e1d1b537db4e0830",
+      "contentType": "font/ttf"
+    },
+    {
+      "source": "https://fonts.gstatic.com/s/sourcecodepro/v32/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DCuXtMlrSQ.ttf",
+      "path": "assets/b7370b80be3b2abf.ttf",
+      "bytes": 23880,
+      "sha256": "9118c56dc3c09f6cc904eb9499704a26f855af5f83a4f6ceea765aac5a9aa9e7",
+      "contentType": "font/ttf"
+    },
+    {
+      "source": "https://fonts.gstatic.com/s/sourcecodepro/v32/HI_jiYsKILxRpg3hIP6sJ7fM7PqlOPHYvDP_W9O7GQTTbI1bTl0d.ttf",
+      "path": "assets/4d0e6f7a80453734.ttf",
+      "bytes": 23724,
+      "sha256": "b1b09c0258002a1ba097a8dce3fc43a9871eca07625e5dab6644f9a28fa77c12",
+      "contentType": "font/ttf"
+    },
+    {
+      "source": "https://fonts.gstatic.com/s/sourcecodepro/v32/HI_jiYsKILxRpg3hIP6sJ7fM7PqlOPHYvDP_W9O7GQTTi4pbTl0d.ttf",
+      "path": "assets/08ea2579623aa034.ttf",
+      "bytes": 23748,
+      "sha256": "d9fc596081b8de76754c2d7a79c0ead218193662dc4eae9315aad3af4ecd00b4",
+      "contentType": "font/ttf"
+    }
+  ],
+  "limitations": "Archive limitation (user-approved): all webpage text and captions are preserved, but 23 of 24 original content images returned HTTP 403 and are replaced with linked placeholders. One original animated image is available locally. Fourteen embedded Google Drive videos remain online links. The Google Sites layout is adapted to a static single-column reading/printing layout. A third-party Elfsight widget is not preserved. The webpage publication date is not stated.",
+  "files": {
+    "article.md": "8c4c9c9b018068c4c2065a235d929a9117c4b8d9fa53e0c8730189c1db41e30b",
+    "article.pdf": "0d07f27add2222873c8ed7cf554e54f4199fce652322b69aa4512d33b94f7115",
+    "index.html": "819c8e0a209040d53350f511d63754060739efe634888315b9d9065e5c171ba6",
+    "source.html": "e9c5e6cfd88a9c7e582728361b1e0908dbe8b558488f7bfd2e4514011ea4cd7f"
+  },
+  "zoteroImport": {
+    "status": "verified-original-and-bilingual",
+    "itemKey": "ITXN4SQT",
+    "originalAttachmentKey": "9RYAGQ3Y",
+    "record": "import-status.json",
+    "bilingualAttachmentKey": "75PRSXJJ"
+  },
+  "translation": {
+    "status": "verified-with-source-and-layout-limitations",
+    "file": "bilingual/article.no_watermark.zh-CN.dual.pdf",
+    "sha256": "647e97940a028132bca7711d7b5fca2862ed834ed6afe910676c8df3360f3bbd",
+    "attachmentKey": "75PRSXJJ",
+    "statusRecord": "bilingual/translation-status.json"
+  }
+}

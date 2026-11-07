@@ -1,0 +1,123 @@
+{
+  "status": "checked-with-layout-limitations",
+  "source": "/home/lyh/Zotero/storage/7XVCIG4J/arxiv_2512.00371.pdf",
+  "sourceSha256": "e979e2f44b81edc1f024211c59975d7d9439bc0b1aef5cc86f22e6b7ad6f3d4b",
+  "software": "Zotero PDF2zh / PDF2zh-next",
+  "service": "openaicompatible",
+  "sourceLanguage": "en",
+  "targetLanguage": "zh-CN",
+  "layout": "lr",
+  "pages": "all",
+  "onlyBilingual": true,
+  "zoteroModified": false,
+  "startedAt": "2026-11-05T11:37:00.787884+00:00",
+  "engineVersionInCurrentPython": "2.9.0",
+  "exitCode": 0,
+  "outputs": [
+    {
+      "file": "arxiv_2512.00371.no_watermark.zh-CN.dual.pdf",
+      "bytes": 1970208,
+      "sha256": "acec7b51c30a56126ab8ebb67c63bf050de721915d9783fcd33b9c2b8894148a"
+    }
+  ],
+  "verification": {
+    "status": "checked-automatically-needs-visual-review",
+    "sourcePages": 32,
+    "documents": [
+      {
+        "file": "arxiv_2512.00371.no_watermark.zh-CN.dual.pdf",
+        "pages": 32,
+        "chineseCharactersByPage": [
+          947,
+          1171,
+          1134,
+          1038,
+          663,
+          1005,
+          829,
+          784,
+          886,
+          1233,
+          485,
+          469,
+          114,
+          859,
+          905,
+          814,
+          723,
+          860,
+          773,
+          530,
+          713,
+          808,
+          637,
+          509,
+          592,
+          582,
+          411,
+          26,
+          1001,
+          742,
+          735,
+          569
+        ],
+        "imagePlacements": 8,
+        "pageCountMatches": true,
+        "originalTextUnchangedByPage": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      }
+    ],
+    "manualVisualReview": {
+      "status": "completed-with-layout-limitations",
+      "samplePages": [
+        1,
+        2,
+        3,
+        9,
+        28,
+        32
+      ],
+      "notes": [
+        "第28页以代码为主，右侧仅26个中文字符，核实两处自然语言说明已译；代码本体保留英文但缩进和行布局丢失。",
+        "末页列表项目有合并重排。"
+      ],
+      "qualityReport": "quality-check.json",
+      "scope": "逐页自动检查页数、原文文字和中文覆盖；仅列出的页面经过人工视觉抽查，未逐句人工校译。"
+    }
+  },
+  "originalConfigUnchanged": true,
+  "originalPDFUnchanged": true,
+  "finishedAt": "2026-11-05T11:44:32.312851+00:00"
+}

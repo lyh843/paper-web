@@ -1,0 +1,134 @@
+{
+  "url": "https://lilianweng.github.io/posts/2026-07-04-harness/",
+  "title": "Harness Engineering for Self-Improvement",
+  "author": "Lilian Weng",
+  "published": "2026-07-04",
+  "archivedAt": "2026-10-30T02:24:20.014699+00:00",
+  "zoteroCollection": {
+    "path": "人工智能/RSI",
+    "key": "XD4KS2FT"
+  },
+  "sourceSha256": "45bc3793c36e42f79749f84af510761798b85960ad18d3123d86f3a403e247ac",
+  "assets": [
+    {
+      "url": "https://lilianweng.github.io/posts/2026-07-04-harness/openai-agent-loop.png",
+      "path": "assets/openai-agent-loop.png",
+      "bytes": 26453,
+      "sha256": "a7876d92a8fc46825b8df1193e0f71dd49a716bf73a2f0693118985039437714"
+    },
+    {
+      "url": "https://lilianweng.github.io/posts/2026-07-04-harness/coding-harness-loop.png",
+      "path": "assets/coding-harness-loop.png",
+      "bytes": 173327,
+      "sha256": "f4efb3c97ce86af55c25a875ee87192fdb349939473d4ec1a300afc4827a31e0"
+    },
+    {
+      "url": "https://lilianweng.github.io/posts/2026-07-04-harness/ace.png",
+      "path": "assets/ace.png",
+      "bytes": 162462,
+      "sha256": "0fbdfaa639c75b6898fd98547efd8170e5e928bd06a6815af0feb9cb71cdb4d0"
+    },
+    {
+      "url": "https://lilianweng.github.io/posts/2026-07-04-harness/mce.png",
+      "path": "assets/mce.png",
+      "bytes": 1052155,
+      "sha256": "b029e8a00415e024ca5ea9fcfe9bb6663c9b0b93860a70a4bfcf356c66dc2a63"
+    },
+    {
+      "url": "https://lilianweng.github.io/posts/2026-07-04-harness/meta-harness-outer-loop.png",
+      "path": "assets/meta-harness-outer-loop.png",
+      "bytes": 153813,
+      "sha256": "382d9c707bebbe570214015d2915ce02f6d43429cf862fc1240ca53431b21798"
+    },
+    {
+      "url": "https://lilianweng.github.io/posts/2026-07-04-harness/meta-harness.png",
+      "path": "assets/meta-harness.png",
+      "bytes": 93462,
+      "sha256": "11c0d4cf8735a06d68052688ef2e198c16fd5ee7734a4eaea00584c5b46fc702"
+    },
+    {
+      "url": "https://lilianweng.github.io/posts/2026-07-04-harness/ai-scientist.png",
+      "path": "assets/ai-scientist.png",
+      "bytes": 157817,
+      "sha256": "b0d204e24a6c0326a6f09356ccd383a8be6905a2b42cd694ca124848e6519695"
+    },
+    {
+      "url": "https://lilianweng.github.io/posts/2026-07-04-harness/autodata.png",
+      "path": "assets/autodata.png",
+      "bytes": 188759,
+      "sha256": "dc949203f206858744d3b35621984d3a8953a08d3eff8513d0372957daae8391"
+    },
+    {
+      "url": "https://lilianweng.github.io/posts/2026-07-04-harness/adas.png",
+      "path": "assets/adas.png",
+      "bytes": 229122,
+      "sha256": "dc5a10cecf66c578612dc964e9af17764dadf14cd3ccb3c7b299e0962bd16dac"
+    },
+    {
+      "url": "https://lilianweng.github.io/posts/2026-07-04-harness/aflow.png",
+      "path": "assets/aflow.png",
+      "bytes": 542907,
+      "sha256": "2bdf9fd25f4a57c62b723ac8a1b65a5dbe55b834865aaf4281432472e3b92642"
+    },
+    {
+      "url": "https://lilianweng.github.io/posts/2026-07-04-harness/aflow-exp.png",
+      "path": "assets/aflow-exp.png",
+      "bytes": 137366,
+      "sha256": "b974178fc5c68103638566a5718f63e793b5537de5d5d7ff8f77f7c7ee533310"
+    },
+    {
+      "url": "https://lilianweng.github.io/posts/2026-07-04-harness/STOP-algo.png",
+      "path": "assets/STOP-algo.png",
+      "bytes": 141808,
+      "sha256": "8f791ddd4796151d367bb3584133d36987d34c10446037ff9c7ee6d82c901002"
+    },
+    {
+      "url": "https://lilianweng.github.io/posts/2026-07-04-harness/STOP-patterns.png",
+      "path": "assets/STOP-patterns.png",
+      "bytes": 88474,
+      "sha256": "0e0212ea355985574125bad2a578409a971a0cdd1012ff8ba5458fb9c29f2379"
+    },
+    {
+      "url": "https://lilianweng.github.io/posts/2026-07-04-harness/harness-update.png",
+      "path": "assets/harness-update.png",
+      "bytes": 388331,
+      "sha256": "f47fa538e5e9ca01007c30520dd2f8228c9eec4e0143ce380a34121372e837fc"
+    },
+    {
+      "url": "https://lilianweng.github.io/posts/2026-07-04-harness/self-harness.png",
+      "path": "assets/self-harness.png",
+      "bytes": 256353,
+      "sha256": "895bd4a7cd9b6b9db2c7a1b10dede177b8b4912afb8c458d163e066d8b9fdd45"
+    },
+    {
+      "url": "https://lilianweng.github.io/posts/2026-07-04-harness/alphaevolve.png",
+      "path": "assets/alphaevolve.png",
+      "bytes": 222950,
+      "sha256": "9aff606707805732b0a8d1d9cc610f7d1608604c9dd76687b5cd5d2ebacc380e"
+    },
+    {
+      "url": "https://lilianweng.github.io/posts/2026-07-04-harness/alphaevolve-plot.png",
+      "path": "assets/alphaevolve-plot.png",
+      "bytes": 355725,
+      "sha256": "ad59c8ccfbcca45e7fa7c9636d54902ee3f13128b5aa76daca73a6955f66dcda"
+    },
+    {
+      "url": "https://lilianweng.github.io/posts/2026-07-04-harness/SIA.png",
+      "path": "assets/SIA.png",
+      "bytes": 140617,
+      "sha256": "86fbe9555a0bf6f3c772683cd3733ffdcd65fd3cd325a0ed0e473099268cd074"
+    },
+    {
+      "url": "https://lilianweng.github.io/assets/css/stylesheet.min.8e2f522e170c601ef0b359b6e27078d17e3020e1f4d928afdff4dae588c1e9e4.css",
+      "path": "assets/stylesheet.min.8e2f522e170c601ef0b359b6e27078d17e3020e1f4d928afdff4dae588c1e9e4.css",
+      "bytes": 15359,
+      "sha256": "8e2f522e170c601ef0b359b6e27078d17e3020e1f4d928afdff4dae588c1e9e4"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-svg.js",
+      "path": "assets/tex-svg.js",
+      "bytes": 2108580,
+      "sha256": "d4295dc33744836935c1399feece5159577b34c5c8ffb9f1c6324cd82e03a882"
+    }
+  ]
+}

@@ -1,0 +1,1600 @@
+===== PDF PAGE 1 =====
+                   POLICY-CONDITIONED POLICIES FOR MULTI-AGENT TASK SOLVING
+
+
+                                   Yue Lin1, Shuhui Zhu2, Wenhao Li3, Ang Li1, Dan Qiao1,
+                                           Pascal Poupart2,4, Hongyuan Zha1, and Baoxiang Wang1,4
+
+                                        1The Chinese University of Hong Kong, Shenzhen
+                                                            2University of Waterloo
+                                                             3Tongji University
+                                                             4Vector Institute
+                                          {yuelin,bxiangwang}@link.cuhk.edu.cn
+
+                                       ABSTRACT
+
+                                In multi-agent tasks, the central challenge lies in the dynamic adaptation of strate-
+                                    gies.  However, directly conditioning on opponents’ strategies is intractable in
+                                 the prevalent deep reinforcement learning paradigm due to a fundamental “rep-2025
+                                  resentational bottleneck”: neural policies are opaque, high-dimensional param-
+                                    eter vectors that are incomprehensible to other agents.  In this work, we pro-
+                             pose a paradigm shift that bridges this gap by representing policies as human-Dec                           interpretable source code and utilizing Large Language Models (LLMs) as ap-
+                              proximate interpreters.  This programmatic representation allows us to opera-
+24                            tionalize the game-theoretic concept of Program Equilibrium. We reformulate the
+                                 learning problem by utilizing LLMs to perform optimization directly in the space
+                                of programmatic policies. The LLM functions as a point-wise best-response oper-
+                                  ator that iteratively synthesizes and refines the ego agent’s policy code to respond
+                                  to the opponent’s strategy. We formalize this process as Programmatic Iterated
+                               Best Response (PIBR), an algorithm where the policy code is optimized by tex-
+                                    tual gradients, using structured feedback derived from game utility and runtime[cs.GT]                           unit tests. We demonstrate that this approach effectively solves several standard
+                                coordination matrix games and a cooperative Level-Based Foraging environment.
+
+
+                1  INTRODUCTION
+
+                   The study of multi-agent tasks, typically formalized as Markov games (or stochastic games) (Shap-
+                           ley, 1953), presents a complexity that fundamentally transcends single-agent decision-making. In
+                        these settings, the environment is non-stationary from the perspective of any individual agent, as
+                        the state transitions and expected rewards are co-determined by the evolving policies of interacting
+                        agents. Consequently, there is no single optimal policy in isolation; rather, an agent must continu-
+                      ously compute a best response to the varying strategies of its opponents.
+
+                      Canonical approaches  to  this problem,  particularly  in Multi-Agent Reinforcement Learning
+                  (MARL), typically rely on opponent modeling (He et al., 2016). Agents attempt to infer the cur-
+                         rent policies of their counterparts from the history of interactions. However, inferring complex,arXiv:2512.21024v1                co-adapting policies from limited, high-dimensional, and non-stationary historical data remains an
+                        exceptionally difficult problem.
+
+             A theoretically more direct alternative is to explicitly condition an agent’s policy on the actual policy
+                       of the opponent. In the domain of game theory, this ideal is captured by the concept of Program
+                      Equilibrium (Tennenholtz, 2004), where agents delegate decision-making to programs that can read
+                    and condition on each other’s source code. This framework theoretically enables rich cooperative
+                    outcomes (e.g., via “mutual cooperation” proofs in the Prisoner’s Dilemma) that are inaccessible to
+                       standard Nash equilibria.
+
+                    However, Program Equilibrium has remained largely theoretical and disconnected from modern
+                        learning approaches. In the prevalent Deep Reinforcement Learning (DRL) paradigm, implementing
+                     such policy-conditioning is practically intractable due to a “representational bottleneck”. Policies
+                        are represented as deep neural networks defined by millions of opaque parameters. Inputting one
+                       neural network’s weights into another is computationally prohibitive and semantically ill-defined, as
+
+
+                                                           1
+
+===== PDF PAGE 2 =====
+the parameter vector is a high-dimensional, unstructured, and non-unique representation of behav-
+ior (Goodfellow et al., 2016).
+
+The central thesis of this work is that we can overcome this bottleneck by leveraging Large Language
+Models (LLMs). We propose representing policies as programmatic policies, which are executable,
+human-interpretable source code. Unlike opaque tensor parameters, source code is semantically
+dense and structured. By utilizing LLMs as approximate interpreters, we can operationalize the
+game-theoretic concept of Program Equilibrium within a learning-based framework. This allows
+agents to condition on the opponent’s source code, enabling rich cooperative outcomes that are
+theoretically inaccessible to standard Nash equilibria but have previously been difficult to realize in
+practice.
+
+This paradigm shift enables us to operationalize policy-conditional adaptation in a fundamentally
+new way. Instead of searching for a static policy via gradient descent on parameters, we shift the
+optimization landscape to the code space, where the LLM functions as a point-wise best-response
+operator. Given the source code of an opponent’s policy, the LLM generates and iteratively refines
+the source code of the best-response policy.
+
+We formalize this learning process as Programmatic Iterated Best Response (PIBR). This algorithm
+proceeds as an iterative dynamic, where at each step, an agent’s policy code is optimized against the
+fixed code of its opponents. The optimization is driven by modern textual gradient techniques (Yuk-
+sekgonul et al., 2024) using structured feedback, incorporating both (1) utility feedback from game
+trajectories and (2) unit test feedback to ensure syntactic and runtime correctness. By doing so, we
+present a practical instantiation of Program Equilibrium for general Markov games, demonstrating
+efficacy in several standard coordination matrix games and a cooperative grid-world task named
+Level-Based Foraging.
+
+
+1.1  RELATION TO CONCURRENT WORK
+
+During the preparation of this manuscript, a contemporaneous work titled “Evaluating LLMs in
+Open-Source Games” (Sistla & Kleiman-Weiner, 2025a) was presented at NeurIPS 2025. The work
+introduced a framework for Open-Source Games, evaluating how LLMs perform in game-theoretic
+settings when agents have full visibility of each other’s source code. We acknowledge that both the
+work and our work share a fundamental contribution: identifying that LLMs can serve as approx-
+imate interpreters to bridge the gap between theoretical Program Equilibrium and practical imple-
+mentation. Both approaches utilize the transparency of code to enable conditional cooperation that
+is difficult to achieve with black-box neural policies. Chronologically, Sistla & Kleiman-Weiner
+(2025a) are the first to make this contribution.
+
+However, our work diverges significantly from Sistla & Kleiman-Weiner (2025a) in motivation,
+methodology, and experimental scope.
+
+      1. Motivation from MARL Challenges: While Sistla & Kleiman-Weiner (2025a) focuses on
+         evaluating LLMs within a game-theoretic context, our approach stems fundamentally from
+         the perspective of MARL. We identify programmatic policies specifically as a solution to
+         the “representational bottleneck” and non-stationarity in MARL. We frame this not merely
+         as an evaluation of LLMs, but as a necessary paradigm shift to solve the recursive reasoning
+         challenges inherent in learning co-adapting policies.
+
+      2. Optimization via Textual Gradients: Sistla & Kleiman-Weiner (2025a) primarily relies
+       on the inherent reasoning capabilities of LLMs via prompting.  In contrast, we propose
+       Programmatic Iterated Best Response (PIBR) as a formal optimization algorithm. Our
+       method explicitly treats the LLM as a definable operator optimized via textual gradients
+        (Yuksekgonul et al., 2024). We incorporate a structured feedback loop that combines game
+           utility with runtime unit tests, ensuring that the generated policies are not only strategically
+        sound but also syntactically robust and executable.
+
+      3. Complexity of Tasks: We extend the validation of programmatic policies beyond standard
+        matrix games (which are the primary focus of concurrent works) to the Level-Based For-
+        aging environment. This is a complex grid-world task requiring spatial coordination and
+         sequential decision-making, demonstrating the capability of our method to handle higher-
+        dimensional state spaces and more intricate coordination dynamics.
+
+
+                                       2
+
+===== PDF PAGE 3 =====
+Acknowledging the precedence of Sistla & Kleiman-Weiner (2025a), we refrain from submitting
+this specific version for formal conference publication to adhere to novelty standards. Instead, we
+release this manuscript as a technical report to establish the timeline of our independent contribu-
+tion. We plan to incorporate these findings into future submissions that feature significant technical
+improvements or novel extensions beyond the scope of the current discussion.
+
+2  PRELIMINARIES
+
+This section provides the necessary background for our method. We begin by establishing the for-
+malisms for multi-agent learning, including game settings and solution concepts. Then we discuss
+the two fundamental challenges that motivate our work: non-stationarity and the complexities of
+opponent modeling. Finally, we introduce the concept of program equilibrium and provability logic,
+which provide the theoretical basis for agents that can condition their policies on the source code of
+their opponents. A detailed discussion of related work is deferred to Appendix A.
+
+2.1  THE GAME
+
+In this work, we focus on the multi-agent task which is formulated as a Markov Game (Littman,
+1994), also known as a stochastic game (Shapley, 1953). A Markov Game for N agents is defined
+by a tuple G = ⟨N, S, {Ai}Ni=1, T , {ri}Ni=1, γ⟩. S is the set of global states. Ai is the action space
+for agent i, and the joint action space is A = ×Ni=1Ai. The function T  : S × A →∆(S) is the state
+transition probability function. Each agent i has a reward function ri : S × A →R, and γ ∈[0, 1)
+is the discount factor. At each timestep t, agents simultaneously select actions ait ∈Ai. The system
+transitions to st+1 ∼T (· | st, at) and each agent i receives a reward rit = ri(st, at), where at is
+the joint action.
+
+2.2  THE SOLUTION CONCEPTS
+
+The objective of each agent i is to find an optimal policy πi∗that, when combined with the policies
+of all other agents, maximizes its expected discounted return. This cumulative reward, denoted Ji,
+is defined for a joint policy π = (π1, . . . , πN) as:
+
+                                 " ∞         #
+                         Ji(π) = E⟨G,π⟩ X γtri(st, at)   ,
+                                             t=0
+where E⟨G,π⟩[·] denotes the expectation over the state transitions T and the agents’ joint actions π.
+The primary solution concept is the Nash Equilibrium (NE) (Nash Jr, 1950), a joint policy π∗=
+(πi∗, π−i∗) from which no single agent i has an incentive to unilaterally deviate. Formally, π∗is a
+Nash Equilibrium if for all i ∈N and for all alternative policies πi available to agent i (πi ∈Πi),
+the following condition holds:
+                               Ji(π∗) ≥Ji(πi, π−i∗).
+This general definition is refined based on the game’s temporal horizon and the class of policies
+considered.
+
+In the finite-horizon (episodic) setting, equilibria must hold at all decision points. The history ht is
+defined as ht = (s0, a0, . . . , st−1, at−1, st), and H is the space of all such histories. One refinement
+is the Subgame Perfect Equilibrium (SPE) (Bielefeld, 1988), which applies when players use history-
+dependent policies, πi : H →∆(Ai), denoted ΠiH. An SPE π∗requires the NE condition to hold in
+every subgame, i.e., beginning from any possible history ht. For all i ∈N, ht ∈H, and πi ∈ΠiH:
+                         Ji(π∗| ht) ≥Ji((πi, π−i∗) | ht),
+where Ji(π  | ht) = E⟨G,π⟩ P∞k=t γk−tri(sk, ak) | ht  is the expected future discounted reward
+given history ht. A second refinement is the Markov Perfect Equilibrium (MPE) (Fudenberg &
+Tirole, 1991), which restricts policies to be Markovian and time-dependent, πi : S × T →∆(Ai),
+denoted ΠiM. An MPE π∗requires the NE condition to hold at every state-time pair (s, t). For all
+i ∈N, s ∈S, t ∈T, and πi ∈ΠiM:
+                        Ji(π∗| s, t) ≥Ji((πi, π−i∗) | s, t),
+
+
+                                       3
+
+===== PDF PAGE 4 =====
+where Ji(π  | s, t) = E⟨G,π⟩ P∞k=t γk−tri(sk, ak) | st = s  is the expected future discounted
+reward from state s at time t. Both SPE and finite-horizon MPE can be computed via backward
+induction (Farina, 2024).
+
+In the infinite-horizon discounted setting, a foundational result establishes that a Nash Equilibrium
+exists in stationary, Markovian policies, πi : S →∆(Ai) (Fink, 1964; Takahashi, 1964). Formally, a
+joint stationary policy π∗= (π1∗, . . . , πN∗) is an equilibrium if for all i ∈N and for all alternative
+policies πi′ ∈Πiall (where Πiall includes arbitrary history-dependent policies):
+                              Ji(π∗) ≥Ji(πi′, π−i∗).
+This demonstrates that the stationary equilibrium policy πi∗is robust against deviations to any non-
+Markovian strategy.
+
+2.3  LEARNING METHODS FOR MARKOV GAMES
+
+The advancement of DRL has enabled the use of deep neural networks to approximate complex
+policies and value functions, greatly extending the applicability of RL to high-dimensional state and
+action spaces. MARL extends this DRL framework to environments with multiple interacting agents
+(N > 1). These agents may be cooperative, competitive, or operate in a mixed setting.
+In a MARL setting, each agent i learns its own policy πi. As defined in the previous section, this
+policy can be a mapping from the current state (a stationary, Markovian policy πi  : S →∆(Ai))
+or from the full history (a history-dependent policy πi  : H →∆(Ai)). In practice, policies are
+frequently history-dependent. Agents require history for two principal reasons: (1) First, in partially
+observable environments, an agent must utilize its history to infer the current underlying state. We
+assume a fully observable environment, so this point does not apply. (2) Second, history is employed
+to estimate the policies of other agents. Notably, even in fully observable environments where the
+state is known, history remains essential for decision-making if the policies of other players are not
+directly accessible. This necessity for opponent modeling will be further discussed in Section 2.5.
+The policy learning rule dictates how the agent updates its policy parameters, θi (when πi is a
+parameterized function πiθi), to maximize this objective. The general learning rule involves an
+iterative update mechanism, typically derived from gradient-based optimization:
+                                     θik+1 ←θik + α∇θiJi(π),
+where k is the iteration index and α is the learning rate. We can abstract this update step for agent i
+as a learning dynamics Li, such that:
+                                           θik+1 = Li(θk).
+This is a vanilla learning dynamics in an independent learning style, which considers its own pa-
+rameters only. The gradient ∇θiJi(π) is estimated using various techniques such as policy gradient
+methods (e.g., REINFORCE (Williams, 1992; Sutton et al., 1999), Actor-Critic (Konda & Tsitsik-
+lis, 1999)) or Q-learning variants, where the form of the gradient estimate strongly depends on the
+specific MARL algorithm employed.
+
+2.4  NON-STATIONARITY
+
+The fundamental challenge that distinguishes multi-agent learning from single-agent learning is
+non-stationarity (Hernandez-Leal et al., 2017). In a single-agent system, the environment is gov-
+erned by a stationary MDP. In contrast, in a multi-agent system, the effective environmental dynam-
+ics from the perspective of an ego agent i are co-determined by the changing policies π−i = (πj)j̸=i
+of all other agents. We can denote the subjective view of the environment and opponents from agent
+i as the perspective environment Gi:
+                                Gi = ⟨G, π, {Lj}j∈N⟩,
+and this perspective environment is non-stationary, i.e., even if the objective environment G and the
+ego agent’s policy remain static, the ego agent’s expected discounted return Ji may change, due to
+the updates of other agents’ policies.
+
+Specifically, consider the vanilla learning rule as described above (i.e., the independent learning
+style), when any opponent j ̸= i updates its policy parameters via its learning rule Lj (i.e., θjk+1 =
+
+
+                                       4
+
+===== PDF PAGE 5 =====
+Lj  θjk   , this results in a change to its policy πjk →πjk+1 (where πjk is shorthand for πjθjk). This, in
+turn, changes the joint policy of all opponents, π−ik →π−ik+1. Consequently, even if agent i’s policy
+πi remains static, its expected discounted return Ji is no longer stationary:
+                                Ji(πi, π−ik ) ̸= Ji(πi, π−ik+1).
+
+This instability invalidates the convergence guarantees of standard single-agent RL algorithms.
+
+
+2.5  OPPONENT MODELING
+
+To succeed in this non-stationary landscape, an agent i must adapt its policy to the changing policies
+of its opponents. The goal shifts from finding a single optimal policy to dynamically computing a
+best response (BR) to the current policies of the other agents.
+Calculating a BR presupposes that the agent possesses an estimate of its opponents’ policies, ˆπ−i.
+This inevitably leads to the need for opponent modeling (He et al., 2016): the process of defining a
+function m that maps available data (e.g., interaction history) to an estimate of the opponent policies:
+                                          ˆπ−i = m(ht).
+To best respond to a hypothesized opponent policy, ˆπj, the opponent modeling component m(ht)
+serves as a direct input to the agent’s response policy.  For example, a history-dependent best-
+response policy is defined as πibr  : Π−i × H →Πi. With this policy, player i takes an action ait
+at timestep t as:
+                            ait ∼πibr(· | ˆπ−i, ht) = πibr(· | m(ht), ht).
+It is important to note that inferring an opponent’s policy from the interaction history ht presents
+two primary challenges. (1) First, the challenge of policy drift: all policies are constantly updating,
+meaning the interaction data is not sampled from a stable joint policy distribution.  (2) Second,
+all agents are simultaneously trying to model each other, which introduces a complex hierarchy of
+beliefs (Gmytrasiewicz & Doshi, 2005; Rabinowitz et al., 2018). For example, agent i must not only
+model what agent j will do, but also model what agent j guesses agent i will do, and so on, leading
+to an arbitrary-level recursive reasoning challenge (Gmytrasiewicz & Doshi, 2005).
+
+
+2.6  PROGRAM EQUILIBRIUM AND PROVABILITY LOGIC
+
+In canonical game theory, players select actions or strategies directly. The concept of Program Equi-
+librium (Tennenholtz, 2004) departs from this by assuming that players delegate decision-making
+to computer programs.  Crucially, these programs are capable of reading and conditioning their
+execution on the source code of their opponent’s program.
+Formally, let Ai denote the action space for player i. Let Πprog denote the set of all valid computer
+programs in a given Turing-complete language. A policy for player i is a program πi ∈Πprog.
+To be rigorous, we explicitly distinguish between the program’s execution logic (semantics) and its
+representation (syntax):
+
+        • Semantics (πi): We identify the policy πi directly with the computable function it imple-
+        ments upon execution.
+        • Syntax (⌜πi⌝): The Gödel number or string representation of the program, where ⌜·⌝:
+         Πprog →{0, 1}∗is the encoding mapping.
+
+Since πi acts as a function that takes the opponent’s source code as input and maps it to a probability
+distribution over actions, the interaction is formally defined by:
+                                   πi : {0, 1}∗→∆(Ai)
+Specifically, in a game, player i executes πi on input ⌜π−i⌝to determine their action ai ∼
+πi(⌜π−i⌝). This meta-game structure enables outcomes that are inaccessible in standard Nash equi-
+libria. For example, in the one-shot Prisoner’s Dilemma, mutual cooperation becomes sustainable if
+players submit programs that verify whether the opponent’s source code is functionally equivalent
+to their own (or satisfies a specific cooperative predicate) before cooperating.
+
+
+                                       5
+
+===== PDF PAGE 6 =====
+A rigorous treatment of this self-referential structure, where program A analyzes program B ana-
+lyzing program A, requires the machinery of Provability Logic. In this context, agents are modeled
+as searching for proofs within a formal system (e.g., Peano Arithmetic). Let □P denote that the
+statement P is provable. A canonical example is FairBot (Barasz et al., 2014), an agent that coop-
+erates if and only if it can prove that the opponent cooperates against it. Formally, let πFB denote
+the FairBot program. It seeks a proof that the opponent’s execution on its own source code yields
+cooperation:
+           πFB(⌜π−i⌝) = “Cooperation” ⇐⇒□(π−i(⌜πFB⌝) = “Cooperation”)
+
+While this creates a potential circular dependency, consistency is resolved via Löb’s Theorem from
+mathematical logic, which states that for any formula P:
+
+                        □(□P →P) →□P
+
+This theorem implies that if an agent can prove “if my cooperation is provable, then it is true,” it can
+indeed prove its own cooperation. This mechanism creates a modal fixed point, allowing mutual co-
+operation to be the provable outcome between two logical agents. This effectively establishes a Folk
+Theorem for program games, implying that any feasible and individually rational payoff profile can
+be sustained in a one-shot setting through conditional code commitment, achieving outcomes that
+are typically restricted to repeated interactions. An illustrative analysis of the program equilibrium
+within the Prisoner’s Dilemma is provided in Appendix B.
+
+Despite its theoretical power, canonical Program Equilibrium faces significant practical hurdles.
+Formal verification of arbitrary Turing-complete policies is computationally undecidable (by Rice’s
+Theorem) and brittle to trivial syntactic variations. Our work can be viewed as a relaxation of this
+rigorous requirement. By utilizing LLMs as approximate interpreters, we operationalize a practical
+form of program equilibrium. Here, policies condition on the inferred semantics of the opponent’s
+code rather than requiring formal deductive proofs, thereby bridging the gap between theoretical
+game-theoretic commitments and modern multi-agent learning.
+
+3  METHOD
+
+This section presents our methodology. We first articulate the “representational bottleneck” in deep
+MARL, which inhibits conditioning on opponent policies. We then introduce our core solution: a
+paradigm shift to programmatic policies. This shift enables us to lift optimization from policy space
+to operator space, where the objective becomes learning a point-wise best-response operator, φi,
+that maps opponent policy-code to ego-agent policy-code. Finally, we introduce the Programmatic
+Iterated Best Response (PIBR) algorithm, a learning framework designed to optimize this operator.
+
+
+3.1  THE REPRESENTATIONAL BOTTLENECK OF DEEP REINFORCEMENT LEARNING
+
+To address the two mentioned challenges in opponent modeling (the challenges of policy drift and
+arbitrary-level recursive reasoning), it is helpful to introduce the communication perspective. If an
+opponent j directly transmits its policy πj via a signal σj = ϕ(πj), the modeling task for agent i
+becomes:
+                                              ˆπj = m(σj) = m(ϕ(πj)),
+
+where ϕ is j’s policy encoder and m is i’s opponent modeling component which serves as a policy
+decoder. Notice that the opponent modeling for agents no longer needs to be inferred from historical
+data, but is instead communicated through signals between the agents.
+Agent i takes an action sampled from its policy πibr, which is conditional on its estimation of oppo-
+nents’ policies:
+               ait ∼πibr  · | ht, ˆπj = πibr  · | ht, m(σ−i) = πibr  · | ht, m(ϕ(πj))  .
+
+The signal, conceptualized as a latent variable, must satisfy two critical and often competing con-
+straints: (1) it must encapsulate and preserve maximal information pertaining to the policy of agent
+j; (2) it must be encoded in a representational format that is simultaneously tractable and parsable by
+the decoder or actor-network of agent i. Consequently, the selection of an appropriate signal space
+
+
+                                       6
+
+===== PDF PAGE 7 =====
+is a pivotal design consideration. In canonical MARL frameworks, this signal is often implicitly
+defined as the shared interaction history among agents.
+
+In this work, we consider an extreme case in which j’s policy encoder ϕ is a source code extractor
+and i’s policy decoder m is a identity function (i.e., ϕ(πj) = ⌜πj⌝and m = I), yielding a perfect
+observation ˆπj = ⌜πj⌝. We denote this setting as the unprocessed policy-communication setting.
+This setting is possible and can be justified in fully cooperative environments where there is no
+incentive for deception, or in zero-sum games under self-play (Silver et al., 2017) where the multi-
+agent system serves as an equilibrium solver.
+
+A key advantage of this setting is that it inherently avoids any information loss that might arise from
+the communication process and obviates the need for learning a dedicated encoding mechanism.
+This setting also avoids the policy drift and recursive reasoning challenges in opponent modeling,
+since agents can accurately obtain each other’s policies through communication before acting, rather
+than having to guess.
+
+The critical drawback, however, is that this approach places a substantial, perhaps prohibitive, pars-
+ing burden on the ego agent, which must now interpret the source code of policy directly:
+                                     ait ∼πi  · | ht, ⌜π−i⌝  .
+This means that πi will take other ⌜π−i⌝as input. If all agents’ policies are implemented by neural
+networks as in MARL, this means that πi’s neural network must parse the entire neural network of
+πj (i.e., its complete parameter vector θj) as input. This leads to two insurmountable obstacles: (1)
+Curse of Dimensionality. A modern policy network can have millions or billions of parameters.
+The requirement for πi’s input layer to accommodate and process this magnitude of parameters
+is computationally prohibitive.  It also creates a recursive loop: πi must grow to parse πj, and
+πj must in turn grow to parse the now-larger πi. (2) Curse of Representation. This is not just a
+problem of dimensionality, but of representation. The parameter vector θj is a brittle and non-unique
+representation of the policy function. A neural network’s function is invariant to permutations of its
+hidden nodes; different random initializations lead to functionally similar policies with drastically
+different parameter vectors. πi would need to learn a complex, permutation-invariant representation
+over this unstructured, high-dimensional vector, which is a task for which there is currently no viable
+solution.
+
+3.2 A PARADIGM SHIFT: PROGRAMMATIC POLICIES BY LLMS
+
+We posit that, while DRL faces challenges in realizing the unprocessed policy-communication Set-
+ting, the use of recently flourishing LLMs to generate code as policies does possess the capacity to
+handle such policy-input. Its objective is to supplant the opaque, “black box” nature of conventional
+DRL with policy representations that are structured, interpretable, and more amenable to formal
+verification.
+
+This paradigm shift is facilitated by the advent of LLMs. LLMs are inherently designed to process
+structured text and source code. Modern architectures are not only proficient code generators but also
+feature extensive context windows, capable of managing inputs equivalent to hundreds of thousands
+of tokens.
+
+This framework directly addresses the aforementioned intractability challenges: (1) Solving Dimen-
+sionality: While a neural network policy may require millions or billions of parameters to capture
+complex behaviors, its programmatic equivalent offers a highly compressed, semantically dense
+representation. Modern LLMs, with their extensive context windows, are capable of processing and
+reasoning over such complex programmatic structures, thus effectively managing the high intrinsic
+dimensionality of the policy space. (2) Solving Representation: Unlike the unstructured parameter
+vectors of a neural network, source code is a semantically rich and structured artifact. This repre-
+sentation aligns precisely with the data modalities that LLMs are trained to comprehend, analyze,
+and generate, enabling high-level reasoning about, and manipulation of, the policy itself.
+
+3.3  REFINED FORMALIZATION: META-PROGRAMMING AND MATHEMATICAL OPERATORS
+
+We leverage this new paradigm to reformalize the best-response computation. Mathematically, this
+process is most precisely described using the terminology of functional analysis. The space of all
+
+
+                                       7
+
+===== PDF PAGE 8 =====
+policies Π constitutes a function space. An operator maps one function space to another; a canonical
+example is the differential operator D, which maps a function f to its derivative f ′, i.e., D(f) = f ′.
+Following this definition, our proposed process (denoted as φi) is formally a best-response opera-
+tor. It constitutes a mapping φi : {0, 1}∗→{0, 1}∗that takes an opponent policy function as input
+and yields a new ego-agent policy function as output. This operator, φi, thus computes the “best
+response” to an input policy function.
+From an implementation perspective,  this abstract operator φi  is realized through a meta-
+programming interpreter. Meta-programming is formally defined as the act of a program treating
+other programs as its data; in this context, it manifests as a code-input, code-output process. This
+operation is implemented by querying a LLM. Agent i provides its opponent’s policy source code
+π−i as input (i.e., as part of the prompt), and the LLM, embodying the operator φ, generates the
+best-response policy source code πi as output. Policy adaptation is thus rendered as an interpretable
+meta-programming task.
+Formally, given opponents’ policies π−i, the ego agent will take an action as follows:
+
+                       ⌜π−i⌝= m ϕ π−i    ,
+                       ⌜πi⌝= φi(⌜π−i⌝| prompt),
+                                πi = CodeInterpreter(⌜πi⌝),
+                                   ai ∼πi,
+
+where φi is implemented by an LLM in our method. Note that the policy of ego agent πi does not
+take opponents’ source code ⌜π−i⌝as inputs, but it still has the dependency since the generation of
+πi is dependent on ⌜π−i⌝.
+While any generated πi constitutes a valid response, it is not inherently a best response; we therefore
+seek the optimal πi by optimizing the operator φi through prompt refinement. Crucially, since we
+optimize the operator specifically for a fixed input π−i, this constitutes a point-wise optimization
+of the best-response mapping.
+
+
+3.4  LEARNING
+
+We optimize the LLM best-response operators φ in prompt space. This optimization is driven by
+structured feedback losses and can be automated using gradient-based methods adapted for text.
+A notable framework in this domain is TextGrad (Yuksekgonul et al., 2024),which enables auto-
+matic differentiation through text-based models by conceptualizing the text generation process as a
+computational graph. This allows for the definition of textual feedback and the backpropagation of
+gradients to update the LLM’s guiding prompts or parameters. Once we rigorously define the loss
+functions, the optimization of the operator φi can proceed automatically.
+
+Textual Loss Functions.  The feedback provided to the operator φi is structured around two pri-
+mary loss signals: (1) Unit Test Feedback. A significant challenge in this paradigm is ensuring the
+syntactic and runtime correctness of the generated policy code. To mitigate this, we employ an
+automated unit testing phase. The ego policy code πi = CodeInterpreter(⌜πi⌝) is instantiated and
+executed within a sandboxed environment. If the code produces any runtime exceptions (e.g., syntax
+errors, out-of-bounds access) or fails predefined assertions, the resulting error trace and stack infor-
+mation are captured. This error data serves as a direct, high-priority feedback signal, prompting the
+LLM operator φi to debug and revise the code, akin to automated debugging workflows. (2) Utility
+Feedback. The central objective is to ensure the generated policy πi constitutes a best response to
+the opponents’ policies π−i. This is evaluated via utility feedback. The policy πi is executed against
+π−i in the game environment for several episodes. The complete episode trajectory, including all
+states, joint actions, and rewards for both agents (st, ait, a−it  , rit, r−it  )Tt=0, is collected. This detailed
+trajectory information is provided as feedback to the operator φi. This allows the operator to as-
+sess the performance of its generated policy and refine its meta-programming logic to maximize the
+expected utility Ji(πi, π−i).
+
+The overall algorithm follows an iterative best-response dynamic (Robinson, 1951), but lifted to the
+operator space. The computation of the best response for each agent is not an atomic operation but
+
+
+                                       8
+
+===== PDF PAGE 9 =====
+  Algorithm 1: Programmatic Iterated Best Response (PIBR)
+   Input: Game G, Agents A = {A0, A1}, Outer loops K, Inner loops T
+  Output: Final policy profile π∗= (π0,∗, π1,∗)
+  // Initialize policies and history
+ 1 π0 ←InitialPolicy(); π1 ←InitialPolicy()
+ 2 H ←∅// History of (profile, social welfare)
+ 3 i ←0 // Agent index
+  // Main training phase (Outer Loop)
+ 4 for k = 1 to K do
+ 5    π−i ←π1−i
+     // Compute BR via operator optimization (Inner Loop)
+ 6     πi ←ComputeBestResponse(Ai, G, π−i, T)
+ 7    πk ←(π0, π1)
+ 8    Jsw(πk) ←EvaluateSocialWelfare(G, πk)
+ 9  H ←H ∪{(πk, Jsw(πk))}
+10      i ←1 −i // Alternate agent
+  // Select best profile from history
+11 (π∗, J∗) ←arg max(π,J)∈H J
+12 return π∗
+
+13 Procedure ComputeBestResponse(Ai, G, π−i, T)
+14    φi ←Ai.operator // Get optimizable operator
+15    Opt ←TextGradOptimizer(φi)
+16     for t = 1 to T do
+17        Opt.zero_grad()
+18        ⌜πit⌝= φi ⌜π−i⌝| prompt(Ai, G, t, T) // Forward pass
+         // Compute composite loss
+19        (πit, Ltest) ←ComputeUnitTestLoss(⌜πit⌝)
+20            Lutility ←−J(G, πit, π−i) L ←Ltest + Lutility
+21       L.backward()
+22        Opt.step()
+23    return πit
+
+
+
+   an inner optimization loop guided by feedback. This two-agent version of this process is formally
+   described in Algorithm 1.
+
+
+  4  EXPERIMENTS
+
+   All experiments were powered by OpenAI’s o4-mini model (OpenAI, 2025), as it provides a par-
+   ticularly effective balance between cost efficiency and code generation performance. The complete
+   codebase, experimental results, and execution logs will be released as open source after the paper is
+   accepted.
+
+
+   4.1  TASKS
+
+  Matrix Games.  We consider three representative coordination matrix games that vary in their
+   payoff structures and coordination difficulty. In each game, two agents simultaneously choose an
+   action (row and column respectively), and both receive the same payoff corresponding to the selected
+   matrix entry. (a) The Vanilla Coordination Game is a simple setting with three pure coordination
+   equilibria of different rewards, testing whether agents can align on the optimal coordination point.
+   (b) The Climbing Game (Claus & Boutilier, 1998) introduces strong miscoordination penalties and
+   uneven reward gradients, making it a challenging variant where naive exploration can easily lead to
+   suboptimal equilibria. Finally, (c) the Penalty Game (Claus & Boutilier, 1998) includes negative
+
+
+                                          9
+
+===== PDF PAGE 10 =====
+diagonal payoffs (p < 0) that discourage coordination on certain actions, requiring agents to learn
+to avoid detrimental equilibria while still maximizing joint payoff. Together, these games provide a
+controlled yet diverse testbed for studying coordination behaviors in multi-agent learning.
+
+
+
+                 aj                              aj                           aj
+           2  0  0                 11  −30  0                p   0  10
+         ai  0  1  0                ai  −30   7   0              ai   0   2   0
+           0  0  3                  0     6   5                10  0   p
+
+ (a) Vanilla Coordination Game        (b) Climbing Game            (c) Penalty Game (p < 0)
+
+Figure 1: Three 3 × 3 coordination matrix games used in our experiments. Each game defines
+payoffs for two agents (row agent’s action ai ∈{0, 1, 2}, column agent’s action aj ∈{0, 1, 2}):
+after they simultaneously choose a row and a column action, both receive the utility indicated by the
+selected matrix entry.
+
+
+
+Level-Based Foraging.  Level-Based Foraging (LBF) (Christianos et al., 2020) is a grid-world
+environment for studying multi-agent coordination. Agents are to collect food items to gain re-
+wards. Each agent can take one of six actions: [stay_idle, move_up, move_down, move_left,
+move_right, load_food]. In the original environment, food items can only be collected when the
+sum of the levels of agents performing the load action adjacent to the food meets or exceeds the
+food’s level, making it a mixed-motive task. 1 We consider a fully cooperative variant here: each
+food is assigned a level such that it always requires both agents to perform the load action simulta-
+neously to be collected. Rewards are shared between agents proportionally to their skill levels and
+normalized. An episode ends when all foods are collected or the maximum length is reached. We
+further modify the environment by introducing a terminal penalty that is inversely proportional to
+the episode length, making the improvement of food collection efficiency the optimization objective
+for the agents.
+
+
+4.2  RESULTS
+
+The experimental results, summarized in Figure 2, demonstrate the effectiveness of PIBR across
+distinct game types. In these plots, the horizontal axis represents the sequential optimization steps,
+where each step corresponds to a policy update step driven by textual gradients. The vertical axis
+denotes the Social Welfare, calculated as the sum of cumulative rewards obtained by the agents.
+For every optimization step, we sample multiple episodes to evaluate the current policy profile;
+these individual episodes are visualized as scattered points, while the dashed line traces the mean
+reward trajectory across optimization steps. The absence of data points at certain optimization steps
+indicates that the generated policy code contained syntax or runtime errors, failing to execute in
+the environment.  (1) Results of Coordination Games: across all three coordination tasks, the
+agents exhibit rapid and robust convergence to the global optima. In Vanilla Coordination and
+Climbing Game, the social welfare instantaneously stabilizes at the optimal values of 6.0 and 22.0,
+respectively. In the Penalty Game, despite the risk of substantial penalties, the agents successfully
+coordinate on the optimal equilibrium within a single update step.  (2) Results of Cooperative
+Foraging: In this complex grid-world task, while individual samples occasionally approach the
+empirical optimum (≈0.554). The mean trajectory exhibits significant variance and instability. The
+performance drop in later stages indicates the challenge of maintaining consistent coordination in
+complicated tasks. Following Line 11 of Algorithm 1, the procedure returns the agents’ strategies
+from the 16-th optimization step, since it yields the highest social welfare. We recognize that the
+current results are not yet fully stabilized, and further improvements to the method’s robustness are
+under active development.
+
+
+    1E.g., collecting Level 1 foods in the grid-world is competitive among Level 1 agents, but they must coop-
+erate to collect Level 2 foods.
+
+
+                                       10
+
+===== PDF PAGE 11 =====
+              (a) Vanilla Coordination Game                              (b) Climbing Game
+
+
+
+
+
+               (c) Penalty Game (p = −2)                            (d) Cooperative Foraging
+
+                               Figure 2: Experimental results.
+
+
+5  CONCLUSION
+
+In this work, we address the challenge of non-stationarity in solving Markov games by proposing
+a paradigm shift from opaque neural policies to interpretable programmatic policies, thereby over-
+coming the “representational bottleneck” that hinders direct conditioning on opponent strategies.
+We reformulate the learning problem by lifting optimization from the policy space to the operator
+space, employing LLMs as point-wise best-response operators that dynamically synthesize policy
+code based on the opponent’s source code. We operationalize this via the Programmatic Iterated
+Best Response algorithm, which optimizes the meta-programming logic through textual gradients
+derived from both game utility and runtime unit test feedback. The proposed method seeks program
+equilibria rather than black-box Nash equilibria, facilitating a broader scope of cooperation. Our
+experiments in coordination matrix games and Level-Based Foraging demonstrate that PIBR effec-
+tively bridges the gap between theoretical Program Equilibrium and modern learning, enabling the
+discovery of robust, coordinated strategies through the exchange and analysis of executable code.
+
+REFERENCES
+
+Elif Akata, Lion Schulz, Julian Coda-Forno, Seong Joon Oh, Matthias Bethge, and Eric Schulz.
+  Playing repeated games with large language models. Nature Human Behaviour, pp. 1–11, 2025.
+
+Ashwath Vaithinathan Aravindan, Zhisheng Tang, and Mayank Kejriwal. Code-driven planning in
+  grid worlds with large language models. arXiv preprint arXiv:2505.10749, 2025.
+
+Yoram Bachrach, Edan Toledo, Karen Hambardzumyan, Despoina Magka, Martin Josifoski, Minqi
+   Jiang, Jakob Foerster, Roberta Raileanu, Tatiana Shavrina, Nicola Cancedda, et al. Combining
+  code generating large language models and self-play to iteratively refine strategies in games. In
+  Proceedings of the Thirty-Fourth International Joint Conference on Artificial Intelligence, IJCAI-
+  25, pp. 10999–11003, 2025.
+
+Mihaly Barasz, Paul Christiano, Benja Fallenstein, Marcello Herreshoff, Patrick LaVictoire, and
+  Eliezer Yudkowsky.  Robust cooperation in the prisoner’s dilemma: Program equilibrium via
+   provability logic. arXiv preprint arXiv:1401.5577, 2014.
+
+Ulrich Berger. Brown’s original fictitious play. Journal of Economic Theory, 135(1):572–578, 2007.
+
+R Selten Bielefeld. Reexamination of the perfectness concept for equilibrium points in extensive
+  games. In Models of strategic rationality, pp. 1–31. Springer, 1988.
+
+
+                                       11
+
+===== PDF PAGE 12 =====
+Anthony Brohan, Yevgen Chebotar, Chelsea Finn, Karol Hausman, Alexander Herzog, Daniel Ho,
+   Julian Ibarz, Alex Irpan, Eric Jang, Ryan Julian, et al. Do as i can, not as i say: Grounding
+  language in robotic affordances. In Conference on robot learning, pp. 287–318. PMLR, 2023.
+
+Wenhu Chen, Xueguang Ma, Xinyi Wang, and William W Cohen. Program of thoughts prompt-
+   ing: Disentangling computation from reasoning for numerical reasoning tasks. Transactions on
+  Machine Learning Research, 2023.
+
+Filippos Christianos, Lukas Schäfer, and Stefano V Albrecht.  Shared experience actor-critic for
+  multi-agent reinforcement learning. In Advances in Neural Information Processing Systems, 2020.
+
+Caroline Claus and Craig Boutilier. The dynamics of reinforcement learning in cooperative multia-
+  gent systems. AAAI/IAAI, 1998(746-752):2, 1998.
+
+Anthony Costarelli, Mat Allen, Roman Hauksson, Grace Sodunke, Suhas Hariharan, Carlson Cheng,
+  Wenjie Li, Joshua Clymer, and Arjun Yadav. Gamebench: Evaluating strategic reasoning abilities
+  of llm agents. arXiv preprint arXiv:2406.06613, 2024.
+
+Andrew Critch. Parametric bounded l\" ob’s theorem and robust cooperation of bounded agents.
+  arXiv preprint arXiv:1602.04184, 2016.
+
+Andrew Critch, Michael Dennis, and Stuart Russell.  Cooperative and uncooperative institution
+  designs: Surprises and problems in open-source game theory. arXiv preprint arXiv:2208.07006,
+  2022.
+
+Anthony DiGiovanni and Jesse Clifton. Commitment games with conditional information disclo-
+   sure. In Proceedings of the AAAI Conference on Artificial Intelligence, volume 37, pp. 5616–5623,
+  2023.
+
+Yilun Du, Shuang Li, Antonio Torralba, Joshua B Tenenbaum, and Igor Mordatch. Improving fac-
+   tuality and reasoning in language models through multiagent debate. In Forty-first International
+  Conference on Machine Learning, 2023.
+
+Gabriele Farina.  Lecture 16: Markov (aka stochastic) games.  Lecture notes for 6.S890 Top-
+   ics in Multiagent Learning, November 2024. URL https://www.mit.edu/~gfarina/2024/
+  6S890f24_L16_sg/L16.pdf. Accessed: 2025-11-16.
+
+Arlington M Fink. Equilibrium in a stochastic n-person game. Journal of science of the hiroshima
+   university, series ai (mathematics), 28(1):89–93, 1964.
+
+Jakob N Foerster, Richard Y Chen, Maruan Al-Shedivat, Shimon Whiteson, Pieter Abbeel, and Igor
+  Mordatch. Learning with opponent-learning awareness. arXiv preprint arXiv:1709.04326, 2017.
+
+Lance Fortnow. Program equilibria and discounted computation time. In Proceedings of the 12th
+  Conference on Theoretical Aspects of Rationality and Knowledge, pp. 128–133, 2009.
+
+Drew Fudenberg and Jean Tirole. Game theory. MIT press, 1991.
+
+Piotr J Gmytrasiewicz and Prashant Doshi. A framework for sequential planning in multi-agent
+   settings. Journal of Artificial Intelligence Research, 24:49–79, 2005.
+
+Ian Goodfellow, Yoshua Bengio, Aaron Courville, and Yoshua Bengio. Deep learning. MIT press
+  Cambridge, 2016.
+
+Taicheng Guo, Xiuying Chen, Yaqi Wang, Ruidi Chang, Shichao Pei, Nitesh V Chawla, Olaf Wiest,
+  and Xiangliang Zhang.  Large language model based multi-agents: A survey of progress and
+  challenges. In IJCAI, 2024.
+
+Shanshan Han, Qifan Zhang, Yuhang Yao, Weizhao Jin, and Zhaozhuo Xu. Llm multi-agent sys-
+  tems: Challenges and open problems. arXiv preprint arXiv:2402.03578, 2024.
+
+He He, Jordan Boyd-Graber, Kevin Kwok, and Hal Daumé III. Opponent modeling in deep rein-
+  forcement learning.  In International conference on machine learning, pp. 1804–1813. PMLR,
+  2016.
+
+
+                                       12
+
+===== PDF PAGE 13 =====
+Pablo Hernandez-Leal, Michael Kaisers, Tim Baarslag, and Enrique Munoz De Cote. A sur-
+  vey of learning in multiagent environments:  Dealing with non-stationarity.  arXiv preprint
+  arXiv:1707.09183, 2017.
+
+Sirui Hong, Mingchen Zhuge, Jonathan Chen, Xiawu Zheng, Yuheng Cheng, Jinlin Wang, Ceyao
+  Zhang, Zili Wang, Steven Ka Shing Yau, Zijuan Lin, et al.  Metagpt: Meta programming for
+  a multi-agent collaborative framework.  In The Twelfth International Conference on Learning
+  Representations, 2023.
+
+Vijay Konda and John Tsitsiklis. Actor-critic algorithms. Advances in neural information processing
+  systems, 12, 1999.
+
+Vojtech Kovarik, Caspar Oesterheld, and Vincent Conitzer. Game theory with simulation of other
+   players. arXiv preprint arXiv:2305.11261, 2023.
+
+Patrick LaVictoire, Benja Fallenstein, Eliezer Yudkowsky, Mihaly Barasz, Paul Christiano, and Mar-
+   cello Herreshoff. Program equilibrium in the prisoner’s dilemma via löb’s theorem.  In AAAI
+  workshop on multiagent interaction without prior coordination, 2014.
+
+Guohao Li, Hasan Hammoud, Hani Itani, Dmitrii Khizbullin, and Bernard Ghanem. Camel: Com-
+  municative agents for" mind" exploration of large language model society. Advances in Neural
+  Information Processing Systems, 36:51991–52008, 2023.
+
+Wenhao Li, Yue Lin, Xiangfeng Wang, Bo Jin, Hongyuan Zha, and Baoxiang Wang. Verbalized
+  bayesian persuasion. arXiv preprint arXiv:2502.01587, 2025.
+
+Jacky Liang, Wenlong Huang, Fei Xia, Peng Xu, Karol Hausman, Brian Ichter, Pete Florence, and
+  Andy Zeng. Code as policies: Language model programs for embodied control. In 2023 IEEE
+  International Conference on Robotics and Automation (ICRA), pp. 9493–9500. IEEE, 2023.
+
+Yaobo Liang, Chenfei Wu, Ting Song, Wenshan Wu, Yan Xia, Yu Liu, Yang Ou, Shuai Lu, Lei Ji,
+  Shaoguang Mao, Yun Wang, Linjun Shou, Ming Gong, and Nan Duan. Taskmatrix.ai: Completing
+   tasks by connecting foundation models with millions of apis.  Intelligent Computing, 3:0063,
+  2024.
+
+Yue Lin, Wenhao Li, Hongyuan Zha, and Baoxiang Wang. Information design in multi-agent re-
+  inforcement learning.  Advances in Neural Information Processing Systems, 36:25584–25597,
+  2023.
+
+Yue Lin, Shuhui Zhu, William A Cunningham, Wenhao Li, Pascal Poupart, Hongyuan Zha, and
+  Baoxiang Wang. Bayesian persuasion as a bargaining game. arXiv preprint arXiv:2506.05876,
+  2025.
+
+Michael L Littman. Markov games as a framework for multi-agent reinforcement learning.  In
+  Machine learning proceedings 1994, pp. 157–163. Elsevier, 1994.
+
+Max Liu, Chan-Hung Yu, Wei-Hsu Lee, Cheng-Wei Hung, Yen-Chun Chen, and Shao-Hua Sun.
+  Synthesizing programmatic reinforcement learning policies with large language model guided
+  search. In The Thirteenth International Conference on Learning Representations, 2025.
+
+Shaoteng Liu, Haoqi Yuan, Minda Hu, Yanwei Li, Yukang Chen, Shu Liu, Zongqing Lu, and Jiaya
+   Jia. Rl-gpt: Integrating reinforcement learning and code-as-policy. Advances in Neural Informa-
+   tion Processing Systems, 37:28430–28459, 2024.
+
+Ryan Lowe, Yi I Wu, Aviv Tamar, Jean Harb, OpenAI Pieter Abbeel, and Igor Mordatch. Multi-
+  agent actor-critic for mixed cooperative-competitive environments. Advances in neural informa-
+   tion processing systems, 30, 2017.
+
+Hanbin Luo, Jianxin Wu, Jiajing Liu, and Maxwell Fordjour Antwi-Afari. Large language model-
+  based code generation for the control of construction assembly robots: A hierarchical generation
+  approach. Developments in the Built Environment, 19:100488, 2024.
+
+
+                                       13
+
+===== PDF PAGE 14 =====
+Aman Madaan, Niket Tandon, Prakhar Gupta, Skyler Hallinan, Luyu Gao, Sarah Wiegreffe, Uri
+  Alon, Nouha Dziri, Shrimai Prabhumoye, Yiming Yang, et al.  Self-refine: Iterative refinement
+  with self-feedback. Advances in Neural Information Processing Systems, 36:46534–46594, 2023.
+
+John F Nash Jr. Equilibrium points in n-person games. Proceedings of the national academy of
+   sciences, 36(1):48–49, 1950.
+
+Caspar Oesterheld and Vincent Conitzer. Safe pareto improvements for delegated game playing.
+  Autonomous Agents and Multi-Agent Systems, 36(2):46, 2022.
+
+OpenAI.   Introducing openai o3 and o4-mini, 2025.  URL https://openai.com/index/
+  introducing-o3-and-o4-mini/.
+
+Joon Sung Park, Joseph O’Brien, Carrie Jun Cai, Meredith Ringel Morris, Percy Liang, and
+  Michael S Bernstein. Generative agents: Interactive simulacra of human behavior. In Proceedings
+   of the 36th annual acm symposium on user interface software and technology, pp. 1–22, 2023.
+
+Michael Peters and Balázs Szentes.  Definable and contractible contracts.  Econometrica, 80(1):
+  363–411, 2012.
+
+Chen Qian, Wei Liu, Hongzhang Liu, Nuo Chen, Yufan Dang, Jiahao Li, Cheng Yang, Weize Chen,
+  Yusheng Su, Xin Cong, et al. Chatdev: Communicative agents for software development. In Pro-
+  ceedings of the 62nd Annual Meeting of the Association for Computational Linguistics (Volume
+  1: Long Papers), pp. 15174–15186, 2024.
+
+Neil Rabinowitz, Frank Perbet, Francis Song, Chiyuan Zhang, SM Ali Eslami, and Matthew
+  Botvinick. Machine theory of mind. In International conference on machine learning, pp. 4218–
+  4227. PMLR, 2018.
+
+Tabish Rashid, Mikayel Samvelyan, Christian Schroeder De Witt, Gregory Farquhar, Jakob Foerster,
+  and Shimon Whiteson. Monotonic value function factorisation for deep multi-agent reinforcement
+   learning. Journal of Machine Learning Research, 21(178):1–51, 2020.
+
+Julia Robinson. An iterative method of solving a game. Annals of mathematics, 54(2):296–301,
+  1951.
+
+Samuel Schmidgall, Yusheng Su, Ze Wang, Ximeng Sun, Jialian Wu, Xiaodong Yu, Jiang Liu,
+  Zicheng Liu, and Emad Barsoum. Agent laboratory: Using llm agents as research assistants.
+  arXiv preprint arXiv:2501.04227, 2025.
+
+Lloyd S Shapley.  Stochastic games.  Proceedings of the national academy of sciences, 39(10):
+  1095–1100, 1953.
+
+Noah Shinn, Federico Cassano, Ashwin Gopinath, Karthik Narasimhan, and Shunyu Yao. Reflexion:
+  Language agents with verbal reinforcement learning. Advances in Neural Information Processing
+  Systems, 36:8634–8652, 2023.
+
+David Silver, Julian Schrittwieser, Karen Simonyan, Ioannis Antonoglou, Aja Huang, Arthur Guez,
+  Thomas Hubert, Lucas Baker, Matthew Lai, Adrian Bolton, et al.  Mastering the game of go
+  without human knowledge. nature, 550(7676):354–359, 2017.
+
+Swadesh Sistla and Max Kleiman-Weiner. Evaluating llms in open-source games. arXiv preprint
+  arXiv:2512.00371, 2025a.
+
+Swadesh Sistla and Max Kleiman-Weiner. Evaluating llms in open-source games. In The Thirty-
+  ninth Annual Conference on Neural Information Processing Systems, 2025b.
+
+Chan Hee Song, Jiaman Wu, Clayton Washington, Brian M Sadler, Wei-Lun Chao, and Yu Su.
+  Llm-planner: Few-shot grounded planning for embodied agents with large language models. In
+  Proceedings of the IEEE/CVF international conference on computer vision, pp. 2998–3009, 2023.
+
+Xinyuan Sun, Davide Crapis, Matt Stephenson, Barnabé Monnot, Thomas Thiery, and Jonathan
+  Passerat-Palmbach.   Cooperative ai via decentralized commitment devices.  arXiv preprint
+  arXiv:2311.07815, 2023.
+
+
+                                       14
+
+===== PDF PAGE 15 =====
+Peter Sunehag, Guy Lever, Audrunas Gruslys, Wojciech Marian Czarnecki, Vinicius Zambaldi, Max
+  Jaderberg, Marc Lanctot, Nicolas Sonnerat, Joel Z Leibo, Karl Tuyls, et al. Value-decomposition
+  networks for cooperative multi-agent learning. arXiv preprint arXiv:1706.05296, 2017.
+
+Richard S Sutton, David McAllester, Satinder Singh, and Yishay Mansour. Policy gradient meth-
+  ods for reinforcement learning with function approximation.  Advances in neural information
+  processing systems, 12, 1999.
+
+Masayuki Takahashi. Equilibrium points of stochastic non-cooperative n-person games. Journal of
+  Science of the Hiroshima University, Series AI (Mathematics), 28(1):95–99, 1964.
+
+Moshe Tennenholtz. Program equilibrium. Games and Economic Behavior, 49(2):363–373, 2004.
+
+Guanzhi Wang, Yuqi Xie, Yunfan Jiang, Ajay Mandlekar, Chaowei Xiao, Yuke Zhu, Linxi Fan, and
+  Anima Anandkumar. Voyager: An open-ended embodied agent with large language models. In
+  Intrinsically-Motivated and Open-Ended Learning Workshop@ NeurIPS2023, 2023a.
+
+Zihao Wang, Shaofei Cai, Guanzhou Chen, Anji Liu, Xiaojian Shawn Ma, and Yitao Liang. De-
+   scribe, explain, plan and select: interactive planning with llms enables open-world multi-task
+  agents. Advances in Neural Information Processing Systems, 36:34153–34189, 2023b.
+
+Ronald J Williams. Simple statistical gradient-following algorithms for connectionist reinforcement
+   learning. Machine learning, 8(3):229–256, 1992.
+
+Richard Willis, Yali Du, Joel Z Leibo, and Michael Luck. Will systems of llm agents cooperate: An
+   investigation into a social dilemma. arXiv preprint arXiv:2501.16173, 2025.
+
+Yuzhuang Xu, Shuo Wang, Peng Li, Fuwen Luo, Xiaolong Wang, Weidong Liu, and Yang Liu.
+  Exploring large language models for communication games: An empirical study on werewolf.
+  arXiv preprint arXiv:2309.04658, 2023.
+
+Jiachen Yang, Ang Li, Mehrdad Farajtabar, Peter Sunehag, Edward Hughes, and Hongyuan Zha.
+  Learning to incentivize other learning agents. Advances in Neural Information Processing Sys-
+  tems, 33:15208–15219, 2020.
+
+Mert Yuksekgonul, Federico Bianchi, Joseph Boen, Sheng Liu, Zhi Huang, Carlos Guestrin, and
+  James Zou.  Textgrad: Automatic “differentiation” via text. arXiv preprint arXiv:2406.07496,
+  2024.
+
+Ceyao Zhang, Kaijie Yang, Siyi Hu, Zihao Wang, Guanghe Li, Yihang Sun, Cheng Zhang, Zhaowei
+  Zhang, Anji Liu, Song-Chun Zhu, et al. Proagent: building proactive cooperative agents with large
+  language models. In Proceedings of the AAAI Conference on Artificial Intelligence, volume 38,
+  pp. 17591–17599, 2024.
+
+Mingchen Zhuge, Wenyi Wang, Louis Kirsch, Francesco Faccio, Dmitrii Khizbullin, and Jürgen
+  Schmidhuber. Gptswarm: Language agents as optimizable graphs. In Forty-first International
+  Conference on Machine Learning, 2024.
+
+
+
+
+
+                                       15
+
+===== PDF PAGE 16 =====
+Appendix
+
+Table of Contents
+
+    A  Related Works                                                            16
+        A.1  Opponent Modeling  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .   16
+        A.2  Commitment .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .   16
+        A.3  Fictitious Play  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .   17
+        A.4 LLMs for Multi-Agent Tasks   .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .   17
+        A.5  Code Policies by LLMs   .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .   18
+
+    B  Program Equilibrium in the Prisoner’s Dilemma                               18
+         B.1  Feasibility: Mutual Cooperation via Löb’s Theorem    .  .  .  .  .  .  .  .  .  .  .  .  .  .  .   19
+         B.2  Stability: Robustness against Deviations    .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .   19
+
+    C  Generated Code-Policies                                                    19
+         C.1  Generated Code-Policies for the Climbing Game  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .   19
+         C.2  Generated Code-Policies for the Cooperative Foraging Task   .  .  .  .  .  .  .  .  .  .  .   20
+
+    D  Glossary                                                                 25
+
+
+
+A  RELATED WORKS
+
+A.1  OPPONENT MODELING
+
+A large body of MARL research can be categorized by how it approaches this modeling function
+m. (1) Implicit Modeling. A dominant branch of research, particularly within the CTDE framework,
+models opponents implicitly.  In methods like Value-Decomposition Networks (VDN) (Sunehag
+et al., 2017), QMIX (Rashid et al., 2020), and MADDPG (Lowe et al., 2017), a centralized critic
+is provided with global state and action information from all agents during training.  This critic
+implicitly learns the interaction dynamics, conveys information by parameter sharing, and uses
+this knowledge to guide the decentralized actors. The resulting actors themselves do not have an
+explicit mechanism at execution time to adapt to novel opponent policies not seen during training.
+(2) Explicit Modeling. An alternative approach attempts to learn ˆπ−i explicitly. Works like He
+et al. (2016) design neural architectures aimed explicitly at predicting the opponent’s behavior or
+encoding it into a latent space. While theoretically more adaptive, these methods face the challenge
+of learning a high-dimensional mapping from history to the policy, which is also a high-dimensional
+object.
+
+There is also some work that goes a step further by being aware of the other agent’s learning dy-
+namics to better predict the ego agent’s expected value (Foerster et al., 2017), or even leverages
+mechanisms to alter the other agent’s behavior (Yang et al., 2020; Lin et al., 2023).
+
+
+A.2  COMMITMENT
+
+A central challenge in committing on other agents’ source code is ensuring credible, robust, and
+non-exploitative cooperation when agents can read, simulate, or reason about each other’s programs.
+Classical program equilibrium (Tennenholtz, 2004) shows that full cooperation in one-shot games is
+achievable when programs condition on opponents’ code, but these early constructions are brittle and
+depend on exact code matching. Logical approaches using Löb’s theorem demonstrate that agents
+can instead cooperate when they can prove that the opponent will reciprocate, yielding robust pro-
+gram equilibria without requiring identical code (LaVictoire et al., 2014; Barasz et al., 2014), though
+still vulnerable to issues of exploitation and representational fragility. Follow-up work extends these
+
+
+                                       16
+
+===== PDF PAGE 17 =====
+results to resource-bounded agents via parametric bounded Löb reasoning (Critch, 2016). When
+agents can simulate each other at a cost, cooperation can emerge when distrust is the only barrier,
+but simulation can also reduce welfare by enabling new threats (Kovarik et al., 2023). Under in-
+complete information, conditional information disclosure provides commitment devices that sustain
+efficient outcomes (DiGiovanni & Clifton, 2023). Similarly, Lin et al. (2025) frame the selection
+of these information structures as a bargaining game, enabling both sender and receiver agents to
+commit to signaling schemes that enforce cooperative equilibria. This parallels formal contracting
+frameworks in which agents write enforceable program-like contracts (Peters & Szentes, 2012). In
+practice, decentralized cryptographic mechanisms provide commitment infrastructure but introduce
+new security and integrity risks (Sun et al., 2023). Open-source game theory reveals counterin-
+tuitive or unstable outcomes even under full transparency (Critch et al., 2022), highlighting unre-
+solved robustness challenges. Recent work on safe Pareto improvements addresses some of these
+risks by identifying commitment restrictions that are guaranteed not to harm any party (Oesterheld
+& Conitzer, 2022), while empirical studies of LLM agents in open-source games show both coop-
+erative and deceptive behaviors, underscoring the need for practical safeguards when commitments
+rely on program inspection (Sistla & Kleiman-Weiner, 2025b).
+
+
+A.3  FICTITIOUS PLAY
+
+Fictitious play (FP) (Robinson, 1951; Berger, 2007) is a classical game-theoretic learning dynamic
+in which each agent iteratively best-responds to the empirical frequency of others’ past actions, often
+converging to a Nash equilibrium in certain classes of games (Bachrach et al., 2025). FP has been
+foundational in multi-agent learning and has been extended to richer settings where agents explicitly
+model or inspect their opponents’ decision-making procedures. In the extreme case of open-source
+or program games (Tennenholtz, 2004), each player submits an algorithm that can read the other’s
+source code, enabling novel equilibria based on mutual transparency (e.g. two programs mutually
+cooperating in a one-shot dilemma) (Fortnow, 2009). Tennenholtz (2004)’s program equilibrium
+framework formalized how agents conditioning on opponents’ code can achieve such outcomes
+beyond standard game-theoretic limits. These ideas are relevant to modern AI: LLM-based agents
+can simulate or infer an opponent’s policy or reasoning process, effectively building a theory-of-
+mind. For instance, prompting an LLM to reason about an opponent’s likely action via a social chain-
+of-thought markedly improves coordination in repeated games (Akata et al., 2025). The intersection
+of fictitious-play-style adaptation with LLMs’ capacity for modeling other agents thus points to a
+promising avenue for multi-agent systems, where agents dynamically learn and adapt by reasoning
+about each other’s strategies.
+
+
+A.4  LLMS FOR MULTI-AGENT TASKS
+
+Recently, due to the powerful reasoning capabilities and extensive intrinsic knowledge of LLMs,
+research on LLM-based multi-agent systems has progressed rapidly (Guo et al., 2024; Han et al.,
+2024). This line of work can be broadly divided into two categories: social simulation and task
+collaboration.  Social simulation research utilizes the natural language interaction capabilities of
+LLMs to analyze and calibrate emergent behaviors in different social interactions, benchmarking
+them against human society. Park et al. (2023) develops the first sandbox environment driven by
+generative LLM agents to simulate a small-scale community of 25 agents and provides a user-
+interactive interface for engagement. CAMEL (Li et al., 2023) provides an scalable framework
+to support dialogue-intensive scenarios and keep consistency of agents during role playing, which is
+suitable for studying conversational behaviors. Xu et al. (2023) investigates emergent strategic be-
+haviors—such as trust, confrontation, camouflage, and leadership—of LLMs in Werewolf, revealing
+the strong potential of LLMs in communication games. Beyond simple interaction, Li et al. (2025)
+explore strategic verbal communication, utilizing LLMs to operationalize Bayesian persuasion and
+influence recipients’ beliefs through natural language.
+
+In task collaboration, the objective is to develop algorithmic frameworks that coordinate multiple
+LLMs to complete complex tasks, including natural-language tasks and text-based games (Costarelli
+et al., 2024; Schmidgall et al., 2025; Qian et al., 2024). MetaGPT (Hong et al., 2023) incorporates
+standardized operating procedures (SOPs) into multi-LLM workflows to improve coordination and
+the accuracy of intermediate processes, which decomposes software development task dinto mul-
+tiple subtasks and roles. ProAgent (Zhang et al., 2024) proposes a modular planning framework
+
+
+                                       17
+
+===== PDF PAGE 18 =====
+to facilitate coordination with arbitrary opponents, including belief, plan, memory, self-reflection,
+and action. GPTswarm (Zhuge et al., 2024) represents multi-agent LLM systems as computational
+graphs, where each LLM agent is represented as a node and the communication among agents is
+represented as the edges. This flexible structure enables ensembling diverse LLM functions and op-
+timizing workflow topologies. Multi-Agent Debate Du et al. (2023) draws inspiration from debate
+and voting mechanisms in human society, using multiple rounds of reasoning and opinion exchange
+to improve accuracy on mathematical and QA problems.
+
+However, these approaches often rely on natural-language dialogue to exchange information and in-
+tent, or treat LLM as executable policies with huge parameters. This leads to a lack of game-theoretic
+guarantees and commitment constraints in communication, which can introduce ambiguity and hal-
+lucinations into the messages. Furthermore, the large parameter space poses severe challenges for
+policy optimization and coordination. Our approach effectively improves policy interpretability and
+reduces the search space by expressing the policy as executable code and communicating it explic-
+itly.
+
+A.5  CODE POLICIES BY LLMS
+
+A growing body of work investigates using large language models to generate executable programs
+that function directly as control policies, offering interpretability and compositional structure ab-
+sent in neural actors. Code as Policies (CaP) (Liang et al., 2023) generates Python programs that
+compose motion primitives and conditional rules, producing explicit and adaptable robot-control
+policies. Code-driven planning (Aravindan et al., 2025) formulates policy generation as program
+synthesis, producing loops and state-handling logic that act as executable decision policies in grid-
+world environments.  Hierarchical program generation (Luo et al., 2024) creates both high-level
+and low-level control code for construction-robot tasks, encoding sequencing and safety constraints
+as explicit policy logic. RL-GPT (Liu et al., 2024) integrates reinforcement learning with LLM-
+generated program structures, allowing reward-driven refinement of high-level policy code. Voy-
+ager (Wang et al., 2023a) continuously synthesizes and improves executable skill programs, treating
+each program as a reusable policy component for lifelong embodied learning.  Reflexion (Shinn
+et al., 2023) iteratively updates code-like decision rules after execution failures, forming a self-
+improving program-structured policy. Self-Refine (Madaan et al., 2023) applies critique-and-correct
+refinement to improve generated code, yielding progressively stronger programmatic decision rules.
+Program-of-Thought prompting (Chen et al., 2023) generates executable intermediate programs that
+act as explicit policies in sequential decision-making tasks. LLM-Planner (Song et al., 2023) synthe-
+sizes executable planning scripts whose encoded procedures serve as interpretable multi-step poli-
+cies. SayCan (Brohan et al., 2023) outputs structured action sequences resembling policy scripts,
+using affordance constraints to guide task-level decision making. DEPS (Wang et al., 2023b) pro-
+duces decomposed control programs that function as hierarchical policies for navigation and ma-
+nipulation tasks. LLM-Guided Search (LLM-GS) (Liu et al., 2025) uses LLM priors to guide the
+synthesis of discrete programmatic RL policies, though DSL compliance remains a core limita-
+tion. TaskMatrix.AI (Liang et al., 2024) generates API-calling scripts that orchestrate multi-tool
+operations, serving as high-level executable policies. LLM-driven strategy generation (Willis et al.,
+2025) translates LLM-produced strategies into executable code for iterated social-dilemma settings,
+enabling systematic evaluation of cooperative and adversarial policies.
+
+B  PROGRAM EQUILIBRIUM IN THE PRISONER’S DILEMMA
+
+In this appendix, we explicitly derive the Program Equilibrium for the Prisoner’s Dilemma (PD)
+using the formalism of Provability Logic. Recall that the standard PD payoffs satisfy rT > rR >
+rP > rS.
+
+We analyze the stability of the FairBot program, denoted as πFB. The source code of πFB is defined
+as follows:
+                            “Cooperation”   if T ⊢π−i(⌜πFB⌝) = “Cooperation”            πFB(⌜π−i⌝) =                                                                      (1)                            “Defect”        otherwise
+
+where T ⊢P denotes that the statement P is provable in the base theory T (e.g., Peano Arithmetic),
+denoted by □P in modal logic.
+
+
+                                       18
+
+===== PDF PAGE 19 =====
+To demonstrate that the profile (πFB, πFB) constitutes a Nash equilibrium, we examine both on-path
+feasibility and off-path stability.
+
+
+B.1  FEASIBILITY: MUTUAL COOPERATION VIA LÖB’S THEOREM
+
+Consider the case where two agents both submit πFB. Let P be the sentence asserting that FairBot
+cooperates against itself:
+                  P := (πFB(⌜πFB⌝) = “Cooperation”)
+By the definition of the program, πFB cooperates if and only if it finds a proof that its opponent
+(which is itself) cooperates. Therefore, we have the fixed-point equivalence:
+
+                              T ⊢(P ↔□P)                                        (2)
+
+To prove that cooperation actually occurs (P), we invoke Löb’s Theorem, which states that for any
+sentence A, if T ⊢(□A →A), then T ⊢A.
+We verify the condition for Löb’s Theorem as follows:
+
+      1. From the program definition (2), we have the implication T ⊢(□P →P). Intuitive expla-
+        nation of the above implication: Inside the formal system, if we hypothetically assume that
+        a proof of cooperation exists (□P), the program’s condition is satisfied, and it will output
+        “Cooperation” (P).
+      2. Since T ⊢(□P →P) holds, Löb’s Theorem implies T ⊢P.
+
+Thus, the system proves that FairBot cooperates. Assuming the formal system T  is sound (i.e.,
+proven statements are true in reality), both programs output “Cooperation”, yielding the payoff rR.
+
+B.2  STABILITY: ROBUSTNESS AGAINST DEVIATIONS
+
+We check for Nash equilibrium by considering a unilateral deviation. Suppose player −i adheres to
+πFB. We analyze whether player i can gain by deviating to an arbitrary program π′ ∈Πprog.
+The equilibrium payoff is ui(πFB, πFB) = rR.
+Case 1: Cooperative Deviation. Suppose player i submits a program π′ such that T ⊢π′(⌜πFB⌝) =
+“Cooperation”. Since πFB searches for precisely this proof, πFB will cooperate. The outcome is
+(C, C), yielding payoff rR. The deviation does not strictly increase the payoff.
+Case 2: Defecting Deviation. Suppose player i submits a program π′ that actually defects against
+πFB, i.e., π′(⌜πFB⌝) = “Defect”. FairBot will only cooperate if it finds a proof of π′ cooperating:
+                            □(π′(⌜πFB⌝) = “Cooperation”)
+Assuming the base theory T  is consistent, it cannot prove a false statement.  Since π′ actually
+defects, the statement “π′ cooperates” is false. Therefore, no proof exists (¬□(“π′ cooperates”)).
+Consequently, the condition for πFB fails, and πFB outputs “Defect”.
+
+The resulting outcome is (D, D), yielding payoff rP . Since rR > rP in the Prisoner’s Dilemma,
+this deviation results in a strictly lower payoff.
+
+                              ui(πFB, πFB) ≥ui(π′, πFB)  ∀π′
+Thus, (πFB, πFB) is a Nash equilibrium.
+
+C  GENERATED CODE-POLICIES
+
+C.1  GENERATED CODE-POLICIES FOR THE CLIMBING GAME
+
+Here we show the result from a single run of the task Climbing Game. The detailed description is
+in Section 4.1.
+
+Agent 0’s final policy is shown as below.
+
+
+                                       19
+
+===== PDF PAGE 20 =====
+ 1 from typing import List , Dict , Any , Callable , TypedDict , Union , Optional
+
+ 2
+ 3 class MatrixGameHistory(TypedDict):
+ 4     state: List[int]
+ 5     action: List[List[int]]
+
+ 6
+ 7 def history_dependent_policy_0(game_history: MatrixGameHistory) -> List[
+      float]:
+ 8      # The opponent always plays action 0 with probability 1.0 (committed
+      cooperation).
+ 9      # Best response is to also play action 0 to secure the 11-point
+      payoff.
+10      # I am matching your cooperation. Please keep playing 0.
+11     return [1.0, 0.0, 0.0]
+
+
+  Agent 1’s final policy is shown as below.
+
+ 1 from typing import List , TypedDict
+
+ 2
+ 3 class MatrixGameHistory(TypedDict):
+ 4     state: List[int]
+ 5     action: List[List[int]]
+
+ 6
+ 7 def history_dependent_policy_1(game_history: MatrixGameHistory) -> List[
+      float]:
+ 8      # Opponent commits to playing action 0 with probability 1.0.
+ 9      # Best response to secure the 11-point payoff is to also play action
+       0.
+10      # I am committing to cooperation. Please match me.
+11     return [1.0, 0.0, 0.0]
+
+
+  C.2  GENERATED CODE-POLICIES FOR THE COOPERATIVE FORAGING TASK
+
+  Here we show the result from a single run of the task Foraging-5x5-2p-2f-coop-v3. This corre-
+  sponds to a Level-Based Foraging environment on a 5 × 5 grid with two players and up to two food
+   items. The setting is fully cooperative, meaning that each food item requires both players to load it
+   jointly.
+
+  Agent 0’s history-dependent policy is shown as below.
+
+ 1 from typing import List , Dict , Any , TypedDict , Union , Optional
+ 2 import math , random
+
+ 3
+ 4 class GridWorldHistory(TypedDict):
+ 5     state: List[List[Union[int , float ]]]
+ 6     action: List[List[Optional[int ]]]
+
+ 7
+ 8 def history_dependent_policy_0(game_history: GridWorldHistory) -> List[
+      float]:
+ 9      # Enhanced policy: probabilistic loading , softmax move selection ,
+      opponent intent , minimal exploration
+10     step = len(game_history[’action ’])
+11     max_steps = 50
+12     last_state = game_history[’state ’][-1]
+13     parsed = parse_grid_state(last_state)
+14     foods = [f for f in parsed[’foods ’] if f.get(’alive ’, True)]
+15     agents = parsed[’agents ’]
+16     me, other = agents [0], agents [1]
+17     grid_h = grid_w = 5
+
+18
+19      # No foods => no-op
+20      if not foods:
+21          return [1.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+
+
+                                         20
+
+===== PDF PAGE 21 =====
+22
+23      # Immediate joint -load if possible
+24      if can_joint_load_any_food_two_agents(me , other , foods).get(’can’,
+      False):
+25          probs = [0.0]*6
+26          probs [5] = 1.0
+27          return probs
+
+28
+29      # Track opponent intent (visit counts)
+30     window = 5
+31     opp_visit = {i: 0 for i in range(len(foods))}
+32     start = max(0, step - window)
+33      for t in range(start , step):
+34         opp_act = game_history[’action ’][t][1]
+35          if opp_act in (1,2,3,4):
+36              prev = parse_grid_state(game_history[’state ’][t])[’agents ’
+      ][1]
+37              nxt = parse_grid_state(game_history[’state ’][t+1])[’agents ’
+      ][1]
+38              for i,f in enumerate(foods):
+39                   d0 = abs(prev[’x’]-f[’x’]) + abs(prev[’y’]-f[’y’])
+40                   d1 = abs(nxt[’x’]-f[’x’]) + abs(nxt[’y’]-f[’y’])
+41                   if d1 < d0:
+42                     opp_visit[i] += 1
+
+43
+44      # Score foods with share , distance , level , and opp_visit; then
+      softmax -sample target
+45     scores = []
+46     total_level = me[’level’] + other[’level ’]
+47      for i,f in enumerate(foods):
+48          if total_level  < f[’level ’]:
+49             scores.append(-1e9)
+50         else:
+51                d = abs(me[’x’]-f[’x’]) + abs(me[’y’]-f[’y’])
+52              share = me[’level ’] / total_level
+53             level_bonus = 1.0 / f[’level ’]
+54             visit_bonus = opp_visit.get(i, 0) * 0.1
+55             scores.append(share /(d+1) + level_bonus + visit_bonus)
+56     T_food = max(0.1, (1.0 - step/max_steps))
+57     exp_s = [math.exp(s/T_food) for s in scores]
+58     sum_s = sum(exp_s) or 1.0
+59     weights = [e/sum_s for e in exp_s]
+60      r = random.random ()
+61      cum = 0.0
+62      for idx ,w in enumerate(weights):
+63          cum += w
+64          if r <= cum:
+65              target = foods[idx]
+66              break
+67     else:
+68          target = foods[weights.index(max(weights))]
+
+69
+70      # If adjacent: probabilistic loading
+71      if is_adjacent ((me[’x’],me[’y’]), (target[’x’],target[’y’])):
+72           # partner -adjacent => always load
+73          if is_adjacent ((other[’x’],other[’y’]), (target[’x’],target[’y’])
+      ):
+74              probs = [0.0]*6
+75              probs [5] = 1.0
+76              return probs
+77           # time -aware load probability
+78          share = me[’level’] / total_level
+79          load_p = min(1.0, share + (step/max_steps)*0.5)
+80          if me[’level’] >= target[’level ’]:
+81              load_p = min(1.0, load_p + 0.1)
+
+
+                                         21
+
+===== PDF PAGE 22 =====
+ 82           # build movement vs load distribution
+ 83         valid_moves = get_valid_moves(me , foods , other , grid_h , grid_w ,
+       include_load=False)
+ 84          move_p = (1.0 - load_p) / max(len(valid_moves) ,1)
+ 85          probs = [0.0]*6
+ 86          for a in valid_moves:
+ 87               if a != 5:
+ 88                  probs[a] = move_p
+ 89          probs [5] = load_p
+ 90          tot = sum(probs) or 1.0
+ 91          return [p/tot for p in probs]
+
+ 92
+ 93      # Movement: softmax over neighbor moves toward target + small
+       exploration
+ 94      occ = build_occupied_positions(foods , agents , exclude_agent_idx =0)
+ 95     neighbor_actions = []
+ 96      for a, (dx,dy) in {1:(-1 ,0), 2:(1 ,0), 3:(0,-1), 4:(0 ,1)}. items ():
+ 97          nx, ny = me[’x’]+dx, me[’y’]+dy
+ 98          if 0 <= nx < grid_h and 0 <= ny < grid_w and (nx ,ny) not in occ:
+ 99             neighbor_actions.append ((a, (nx ,ny)))
+100      if not neighbor_actions:
+101          return [1.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+102     T_move = max(0.1, (1.0 - step/max_steps)*0.5)
+103     nb_scores = [ - (abs(pos[0]- target[’x’]) + abs(pos[1]- target[’y’]))
+       for _,pos in neighbor_actions ]
+104     exp_nb = [math.exp(s/T_move) for s in nb_scores]
+105     sum_nb = sum(exp_nb) or 1.0
+106     nb_probs = [e/sum_nb for e in exp_nb]
+107      # epsilon -greedy exploration
+108     epsilon = 0.05
+109     probs = [0.0]*6
+110      for (a,_), p_nb in zip(neighbor_actions , nb_probs):
+111         probs[a] = (1-epsilon)*p_nb + epsilon/len(neighbor_actions)
+112     return probs
+
+   Agent 1’s history-dependent policy is shown as below.
+
+  1 from typing import List , Dict , Any , Callable , TypedDict , Union , Optional
+  2 import math , random
+
+  3
+  4 class GridWorldHistory(TypedDict):
+  5     state: List[List[Union[int , float ]]]
+  6     action: List[List[Optional[int ]]]
+
+  7
+  8 def history_dependent_policy_1(game_history: GridWorldHistory) -> List[
+       float]:
+  9      # Improved policy with softmax targeting , partner tracking , time -
+       aware loading , and randomness to avoid deadlocks.
+ 10     step = len(game_history[’action ’])
+ 11     max_steps = 50
+ 12     last_state = game_history[’state ’][-1]
+ 13     parsed = parse_grid_state(last_state)
+ 14     foods = [f for f in parsed[’foods ’] if f.get(’alive ’, True)]
+ 15     agents = parsed[’agents ’]
+ 16     other , me = agents [0], agents [1]
+ 17     grid_h = grid_w = 5
+
+ 18
+ 19      # no foods -> no-op
+ 20      if not foods:
+ 21          return [1.0 ,0.0 ,0.0 ,0.0 ,0.0 ,0.0]
+
+ 22
+ 23      # seed randomness once
+ 24      if step == 0:
+ 25         random.seed(hash(tuple(last_state)))
+
+ 26
+
+
+                                          22
+
+===== PDF PAGE 23 =====
+27      # immediate joint -load if possible
+28      if can_joint_load_any_food_two_agents(other , me , foods).get(’can’,
+      False):
+29          return [0.0 ,0.0 ,0.0 ,0.0 ,0.0 ,1.0]
+
+30
+31      # track opponent moves towards foods
+32     window = 5
+33     opp_visit = {i:0 for i in range(len(foods))}
+34     start = max(0, step - window)
+35      for t in range(start , step):
+36         opp_act = game_history[’action ’][t][0]
+37          if opp_act in (1,2,3,4):
+38              prev = parse_grid_state(game_history[’state ’][t])[’agents ’
+      ][0]
+39              nxt = parse_grid_state(game_history[’state ’][t+1])[’agents ’
+      ][0]
+40              for i,f in enumerate(foods):
+41                   d0 = abs(prev[’x’]-f[’x’])+abs(prev[’y’]-f[’y’])
+42                   d1 = abs(nxt[’x’]-f[’x’])+abs(nxt[’y’]-f[’y’])
+43                   if d1 < d0:
+44                     opp_visit[i] += 1
+
+45
+46      # scoring foods with softmax
+47     T_food = max(0.05, (1.0 - step/max_steps)**2)
+48     scores = []
+49      for i,f in enumerate(foods):
+50          if me[’level’]+other[’level ’] < f[’level ’]:
+51             scores.append(-math.inf)
+52         else:
+53                d = abs(me[’x’]-f[’x’])+abs(me[’y’]-f[’y’])
+54              share = me[’level ’]/(me[’level ’]+ other[’level ’])
+55             level_bonus = 1.0/f[’level ’]
+56             visit_bonus = opp_visit.get(i,0) *0.1
+57              score = share/(d+1) + level_bonus + visit_bonus
+58             scores.append(score)
+59     exp_s = [math.exp(s/T_food) if s>-math.inf else 0.0 for s in scores]
+60     total_s = sum(exp_s) or 1.0
+61     weights = [e/total_s for e in exp_s]
+
+62
+63      # choose target by probability distribution
+64      r = random.random ()
+65      cum = 0.0
+66      for idx ,w in enumerate(weights):
+67          cum += w
+68          if r <= cum:
+69              target = foods[idx]
+70              break
+71     else:
+72          target = foods[weights.index(max(weights))]
+
+73
+74      # if adjacent: time -aware load probability
+75      if is_adjacent ((me[’x’],me[’y’]), (target[’x’],target[’y’])):
+76          share = me[’level’]/(me[’level ’]+ other[’level ’])
+77          load_p = min(1.0, share + (step/max_steps)*0.5)
+78          if me[’level’]>=target[’level ’]:
+79              load_p = min(1.0, load_p +0.1)
+80          if step/max_steps  < 0.3:
+81              load_p *= (step/max_steps)/0.3
+82          valid = get_valid_moves(me , foods , other , grid_h , grid_w ,
+      include_load=False)
+83          move_p = (1.0- load_p)/max(len(valid) ,1)
+84          probs = [0.0]*6
+85          for a in valid:
+86             probs[a] = move_p
+87          probs [5] = load_p
+
+
+                                         23
+
+===== PDF PAGE 24 =====
+ 88          tot = sum(probs) or 1.0
+ 89          return [p/tot for p in probs]
+
+ 90
+ 91      # movement: softmax over neighbor cells of target
+ 92      occ = build_occupied_positions(foods , agents , exclude_agent_idx =1)
+ 93     neighbor_cells = [( target[’x’]+dx , target[’y’]+dy)
+ 94                         for dx ,dy in [(-1,0) ,(1,0) ,(0,-1) ,(0,1)]
+ 95                          if 0<=target[’x’]+dx <grid_h and 0<=target[’y’]+dy <
+       grid_w]
+ 96     valid_nb = [nb for nb in neighbor_cells if nb not in occ] or
+       neighbor_cells
+ 97     T_move = max(0.1, (1.0- step/max_steps)*0.5)
+ 98     nb_scores = []
+ 99      for nb in valid_nb:
+100           d = abs(me[’x’]-nb[0])+abs(me[’y’]-nb[1])
+101         nb_scores.append(-d)
+102     exp_nb = [math.exp(s/T_move) for s in nb_scores]
+103     total_nb = sum(exp_nb) or 1.0
+104     nb_probs = [e/total_nb for e in exp_nb]
+
+105
+106      # map neighbor probs to action probs
+107     action_map = {
+108         1:(me[’x’]-1,me[’y’]), 2:(me[’x’]+1,me[’y’]),
+109         3:(me[’x’],me[’y’]-1), 4:(me[’x’],me[’y’]+1)
+110      }
+111     valid_moves = get_valid_moves(me , foods , other , grid_h , grid_w ,
+       include_load=False)
+112     probs = [0.0]*6
+113      for nb,p_nb in zip(valid_nb ,nb_probs):
+114          for a,pos in action_map.items ():
+115               if a in valid_moves and pos==nb:
+116                  probs[a] += p_nb
+
+117
+118      # fallback: random valid move if stuck
+119      if sum(probs)==0:
+120          moves = [a for a in valid_moves if a!=5]
+121          if not moves:
+122              return [1.0 ,0.0 ,0.0 ,0.0 ,0.0 ,0.0]
+123          rnd = random.choice(moves)
+124         probs[rnd] = 1.0
+125          return probs
+
+126
+127      tot = sum(probs)
+128     return [p/tot for p in probs]
+
+
+
+
+
+                                          24
+
+===== PDF PAGE 25 =====
+D  GLOSSARY
+
+
+                         Table 1: Comprehensive Glossary of Symbols
+
+ Symbol  Meaning                       Note
+ Markov Games & Environment
+   G     Markov Game tuple              ⟨N, S, {Ai}, T , {ri}, γ⟩
+  N      Set of agents                      Index i ∈N
+   S      Global state space                 s ∈S
+   Ai     Action space for agent i        A = ×Ai (Joint space)
+   T       State transition function          T  : S × A →∆(S)
+     ri     Reward function                      ri : S × A →R
+    γ      Discount factor                 γ ∈[0, 1)
+   st, ait     State and Action at timestep t       at denotes joint action
+    ht      Interaction history                Sequence (s0, a0, . . . , st)
+  H     Space of all histories
+    Gi      Perspective environment           Agent i’s subjective view
+    Ji     Expected discounted return         Cumulative reward objective
+   Jsw     Social Welfare               Sum of all agents’ returns
+ Policies & Representations
+    πi      Policy (Semantics)                 Executable function πi : H →∆(Ai)
+   ⌜πi⌝    Policy (Syntax)                   Source code string / Gödel number
+   π       Joint policy                          (πi, π−i)
+  Π     General policy space
+   Πprog    Space of programmatic policies      Set of valid programs in the language
+     θi     Neural network parameters        Used in standard DRL
+  ∆(X)    Probability simplex over X
+  m     Opponent modeling function       Decoder m : Signal →Π
+   ϕ      Policy encoder               ϕ : Π →Signal
+ Method (PIBR) & Optimization
+    φi     Best-Response Operator            Meta-function {0, 1}∗→{0, 1}∗
+   Li     Learning dynamics               Update rule θk+1 = L(θk)
+  K     Outer loop iterations             Number of mutual adaptation rounds
+   T      Inner loop iterations             Number of operator optimization steps
+   Lutility     Utility Feedback Loss             Based on game trajectories
+    Ltest     Unit Test Loss                   Based on runtime/syntax correctness
+  prompt  LLM Instruction                    Input to operator φ
+ Logic & Game Theory (Appendix)
+   πFB     FairBot Program                   Cooperates iff proved opponent cooperates
+   T      Base Theory                     Formal system (e.g., Peano Arithmetic)
+   ⊢      Provability relation              T ⊢P means P is provable in T
+  □P    Modal operator                         “It is provable that P”
+  rT , rR   Temptation/Reward payoffs          Prisoner’s Dilemma parameters
+  rP , rS    Punishment/Sucker payoffs          Prisoner’s Dilemma parameters
+
+
+
+
+
+                                       25

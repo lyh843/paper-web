@@ -1,0 +1,214 @@
+{
+  "generated_on": "2026-10-19",
+  "zotero_collection_key": "FLT4H9RN",
+  "zotero_item_key": "KGSUGZNB",
+  "zotero_attachment_key": "A98TU3SS",
+  "source_pdf_path": "/home/lyh/Zotero/storage/A98TU3SS/Hollmann 等 - 2025 - Accurate predictions on small data with a tabular foundation model.pdf",
+  "source_pdf_sha256": "6b5ce3dba2ef7454ad0868ad733a64b4ac89bcd98307773fad1e0e977caaa013",
+  "source_pdf_pages": 23,
+  "source_version": "Nature 2025 published PDF, DOI 10.1038/s41586-024-08328-6, 23 pages including Methods and Extended Data",
+  "central_source_pages_inspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    23
+  ],
+  "source_pdf_modified": false,
+  "duplicate_of": null,
+  "reading_language": "zh-CN",
+  "mode": "DEEP READ",
+  "lens": "understanding-first",
+  "skill_source": "https://github.com/xiaofengShi/paper-reading-skill",
+  "skill_commit": "eadd0cd61d276d082938d80eb0d3fbb85614f2e1",
+  "renderer_sha256": "3ed818344cd402297240d51553c0c6ab7eb599017a51380cb437d37283f5598c",
+  "rebuild_command": "node /repo/paper-web/.opencode/skills/paper-reading/scripts/render-reading.cjs /repo/paper-web/TabFM/tabpfn-v2-KGSUGZNB/reading.md /repo/paper-web/TabFM/tabpfn-v2-KGSUGZNB/index.html",
+  "audit_source_sha256": "c2e70dc6609c12a264f447cdeaa419d82c768c4de154cc9d1b25649428337932",
+  "html_sha256": "74b372e754f7001218041deb74a8bf7e088bd900f7a12cc154de2de56f9ba214",
+  "figures": [
+    {
+      "file": "assets/tabpfnv2-fig1-architecture.png",
+      "pdf_page_1based": 2,
+      "crop_rectangle_pdf_points": [
+        35,
+        28,
+        565,
+        333
+      ],
+      "render_scale": 2.5,
+      "sha256": "5a73689efcfd8ee6bd6be30a9eb249d4ae0bd9070987539ca9b60a7b18139a74"
+    },
+    {
+      "file": "assets/tabpfnv2-fig2-prior.png",
+      "pdf_page_1based": 3,
+      "crop_rectangle_pdf_points": [
+        35,
+        25,
+        565,
+        295
+      ],
+      "render_scale": 2.5,
+      "sha256": "10868f113f2c66738934062d2844dfe0d8d714775022adb3de7720c818bc7044"
+    },
+    {
+      "file": "assets/tabpfnv2-fig4-evaluation.png",
+      "pdf_page_1based": 5,
+      "crop_rectangle_pdf_points": [
+        30,
+        25,
+        570,
+        285
+      ],
+      "render_scale": 2.5,
+      "sha256": "3b6a3b0c16a145bf1035d679f21e43bcaf14c1b3948eb567759a82ee9fa3d817"
+    },
+    {
+      "file": "assets/tabpfnv2-fig6-capabilities.png",
+      "pdf_page_1based": 7,
+      "crop_rectangle_pdf_points": [
+        35,
+        25,
+        565,
+        191
+      ],
+      "render_scale": 2.5,
+      "sha256": "2eb77b1577e5bd91b34e23c5c92a1e06c99535a3ad712a19ab0a995cc69c2972"
+    },
+    {
+      "file": "assets/tabpfnv2-extended-table1.png",
+      "pdf_page_1based": 18,
+      "crop_rectangle_pdf_points": "whole page",
+      "render_scale": 2.5,
+      "sha256": "9626fc337a3b2b44251b30380aeaf09fd719e68fc2752ec142f68db5ef957756"
+    },
+    {
+      "file": "assets/tabpfnv2-extended-table2.png",
+      "pdf_page_1based": 19,
+      "crop_rectangle_pdf_points": "whole page",
+      "render_scale": 2.5,
+      "sha256": "9b4e8aba70430078c24b5a49f8fb0f4d45ba29595e28e9563a39169f815667ce"
+    }
+  ],
+  "validation_scope": "Manual narrative and source review plus renderer/browser checks; no independent reader study or scientific reproduction",
+  "skill_base_commit": "eadd0cd61d276d082938d80eb0d3fbb85614f2e1",
+  "skill_revision": "narrative-logic-v1",
+  "skill_definition_sha256": "8d086cb16b69e68d4517e538cc25b651e929a37599e60f0f909794e5a17b267b",
+  "historical_context": {
+    "status": "pass",
+    "horizon": "2025-01-08",
+    "horizon_basis": "publisher-online-publication",
+    "date_evidence_url": "https://doi.org/10.1038/s41586-024-08328-6",
+    "predecessor_rows": 4,
+    "chapter": "00 / 发表时的研究背景",
+    "source_review": "用PDF明确的2025-01-08在线日期作边界；解释第一代PFN/TabPFN及既有树/NN挑战，不借后发TabICL或2.5背书。",
+    "review_scope": "Target introduction/background/related work plus selected primary abstracts and official submission histories; not comprehensive full-text review of all predecessors",
+    "source_urls": [
+      "https://arxiv.org/abs/2112.10510",
+      "https://arxiv.org/abs/2305.02997"
+    ]
+  },
+  "local_revisions": [
+    {
+      "revision": "historical-context-v1",
+      "date": "2026-10-17",
+      "action": "Insert publication-time background; preserve prior method, evidence, assets and paths",
+      "before": {
+        "audit_source_sha256": "2c4661d2e9d244a2e9e02b013fbe90c87f592b05e5ce9f2a0eab6c1c1e5ff362",
+        "html_sha256": "83745c13aee1a7e3dfea599b5e18c787f0f6cf803f5a07c9637986487546311f"
+      }
+    },
+    {
+      "revision": "narrative-logic-v1",
+      "date": "2026-10-19",
+      "action": "Paper-specific prose refactor: problem/value, prior-only idea reconstruction, intuition, running instance, accessible mathematics, question/test/answer evidence and takeaways; preserve original evidence and visuals",
+      "archive_directory": "revisions/pre-narrative-logic-20261019",
+      "before": {
+        "audit_source_sha256": "4850893b300637294dcc701711c2030360f219c35a9ec0b722738750365695cd",
+        "html_sha256": "f8ef37ea283af3bbe3ed10054213ed159492e18472827e18a7c3fa9e3b5978a4"
+      }
+    }
+  ],
+  "preserved_skill_extensions": [
+    "historical-context-v1"
+  ],
+  "narrative_protocol_sha256": "25a89f7a1b55037132b049163ecb82d2ea7fa9106bbd729652fcf8a4b124a483",
+  "quality_check_sha256": "cb396eec253ad505ce84da4462242ca37acfd0f156838d3cd546e74b3456a877",
+  "manual_narrative_review": {
+    "title": "Accurate predictions on small data with a tabular foundation model",
+    "problem": "§00：将小数值分类接口扩到混合列、缺失、异常、回归，潜在行业价值与基准证据分开",
+    "prior_gap": "§00：第一代及表格偏置研究给出任务覆盖、表结构与复用成本的独立约束",
+    "idea": "§01：从先验覆盖不足、既有双轴结构与fit/predict复用需求推假设，不以最终排行榜作前提",
+    "intuition": "§01：练习困难、双轴交换信息、缓存训练状态分别解决不同问题",
+    "example": "§02：视觉核对原Fig1b的三行回归示意表与(33.3,2.2)查询，不编精确目标、密度或内部激活",
+    "math": "§03、06–07：继承PFN目标、概率质量除区间宽度的积分推导、归一化指标不等于概率",
+    "evidence": "§07–08：分类/回归、default/HPO/PHE、鲁棒性与能力展示分层，原始指标和归一化保留",
+    "takeaways": "§09：任务内容、输出接口与证据范围、缓存与服务成本",
+    "source_pages_rechecked": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      9,
+      10,
+      11,
+      12
+    ],
+    "cautions": [
+      "Fig1b是作者示意而非真实业务记录",
+      "完整外部Supplementary Data未独立审计",
+      "正式PDF与已有栅格表审计保持一致"
+    ]
+  },
+  "manual_review_type": "Generator source-based semantic self-check; not independent reader study",
+  "source_pages_rechecked_this_revision": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    9,
+    10,
+    11,
+    12
+  ],
+  "reused_source_audit": "Unchanged PDF and existing equation/figure/number source audits retained from archived reading; full text accessible, not claimed to have independently rerun experiments or read every appendix table anew",
+  "delivery_status": "completed",
+  "browser_validation_this_revision": {
+    "ok": true,
+    "viewports": [
+      1280,
+      390
+    ],
+    "images_loaded": 6,
+    "images_total": 6,
+    "math": 24,
+    "math_errors": 0,
+    "sections": 10,
+    "source_count": 51,
+    "anchors_valid": true,
+    "source_toggle": true,
+    "page_overflow_default_or_sources": false,
+    "figures_have_context": true,
+    "external_resources": 0,
+    "scripts": 0
+  }
+}

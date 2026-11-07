@@ -1,0 +1,622 @@
+{
+  "sourceSha256": "aeb53c8dda50161ea590512436bcfb7d2049261b54e196bff9c0cf048f9949e2",
+  "outputSha256": "2cb158d424def400c69d84289a7819e9496bcec584f26b8f2d164089b82bacb5",
+  "sourcePages": 65,
+  "outputPages": 65,
+  "allLeftTextUnchanged": true,
+  "pagesWithNoChineseRight": [
+    {
+      "page": 65,
+      "sourceCharacters": 2,
+      "chineseCharactersRight": 0,
+      "leftTextUnchanged": true,
+      "widthRatio": 2.0,
+      "sourceImagePlacements": 0,
+      "outputImagePlacements": 0
+    }
+  ],
+  "pages": [
+    {
+      "page": 1,
+      "sourceCharacters": 3355,
+      "chineseCharactersRight": 777,
+      "leftTextUnchanged": true,
+      "widthRatio": 2.0,
+      "sourceImagePlacements": 0,
+      "outputImagePlacements": 0
+    },
+    {
+      "page": 2,
+      "sourceCharacters": 3389,
+      "chineseCharactersRight": 780,
+      "leftTextUnchanged": true,
+      "widthRatio": 2.0,
+      "sourceImagePlacements": 1,
+      "outputImagePlacements": 2
+    },
+    {
+      "page": 3,
+      "sourceCharacters": 4311,
+      "chineseCharactersRight": 979,
+      "leftTextUnchanged": true,
+      "widthRatio": 2.0,
+      "sourceImagePlacements": 0,
+      "outputImagePlacements": 0
+    },
+    {
+      "page": 4,
+      "sourceCharacters": 4447,
+      "chineseCharactersRight": 951,
+      "leftTextUnchanged": true,
+      "widthRatio": 2.0,
+      "sourceImagePlacements": 0,
+      "outputImagePlacements": 0
+    },
+    {
+      "page": 5,
+      "sourceCharacters": 4313,
+      "chineseCharactersRight": 1012,
+      "leftTextUnchanged": true,
+      "widthRatio": 2.0,
+      "sourceImagePlacements": 0,
+      "outputImagePlacements": 0
+    },
+    {
+      "page": 6,
+      "sourceCharacters": 4072,
+      "chineseCharactersRight": 930,
+      "leftTextUnchanged": true,
+      "widthRatio": 2.0,
+      "sourceImagePlacements": 0,
+      "outputImagePlacements": 0
+    },
+    {
+      "page": 7,
+      "sourceCharacters": 5804,
+      "chineseCharactersRight": 1473,
+      "leftTextUnchanged": true,
+      "widthRatio": 2.0,
+      "sourceImagePlacements": 3,
+      "outputImagePlacements": 6
+    },
+    {
+      "page": 8,
+      "sourceCharacters": 4392,
+      "chineseCharactersRight": 828,
+      "leftTextUnchanged": true,
+      "widthRatio": 2.0,
+      "sourceImagePlacements": 0,
+      "outputImagePlacements": 0
+    },
+    {
+      "page": 9,
+      "sourceCharacters": 4535,
+      "chineseCharactersRight": 1084,
+      "leftTextUnchanged": true,
+      "widthRatio": 2.0,
+      "sourceImagePlacements": 0,
+      "outputImagePlacements": 0
+    },
+    {
+      "page": 10,
+      "sourceCharacters": 693,
+      "chineseCharactersRight": 177,
+      "leftTextUnchanged": true,
+      "widthRatio": 2.0,
+      "sourceImagePlacements": 0,
+      "outputImagePlacements": 0
+    },
+    {
+      "page": 11,
+      "sourceCharacters": 3517,
+      "chineseCharactersRight": 413,
+      "leftTextUnchanged": true,
+      "widthRatio": 2.0,
+      "sourceImagePlacements": 0,
+      "outputImagePlacements": 0
+    },
+    {
+      "page": 12,
+      "sourceCharacters": 3558,
+      "chineseCharactersRight": 383,
+      "leftTextUnchanged": true,
+      "widthRatio": 2.0,
+      "sourceImagePlacements": 0,
+      "outputImagePlacements": 0
+    },
+    {
+      "page": 13,
+      "sourceCharacters": 3853,
+      "chineseCharactersRight": 431,
+      "leftTextUnchanged": true,
+      "widthRatio": 2.0,
+      "sourceImagePlacements": 0,
+      "outputImagePlacements": 0
+    },
+    {
+      "page": 14,
+      "sourceCharacters": 2674,
+      "chineseCharactersRight": 298,
+      "leftTextUnchanged": true,
+      "widthRatio": 2.0,
+      "sourceImagePlacements": 0,
+      "outputImagePlacements": 0
+    },
+    {
+      "page": 15,
+      "sourceCharacters": 3182,
+      "chineseCharactersRight": 259,
+      "leftTextUnchanged": true,
+      "widthRatio": 2.0,
+      "sourceImagePlacements": 0,
+      "outputImagePlacements": 0
+    },
+    {
+      "page": 16,
+      "sourceCharacters": 1046,
+      "chineseCharactersRight": 60,
+      "leftTextUnchanged": true,
+      "widthRatio": 2.0,
+      "sourceImagePlacements": 0,
+      "outputImagePlacements": 0
+    },
+    {
+      "page": 17,
+      "sourceCharacters": 3750,
+      "chineseCharactersRight": 797,
+      "leftTextUnchanged": true,
+      "widthRatio": 2.0,
+      "sourceImagePlacements": 0,
+      "outputImagePlacements": 0
+    },
+    {
+      "page": 18,
+      "sourceCharacters": 3098,
+      "chineseCharactersRight": 696,
+      "leftTextUnchanged": true,
+      "widthRatio": 2.0,
+      "sourceImagePlacements": 1,
+      "outputImagePlacements": 2
+    },
+    {
+      "page": 19,
+      "sourceCharacters": 2862,
+      "chineseCharactersRight": 574,
+      "leftTextUnchanged": true,
+      "widthRatio": 2.0,
+      "sourceImagePlacements": 1,
+      "outputImagePlacements": 2
+    },
+    {
+      "page": 20,
+      "sourceCharacters": 3239,
+      "chineseCharactersRight": 675,
+      "leftTextUnchanged": true,
+      "widthRatio": 2.0,
+      "sourceImagePlacements": 0,
+      "outputImagePlacements": 0
+    },
+    {
+      "page": 21,
+      "sourceCharacters": 3040,
+      "chineseCharactersRight": 654,
+      "leftTextUnchanged": true,
+      "widthRatio": 2.0,
+      "sourceImagePlacements": 0,
+      "outputImagePlacements": 0
+    },
+    {
+      "page": 22,
+      "sourceCharacters": 3210,
+      "chineseCharactersRight": 805,
+      "leftTextUnchanged": true,
+      "widthRatio": 2.0,
+      "sourceImagePlacements": 0,
+      "outputImagePlacements": 0
+    },
+    {
+      "page": 23,
+      "sourceCharacters": 4858,
+      "chineseCharactersRight": 1170,
+      "leftTextUnchanged": true,
+      "widthRatio": 2.0,
+      "sourceImagePlacements": 0,
+      "outputImagePlacements": 0
+    },
+    {
+      "page": 24,
+      "sourceCharacters": 3879,
+      "chineseCharactersRight": 1111,
+      "leftTextUnchanged": true,
+      "widthRatio": 2.0,
+      "sourceImagePlacements": 0,
+      "outputImagePlacements": 0
+    },
+    {
+      "page": 25,
+      "sourceCharacters": 3903,
+      "chineseCharactersRight": 1203,
+      "leftTextUnchanged": true,
+      "widthRatio": 2.0,
+      "sourceImagePlacements": 0,
+      "outputImagePlacements": 0
+    },
+    {
+      "page": 26,
+      "sourceCharacters": 4223,
+      "chineseCharactersRight": 1077,
+      "leftTextUnchanged": true,
+      "widthRatio": 2.0,
+      "sourceImagePlacements": 0,
+      "outputImagePlacements": 0
+    },
+    {
+      "page": 27,
+      "sourceCharacters": 2837,
+      "chineseCharactersRight": 721,
+      "leftTextUnchanged": true,
+      "widthRatio": 2.0,
+      "sourceImagePlacements": 0,
+      "outputImagePlacements": 0
+    },
+    {
+      "page": 28,
+      "sourceCharacters": 2187,
+      "chineseCharactersRight": 426,
+      "leftTextUnchanged": true,
+      "widthRatio": 2.0,
+      "sourceImagePlacements": 0,
+      "outputImagePlacements": 0
+    },
+    {
+      "page": 29,
+      "sourceCharacters": 2565,
+      "chineseCharactersRight": 655,
+      "leftTextUnchanged": true,
+      "widthRatio": 2.0,
+      "sourceImagePlacements": 0,
+      "outputImagePlacements": 0
+    },
+    {
+      "page": 30,
+      "sourceCharacters": 2970,
+      "chineseCharactersRight": 758,
+      "leftTextUnchanged": true,
+      "widthRatio": 2.0,
+      "sourceImagePlacements": 0,
+      "outputImagePlacements": 0
+    },
+    {
+      "page": 31,
+      "sourceCharacters": 3057,
+      "chineseCharactersRight": 730,
+      "leftTextUnchanged": true,
+      "widthRatio": 2.0,
+      "sourceImagePlacements": 0,
+      "outputImagePlacements": 0
+    },
+    {
+      "page": 32,
+      "sourceCharacters": 1619,
+      "chineseCharactersRight": 409,
+      "leftTextUnchanged": true,
+      "widthRatio": 2.0,
+      "sourceImagePlacements": 0,
+      "outputImagePlacements": 0
+    },
+    {
+      "page": 33,
+      "sourceCharacters": 3464,
+      "chineseCharactersRight": 868,
+      "leftTextUnchanged": true,
+      "widthRatio": 2.0,
+      "sourceImagePlacements": 0,
+      "outputImagePlacements": 0
+    },
+    {
+      "page": 34,
+      "sourceCharacters": 3064,
+      "chineseCharactersRight": 777,
+      "leftTextUnchanged": true,
+      "widthRatio": 2.0,
+      "sourceImagePlacements": 0,
+      "outputImagePlacements": 0
+    },
+    {
+      "page": 35,
+      "sourceCharacters": 2986,
+      "chineseCharactersRight": 643,
+      "leftTextUnchanged": true,
+      "widthRatio": 2.0,
+      "sourceImagePlacements": 0,
+      "outputImagePlacements": 0
+    },
+    {
+      "page": 36,
+      "sourceCharacters": 2503,
+      "chineseCharactersRight": 588,
+      "leftTextUnchanged": true,
+      "widthRatio": 2.0,
+      "sourceImagePlacements": 0,
+      "outputImagePlacements": 0
+    },
+    {
+      "page": 37,
+      "sourceCharacters": 2209,
+      "chineseCharactersRight": 523,
+      "leftTextUnchanged": true,
+      "widthRatio": 2.0,
+      "sourceImagePlacements": 0,
+      "outputImagePlacements": 0
+    },
+    {
+      "page": 38,
+      "sourceCharacters": 2569,
+      "chineseCharactersRight": 628,
+      "leftTextUnchanged": true,
+      "widthRatio": 2.0,
+      "sourceImagePlacements": 0,
+      "outputImagePlacements": 0
+    },
+    {
+      "page": 39,
+      "sourceCharacters": 3548,
+      "chineseCharactersRight": 769,
+      "leftTextUnchanged": true,
+      "widthRatio": 2.0,
+      "sourceImagePlacements": 0,
+      "outputImagePlacements": 0
+    },
+    {
+      "page": 40,
+      "sourceCharacters": 2947,
+      "chineseCharactersRight": 804,
+      "leftTextUnchanged": true,
+      "widthRatio": 2.0,
+      "sourceImagePlacements": 0,
+      "outputImagePlacements": 0
+    },
+    {
+      "page": 41,
+      "sourceCharacters": 2118,
+      "chineseCharactersRight": 426,
+      "leftTextUnchanged": true,
+      "widthRatio": 2.0,
+      "sourceImagePlacements": 0,
+      "outputImagePlacements": 0
+    },
+    {
+      "page": 42,
+      "sourceCharacters": 1534,
+      "chineseCharactersRight": 343,
+      "leftTextUnchanged": true,
+      "widthRatio": 2.0,
+      "sourceImagePlacements": 0,
+      "outputImagePlacements": 0
+    },
+    {
+      "page": 43,
+      "sourceCharacters": 2631,
+      "chineseCharactersRight": 696,
+      "leftTextUnchanged": true,
+      "widthRatio": 2.0,
+      "sourceImagePlacements": 0,
+      "outputImagePlacements": 0
+    },
+    {
+      "page": 44,
+      "sourceCharacters": 3017,
+      "chineseCharactersRight": 830,
+      "leftTextUnchanged": true,
+      "widthRatio": 2.0,
+      "sourceImagePlacements": 0,
+      "outputImagePlacements": 0
+    },
+    {
+      "page": 45,
+      "sourceCharacters": 2784,
+      "chineseCharactersRight": 672,
+      "leftTextUnchanged": true,
+      "widthRatio": 2.0,
+      "sourceImagePlacements": 0,
+      "outputImagePlacements": 0
+    },
+    {
+      "page": 46,
+      "sourceCharacters": 2910,
+      "chineseCharactersRight": 830,
+      "leftTextUnchanged": true,
+      "widthRatio": 2.0,
+      "sourceImagePlacements": 0,
+      "outputImagePlacements": 0
+    },
+    {
+      "page": 47,
+      "sourceCharacters": 3466,
+      "chineseCharactersRight": 1018,
+      "leftTextUnchanged": true,
+      "widthRatio": 2.0,
+      "sourceImagePlacements": 0,
+      "outputImagePlacements": 0
+    },
+    {
+      "page": 48,
+      "sourceCharacters": 2676,
+      "chineseCharactersRight": 711,
+      "leftTextUnchanged": true,
+      "widthRatio": 2.0,
+      "sourceImagePlacements": 0,
+      "outputImagePlacements": 0
+    },
+    {
+      "page": 49,
+      "sourceCharacters": 4281,
+      "chineseCharactersRight": 1264,
+      "leftTextUnchanged": true,
+      "widthRatio": 2.0,
+      "sourceImagePlacements": 0,
+      "outputImagePlacements": 0
+    },
+    {
+      "page": 50,
+      "sourceCharacters": 1274,
+      "chineseCharactersRight": 505,
+      "leftTextUnchanged": true,
+      "widthRatio": 2.0,
+      "sourceImagePlacements": 0,
+      "outputImagePlacements": 0
+    },
+    {
+      "page": 51,
+      "sourceCharacters": 2468,
+      "chineseCharactersRight": 633,
+      "leftTextUnchanged": true,
+      "widthRatio": 2.0,
+      "sourceImagePlacements": 0,
+      "outputImagePlacements": 0
+    },
+    {
+      "page": 52,
+      "sourceCharacters": 2512,
+      "chineseCharactersRight": 679,
+      "leftTextUnchanged": true,
+      "widthRatio": 2.0,
+      "sourceImagePlacements": 0,
+      "outputImagePlacements": 0
+    },
+    {
+      "page": 53,
+      "sourceCharacters": 2931,
+      "chineseCharactersRight": 676,
+      "leftTextUnchanged": true,
+      "widthRatio": 2.0,
+      "sourceImagePlacements": 0,
+      "outputImagePlacements": 0
+    },
+    {
+      "page": 54,
+      "sourceCharacters": 3684,
+      "chineseCharactersRight": 1101,
+      "leftTextUnchanged": true,
+      "widthRatio": 2.0,
+      "sourceImagePlacements": 0,
+      "outputImagePlacements": 0
+    },
+    {
+      "page": 55,
+      "sourceCharacters": 2567,
+      "chineseCharactersRight": 680,
+      "leftTextUnchanged": true,
+      "widthRatio": 2.0,
+      "sourceImagePlacements": 0,
+      "outputImagePlacements": 0
+    },
+    {
+      "page": 56,
+      "sourceCharacters": 2743,
+      "chineseCharactersRight": 662,
+      "leftTextUnchanged": true,
+      "widthRatio": 2.0,
+      "sourceImagePlacements": 0,
+      "outputImagePlacements": 0
+    },
+    {
+      "page": 57,
+      "sourceCharacters": 3191,
+      "chineseCharactersRight": 860,
+      "leftTextUnchanged": true,
+      "widthRatio": 2.0,
+      "sourceImagePlacements": 0,
+      "outputImagePlacements": 0
+    },
+    {
+      "page": 58,
+      "sourceCharacters": 2671,
+      "chineseCharactersRight": 575,
+      "leftTextUnchanged": true,
+      "widthRatio": 2.0,
+      "sourceImagePlacements": 0,
+      "outputImagePlacements": 0
+    },
+    {
+      "page": 59,
+      "sourceCharacters": 1944,
+      "chineseCharactersRight": 201,
+      "leftTextUnchanged": true,
+      "widthRatio": 2.0,
+      "sourceImagePlacements": 0,
+      "outputImagePlacements": 0
+    },
+    {
+      "page": 60,
+      "sourceCharacters": 1922,
+      "chineseCharactersRight": 332,
+      "leftTextUnchanged": true,
+      "widthRatio": 2.0,
+      "sourceImagePlacements": 0,
+      "outputImagePlacements": 0
+    },
+    {
+      "page": 61,
+      "sourceCharacters": 2773,
+      "chineseCharactersRight": 743,
+      "leftTextUnchanged": true,
+      "widthRatio": 2.0,
+      "sourceImagePlacements": 0,
+      "outputImagePlacements": 0
+    },
+    {
+      "page": 62,
+      "sourceCharacters": 2683,
+      "chineseCharactersRight": 479,
+      "leftTextUnchanged": true,
+      "widthRatio": 2.0,
+      "sourceImagePlacements": 0,
+      "outputImagePlacements": 0
+    },
+    {
+      "page": 63,
+      "sourceCharacters": 2555,
+      "chineseCharactersRight": 428,
+      "leftTextUnchanged": true,
+      "widthRatio": 2.0,
+      "sourceImagePlacements": 0,
+      "outputImagePlacements": 0
+    },
+    {
+      "page": 64,
+      "sourceCharacters": 2262,
+      "chineseCharactersRight": 597,
+      "leftTextUnchanged": true,
+      "widthRatio": 2.0,
+      "sourceImagePlacements": 0,
+      "outputImagePlacements": 0
+    },
+    {
+      "page": 65,
+      "sourceCharacters": 2,
+      "chineseCharactersRight": 0,
+      "leftTextUnchanged": true,
+      "widthRatio": 2.0,
+      "sourceImagePlacements": 0,
+      "outputImagePlacements": 0
+    }
+  ],
+  "renderedReviewPages": [
+    1,
+    2,
+    8,
+    18,
+    19,
+    64,
+    65
+  ],
+  "visualReviewStatus": "passed-sampled-pages",
+  "visualReviewNotes": [
+    "Reviewed title/abstract, overview figure, results table/body, architecture diagram, equations (4) and (5), final text page and final page. No obvious cropping found in reviewed pages.",
+    "Page 65 contains only the page number in the source and output; zero Chinese is expected.",
+    "Images retained; embedded English in figures remains untranslated.",
+    "Machine translation only; not sentence-by-sentence human proofreading."
+  ],
+  "zoteroCopySha256Matches": true
+}

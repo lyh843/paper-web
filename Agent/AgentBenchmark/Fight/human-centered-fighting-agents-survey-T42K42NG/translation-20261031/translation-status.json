@@ -1,0 +1,82 @@
+{
+  "status": "checked-automatically-needs-visual-review",
+  "source": "/home/lyh/Zotero/storage/NW7VLVXC/Tavares 等 - 2025 - A Survey on the Development of Human-Centered Artificial Agents for Fighting Games.pdf",
+  "sourceSha256": "68f039fc1e0f061425c93d4bf077bda2de31b14584c6b4c4e61f10f4864478f6",
+  "software": "Zotero PDF2zh / PDF2zh-next",
+  "service": "openaicompatible",
+  "sourceLanguage": "en",
+  "targetLanguage": "zh-CN",
+  "layout": "lr",
+  "pages": "all",
+  "onlyBilingual": true,
+  "zoteroModified": false,
+  "startedAt": "2026-10-31T08:00:14.789272+00:00",
+  "engineVersionInCurrentPython": "2.9.0",
+  "exitCode": 0,
+  "outputs": [
+    {
+      "file": "Tavares 等 - 2025 - A Survey on the Development of Human-Centered Artificial Agents for Fighting Games.no_watermark.zh-CN.dual.pdf",
+      "bytes": 4875701,
+      "sha256": "47c084ace7abee405adc8e40a551de37d9e5bc0f6e42eaaed3899f05976c7d87"
+    }
+  ],
+  "verification": {
+    "status": "checked-automatically-needs-visual-review",
+    "sourcePages": 20,
+    "documents": [
+      {
+        "file": "Tavares 等 - 2025 - A Survey on the Development of Human-Centered Artificial Agents for Fighting Games.no_watermark.zh-CN.dual.pdf",
+        "pages": 20,
+        "chineseCharactersByPage": [
+          1456,
+          1496,
+          1596,
+          1593,
+          1896,
+          1191,
+          954,
+          1284,
+          1322,
+          1264,
+          1655,
+          1547,
+          1901,
+          1062,
+          1757,
+          1901,
+          1785,
+          1754,
+          1743,
+          875
+        ],
+        "imagePlacements": 10,
+        "pageCountMatches": true,
+        "originalTextUnchangedByPage": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      }
+    ]
+  },
+  "originalConfigUnchanged": true,
+  "originalPDFUnchanged": true,
+  "finishedAt": "2026-10-31T08:05:27.338335+00:00"
+}

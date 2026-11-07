@@ -1,0 +1,54 @@
+{
+  "status": "checked-automatically-needs-visual-review",
+  "source": "/repo/paper-web/Agent/AgentBenchmark/Fight/highlight-cues-entertaining-gameplay-VVXB6NTX/original.pdf",
+  "sourceSha256": "b0bcc164cfa4a8a5631510b0ab2072347ce10b8a973e1d84528d7d53b96f7b58",
+  "software": "Zotero PDF2zh / PDF2zh-next",
+  "service": "openaicompatible",
+  "sourceLanguage": "en",
+  "targetLanguage": "zh-CN",
+  "layout": "lr",
+  "pages": "all",
+  "onlyBilingual": true,
+  "zoteroModified": false,
+  "startedAt": "2026-10-31T08:03:57.289556+00:00",
+  "engineVersionInCurrentPython": "2.9.0",
+  "exitCode": 0,
+  "outputs": [
+    {
+      "file": "original.no_watermark.zh-CN.dual.pdf",
+      "bytes": 1020624,
+      "sha256": "f3515ce9627dcfdaa1ff59c799f403f88eee23ce23d6c76620d4ca89ba88faf0"
+    }
+  ],
+  "verification": {
+    "status": "checked-automatically-needs-visual-review",
+    "sourcePages": 6,
+    "documents": [
+      {
+        "file": "original.no_watermark.zh-CN.dual.pdf",
+        "pages": 6,
+        "chineseCharactersByPage": [
+          1271,
+          1202,
+          1028,
+          1535,
+          751,
+          1385
+        ],
+        "imagePlacements": 16,
+        "pageCountMatches": true,
+        "originalTextUnchangedByPage": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      }
+    ]
+  },
+  "originalConfigUnchanged": true,
+  "originalPDFUnchanged": true,
+  "finishedAt": "2026-10-31T08:06:53.548384+00:00"
+}

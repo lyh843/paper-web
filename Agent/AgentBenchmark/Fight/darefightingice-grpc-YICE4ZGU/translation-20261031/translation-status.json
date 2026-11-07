@@ -1,0 +1,62 @@
+{
+  "status": "verified-attachment-pending",
+  "source": "/home/lyh/Zotero/storage/UQNX4E8Q/arxiv_2303.10001.pdf",
+  "sourceSha256": "4a41209931bc76f50644f35d783b198f78806ac9b92332e0c746c220bef9e48c",
+  "software": "Zotero PDF2zh / PDF2zh-next",
+  "service": "openaicompatible",
+  "sourceLanguage": "en",
+  "targetLanguage": "zh-CN",
+  "layout": "lr",
+  "pages": "all",
+  "onlyBilingual": true,
+  "zoteroModified": false,
+  "zoteroParentKey": "YICE4ZGU",
+  "zoteroSourceAttachmentKey": "UQNX4E8Q",
+  "zoteroCollectionKey": "EX92BW5T",
+  "zoteroAttachmentStatus": "failed-connection-refused",
+  "zoteroAttachmentError": "MCP zotero_attach_file returned Item 'YICE4ZGU' not found ([Errno 111] Connection refused). One retry after checking capabilities and children returned the same error. No successful attachment confirmed.",
+  "visualReview": {
+    "pages": [1, 2, 3, 4, 5],
+    "scope": "全部页面排版查看；非逐句人工校译",
+    "findings": "架构图、流程图、延迟曲线及表格保留，未见明显整页裁切；首页作者单位及邮箱换行零碎；图内英文保留。"
+  },
+  "startedAt": "2026-10-30T16:46:52.452714+00:00",
+  "engineVersionInCurrentPython": "2.9.0",
+  "exitCode": 0,
+  "outputs": [
+    {
+      "file": "arxiv_2303.10001.no_watermark.zh-CN.dual.pdf",
+      "bytes": 772686,
+      "sha256": "71197d4ccea54a78a4fd3f0d89b614dbbfc16e287239a5c0d0e73f97c4e51368"
+    }
+  ],
+  "verification": {
+    "status": "checked-automatically-needs-visual-review",
+    "sourcePages": 5,
+    "documents": [
+      {
+        "file": "arxiv_2303.10001.no_watermark.zh-CN.dual.pdf",
+        "pages": 5,
+        "chineseCharactersByPage": [
+          927,
+          1397,
+          189,
+          1339,
+          514
+        ],
+        "imagePlacements": 6,
+        "pageCountMatches": true,
+        "originalTextUnchangedByPage": [
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      }
+    ]
+  },
+  "originalConfigUnchanged": true,
+  "originalPDFUnchanged": true,
+  "finishedAt": "2026-10-30T16:48:09.250654+00:00"
+}

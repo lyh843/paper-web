@@ -1,0 +1,110 @@
+{
+  "status": "checked-with-layout-limitations",
+  "source": "/home/lyh/Zotero/storage/B4VHEQMK/arxiv_2610.12341.pdf",
+  "sourceSha256": "d4f88e99f52f3da80ec0206ac16801c9fb2a7adea882c305e71097139629b180",
+  "software": "Zotero PDF2zh / PDF2zh-next",
+  "service": "openaicompatible",
+  "sourceLanguage": "en",
+  "targetLanguage": "zh-CN",
+  "layout": "lr",
+  "pages": "all",
+  "onlyBilingual": true,
+  "zoteroModified": false,
+  "startedAt": "2026-11-05T11:44:34.380356+00:00",
+  "engineVersionInCurrentPython": "2.9.0",
+  "exitCode": 0,
+  "outputs": [
+    {
+      "file": "arxiv_2610.12341.no_watermark.zh-CN.dual.pdf",
+      "bytes": 4771921,
+      "sha256": "5cec4da95b799df729d50385579dc85dc675f4752f747df6ae446ec064eeee35"
+    }
+  ],
+  "verification": {
+    "status": "checked-automatically-needs-visual-review",
+    "sourcePages": 26,
+    "documents": [
+      {
+        "file": "arxiv_2610.12341.no_watermark.zh-CN.dual.pdf",
+        "pages": 26,
+        "chineseCharactersByPage": [
+          756,
+          888,
+          889,
+          676,
+          730,
+          800,
+          702,
+          640,
+          432,
+          667,
+          737,
+          378,
+          633,
+          1036,
+          419,
+          454,
+          741,
+          964,
+          903,
+          444,
+          375,
+          488,
+          302,
+          456,
+          809,
+          100
+        ],
+        "imagePlacements": 78,
+        "pageCountMatches": true,
+        "originalTextUnchangedByPage": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      }
+    ],
+    "manualVisualReview": {
+      "status": "completed-with-layout-limitations",
+      "samplePages": [
+        1,
+        2,
+        4,
+        14,
+        26
+      ],
+      "notes": [
+        "第2页图内标签部分仍为英文，部分被翻译后位置变化；图像本体仍保留。",
+        "第1页联系信息区、第2页末尾贡献列表有紧凑或零散排版，需与左侧对照。"
+      ],
+      "qualityReport": "quality-check.json",
+      "scope": "逐页自动检查页数、原文文字和中文覆盖；仅列出的页面经过人工视觉抽查，未逐句人工校译。"
+    }
+  },
+  "originalConfigUnchanged": true,
+  "originalPDFUnchanged": true,
+  "finishedAt": "2026-11-05T12:01:52.780764+00:00"
+}

@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>System1 · 实时智能体论文深读</title>
+  <style>
+    :root{color-scheme:light;--ink:#183b37;--muted:#586f69;--line:#d7e3de;--accent:#2d705d}
+    *{box-sizing:border-box}body{margin:0;background:#f6f9f7;color:var(--ink);font:16px/1.85 system-ui,-apple-system,"Noto Sans CJK SC",sans-serif}
+    main{max-width:1080px;margin:auto;padding:64px 24px 80px}.eyebrow{color:var(--accent);font-size:12px;letter-spacing:.15em;font-weight:750}
+    h1{font-size:clamp(32px,6vw,54px);line-height:1.2;margin:16px 0 24px}h2{font-size:25px;line-height:1.4;margin:10px 0 16px}p{margin:0 0 16px}.lede{max-width:830px;color:var(--muted)}
+    .stats{display:flex;gap:12px;flex-wrap:wrap;margin:24px 0 32px}.stats span{border:1px solid var(--line);border-radius:25px;background:white;padding:5px 14px;font-size:14px}
+    .grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}.card{display:flex;flex-direction:column;border:1px solid var(--line);background:white;border-radius:16px;padding:28px}.tag{font-size:13px;color:var(--muted)}.desc{color:var(--muted);flex:1}
+    .links{display:flex;gap:15px;flex-wrap:wrap;margin-top:10px}a{color:var(--accent);text-underline-offset:4px}a:focus-visible{outline:3px solid #c38a2b;outline-offset:4px}code{font-size:.86em;overflow-wrap:anywhere}
+    .note{margin:30px 0;padding:20px 24px;background:#eaf2ee;border-left:3px solid var(--accent)}.footer{font-size:13px;color:var(--muted);margin-top:26px}.table-wrap{overflow:auto}table{width:100%;border-collapse:collapse}th,td{padding:10px 14px;text-align:left;border-bottom:1px solid var(--line)}th{background:#edf3f0}
+    @media(max-width:640px){main{padding:36px 16px}.grid{grid-template-columns:1fr}.card{padding:22px}.note{padding:16px}}
+    @media print{body{background:white}main{padding:10px}.grid{display:block}.card{break-inside:avoid;margin:16px 0}}
+  </style>
+</head>
+<body>
+<main>
+  <div class="eyebrow">ZOTERO / 人工智能 / SYSTEM1</div>
+  <h1>实时智能体 · 深读图谱</h1>
+  <p class="lede">当世界不等模型想完，能力不仅是选对动作，还要让动作来得及生效。这里按首次公开时间从早到晚整理 System1 的全部论文；每篇均包含发表时研究背景、前作贡献、方法/协议、关键公式、原图表、实验解释和结论边界。</p>
+  <div class="stats"><span>2 篇不同论文</span><span>中文完整深读</span><span>含发表时研究背景</span><span>HTML 离线可读</span></div>
+  <div class="grid">
+    <article class="card">
+      <div class="tag">2026-10-14 · arXiv:2610.20665v1 · 22 页 · XRRV4TN9</div>
+      <h2>The World Won’t Wait</h2>
+      <p class="desc">Pan 等：六游戏族 RealtimeBench 与 TORSI。区分响应延迟和动作年龄，追踪离线教师实践、快学生复查与验证门控，并解释为什么最终采用版不等于直接采用第二轮。</p>
+      <p><strong>核心指标：</strong>归一化进度 13.51 → 24.19，非任务成功率。</p>
+      <div class="links"><a href="world-wont-wait-XRRV4TN9/index.html">打开深读 →</a><a href="world-wont-wait-XRRV4TN9/reading.md">Markdown 源</a><a href="world-wont-wait-XRRV4TN9/quality-check.md">质量记录</a></div>
+    </article>
+    <article class="card">
+      <div class="tag">2026-10-15 · arXiv:2610.22155v1 · 26 页 · MH47BEJ5</div>
+      <h2>Realtime-Bench</h2>
+      <p class="desc">Tang 等：50 个网页/游戏任务，比较 Wall、Paused、Token Clock。解释生成时间、动作窗口、三次全成功与至少一次成功，附可离线操作的 Token Clock 算例。</p>
+      <p><strong>核心指标：</strong>最佳单次成功 44%，最佳 Pass³ 为 36%，并非同一统计量。</p>
+      <div class="links"><a href="realtime-bench-MH47BEJ5/index.html">打开深读 →</a><a href="realtime-bench-MH47BEJ5/reading.md">Markdown 源</a><a href="realtime-bench-MH47BEJ5/quality-check.md">质量记录</a></div>
+    </article>
+  </div>
+  <aside class="note"><strong>名称相近，不是同一个基准</strong><br>第一篇叫 <strong>RealtimeBench</strong>，第二篇叫 <strong>Realtime-Bench</strong>。两篇同期独立研究，不据一天的日期差认定继承关系，也不能把进度分、二元成功率、模型版本或时钟配置直接拼成排行榜。</aside>
+  <div class="table-wrap"><table>
+    <thead><tr><th>对照项</th><th>Pan 等</th><th>Tang 等</th></tr></thead>
+    <tbody><tr><td>任务范围</td><td>180 任务：反馈/验证/测试各60</td><td>50 任务：30网页、20游戏</td></tr><tr><td>主要接口</td><td>结构化文本状态与合法选择</td><td>截图+只读SoM、GUI动作；部分模型有覆盖例外</td></tr><tr><td>主要贡献</td><td>时钟敏感性评测+局外教师指导</td><td>三时钟与推理时间代价评测/诊断</td></tr></tbody>
+  </table></div>
+  <aside class="note"><strong>阅读方式</strong><br>从每篇“00 / 发表时的研究背景”开始，再沿导航进入时序、协议和实验。单篇 <code>index.html</code> 已内嵌图片、字体与公式，可单文件离线打开；第二篇的补充交互也内嵌，主要解释不依赖脚本。Markdown、素材、来源指纹和质量自查放在同目录。此目录页的链接需要保留文件夹层级。</aside>
+  <p class="footer">生成日期：2026-10-17 · 使用 paper-reading 本地增强版 historical-context-v1 · Zotero 分类 key：G2VDMDFY。未修改 Zotero 或原始 PDF，未重新运行游戏实验。质量记录为来源核验与技术自查，不是独立读者研究；原文数字或覆盖口径不明确之处已在相应解读中标出。</p>
+</main>
+</body>
+</html>

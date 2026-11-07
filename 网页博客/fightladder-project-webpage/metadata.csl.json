@@ -1,0 +1,27 @@
+[
+  {
+    "type": "webpage",
+    "title": "FightLadder: A Benchmark for Competitive Multi-Agent Reinforcement Learning",
+    "URL": "https://sites.google.com/view/fightladder/home",
+    "author": [
+      {
+        "given": "Wenzhe",
+        "family": "Li"
+      },
+      {
+        "given": "Zihan",
+        "family": "Ding"
+      },
+      {
+        "given": "Seth",
+        "family": "Karten"
+      },
+      {
+        "given": "Chi",
+        "family": "Jin"
+      }
+    ],
+    "language": "en",
+    "note": "Project webpage archive. Webpage publication date not stated; linked paper and its citation are from 2024."
+  }
+]

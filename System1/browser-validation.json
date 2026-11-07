@@ -1,0 +1,179 @@
+{
+  "checked_at": "2026-10-17",
+  "method": "browser.evaluate in same-origin 390px/1280px frames; explicit image loading plus complete/naturalWidth; fonts.ready; all details expanded",
+  "pages": [
+    {
+      "path": "world-wont-wait-XRRV4TN9/index.html",
+      "pass": true,
+      "checks": [
+        {
+          "width": 390,
+          "fontsLoaded": true,
+          "overflow": false,
+          "images": 7,
+          "imagesOk": true,
+          "math": 16,
+          "mathErrors": 0,
+          "navOk": true,
+          "backgroundFirst": true,
+          "toggle": true,
+          "externalResources": 0,
+          "raw": false
+        },
+        {
+          "width": 1280,
+          "fontsLoaded": true,
+          "overflow": false,
+          "images": 7,
+          "imagesOk": true,
+          "math": 16,
+          "mathErrors": 0,
+          "navOk": true,
+          "backgroundFirst": true,
+          "toggle": true,
+          "externalResources": 0,
+          "raw": false
+        }
+      ]
+    },
+    {
+      "path": "realtime-bench-MH47BEJ5/index.html",
+      "pass": true,
+      "checks": [
+        {
+          "width": 390,
+          "fontsLoaded": true,
+          "overflow": false,
+          "images": 6,
+          "imagesOk": true,
+          "math": 21,
+          "mathErrors": 0,
+          "navOk": true,
+          "backgroundFirst": true,
+          "toggle": true,
+          "externalResources": 0,
+          "raw": false
+        },
+        {
+          "width": 1280,
+          "fontsLoaded": true,
+          "overflow": false,
+          "images": 6,
+          "imagesOk": true,
+          "math": 21,
+          "mathErrors": 0,
+          "navOk": true,
+          "backgroundFirst": true,
+          "toggle": true,
+          "externalResources": 0,
+          "raw": false
+        }
+      ]
+    }
+  ],
+  "interaction": {
+    "paper": "MH47BEJ5",
+    "embedded_srcdoc": true,
+    "sandbox": "allow-scripts",
+    "cases": [
+      {
+        "n": 200,
+        "B": 32,
+        "scenario": "auction",
+        "seconds": 6.25,
+        "outcome": "late"
+      },
+      {
+        "n": 200,
+        "B": 64,
+        "scenario": "auction",
+        "seconds": 3.125,
+        "outcome": "in-window"
+      },
+      {
+        "n": 200,
+        "B": 64,
+        "scenario": "snake",
+        "seconds": 3.125,
+        "outcome": "late-by-0.4583"
+      },
+      {
+        "n": 200,
+        "B": 128,
+        "scenario": "snake",
+        "seconds": 1.5625,
+        "outcome": "early-by-0.4375"
+      },
+      {
+        "n": 0,
+        "B": 64,
+        "scenario": "snake",
+        "seconds": 0,
+        "outcome": "early"
+      },
+      {
+        "n": 512,
+        "B": 32,
+        "scenario": "auction",
+        "seconds": 16,
+        "outcome": "late"
+      }
+    ],
+    "svg_finite": true,
+    "labels_present": true,
+    "static_rows": 3,
+    "keyboard": {
+      "key": "ArrowRight",
+      "before": 200,
+      "after": 201,
+      "formula_seconds": 3.1406,
+      "pass": true
+    }
+  },
+  "screenshots": {
+    "status": "unavailable",
+    "reason": "browser.screenshot reported no visible desktop tab even after tabs.focus; DOM checks are not screenshot review"
+  },
+  "limits": [
+    "No independent reader study",
+    "No game rerun",
+    "No independent log or provider audit",
+    "No multi-engine browser testing"
+  ],
+  "local_links": {
+    "count": 6,
+    "all_exist": true,
+    "checks": [
+      {
+        "from": "System1/index.html",
+        "href": "world-wont-wait-XRRV4TN9/index.html",
+        "exists": true
+      },
+      {
+        "from": "System1/index.html",
+        "href": "world-wont-wait-XRRV4TN9/reading.md",
+        "exists": true
+      },
+      {
+        "from": "System1/index.html",
+        "href": "world-wont-wait-XRRV4TN9/quality-check.md",
+        "exists": true
+      },
+      {
+        "from": "System1/index.html",
+        "href": "realtime-bench-MH47BEJ5/index.html",
+        "exists": true
+      },
+      {
+        "from": "System1/index.html",
+        "href": "realtime-bench-MH47BEJ5/reading.md",
+        "exists": true
+      },
+      {
+        "from": "System1/index.html",
+        "href": "realtime-bench-MH47BEJ5/quality-check.md",
+        "exists": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "status": "verified-with-layout-limitations",
+  "source": "/repo/paper-web/网页博客/luna-decisions-vs-luna/article.pdf",
+  "sourceSha256": "79c057a5b7c46b2629a3404cfcfed23fd405eba0a1e7411b1eea3cf8b76f7c39",
+  "software": "Zotero PDF2zh / PDF2zh-next",
+  "service": "openaicompatible",
+  "sourceLanguage": "en",
+  "targetLanguage": "zh-CN",
+  "layout": "lr",
+  "pages": "all",
+  "onlyBilingual": true,
+  "zoteroModified": false,
+  "startedAt": "2026-10-31T06:55:15.184568+00:00",
+  "engineVersionInCurrentPython": "2.9.0",
+  "exitCode": 0,
+  "outputs": [
+    {
+      "file": "article.no_watermark.zh-CN.dual.pdf",
+      "bytes": 628372,
+      "sha256": "33ba0bcd3e962bd056695a38e866c9431ebbfca959fd78ae064f45b46290aba0"
+    }
+  ],
+  "verification": {
+    "status": "verified-with-layout-limitations",
+    "sourcePages": 4,
+    "documents": [
+      {
+        "file": "article.no_watermark.zh-CN.dual.pdf",
+        "pages": 4,
+        "chineseCharactersByPage": [
+          289,
+          366,
+          405,
+          194
+        ],
+        "imagePlacements": 4,
+        "pageCountMatches": true,
+        "originalTextUnchangedByPage": [
+          true,
+          true,
+          true,
+          true
+        ]
+      }
+    ],
+    "visualReview": {
+      "pages": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "layout": "English left, Simplified Chinese right; 4 landscape double-width pages",
+      "content": "Chinese body present on every page; both results tables and numerical values retained; original text unchanged on left",
+      "imageReview": "Original video poster preserved on both sides; text inside image remains English",
+      "formulaReview": "No mathematical formulas in source",
+      "clipping": "No obvious body text clipping observed",
+      "limitations": [
+        "Some translated list items are merged into paragraphs and leave empty bullets, notably pages 1, 3, and 4.",
+        "Chinese table text is smaller; source URL wraps awkwardly on page 1.",
+        "Terminology has not been fully human-proofread; JSON schema is rendered as JSON模式 in the machine translation.",
+        "Image-internal English is not translated."
+      ]
+    }
+  },
+  "originalConfigUnchanged": true,
+  "originalPDFUnchanged": true,
+  "finishedAt": "2026-10-31T06:56:53.997698+00:00",
+  "zoteroAttachment": {
+    "status": "verified",
+    "parentItemKey": "7JXP272S",
+    "attachmentKey": "QNGMMMIU",
+    "collectionPath": "人工智能/网页博客",
+    "sha256": "33ba0bcd3e962bd056695a38e866c9431ebbfca959fd78ae064f45b46290aba0",
+    "storedFileMatches": true
+  }
+}

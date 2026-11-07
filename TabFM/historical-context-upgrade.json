@@ -1,0 +1,370 @@
+{
+  "updated_on": "2026-10-17",
+  "skill_revision": "historical-context-v1",
+  "skill_files": {
+    "SKILL.md": "a795c8d00b90632ef0eaada455415b555acc6c0e6dc101bce4cddc26de8315a4",
+    "references/historical-context.md": "992233f756d28a0d65ddec1618496704f8c7918011b5777e7940f089346a6a73",
+    "evals/reading-quality.md": "44a2383edc73a4f65462775e5a85ef2c11c49e51431e867b727073b254cba002",
+    "references/renderer-format.md": "779dc179e0c11bd1816b82ccb82ea727648fcdd82b2d27754e8d9cfb250e17cc",
+    "scripts/check-background.cjs": "e7fe305907333fd90264e0efffa711ce82bf36b3464642c1d3080f87b6ee3571",
+    "scripts/test-check-background.cjs": "d5f81d0f6ed624974852b01718a63c854adfdc544e1dbf32330dc64cd7438119",
+    "LOCAL_CHANGES.md": "d7080832a9bf91009ac76979066e9ff4f55198e8992cfd0eeb40045de9b1eb3d"
+  },
+  "skill_tests": {
+    "passed": 29,
+    "failed": 0
+  },
+  "background_structure_checks": 13,
+  "updated_items": 13,
+  "index_order_preserved": true,
+  "original_renderer_unchanged": true,
+  "source_pdfs_modified": false,
+  "independent_reader_study": "not performed",
+  "items": [
+    {
+      "item_key": "VHVYYSMP",
+      "html": "pfn-bayesian-inference-VHVYYSMP/index.html",
+      "historical_context": {
+        "status": "pass",
+        "horizon": "2021-12-20",
+        "horizon_basis": "first-publication",
+        "date_evidence_url": "https://arxiv.org/abs/2112.10510",
+        "predecessor_rows": 4,
+        "chapter": "00 / 发表时的研究背景",
+        "source_review": "2021首发与ICLR2022/2024修订分开；解释GP/BNN、近似推断、CNP/ANP和GPT-3的已有贡献，不把后来的TabPFN倒写成前作。",
+        "review_scope": "Target introduction/background/related work plus selected primary abstracts and official submission histories; not comprehensive full-text review of all predecessors",
+        "source_urls": [
+          "https://arxiv.org/abs/1807.01613",
+          "https://arxiv.org/abs/1901.05761",
+          "https://arxiv.org/abs/2005.14165",
+          "https://arxiv.org/abs/2112.10510"
+        ]
+      },
+      "previous": {
+        "audit_source_sha256": "e5d8854531a6d79e9bc9575037e1b32874cbeb4a777631f3ac557911c6cddc8f",
+        "html_sha256": "b6ac4d9c9954e02fe4a5507428079b50ded50a6b70b8b2dd22cda78949a886a5"
+      },
+      "audit_source_sha256": "9c57bec0565a0474eb76bfe401b0f9dae5e29ec36b4fab4ff37c9bb131f6f100",
+      "html_sha256": "552ec0255de22c57c4dc2529fbf1d0e05da17ac61cf99ee568de12beb011255a",
+      "old_reading_preserved": true
+    },
+    {
+      "item_key": "5QV5CK9L",
+      "html": "retrieval-finetuning-5QV5CK9L/index.html",
+      "historical_context": {
+        "status": "pass",
+        "horizon": "2024-06-07",
+        "horizon_basis": "first-publication",
+        "date_evidence_url": "https://arxiv.org/abs/2406.05207",
+        "predecessor_rows": 4,
+        "chapter": "00 / 发表时的研究背景",
+        "source_review": "2024年6月时TabPFN、TabZilla、TabR、ICD/TuneTables已有不同贡献；局部context与微调对齐的动机明确。",
+        "review_scope": "Target introduction/background/related work plus selected primary abstracts and official submission histories; not comprehensive full-text review of all predecessors",
+        "source_urls": [
+          "https://arxiv.org/abs/2305.02997",
+          "https://arxiv.org/abs/2307.14338",
+          "https://arxiv.org/abs/2402.06971",
+          "https://arxiv.org/abs/2402.11137",
+          "https://arxiv.org/abs/2406.05207"
+        ]
+      },
+      "previous": {
+        "audit_source_sha256": "9366c0b5f1eb4d470f91199cff5eba633810886c6b2421be31e22ab011b5ab13",
+        "html_sha256": "7f244827e667cf8245d8f6f7634dab8d955414a8951c47da3681a8e16038d47b"
+      },
+      "audit_source_sha256": "dbce893f593c4791fb3a0330fbb8db2a612323172098e7b5c2fea6b37917a959",
+      "html_sha256": "58b2b28a8e8410b6246ad5f2862bc22e68a33ec23ef83274a89b7b3ed64b3f2d",
+      "old_reading_preserved": true
+    },
+    {
+      "item_key": "SAZSYEMX",
+      "html": "tabarena-SAZSYEMX/index.html",
+      "historical_context": {
+        "status": "pass",
+        "horizon": "2025-06-20",
+        "horizon_basis": "first-publication",
+        "date_evidence_url": "https://arxiv.org/abs/2506.16791",
+        "predecessor_rows": 5,
+        "chapter": "00 / 发表时的研究背景",
+        "source_review": "2025-06首发与11月v0.1快照分开；已有公共基准、强NN/TFM与AutoML的贡献和维护缺口具体化。",
+        "review_scope": "Target introduction/background/related work plus selected primary abstracts and official submission histories; not comprehensive full-text review of all predecessors",
+        "source_urls": [
+          "https://arxiv.org/abs/2003.06505",
+          "https://arxiv.org/abs/2305.02997",
+          "https://arxiv.org/abs/2407.04491",
+          "https://arxiv.org/abs/2506.16791"
+        ]
+      },
+      "previous": {
+        "audit_source_sha256": "0c0aeccaf81f23dbdde9ff9ef0a9add54b10ea48ae242de7cf552566fd947a9c",
+        "html_sha256": "e0774c9237a8262ccdd6c4d68700634b2c2aa04b14f4bd142a616a43a0f26259"
+      },
+      "audit_source_sha256": "e7d8e05ba16325ab072b6d1053cbd94382fed466107c5e09ec8c3446f84c3b86",
+      "html_sha256": "715637ca670cb4c887fe982c3eb4f183e82645ee8c54b04f114577e6671c3626",
+      "old_reading_preserved": true
+    },
+    {
+      "item_key": "V7LZ2JEQ",
+      "html": "tabdpt-V7LZ2JEQ/index.html",
+      "historical_context": {
+        "status": "pass",
+        "horizon": "2024-10-23",
+        "horizon_basis": "first-publication",
+        "date_evidence_url": "https://arxiv.org/abs/2410.18164",
+        "predecessor_rows": 4,
+        "chapter": "00 / 发表时的研究背景",
+        "source_review": "2024-10首发与2026-01本地修订分开，较新的TabICL/2.5比较不作为原始动机；真实表SSL与局部任务构造的缺口明确。",
+        "review_scope": "Target introduction/background/related work plus selected primary abstracts and official submission histories; not comprehensive full-text review of all predecessors",
+        "source_urls": [
+          "https://arxiv.org/abs/2112.10510",
+          "https://arxiv.org/abs/2207.01848",
+          "https://arxiv.org/abs/2406.05207",
+          "https://arxiv.org/abs/2410.18164"
+        ]
+      },
+      "previous": {
+        "audit_source_sha256": "5cb84070d54d6142280472195f06e39d353040cbbe5fc46cdd3667c7e56613be",
+        "html_sha256": "ac06881af26f70768728ad3382e20d58152fc85d4ae7fc80b1823e34fd8c3ba8"
+      },
+      "audit_source_sha256": "f0a40c619f19812247d07d11e5543a95a933966ab44f774ebd8cd7957c9569c9",
+      "html_sha256": "72cf598755fe1ba35cfe0238ecb3bd25f64e1944fe3c23d308fe0fcc5ca57242",
+      "old_reading_preserved": true
+    },
+    {
+      "item_key": "DFAGC498",
+      "html": "tabdpt-turbo-DFAGC498/index.html",
+      "historical_context": {
+        "status": "pass",
+        "horizon": "2026-08-02",
+        "horizon_basis": "first-publication",
+        "date_evidence_url": "https://arxiv.org/abs/2608.01400",
+        "predecessor_rows": 4,
+        "chapter": "00 / 发表时的研究背景",
+        "source_review": "以2026-08首发为边界；LoCalPFN/TabDPT检索成本与已有行压缩/cache进展并列，不把效率问题写成此前所有模型都没有解决。",
+        "review_scope": "Target introduction/background/related work plus selected primary abstracts and official submission histories; not comprehensive full-text review of all predecessors",
+        "source_urls": [
+          "https://arxiv.org/abs/2406.05207",
+          "https://arxiv.org/abs/2602.11139v1",
+          "https://arxiv.org/abs/2608.01400"
+        ]
+      },
+      "previous": {
+        "audit_source_sha256": "908da2cf875a68d53710b10dbef23dc97612e3b75beecaec19cb27e4c317dcfb",
+        "html_sha256": "9602c4f92a3fbe7e1a4752211990a944ac03fecfcff042d4628ac568e0089343"
+      },
+      "audit_source_sha256": "1dd7cf6bed377930b4540d9276f2577d081c0a919b46eddc8939f01f3e6bbfdd",
+      "html_sha256": "df052673071f152652fc19ac8953222bd44326914a13cab08a1796d327edd34f",
+      "old_reading_preserved": true
+    },
+    {
+      "item_key": "KZJI8QQR",
+      "html": "tabfm-zero-shot-KZJI8QQR/index.html",
+      "historical_context": {
+        "status": "pass",
+        "horizon": "2026-09-29",
+        "horizon_basis": "first-publication",
+        "date_evidence_url": "https://arxiv.org/abs/2609.37959",
+        "predecessor_rows": 5,
+        "chapter": "00 / 发表时的研究背景",
+        "source_review": "2026-09时已有PFN/TabICL/TabPFN-3、Fourier与LLM特征工程路线；本篇组合与外围搜索不被当成所有组件的首次发明。",
+        "review_scope": "Target introduction/background/related work plus selected primary abstracts and official submission histories; not comprehensive full-text review of all predecessors",
+        "source_urls": [
+          "https://arxiv.org/abs/2003.06505",
+          "https://arxiv.org/abs/2502.05564",
+          "https://arxiv.org/abs/2605.13986",
+          "https://arxiv.org/abs/2609.37959"
+        ]
+      },
+      "previous": {
+        "audit_source_sha256": "72685894572fe0ba23599af4bc05a66ea10eee5046527ef70cc2c2b1e174ce17",
+        "html_sha256": "5c07398fd68d993db5bdfdcfe87f548d569c7e85b629ce7e13493479f9fba296"
+      },
+      "audit_source_sha256": "5183747ff102fd72fd91ddf953e81c14e89062ecacd3e0e36deeeba887aa8528",
+      "html_sha256": "fcec4016dc637ceb3966f4abf2006cabe844f3e88840b1f99c18688f9a94fd5b",
+      "old_reading_preserved": true
+    },
+    {
+      "item_key": "XKRXCPY2",
+      "html": "tabicl-XKRXCPY2/index.html",
+      "historical_context": {
+        "status": "pass",
+        "horizon": "2025-02-08",
+        "horizon_basis": "first-publication",
+        "date_evidence_url": "https://arxiv.org/abs/2502.05564",
+        "predecessor_rows": 5,
+        "chapter": "00 / 发表时的研究背景",
+        "source_review": "2025-02首发时Nature第二代已经公开；结构压缩与此前context压缩/检索路线分开，排除2026后续模型。",
+        "review_scope": "Target introduction/background/related work plus selected primary abstracts and official submission histories; not comprehensive full-text review of all predecessors",
+        "source_urls": [
+          "https://arxiv.org/abs/2402.06971",
+          "https://arxiv.org/abs/2406.05207",
+          "https://arxiv.org/abs/2410.18164",
+          "https://arxiv.org/abs/2502.05564"
+        ]
+      },
+      "previous": {
+        "audit_source_sha256": "27d994cc478f3d7b9f52bce550073fac701a3f607bd86a94b302c01d3edb03a5",
+        "html_sha256": "48a9f6a91e542cba5787403bbae25a73df9842113c4d2164cc5d07887a209e48"
+      },
+      "audit_source_sha256": "292cdc13333bee7c697f364410d526fa72962fd8f721a00a09adf7754e99d588",
+      "html_sha256": "dfeec1cf4af2bc5caa7e8bacc3d2c45ed8e2c0b1dced7dc3c93e0d1ceb0e4e6a",
+      "old_reading_preserved": true
+    },
+    {
+      "item_key": "2PKI4VVL",
+      "html": "tabicl-v2-2PKI4VVL/index.html",
+      "historical_context": {
+        "status": "pass",
+        "horizon": "2026-02-11",
+        "horizon_basis": "first-publication",
+        "date_evidence_url": "https://arxiv.org/abs/2602.11139v1",
+        "predecessor_rows": 5,
+        "chapter": "00 / 发表时的研究背景",
+        "source_review": "2026-02首次公开与9月本地版本分开；已有TabICL/2.5/Real路线与SSMax/Muon的贡献明确，后文最新细节不声称v1完全相同。",
+        "review_scope": "Target introduction/background/related work plus selected primary abstracts and official submission histories; not comprehensive full-text review of all predecessors",
+        "source_urls": [
+          "https://arxiv.org/abs/2507.03971",
+          "https://arxiv.org/abs/2602.11139v1"
+        ]
+      },
+      "previous": {
+        "audit_source_sha256": "f9071df6bbf323f91b482824eae009c7b89a002f48a0da2ef58ee68aabb6c3a0",
+        "html_sha256": "9a7d89cc3485866fb9542a0634b3e182722a52b5f6137459b1644490453c334d"
+      },
+      "audit_source_sha256": "f03534a6f6f6608277bba14632d4bee118c9594ddf9a862e8862567cb1fd0be7",
+      "html_sha256": "673db35156a4077684c4d85dea7728e6dae9e7bdc2daa45ed67552522edcfdf0",
+      "old_reading_preserved": true
+    },
+    {
+      "item_key": "SA9FC8Q4",
+      "html": "tabpfn-2-5-SA9FC8Q4/index.html",
+      "historical_context": {
+        "status": "pass",
+        "horizon": "2025-11-11",
+        "horizon_basis": "first-arxiv-publication",
+        "date_evidence_url": "https://arxiv.org/abs/2511.08667",
+        "predecessor_rows": 4,
+        "chapter": "00 / 发表时的研究背景",
+        "source_review": "区分2025-11报告/首发与2026-02修订；说明Real续训、TabArena和任务蒸馏的不同来源，不混合训练含义。",
+        "review_scope": "Target introduction/background/related work plus selected primary abstracts and official submission histories; not comprehensive full-text review of all predecessors",
+        "source_urls": [
+          "https://arxiv.org/abs/2506.16791",
+          "https://arxiv.org/abs/2507.03971",
+          "https://arxiv.org/abs/2511.08667"
+        ]
+      },
+      "previous": {
+        "audit_source_sha256": "afdf6559435ea21542f369d8824d9fe7b7472149975a07be186145d229b266d2",
+        "html_sha256": "fabc0ac5f29507889a1fe3b0ddca2dc21cae0bdd50f0fe40253c25d85bd9d1b0"
+      },
+      "audit_source_sha256": "3fd04375eb4ba29f61dc6361d4d09afe1cc2be5f84e8d47cad531d13b8a27e80",
+      "html_sha256": "b20ce4093ae9fc0e9f19c703d538b0edf3332133fc87b57bf6fb361132c79fd1",
+      "old_reading_preserved": true
+    },
+    {
+      "item_key": "4ZXDEDKZ",
+      "html": "tabpfn-3-4ZXDEDKZ/index.html",
+      "historical_context": {
+        "status": "pass",
+        "horizon": "2026-05-13",
+        "horizon_basis": "first-arxiv-publication",
+        "date_evidence_url": "https://arxiv.org/abs/2605.13986",
+        "predecessor_rows": 5,
+        "chapter": "00 / 发表时的研究背景",
+        "source_review": "截至2026-05，TabICLv2只有早期版本可作前作，不能将9月修订实验倒推为已知；解释行压缩/缓存/分块各自历史问题。",
+        "review_scope": "Target introduction/background/related work plus selected primary abstracts and official submission histories; not comprehensive full-text review of all predecessors",
+        "source_urls": [
+          "https://arxiv.org/abs/2502.05564",
+          "https://arxiv.org/abs/2602.11139v1",
+          "https://arxiv.org/abs/2605.13986"
+        ]
+      },
+      "previous": {
+        "audit_source_sha256": "0c0892bc711ec315302b2ff6180e8dcdf846c8cf367172f49862a4cbdd0ed41d",
+        "html_sha256": "cc8d041e3940d54f1b1c2f28711ea26baa59b85aea2f8d514ea4f31bb7cc06e9"
+      },
+      "audit_source_sha256": "13c115b1117c7c7ea7a1f99a794df8e0f504e09ceb8e3f79f4acbe84c7f42097",
+      "html_sha256": "2d0298b12cafe4223c3b60e8d834bc466db098c8b0f45aec29eff9795dd83037",
+      "old_reading_preserved": true
+    },
+    {
+      "item_key": "CL7A9HMJ",
+      "html": "tabpfn-CL7A9HMJ/index.html",
+      "historical_context": {
+        "status": "pass",
+        "horizon": "2022-07-05",
+        "horizon_basis": "first-publication",
+        "date_evidence_url": "https://arxiv.org/abs/2207.01848",
+        "predecessor_rows": 4,
+        "chapter": "00 / 发表时的研究背景",
+        "source_review": "核对TabPFN的7月5日早于树/NN分析的7月18日；当前会议版引用后者不等于首发时已受其影响。",
+        "review_scope": "Target introduction/background/related work plus selected primary abstracts and official submission histories; not comprehensive full-text review of all predecessors",
+        "source_urls": [
+          "https://arxiv.org/abs/2003.06505",
+          "https://arxiv.org/abs/2112.10510",
+          "https://arxiv.org/abs/2207.01848",
+          "https://arxiv.org/abs/2207.08815"
+        ]
+      },
+      "previous": {
+        "audit_source_sha256": "fae8da2f99d15a0c4f58c7d647aba6970ccc82a5e617b514174a4096761b3be2",
+        "html_sha256": "ef436840730b3e4cf6366a45204e7133752ec49083f5c2c9435c7dad9cbd7ba6"
+      },
+      "audit_source_sha256": "16a1efabb8380a236ebf668e9056e18c2c68d96d54ad98598b2422708ae0ac7f",
+      "html_sha256": "0a985c3940bccc0ec43cbc5015251f3a65d819b7e98bc50d377d8c10a28f70ea",
+      "old_reading_preserved": true
+    },
+    {
+      "item_key": "KGSUGZNB",
+      "html": "tabpfn-v2-KGSUGZNB/index.html",
+      "historical_context": {
+        "status": "pass",
+        "horizon": "2025-01-08",
+        "horizon_basis": "publisher-online-publication",
+        "date_evidence_url": "https://doi.org/10.1038/s41586-024-08328-6",
+        "predecessor_rows": 4,
+        "chapter": "00 / 发表时的研究背景",
+        "source_review": "用PDF明确的2025-01-08在线日期作边界；解释第一代PFN/TabPFN及既有树/NN挑战，不借后发TabICL或2.5背书。",
+        "review_scope": "Target introduction/background/related work plus selected primary abstracts and official submission histories; not comprehensive full-text review of all predecessors",
+        "source_urls": [
+          "https://arxiv.org/abs/2112.10510",
+          "https://arxiv.org/abs/2305.02997"
+        ]
+      },
+      "previous": {
+        "audit_source_sha256": "2c4661d2e9d244a2e9e02b013fbe90c87f592b05e5ce9f2a0eab6c1c1e5ff362",
+        "html_sha256": "83745c13aee1a7e3dfea599b5e18c787f0f6cf803f5a07c9637986487546311f"
+      },
+      "audit_source_sha256": "4850893b300637294dcc701711c2030360f219c35a9ec0b722738750365695cd",
+      "html_sha256": "f8ef37ea283af3bbe3ed10054213ed159492e18472827e18a7c3fa9e3b5978a4",
+      "old_reading_preserved": true
+    },
+    {
+      "item_key": "BKDZDVHC",
+      "html": "trees-vs-deep-learning-BKDZDVHC/index.html",
+      "historical_context": {
+        "status": "pass",
+        "horizon": "2022-07-18",
+        "horizon_basis": "first-publication",
+        "date_evidence_url": "https://arxiv.org/abs/2207.08815",
+        "predecessor_rows": 4,
+        "chapter": "00 / 发表时的研究背景",
+        "source_review": "以2022-07-18为边界，区分RTDL/SAINT/树基线和当时评估争议；TabPFN作为同月同期补充而非被测基线。",
+        "review_scope": "Target introduction/background/related work plus selected primary abstracts and official submission histories; not comprehensive full-text review of all predecessors",
+        "source_urls": [
+          "https://arxiv.org/abs/2106.01342",
+          "https://arxiv.org/abs/2106.11959",
+          "https://arxiv.org/abs/2207.01848",
+          "https://arxiv.org/abs/2207.08815"
+        ]
+      },
+      "previous": {
+        "audit_source_sha256": "792ef00a90bc88903ae94960c489dff0082e9023ae35c2e19de1efeb6c2163fc",
+        "html_sha256": "f6721831bc84697e18d2dc8afed8ec850dee649adbfc1d43d4589e0c08a224af"
+      },
+      "audit_source_sha256": "e49ccfb435ebd2dabb5b68f3fa58da3aa430c74f8a8de94019281a5b449666c5",
+      "html_sha256": "a7aef9a379234371b357931db00370d7868e6c40dcd52325b3c7415f770368ec",
+      "old_reading_preserved": true
+    }
+  ]
+}

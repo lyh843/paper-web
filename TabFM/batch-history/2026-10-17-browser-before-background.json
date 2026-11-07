@@ -1,0 +1,214 @@
+{
+  "checked_on": "2026-10-17",
+  "method": "Real browser iframe viewports, eager image decode, document.fonts.ready, native source checkbox click, DOM anchor validation",
+  "checks": [
+    {
+      "path": "pfn-bayesian-inference-VHVYYSMP/index.html",
+      "checked_widths": [
+        390,
+        1280
+      ],
+      "image_count": 4,
+      "katex_count": 21,
+      "images_decoded": true,
+      "math_errors": 0,
+      "document_overflow": false,
+      "source_toggle": true,
+      "navigation": true,
+      "external_resources": 0,
+      "raw_markers": false
+    },
+    {
+      "path": "retrieval-finetuning-5QV5CK9L/index.html",
+      "checked_widths": [
+        390,
+        1280
+      ],
+      "image_count": 5,
+      "katex_count": 28,
+      "images_decoded": true,
+      "math_errors": 0,
+      "document_overflow": false,
+      "source_toggle": true,
+      "navigation": true,
+      "external_resources": 0,
+      "raw_markers": false
+    },
+    {
+      "path": "tabarena-SAZSYEMX/index.html",
+      "checked_widths": [
+        390,
+        1280
+      ],
+      "image_count": 5,
+      "katex_count": 7,
+      "images_decoded": true,
+      "math_errors": 0,
+      "document_overflow": false,
+      "source_toggle": true,
+      "navigation": true,
+      "external_resources": 0,
+      "raw_markers": false
+    },
+    {
+      "path": "tabdpt-V7LZ2JEQ/index.html",
+      "checked_widths": [
+        390,
+        1280
+      ],
+      "image_count": 4,
+      "katex_count": 21,
+      "images_decoded": true,
+      "math_errors": 0,
+      "document_overflow": false,
+      "source_toggle": true,
+      "navigation": true,
+      "external_resources": 0,
+      "raw_markers": false
+    },
+    {
+      "path": "tabdpt-turbo-DFAGC498/index.html",
+      "checked_widths": [
+        390,
+        1280
+      ],
+      "image_count": 4,
+      "katex_count": 17,
+      "images_decoded": true,
+      "math_errors": 0,
+      "document_overflow": false,
+      "source_toggle": true,
+      "navigation": true,
+      "external_resources": 0,
+      "raw_markers": false
+    },
+    {
+      "path": "tabfm-zero-shot-KZJI8QQR/index.html",
+      "checked_widths": [
+        390,
+        1280
+      ],
+      "image_count": 4,
+      "katex_count": 17,
+      "images_decoded": true,
+      "math_errors": 0,
+      "document_overflow": false,
+      "source_toggle": true,
+      "navigation": true,
+      "external_resources": 0,
+      "raw_markers": false
+    },
+    {
+      "path": "tabicl-XKRXCPY2/index.html",
+      "checked_widths": [
+        390,
+        1280
+      ],
+      "image_count": 6,
+      "katex_count": 29,
+      "images_decoded": true,
+      "math_errors": 0,
+      "document_overflow": false,
+      "source_toggle": true,
+      "navigation": true,
+      "external_resources": 0,
+      "raw_markers": false
+    },
+    {
+      "path": "tabicl-v2-2PKI4VVL/index.html",
+      "checked_widths": [
+        390,
+        1280
+      ],
+      "image_count": 5,
+      "katex_count": 25,
+      "images_decoded": true,
+      "math_errors": 0,
+      "document_overflow": false,
+      "source_toggle": true,
+      "navigation": true,
+      "external_resources": 0,
+      "raw_markers": false
+    },
+    {
+      "path": "tabpfn-2-5-SA9FC8Q4/index.html",
+      "checked_widths": [
+        390,
+        1280
+      ],
+      "image_count": 5,
+      "katex_count": 8,
+      "images_decoded": true,
+      "math_errors": 0,
+      "document_overflow": false,
+      "source_toggle": true,
+      "navigation": true,
+      "external_resources": 0,
+      "raw_markers": false
+    },
+    {
+      "path": "tabpfn-3-4ZXDEDKZ/index.html",
+      "checked_widths": [
+        390,
+        1280
+      ],
+      "image_count": 6,
+      "katex_count": 8,
+      "images_decoded": true,
+      "math_errors": 0,
+      "document_overflow": false,
+      "source_toggle": true,
+      "navigation": true,
+      "external_resources": 0,
+      "raw_markers": false
+    },
+    {
+      "path": "tabpfn-CL7A9HMJ/index.html",
+      "checked_widths": [
+        390,
+        1280
+      ],
+      "image_count": 3,
+      "katex_count": 21,
+      "images_decoded": true,
+      "math_errors": 0,
+      "document_overflow": false,
+      "source_toggle": true,
+      "navigation": true,
+      "external_resources": 0,
+      "raw_markers": false
+    },
+    {
+      "path": "tabpfn-v2-KGSUGZNB/index.html",
+      "checked_widths": [
+        390,
+        1280
+      ],
+      "image_count": 6,
+      "katex_count": 22,
+      "images_decoded": true,
+      "math_errors": 0,
+      "document_overflow": false,
+      "source_toggle": true,
+      "navigation": true,
+      "external_resources": 0,
+      "raw_markers": false
+    },
+    {
+      "path": "trees-vs-deep-learning-BKDZDVHC/index.html",
+      "checked_widths": [
+        390,
+        1280
+      ],
+      "image_count": 4,
+      "katex_count": 10,
+      "images_decoded": true,
+      "math_errors": 0,
+      "document_overflow": false,
+      "source_toggle": true,
+      "navigation": true,
+      "external_resources": 0,
+      "raw_markers": false
+    }
+  ]
+}

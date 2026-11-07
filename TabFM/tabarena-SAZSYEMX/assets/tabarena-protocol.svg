@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="610" viewBox="0 0 1120 610" role="img" aria-labelledby="title desc">
+<title id="title">credit-g：把选择与最终评估分开的数据流</title>
+<desc id="desc">credit-g约1000条记录划出外层训练约667条、测试约333条。训练部分的8折OOF用于选配置或学权重，外层测试只在流程冻结后计分。普通可调家族的fold平均和跨配置集成是两层操作。数值为教学约数，未运行模型。</desc>
+<defs><marker id="a" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8" fill="none" stroke="#4564a0" stroke-width="1.4"/></marker></defs>
+<rect width="1120" height="610" rx="22" fill="#f4f7fc"/>
+<g font-family="system-ui,sans-serif" fill="#183252">
+<text x="36" y="44" font-size="16" fill="#4269a9">本文重绘 · 原论文 §2、Appendix C · 未执行的协议示例</text>
+<text x="36" y="82" font-size="28" font-weight="700">一份真实任务，两道数据边界</text>
+<rect x="36" y="113" width="225" height="111" rx="14" fill="white" stroke="#b4c5e3"/>
+<text x="54" y="146" font-size="19" font-weight="650">credit-g · 1,000 条</text>
+<text x="54" y="176" font-size="16">OpenML task 363626</text>
+<text x="54" y="202" font-size="16">申请者属性 → 风险类别</text>
+<rect x="318" y="113" width="332" height="111" rx="14" fill="#e4edfc" stroke="#9fb9e4"/>
+<text x="338" y="146" font-size="19" font-weight="650">外层训练 · 约 667 条</text>
+<text x="338" y="176" font-size="16">内层选择与参数学习的唯一数据来源</text>
+<text x="338" y="202" font-size="16">一次外层划分；实际以发布索引为准</text>
+<rect x="713" y="113" width="370" height="111" rx="14" fill="#fff4df" stroke="#d8bb7d"/>
+<text x="734" y="146" font-size="19" font-weight="650">外层测试 · 约 333 条</text>
+<text x="734" y="176" font-size="16">锁住标签：不能调参、早停或学权重</text>
+<text x="734" y="202" font-size="16">只负责最终评估</text>
+<path d="M261 152H308M261 201H285V95H899V104" stroke="#4564a0" stroke-width="2" fill="none" marker-end="url(#a)"/>
+<text x="281" y="147" font-size="13">切分</text>
+<rect x="36" y="274" width="1047" height="181" rx="16" fill="#fff" stroke="#9fb9e4"/>
+<text x="56" y="304" font-size="17" font-weight="650">仅在外层训练内部 · 普通可调家族示意</text>
+<rect x="56" y="324" width="286" height="106" rx="12" fill="#edf3fc"/>
+<text x="73" y="352" font-size="18" font-weight="650">每个配置：内层 8 折</text>
+<text x="73" y="380" font-size="16">训练 7/8 → 预测余下 1/8</text>
+<text x="73" y="406" font-size="16">拼成 OOF 预测 + 保存 fold 模型</text>
+<rect x="402" y="324" width="283" height="106" rx="12" fill="#edf3fc"/>
+<text x="421" y="352" font-size="18" font-weight="650">用 OOF 选择部署流程</text>
+<text x="421" y="380" font-size="16">Tuned：选一个配置</text>
+<text x="421" y="406" font-size="16">T+E：40 轮 GES 学组合权重</text>
+<rect x="745" y="324" width="317" height="106" rx="12" fill="#edf3fc"/>
+<text x="764" y="352" font-size="18" font-weight="650">流程冻结后预测测试记录</text>
+<text x="764" y="380" font-size="16">① 同配置的 fold 预测平均</text>
+<text x="764" y="406" font-size="16">② T+E 再做跨配置加权平均</text>
+<path d="M484 224V258H198V314M342 377H392M685 377H735M899 224V258H1045V314" fill="none" stroke="#4564a0" stroke-width="2" marker-end="url(#a)"/>
+<text x="910" y="253" font-size="13">仅输入特征 x</text>
+<rect x="36" y="497" width="1047" height="74" rx="13" fill="#183252"/>
+<text x="57" y="527" font-size="18" fill="white" font-weight="650">最终才使用外层测试标签计分 → 保存预测、配置、硬件与耗时 → 重复外层划分</text>
+<text x="57" y="553" font-size="15" fill="#d1dff4">TFM 通常 refit 上下文；KNN 使用 leave-one-out 验证。不可把图中 8 折流程强套给每个方法。</text>
+<path d="M905 455V487" stroke="#4564a0" stroke-width="2" marker-end="url(#a)"/>
+</g></svg>

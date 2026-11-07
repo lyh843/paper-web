@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; img-src data:; connect-src 'none'">
+<title>TabArena：协议、精度与成本探索</title>
+<style>
+:root{color-scheme:light;--ink:#193452;--muted:#51647d;--line:#cedaed;--blue:#315fa8}*{box-sizing:border-box}body{margin:0;background:#f4f7fc;color:var(--ink);font:15px/1.75 system-ui,-apple-system,sans-serif}main{max-width:1040px;margin:auto;padding:24px}h1{font-size:25px;line-height:1.4;margin:5px 0 14px}h2{font-size:20px;margin:28px 0 10px}h3{font-size:17px;margin:0 0 8px}p{margin:8px 0 15px}.kicker{font-size:12px;color:var(--blue);font-weight:700;letter-spacing:.1em}.tag{background:#e2ebfb;padding:3px 9px;border-radius:7px;font-size:12px;display:inline-block}.hint{color:var(--muted);font-size:13px}fieldset{border:1px solid var(--line);border-radius:12px;margin:14px 0;padding:10px 14px}legend{font-weight:700;padding:0 6px}.choices{display:flex;gap:8px;flex-wrap:wrap}.choices label{display:flex;align-items:center;gap:6px;padding:5px 10px;background:white;border-radius:7px;border:1px solid var(--line);cursor:pointer}input{accent-color:var(--blue)}input:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid #bf770d;outline-offset:4px}.metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.metric,.panel{background:white;border:1px solid var(--line);border-radius:13px;padding:16px}.num{font-size:29px;line-height:1.4;font-weight:750;color:#244f93}.unit{font-size:12px;color:var(--muted)}.bar{height:10px;background:#e9eff8;border-radius:8px;overflow:hidden;margin-top:12px}.bar span{display:block;background:#4777b7;height:100%}.warning{border-left:4px solid #bd871e;padding:10px 13px;background:#fff7e7}.table-wrap{overflow:auto}table{border-collapse:collapse;width:100%;font-size:13px;min-width:600px}td,th{padding:8px;text-align:left;border-bottom:1px solid var(--line)}th{background:#e7eef9}tr.selected{background:#eaf2ff;font-weight:650}ol{padding-left:24px}li{margin:9px 0}button{font:inherit;background:white;color:var(--ink);border:1px solid var(--line);border-radius:8px;padding:7px 12px;cursor:pointer}button[aria-pressed=true]{color:white;background:#315fa8;border-color:#315fa8}.steps{display:flex;flex-wrap:wrap;gap:7px;margin:12px 0}.panel{min-height:155px}.boundary{font-weight:650;color:#94610c}details{margin-top:18px}summary{cursor:pointer;font-weight:650}noscript p{background:#fff4df;padding:10px}@media(max-width:550px){main{padding:14px}.metrics{grid-template-columns:1fr}.num{font-size:25px}h1{font-size:22px}.metric{padding:12px}}@media print{.controls,.steps{display:none}.table-wrap{overflow:visible}table{min-width:0}details>div{display:block}}
+</style></head>
+<body><main>
+<div class="kicker">TABARENA v0.1 · REPORTED DATA</div>
+<h1>名字不变，预测流程已经不同</h1>
+<p>选择家族与协议，查看原论文 <strong>Table A.1</strong> 报告的精度与成本。数值来自同一冻结快照，不是实时榜，也不是浏览器训练结果。</p>
+<div class="controls">
+<fieldset><legend>1 · 模型家族</legend><div class="choices">
+<label><input type="radio" name="family" value="RealMLP" checked>RealMLP</label><label><input type="radio" name="family" value="TabM">TabM</label><label><input type="radio" name="family" value="LightGBM">LightGBM</label><label><input type="radio" name="family" value="CatBoost">CatBoost</label>
+</div></fieldset>
+<fieldset><legend>2 · 建模协议</legend><div class="choices">
+<label><input type="radio" name="mode" value="D">Default</label><label><input type="radio" name="mode" value="T" checked>Tuned</label><label><input type="radio" name="mode" value="TE">Tuned + Ensemble</label>
+</div></fieldset></div>
+<div id="selection" aria-live="polite" aria-atomic="true">
+<h2 id="selected-title">RealMLP · Tuned</h2>
+<div class="metrics">
+<div class="metric"><div>Elo ↑</div><div class="num" id="elo">1342</div><div class="unit">原表约 95% 区间：<span id="ci">1297–1385</span></div><div class="bar"><span id="elo-bar" style="width:78.94%"></span></div><div class="unit">条形共同标尺：0–1700 Elo</div></div>
+<div class="metric"><div>Improvability ↓</div><div class="num" id="imp">9.8%</div><div class="unit">相对本方法池逐任务最优误差的差距</div></div>
+<div class="metric"><div>预测成本 ↓</div><div class="num" id="infer">0.49</div><div class="unit">秒 / 1,000 样本 · 跨任务中位数</div></div>
+</div>
+<p id="train">建模成本：6564.71 秒 / 1,000 样本（跨任务中位数）。</p>
+<div class="panel"><h3 id="mechanism-title">选最佳配置，仍保留 fold 平均</h3><p id="mechanism">训练默认及随机搜索配置，用 OOF 分数选一个配置；普通家族通常保留其 8 个 fold 预测器，预测时平均。被丢弃的配置仍产生搜索成本。</p><p class="hint" id="comparison">相对该家族 Tuned，当前就是比较起点。</p></div>
+</div>
+<p class="warning">时间不是同硬件单次请求延迟。四个家族属于原表同一 51 任务比较，Elo 的方法池还包含部分补齐 TFM。这里未重新拟合 Elo，也未把区间宽度当作成对显著性检验。</p>
+<details open><summary>保留原始数值 · 无脚本也能阅读</summary><div class="table-wrap"><table>
+<thead><tr><th>家族 / 协议</th><th>Elo ↑</th><th>约95%区间</th><th>I ↓</th><th>建模 s/1K</th><th>预测 s/1K</th></tr></thead>
+<tbody>
+<tr data-key="RealMLP-D"><td>RealMLP · D</td><td>1238</td><td>1191–1289</td><td>12.4%</td><td>21.86</td><td>0.84</td></tr>
+<tr data-key="RealMLP-T" class="selected"><td>RealMLP · T</td><td>1342</td><td>1297–1385</td><td>9.8%</td><td>6564.71</td><td>0.49</td></tr>
+<tr data-key="RealMLP-TE"><td>RealMLP · T+E</td><td>1564</td><td>1507–1637</td><td>6.4%</td><td>6564.71</td><td>10.26</td></tr>
+<tr data-key="TabM-D"><td>TabM · D</td><td>1343</td><td>1288–1411</td><td>10.7%</td><td>10.49</td><td>0.13</td></tr>
+<tr data-key="TabM-T"><td>TabM · T</td><td>1447</td><td>1395–1520</td><td>7.7%</td><td>3285.87</td><td>0.17</td></tr>
+<tr data-key="TabM-TE"><td>TabM · T+E</td><td>1541</td><td>1480–1615</td><td>6.7%</td><td>3285.87</td><td>1.47</td></tr>
+<tr data-key="LightGBM-D"><td>LightGBM · D</td><td>1197</td><td>1152–1241</td><td>13.3%</td><td>1.96</td><td>0.14</td></tr>
+<tr data-key="LightGBM-T"><td>LightGBM · T</td><td>1446</td><td>1409–1485</td><td>9.0%</td><td>416.98</td><td>0.33</td></tr>
+<tr data-key="LightGBM-TE"><td>LightGBM · T+E</td><td>1527</td><td>1482–1576</td><td>8.3%</td><td>416.98</td><td>2.64</td></tr>
+<tr data-key="CatBoost-D"><td>CatBoost · D</td><td>1427</td><td>1384–1479</td><td>9.0%</td><td>6.83</td><td>0.08</td></tr>
+<tr data-key="CatBoost-T"><td>CatBoost · T</td><td>1469</td><td>1420–1525</td><td>7.8%</td><td>1658.41</td><td>0.08</td></tr>
+<tr data-key="CatBoost-TE"><td>CatBoost · T+E</td><td>1482</td><td>1427–1539</td><td>7.6%</td><td>1658.41</td><td>0.65</td></tr>
+</tbody></table></div></details>
+<h2>沿 credit-g 追踪信息边界</h2>
+<p>同一条外层测试记录从切分后一直被隔离。点击阶段，辨认谁可以使用标签、什么在更新、什么必须锁住。</p>
+<div class="steps" role="group" aria-label="任务流程阶段">
+<button type="button" data-step="0" aria-pressed="true">① 外层切分</button><button type="button" data-step="1" aria-pressed="false">② 内层 OOF</button><button type="button" data-step="2" aria-pressed="false">③ 选择与组合</button><button type="button" data-step="3" aria-pressed="false">④ 测试预测</button><button type="button" data-step="4" aria-pressed="false">⑤ 最终评估</button>
+</div>
+<div id="step-panel" class="panel" aria-live="polite" aria-atomic="true"><h3 id="step-title">① 外层切分</h3><p id="step-text">真实任务为 credit-g，1,000 条记录，OpenML task 363626。一轮3折外层划分约667条用于训练、333条用于测试，实际使用发布索引。</p><p class="boundary" id="step-boundary">边界：测试标签不能用于后续调参、早停或权重选择。</p></div>
+<details open><summary>完整静态流程与例外</summary><ol>
+<li>外层切分：credit-g 使用 10 次重复 3 折评估；任务表提供其真实来源。</li>
+<li>内层 OOF：每个配置在当前外层训练部分做 8 折；当前 OOF 行由未用该行拟合的 fold 模型预测。</li>
+<li>选择：T 选一个配置，T+E 在 OOF 预测上做 40 步 GES；同一配置可以重复入选。</li>
+<li>预测：先平均配置内的 fold 模型，再在需要时跨配置加权。测试特征进入预测，测试标签保持封存。</li>
+<li>评估：流程冻结后才用测试标签算 AUC，保留预测、配置、耗时和硬件信息。</li>
+</ol><p class="hint">上述8折训练示意适用于普通可调家族；TFM通常refit上下文，KNN使用高效leave-one-out验证。没有展示任何真实样本的未公开概率。</p></details>
+<p class="hint">来源：原论文 Table A.1（p.31）、Table B.2（p.40）、§2 与 Appendix C.1/C.3–C.4（pp.41–42、47）。所有交互只改变解释焦点；数据与比较条件保持冻结。区间端点为原表中心值加减上下偏移的算术换写。</p>
+<noscript><p>当前禁用了 JavaScript。请直接阅读完整数据表和静态流程；全部关键事实仍可访问。</p></noscript>
+</main>
+<script>
+'use strict';
+const rows = [...document.querySelectorAll('tbody tr')];
+const data = Object.fromEntries(rows.map(row => {
+  const cells = [...row.cells].map(cell => cell.textContent);
+  return [row.dataset.key, {elo:Number(cells[1]),ci:cells[2],imp:cells[3],train:Number(cells[4]),infer:Number(cells[5])}];
+}));
+const modes = {
+  D:['Default','只用默认配置，也区分 fold 平均','不做配置搜索。对这四个普通家族，默认配置通常仍经过内层交叉验证并保留 fold 预测器；Default 不等于只拟合一份预测器。'],
+  T:['Tuned','选最佳配置，仍保留 fold 平均','训练默认及随机搜索配置，用 OOF 分数选一个配置；普通家族通常保留其 8 个 fold 预测器，预测时平均。被丢弃的配置仍产生搜索成本。'],
+  TE:['Tuned + Ensemble','相同搜索产物，多配置一起预测','复用搜索中保存的 OOF 预测，40 轮 GES 得到稀疏权重；先平均配置内的 fold 预测，再跨配置加权。没有重新发明一个网络架构，推理要执行多个配置。']
+};
+const el = id => document.getElementById(id);
+function update(){
+  const family=document.querySelector('input[name="family"]:checked').value;
+  const mode=document.querySelector('input[name="mode"]:checked').value;
+  const key=family+'-'+mode,d=data[key],base=data[family+'-T'];
+  el('selected-title').textContent=family+' · '+modes[mode][0];
+  el('elo').textContent=d.elo;
+  el('ci').textContent=d.ci;
+  el('elo-bar').style.width=(d.elo/1700*100)+'%';
+  el('imp').textContent=d.imp;
+  el('infer').textContent=d.infer.toFixed(2);
+  el('train').textContent='建模成本：'+d.train.toFixed(2)+' 秒 / 1,000 样本（跨任务中位数）。';
+  el('mechanism-title').textContent=modes[mode][1];
+  el('mechanism').textContent=modes[mode][2];
+  const delta=d.elo-base.elo;
+  el('comparison').textContent=mode==='T'?'相对该家族 Tuned，当前就是比较起点。':
+    '相对该家族 Tuned：Elo 点估计 '+(delta>=0?'+':'')+delta+'；预测成本为 '+(d.infer/base.infer).toFixed(2)+' 倍。比值是两个跨任务中位数之比，不是逐任务加速比的中位数。';
+  rows.forEach(row=>row.classList.toggle('selected',row.dataset.key===key));
+}
+document.querySelectorAll('input').forEach(input=>input.addEventListener('change',update));
+const steps=[
+ ['① 外层切分','真实任务为 credit-g，1,000 条记录，OpenML task 363626。一轮3折外层划分约667条用于训练、333条用于测试，实际使用发布索引。','边界：测试标签不能用于后续调参、早停或权重选择。'],
+ ['② 内层 OOF','以普通可调家族为例，每个配置在外层训练部分做8折，每次拟合7份、预测余下1份，再把所有未见行预测拼起来。预处理遵守相同的数据边界。','可用标签：当前外层训练集；仍封存：外层测试标签。'],
+ ['③ 选择与组合','Tuned按OOF指标选一份配置；T+E用相同选择数据做40步GES，重复选中的候选获得更高权重。OOF本身仍可能被反复选择过拟合。','改变的是选择/组合规则；外层测试不参与权重学习。'],
+ ['④ 测试预测','把同一条外层测试记录的特征交给保留的fold预测器，先做配置内平均；T+E再按已冻结权重组合。TFM走不同的refit路径。','只读取测试特征；测试标签仍不能改变模型或权重。'],
+ ['⑤ 最终评估','流程固定后用外层测试标签算AUC，记录预测、配置、建模与预测时间、硬件和版本。重复划分，先按任务汇总，再跨任务聚合。','现在标签可用于最终报告，不能据此回头调好同一轮流程。']
+];
+document.querySelectorAll('[data-step]').forEach(button=>button.addEventListener('click',()=>{
+ const step=steps[Number(button.dataset.step)];
+ el('step-title').textContent=step[0];el('step-text').textContent=step[1];el('step-boundary').textContent=step[2];
+ document.querySelectorAll('[data-step]').forEach(other=>other.setAttribute('aria-pressed',String(other===button)));
+}));
+update();
+</script></body></html>

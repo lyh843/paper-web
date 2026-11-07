@@ -1,0 +1,115 @@
+{
+  "generated_on": "2026-10-17",
+  "zotero_collection_key": "FLT4H9RN",
+  "zotero_item_key": "SA9FC8Q4",
+  "zotero_attachment_key": "9IIFU5YD",
+  "source_pdf_path": "/home/lyh/Zotero/storage/9IIFU5YD/Grinsztajn 等 - 2025 - TabPFN-2.5 Advancing the State of the Art in Tabular Foundation Models.pdf",
+  "source_pdf_sha256": "21f3cb0e28e587aef164a79a8ada9e942da51b052f55e6f366d5744a8b97f90f",
+  "source_pdf_pages": 35,
+  "source_version": "TabPFN-2.5 report, arXiv:2511.08667v2, 2026-02-05; internal date 2025-11-06, 35 pages",
+  "covered_sections_and_scope": "报告日期与arXiv版本日期分开；正文§§3–6及Appendix C、D、F、G相关内容已读取。",
+  "source_pdf_modified": false,
+  "duplicate_of": null,
+  "standalone_pdf_item": false,
+  "reading_language": "zh-CN",
+  "mode": "DEEP READ",
+  "lens": "understanding-first",
+  "skill_source": "https://github.com/xiaofengShi/paper-reading-skill",
+  "skill_commit": "eadd0cd61d276d082938d80eb0d3fbb85614f2e1",
+  "renderer_sha256": "3ed818344cd402297240d51553c0c6ab7eb599017a51380cb437d37283f5598c",
+  "rebuild_command": "node /repo/paper-web/.opencode/skills/paper-reading/scripts/render-reading.cjs /repo/paper-web/TabFM/tabpfn-2-5-SA9FC8Q4/reading.md /repo/paper-web/TabFM/tabpfn-2-5-SA9FC8Q4/index.html",
+  "audit_source_sha256": "3fd04375eb4ba29f61dc6361d4d09afe1cc2be5f84e8d47cad531d13b8a27e80",
+  "html_sha256": "b20ce4093ae9fc0e9f19c703d538b0edf3332133fc87b57bf6fb361132c79fd1",
+  "figures": [
+    {
+      "file": "assets/tabpfn25-fig3-small.png",
+      "pdf_page_1based": 7,
+      "crop_rectangle_pdf_points": [
+        68,
+        65,
+        528,
+        275
+      ],
+      "render_scale": 2.5,
+      "sha256": "230a6d3a939ff9726df5f0212c7b4578bbe6b4ad3aed4927ecb3ac48187790c7"
+    },
+    {
+      "file": "assets/tabpfn25-fig4-all.png",
+      "pdf_page_1based": 8,
+      "crop_rectangle_pdf_points": [
+        68,
+        65,
+        528,
+        280
+      ],
+      "render_scale": 2.5,
+      "sha256": "f7f2b11fb7a93c6088f5aca84a3fe2084304e1f5084e11fa3649143ec24273cb"
+    },
+    {
+      "file": "assets/tabpfn25-fig7-distillation.png",
+      "pdf_page_1based": 9,
+      "crop_rectangle_pdf_points": [
+        68,
+        65,
+        528,
+        221
+      ],
+      "render_scale": 2.5,
+      "sha256": "31504adc0f9655954e6c078fe5bd349e365d76d51a0f9683d3e2c33e5c405c35"
+    },
+    {
+      "file": "assets/tabpfn25-fig8-speed.png",
+      "pdf_page_1based": 9,
+      "crop_rectangle_pdf_points": [
+        68,
+        280,
+        528,
+        417
+      ],
+      "render_scale": 2.5,
+      "sha256": "f006bf6813c9906503cf468f3a02e27a081e7c6151dd494444089edd03cf83ff"
+    },
+    {
+      "file": "assets/tabpfn25-fig9-causal.png",
+      "pdf_page_1based": 10,
+      "crop_rectangle_pdf_points": [
+        68,
+        65,
+        528,
+        243
+      ],
+      "render_scale": 2.5,
+      "sha256": "10bb8dbbf9356b424472fe50607e745a29506c2294aa56813ed5a067a846490f"
+    }
+  ],
+  "validation_scope": "Source-based generator self-check and browser delivery checks; no independent reader study, raw-data audit or experimental reproduction",
+  "skill_base_commit": "eadd0cd61d276d082938d80eb0d3fbb85614f2e1",
+  "skill_revision": "historical-context-v1",
+  "skill_definition_sha256": "a795c8d00b90632ef0eaada455415b555acc6c0e6dc101bce4cddc26de8315a4",
+  "historical_context": {
+    "status": "pass",
+    "horizon": "2025-11-11",
+    "horizon_basis": "first-arxiv-publication",
+    "date_evidence_url": "https://arxiv.org/abs/2511.08667",
+    "predecessor_rows": 4,
+    "chapter": "00 / 发表时的研究背景",
+    "source_review": "区分2025-11报告/首发与2026-02修订；说明Real续训、TabArena和任务蒸馏的不同来源，不混合训练含义。",
+    "review_scope": "Target introduction/background/related work plus selected primary abstracts and official submission histories; not comprehensive full-text review of all predecessors",
+    "source_urls": [
+      "https://arxiv.org/abs/2506.16791",
+      "https://arxiv.org/abs/2507.03971",
+      "https://arxiv.org/abs/2511.08667"
+    ]
+  },
+  "local_revisions": [
+    {
+      "revision": "historical-context-v1",
+      "date": "2026-10-17",
+      "action": "Insert publication-time background; preserve prior method, evidence, assets and paths",
+      "before": {
+        "audit_source_sha256": "afdf6559435ea21542f369d8824d9fe7b7472149975a07be186145d229b266d2",
+        "html_sha256": "fabc0ac5f29507889a1fe3b0ddca2dc21cae0bdd50f0fe40253c25d85bd9d1b0"
+      }
+    }
+  ]
+}

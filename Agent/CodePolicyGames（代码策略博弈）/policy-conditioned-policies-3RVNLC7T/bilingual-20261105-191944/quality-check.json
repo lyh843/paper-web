@@ -1,0 +1,279 @@
+{
+  "itemKey": "3RVNLC7T",
+  "file": "/repo/paper-web/Agent/CodePolicyGames（代码策略博弈）/policy-conditioned-policies-3RVNLC7T/bilingual-20261105-191944/arxiv_2512.21024.no_watermark.zh-CN.dual.pdf",
+  "sha256": "4d0b75df2b0f2d8db7773239a5ab4ba082bcfb03529823ecb8fe67e67244bfd0",
+  "samplePages": [
+    1,
+    4,
+    11,
+    20,
+    25
+  ],
+  "manualVisualReview": "completed-with-layout-limitations",
+  "pages": [
+    {
+      "page": 1,
+      "chineseCharactersRight": 911,
+      "leftPixelsMatchOriginal": true,
+      "widthRatio": 2.0,
+      "heightRatio": 1.0,
+      "originalRasterImages": 0,
+      "allOriginalRasterImagesRetainedRight": true
+    },
+    {
+      "page": 2,
+      "chineseCharactersRight": 1155,
+      "leftPixelsMatchOriginal": true,
+      "widthRatio": 2.0,
+      "heightRatio": 1.0,
+      "originalRasterImages": 0,
+      "allOriginalRasterImagesRetainedRight": true
+    },
+    {
+      "page": 3,
+      "chineseCharactersRight": 819,
+      "leftPixelsMatchOriginal": true,
+      "widthRatio": 2.0,
+      "heightRatio": 1.0,
+      "originalRasterImages": 0,
+      "allOriginalRasterImagesRetainedRight": true
+    },
+    {
+      "page": 4,
+      "chineseCharactersRight": 980,
+      "leftPixelsMatchOriginal": true,
+      "widthRatio": 2.0,
+      "heightRatio": 1.0,
+      "originalRasterImages": 0,
+      "allOriginalRasterImagesRetainedRight": true
+    },
+    {
+      "page": 5,
+      "chineseCharactersRight": 851,
+      "leftPixelsMatchOriginal": true,
+      "widthRatio": 2.0,
+      "heightRatio": 1.0,
+      "originalRasterImages": 0,
+      "allOriginalRasterImagesRetainedRight": true
+    },
+    {
+      "page": 6,
+      "chineseCharactersRight": 1041,
+      "leftPixelsMatchOriginal": true,
+      "widthRatio": 2.0,
+      "heightRatio": 1.0,
+      "originalRasterImages": 0,
+      "allOriginalRasterImagesRetainedRight": true
+    },
+    {
+      "page": 7,
+      "chineseCharactersRight": 1147,
+      "leftPixelsMatchOriginal": true,
+      "widthRatio": 2.0,
+      "heightRatio": 1.0,
+      "originalRasterImages": 0,
+      "allOriginalRasterImagesRetainedRight": true
+    },
+    {
+      "page": 8,
+      "chineseCharactersRight": 1020,
+      "leftPixelsMatchOriginal": true,
+      "widthRatio": 2.0,
+      "heightRatio": 1.0,
+      "originalRasterImages": 0,
+      "allOriginalRasterImagesRetainedRight": true
+    },
+    {
+      "page": 9,
+      "chineseCharactersRight": 467,
+      "leftPixelsMatchOriginal": true,
+      "widthRatio": 2.0,
+      "heightRatio": 1.0,
+      "originalRasterImages": 0,
+      "allOriginalRasterImagesRetainedRight": true
+    },
+    {
+      "page": 10,
+      "chineseCharactersRight": 965,
+      "leftPixelsMatchOriginal": true,
+      "widthRatio": 2.0,
+      "heightRatio": 1.0,
+      "originalRasterImages": 0,
+      "allOriginalRasterImagesRetainedRight": true
+    },
+    {
+      "page": 11,
+      "chineseCharactersRight": 514,
+      "leftPixelsMatchOriginal": true,
+      "widthRatio": 2.0,
+      "heightRatio": 1.0,
+      "originalRasterImages": 4,
+      "allOriginalRasterImagesRetainedRight": true
+    },
+    {
+      "page": 12,
+      "chineseCharactersRight": 548,
+      "leftPixelsMatchOriginal": true,
+      "widthRatio": 2.0,
+      "heightRatio": 1.0,
+      "originalRasterImages": 0,
+      "allOriginalRasterImagesRetainedRight": true
+    },
+    {
+      "page": 13,
+      "chineseCharactersRight": 470,
+      "leftPixelsMatchOriginal": true,
+      "widthRatio": 2.0,
+      "heightRatio": 1.0,
+      "originalRasterImages": 0,
+      "allOriginalRasterImagesRetainedRight": true
+    },
+    {
+      "page": 14,
+      "chineseCharactersRight": 455,
+      "leftPixelsMatchOriginal": true,
+      "widthRatio": 2.0,
+      "heightRatio": 1.0,
+      "originalRasterImages": 0,
+      "allOriginalRasterImagesRetainedRight": true
+    },
+    {
+      "page": 15,
+      "chineseCharactersRight": 370,
+      "leftPixelsMatchOriginal": true,
+      "widthRatio": 2.0,
+      "heightRatio": 1.0,
+      "originalRasterImages": 0,
+      "allOriginalRasterImagesRetainedRight": true
+    },
+    {
+      "page": 16,
+      "chineseCharactersRight": 715,
+      "leftPixelsMatchOriginal": true,
+      "widthRatio": 2.0,
+      "heightRatio": 1.0,
+      "originalRasterImages": 0,
+      "allOriginalRasterImagesRetainedRight": true
+    },
+    {
+      "page": 17,
+      "chineseCharactersRight": 1299,
+      "leftPixelsMatchOriginal": true,
+      "widthRatio": 2.0,
+      "heightRatio": 1.0,
+      "originalRasterImages": 0,
+      "allOriginalRasterImagesRetainedRight": true
+    },
+    {
+      "page": 18,
+      "chineseCharactersRight": 1039,
+      "leftPixelsMatchOriginal": true,
+      "widthRatio": 2.0,
+      "heightRatio": 1.0,
+      "originalRasterImages": 0,
+      "allOriginalRasterImagesRetainedRight": true
+    },
+    {
+      "page": 19,
+      "chineseCharactersRight": 605,
+      "leftPixelsMatchOriginal": true,
+      "widthRatio": 2.0,
+      "heightRatio": 1.0,
+      "originalRasterImages": 0,
+      "allOriginalRasterImagesRetainedRight": true
+    },
+    {
+      "page": 20,
+      "chineseCharactersRight": 313,
+      "leftPixelsMatchOriginal": true,
+      "widthRatio": 2.0,
+      "heightRatio": 1.0,
+      "originalRasterImages": 0,
+      "allOriginalRasterImagesRetainedRight": true
+    },
+    {
+      "page": 21,
+      "chineseCharactersRight": 101,
+      "leftPixelsMatchOriginal": true,
+      "widthRatio": 2.0,
+      "heightRatio": 1.0,
+      "originalRasterImages": 0,
+      "allOriginalRasterImagesRetainedRight": true
+    },
+    {
+      "page": 22,
+      "chineseCharactersRight": 101,
+      "leftPixelsMatchOriginal": true,
+      "widthRatio": 2.0,
+      "heightRatio": 1.0,
+      "originalRasterImages": 0,
+      "allOriginalRasterImagesRetainedRight": true
+    },
+    {
+      "page": 23,
+      "chineseCharactersRight": 59,
+      "leftPixelsMatchOriginal": true,
+      "widthRatio": 2.0,
+      "heightRatio": 1.0,
+      "originalRasterImages": 0,
+      "allOriginalRasterImagesRetainedRight": true
+    },
+    {
+      "page": 24,
+      "chineseCharactersRight": 49,
+      "leftPixelsMatchOriginal": true,
+      "widthRatio": 2.0,
+      "heightRatio": 1.0,
+      "originalRasterImages": 0,
+      "allOriginalRasterImagesRetainedRight": true
+    },
+    {
+      "page": 25,
+      "chineseCharactersRight": 416,
+      "leftPixelsMatchOriginal": true,
+      "widthRatio": 2.0,
+      "heightRatio": 1.0,
+      "originalRasterImages": 0,
+      "allOriginalRasterImagesRetainedRight": true
+    }
+  ],
+  "sourcePages": 25,
+  "outputPages": 25,
+  "pageCountMatches": true,
+  "allLeftPixelsMatch": true,
+  "allRasterImagesRetainedRight": true,
+  "manualVisualReviewAt": "2026-11-05T12:05:35.506795+00:00",
+  "manualVisualNotes": [
+    "第20页代码框右侧出现连续文本重排、缩进丢失及代码关键字翻译；代码以左侧原文为准。",
+    "第25页术语表部分表头保留英文。"
+  ],
+  "allOriginalTextUnchangedByPage": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true
+  ],
+  "zeroChinesePages": [],
+  "pixelDifferenceInterpretation": "112/117页原文侧低分辨率像素完全相同；另5页局部有5至113个像素差异（单页不足0.05%），文字逐页一致，未发现对应内容缺失。此检查不承诺像素级排版完全一致。"
+}

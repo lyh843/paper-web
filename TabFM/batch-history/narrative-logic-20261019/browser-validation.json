@@ -1,0 +1,267 @@
+{
+  "checked_on": "2026-10-17",
+  "revision": "historical-context-v1",
+  "method": "Real browser 390px/1280px iframes; explicit image load complete/naturalWidth, fonts, DOM navigation/background inspection and native source checkbox",
+  "checks": [
+    {
+      "path": "pfn-bayesian-inference-VHVYYSMP/index.html",
+      "checked_widths": [
+        390,
+        1280
+      ],
+      "background_first": true,
+      "background_table_rows": 4,
+      "image_count": 4,
+      "images_loaded": true,
+      "image_check": "complete and naturalWidth",
+      "katex_count": 21,
+      "math_errors": 0,
+      "document_overflow": false,
+      "source_toggle": true,
+      "navigation": true,
+      "fonts_loaded": true,
+      "external_resources": 0,
+      "raw_markers": false
+    },
+    {
+      "path": "retrieval-finetuning-5QV5CK9L/index.html",
+      "checked_widths": [
+        390,
+        1280
+      ],
+      "background_first": true,
+      "background_table_rows": 4,
+      "image_count": 5,
+      "images_loaded": true,
+      "image_check": "complete and naturalWidth",
+      "katex_count": 28,
+      "math_errors": 0,
+      "document_overflow": false,
+      "source_toggle": true,
+      "navigation": true,
+      "fonts_loaded": true,
+      "external_resources": 0,
+      "raw_markers": false
+    },
+    {
+      "path": "tabarena-SAZSYEMX/index.html",
+      "checked_widths": [
+        390,
+        1280
+      ],
+      "background_first": true,
+      "background_table_rows": 5,
+      "image_count": 5,
+      "images_loaded": true,
+      "image_check": "complete and naturalWidth",
+      "katex_count": 7,
+      "math_errors": 0,
+      "document_overflow": false,
+      "source_toggle": true,
+      "navigation": true,
+      "fonts_loaded": true,
+      "external_resources": 0,
+      "raw_markers": false
+    },
+    {
+      "path": "tabdpt-V7LZ2JEQ/index.html",
+      "checked_widths": [
+        390,
+        1280
+      ],
+      "background_first": true,
+      "background_table_rows": 4,
+      "image_count": 4,
+      "images_loaded": true,
+      "image_check": "complete and naturalWidth",
+      "katex_count": 21,
+      "math_errors": 0,
+      "document_overflow": false,
+      "source_toggle": true,
+      "navigation": true,
+      "fonts_loaded": true,
+      "external_resources": 0,
+      "raw_markers": false
+    },
+    {
+      "path": "tabdpt-turbo-DFAGC498/index.html",
+      "checked_widths": [
+        390,
+        1280
+      ],
+      "background_first": true,
+      "background_table_rows": 4,
+      "image_count": 4,
+      "images_loaded": true,
+      "image_check": "complete and naturalWidth",
+      "katex_count": 17,
+      "math_errors": 0,
+      "document_overflow": false,
+      "source_toggle": true,
+      "navigation": true,
+      "fonts_loaded": true,
+      "external_resources": 0,
+      "raw_markers": false
+    },
+    {
+      "path": "tabfm-zero-shot-KZJI8QQR/index.html",
+      "checked_widths": [
+        390,
+        1280
+      ],
+      "background_first": true,
+      "background_table_rows": 5,
+      "image_count": 4,
+      "images_loaded": true,
+      "image_check": "complete and naturalWidth",
+      "katex_count": 17,
+      "math_errors": 0,
+      "document_overflow": false,
+      "source_toggle": true,
+      "navigation": true,
+      "fonts_loaded": true,
+      "external_resources": 0,
+      "raw_markers": false
+    },
+    {
+      "path": "tabicl-XKRXCPY2/index.html",
+      "checked_widths": [
+        390,
+        1280
+      ],
+      "background_first": true,
+      "background_table_rows": 5,
+      "image_count": 6,
+      "images_loaded": true,
+      "image_check": "complete and naturalWidth",
+      "katex_count": 29,
+      "math_errors": 0,
+      "document_overflow": false,
+      "source_toggle": true,
+      "navigation": true,
+      "fonts_loaded": true,
+      "external_resources": 0,
+      "raw_markers": false
+    },
+    {
+      "path": "tabicl-v2-2PKI4VVL/index.html",
+      "checked_widths": [
+        390,
+        1280
+      ],
+      "background_first": true,
+      "background_table_rows": 5,
+      "image_count": 5,
+      "images_loaded": true,
+      "image_check": "complete and naturalWidth",
+      "katex_count": 25,
+      "math_errors": 0,
+      "document_overflow": false,
+      "source_toggle": true,
+      "navigation": true,
+      "fonts_loaded": true,
+      "external_resources": 0,
+      "raw_markers": false
+    },
+    {
+      "path": "tabpfn-2-5-SA9FC8Q4/index.html",
+      "checked_widths": [
+        390,
+        1280
+      ],
+      "background_first": true,
+      "background_table_rows": 4,
+      "image_count": 5,
+      "images_loaded": true,
+      "image_check": "complete and naturalWidth",
+      "katex_count": 8,
+      "math_errors": 0,
+      "document_overflow": false,
+      "source_toggle": true,
+      "navigation": true,
+      "fonts_loaded": true,
+      "external_resources": 0,
+      "raw_markers": false
+    },
+    {
+      "path": "tabpfn-3-4ZXDEDKZ/index.html",
+      "checked_widths": [
+        390,
+        1280
+      ],
+      "background_first": true,
+      "background_table_rows": 5,
+      "image_count": 6,
+      "images_loaded": true,
+      "image_check": "complete and naturalWidth",
+      "katex_count": 8,
+      "math_errors": 0,
+      "document_overflow": false,
+      "source_toggle": true,
+      "navigation": true,
+      "fonts_loaded": true,
+      "external_resources": 0,
+      "raw_markers": false
+    },
+    {
+      "path": "tabpfn-CL7A9HMJ/index.html",
+      "checked_widths": [
+        390,
+        1280
+      ],
+      "background_first": true,
+      "background_table_rows": 4,
+      "image_count": 3,
+      "images_loaded": true,
+      "image_check": "complete and naturalWidth",
+      "katex_count": 21,
+      "math_errors": 0,
+      "document_overflow": false,
+      "source_toggle": true,
+      "navigation": true,
+      "fonts_loaded": true,
+      "external_resources": 0,
+      "raw_markers": false
+    },
+    {
+      "path": "tabpfn-v2-KGSUGZNB/index.html",
+      "checked_widths": [
+        390,
+        1280
+      ],
+      "background_first": true,
+      "background_table_rows": 4,
+      "image_count": 6,
+      "images_loaded": true,
+      "image_check": "complete and naturalWidth",
+      "katex_count": 22,
+      "math_errors": 0,
+      "document_overflow": false,
+      "source_toggle": true,
+      "navigation": true,
+      "fonts_loaded": true,
+      "external_resources": 0,
+      "raw_markers": false
+    },
+    {
+      "path": "trees-vs-deep-learning-BKDZDVHC/index.html",
+      "checked_widths": [
+        390,
+        1280
+      ],
+      "background_first": true,
+      "background_table_rows": 4,
+      "image_count": 4,
+      "images_loaded": true,
+      "image_check": "complete and naturalWidth",
+      "katex_count": 10,
+      "math_errors": 0,
+      "document_overflow": false,
+      "source_toggle": true,
+      "navigation": true,
+      "fonts_loaded": true,
+      "external_resources": 0,
+      "raw_markers": false
+    }
+  ]
+}

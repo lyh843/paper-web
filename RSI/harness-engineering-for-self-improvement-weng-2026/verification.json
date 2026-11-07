@@ -1,0 +1,124 @@
+{
+  "images": [
+    {
+      "src": "assets/openai-agent-loop.png",
+      "width": 497,
+      "height": 224,
+      "complete": true
+    },
+    {
+      "src": "assets/coding-harness-loop.png",
+      "width": 3248,
+      "height": 1080,
+      "complete": true
+    },
+    {
+      "src": "assets/ace.png",
+      "width": 1498,
+      "height": 550,
+      "complete": true
+    },
+    {
+      "src": "assets/mce.png",
+      "width": 1721,
+      "height": 910,
+      "complete": true
+    },
+    {
+      "src": "assets/meta-harness-outer-loop.png",
+      "width": 1448,
+      "height": 636,
+      "complete": true
+    },
+    {
+      "src": "assets/meta-harness.png",
+      "width": 1401,
+      "height": 450,
+      "complete": true
+    },
+    {
+      "src": "assets/ai-scientist.png",
+      "width": 1014,
+      "height": 786,
+      "complete": true
+    },
+    {
+      "src": "assets/autodata.png",
+      "width": 1190,
+      "height": 664,
+      "complete": true
+    },
+    {
+      "src": "assets/adas.png",
+      "width": 1494,
+      "height": 852,
+      "complete": true
+    },
+    {
+      "src": "assets/aflow.png",
+      "width": 1938,
+      "height": 1210,
+      "complete": true
+    },
+    {
+      "src": "assets/aflow-exp.png",
+      "width": 1492,
+      "height": 492,
+      "complete": true
+    },
+    {
+      "src": "assets/STOP-algo.png",
+      "width": 1438,
+      "height": 546,
+      "complete": true
+    },
+    {
+      "src": "assets/STOP-patterns.png",
+      "width": 1116,
+      "height": 252,
+      "complete": true
+    },
+    {
+      "src": "assets/harness-update.png",
+      "width": 1884,
+      "height": 622,
+      "complete": true
+    },
+    {
+      "src": "assets/self-harness.png",
+      "width": 1302,
+      "height": 938,
+      "complete": true
+    },
+    {
+      "src": "assets/alphaevolve.png",
+      "width": 1420,
+      "height": 884,
+      "complete": true
+    },
+    {
+      "src": "assets/alphaevolve-plot.png",
+      "width": 1962,
+      "height": 692,
+      "complete": true
+    },
+    {
+      "src": "assets/SIA.png",
+      "width": 1624,
+      "height": 640,
+      "complete": true
+    }
+  ],
+  "mathCount": 42,
+  "mathErrors": [],
+  "figures": 18,
+  "tables": 1,
+  "pdfPages": 23,
+  "pdfImageObjects": 18,
+  "pdfTextCharacters": 44963,
+  "sourceContentCharacters": 45049,
+  "sourceContentPreservedBeforeMathRendering": true,
+  "allHeadingsFoundInPDF": true,
+  "offlineRemoteRequests": [],
+  "javascriptErrors": []
+}

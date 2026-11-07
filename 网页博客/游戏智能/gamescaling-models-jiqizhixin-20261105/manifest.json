@@ -1,0 +1,110 @@
+{
+  "url": "https://mp.weixin.qq.com/s/T2LNcUGe5L4LR7duwVfNPg",
+  "requestedUrl": "https://mp.weixin.qq.com/s/T2LNcUGe5L4LR7duwVfNPg",
+  "title": "迈向通用游戏智能，清华、米哈游开源GameScaling系列模型",
+  "author": "机器之心",
+  "published": "2026-11-05",
+  "archivedAt": "2026-11-06T08:47:42.435495+00:00",
+  "sourceSha256": "6b81ad8731e6731a42ac9f0daa6d61bb42e635c9de1a2c3a0bb182a7e3f7b119",
+  "assets": [
+    {
+      "source": "https://mmbiz.qpic.cn/mmbiz_jpg/5L8bhP5dIqFg0WfYlyqqeepLD4C3TibGpjf6FOH7EVuKjibcnDe74qjAU9XhgHylI3WghS7ricbx1ckkNhJHaQ2AnGqG5ZmOdwHJQLl99bxYHU/640?wx_fmt=webp&from=appmsg",
+      "path": "assets/f9b16d93980d-640",
+      "bytes": 45489,
+      "sha256": "d1844d536c0554dddf5c0e490b7407303bc9c245ee6b9c7b0aaea0d46d809ef1"
+    },
+    {
+      "source": "http://mmbiz.qpic.cn/mmbiz_jpg/5L8bhP5dIqFhO7kAU0cgyJibiaMJWHLsqTp4c9qYI0jVagd80jrXOLNIrnII6xD2m8LY0ib2np2gm9YFwTnCukPIpYT9GnZyweg9Iw5zIaweZ8/0?wx_fmt=jpeg",
+      "path": "assets/5d19499375df-0",
+      "bytes": 84662,
+      "sha256": "2fc54cb1862b2f6edb182c3f3fbf7f417503d37ea9228af0fad2329f7be33f2e"
+    },
+    {
+      "source": "https://mmbiz.qpic.cn/sz_mmbiz_gif/5L8bhP5dIqFzk8rMSLYEx14ekqiceic7k4ibkvkQY5nibGYIEQ46sCicneN72AQnqo7eXFmGV5oXTF3vl6dCqpUVOKCSjAumcKickIvPUKdRuYVwI/640?wx_fmt=gif&from=appmsg",
+      "path": "assets/883e7d9c260d-640",
+      "bytes": 3337931,
+      "sha256": "ca44e040d84bb57cd2bcce2dcded819b986e4e45df6dec588aee4f063aabd48d"
+    },
+    {
+      "source": "https://mmbiz.qpic.cn/mmbiz_png/5L8bhP5dIqH6iaWvFQ5Novhf2EiawvoeaEOeGLOuOibjUIsib0AWFpbKAsR2Oh740MbJQ26h6ggmfOuLvYhcskdRiaIAw1bDxRVZTibREpHb11g4k/640?wx_fmt=png&from=appmsg",
+      "path": "assets/65097d78f872-640",
+      "bytes": 761888,
+      "sha256": "a503a3d999b08307b8e78e4ed4759332d2488e382133f2fafbe044c536deda28"
+    },
+    {
+      "source": "https://mmbiz.qpic.cn/sz_mmbiz_png/5L8bhP5dIqFbRlUFMapMib3CjMwhkp5m0gTDnE4XegAicdUicYkXU6gGGQibGX2fNibtO7fD9kC8YSJpCRZROtVg4Sb2e3pXKKAnhibmb4fVibxSGc/640?wx_fmt=png&from=appmsg",
+      "path": "assets/6576c6ab4afb-640",
+      "bytes": 141833,
+      "sha256": "8561e225e617ac5da2f3e89b3665a88bd3b8b2e4f2ca7aac0c9d0d8e8210a4b2"
+    },
+    {
+      "source": "https://mmbiz.qpic.cn/sz_mmbiz_gif/5L8bhP5dIqG3nw8CUzJwuHQ8gYib7n8Lrq1rmVibnrUWxLs4FbqBTnnAxynkG2PHFlabqv5kwDl4YiaxygLDF3KTc55o9WOjnibVTbpoUd7tZmU/640?wx_fmt=gif&from=appmsg",
+      "path": "assets/17694203ba8e-640",
+      "bytes": 1716222,
+      "sha256": "066f506131092f0f44be33b3f516c3915acd59e85b4b10e678baa447d05075c7"
+    },
+    {
+      "source": "https://mmbiz.qpic.cn/mmbiz_gif/5L8bhP5dIqGAvOJgibBhJjpDxWL4yRUMreOnlZRJsVuWtCVg1XYSIXnkha8Xib2RqNdxtqF433nohms3nM9ermgACAiccPT026n8jv5oKMjibTQ/640?wx_fmt=gif&from=appmsg",
+      "path": "assets/304ee9613c8f-640",
+      "bytes": 6233879,
+      "sha256": "fa1dc017b9c96ea2e7c238f58680372dfbd81ab99b7911688588343d23f1efd5"
+    },
+    {
+      "source": "https://mmbiz.qpic.cn/mmbiz_png/5L8bhP5dIqEl8B9xyTPqleRQvru36wcxUVVCS9qRMWLmGj4rAZAyWWEibQ4KlmUlId3FdyOKVfPuTiaKxPIaYibrcrkCvu7wVDRfuPF4XmU1dQ/640?wx_fmt=png&from=appmsg",
+      "path": "assets/cc2a5f85e046-640",
+      "bytes": 927159,
+      "sha256": "1e69f7120d916a868199cf2bacedb197209ecdc0690fc1586df7997843681f00"
+    }
+  ],
+  "zoteroImport": "imported-and-readback-verified",
+  "zoteroCollectionPath": "人工智能/网页博客/游戏智能",
+  "zoteroCollectionKey": "9MFNBSBH",
+  "zoteroItemKey": "HKCWJUH7",
+  "zoteroAttachmentKey": "4F3HAPHI",
+  "sourceAcquisition": "functions.webfetch(format=html); raw tool output saved without truncation",
+  "extractionSha256": "642c8eba527c7480abf98955fc4e95e141b147c5891aa3eeee150a0fe27f6fcc",
+  "originalArticleImages": 7,
+  "originalImageURLs": [
+    "https://mmbiz.qpic.cn/mmbiz_jpg/5L8bhP5dIqFg0WfYlyqqeepLD4C3TibGpjf6FOH7EVuKjibcnDe74qjAU9XhgHylI3WghS7ricbx1ckkNhJHaQ2AnGqG5ZmOdwHJQLl99bxYHU/640?wx_fmt=webp&from=appmsg",
+    "https://mmbiz.qpic.cn/sz_mmbiz_gif/5L8bhP5dIqFzk8rMSLYEx14ekqiceic7k4ibkvkQY5nibGYIEQ46sCicneN72AQnqo7eXFmGV5oXTF3vl6dCqpUVOKCSjAumcKickIvPUKdRuYVwI/640?wx_fmt=gif&from=appmsg",
+    "https://mmbiz.qpic.cn/mmbiz_png/5L8bhP5dIqH6iaWvFQ5Novhf2EiawvoeaEOeGLOuOibjUIsib0AWFpbKAsR2Oh740MbJQ26h6ggmfOuLvYhcskdRiaIAw1bDxRVZTibREpHb11g4k/640?wx_fmt=png&from=appmsg",
+    "https://mmbiz.qpic.cn/sz_mmbiz_png/5L8bhP5dIqFbRlUFMapMib3CjMwhkp5m0gTDnE4XegAicdUicYkXU6gGGQibGX2fNibtO7fD9kC8YSJpCRZROtVg4Sb2e3pXKKAnhibmb4fVibxSGc/640?wx_fmt=png&from=appmsg",
+    "https://mmbiz.qpic.cn/sz_mmbiz_gif/5L8bhP5dIqG3nw8CUzJwuHQ8gYib7n8Lrq1rmVibnrUWxLs4FbqBTnnAxynkG2PHFlabqv5kwDl4YiaxygLDF3KTc55o9WOjnibVTbpoUd7tZmU/640?wx_fmt=gif&from=appmsg",
+    "https://mmbiz.qpic.cn/mmbiz_gif/5L8bhP5dIqGAvOJgibBhJjpDxWL4yRUMreOnlZRJsVuWtCVg1XYSIXnkha8Xib2RqNdxtqF433nohms3nM9ermgACAiccPT026n8jv5oKMjibTQ/640?wx_fmt=gif&from=appmsg",
+    "https://mmbiz.qpic.cn/mmbiz_png/5L8bhP5dIqEl8B9xyTPqleRQvru36wcxUVVCS9qRMWLmGj4rAZAyWWEibQ4KlmUlId3FdyOKVfPuTiaKxPIaYibrcrkCvu7wVDRfuPF4XmU1dQ/640?wx_fmt=png&from=appmsg"
+  ],
+  "mediaLimitations": [
+    {
+      "type": "embedded-wechat-video",
+      "url": "https://mp.weixin.qq.com/mp/readtemplate?t=pages/video_player_tmpl&action=mpvideo&auto=0&vid=wxv_4767461252522835986",
+      "poster": "http://mmbiz.qpic.cn/mmbiz_jpg/5L8bhP5dIqFhO7kAU0cgyJibiaMJWHLsqTp4c9qYI0jVagd80jrXOLNIrnII6xD2m8LY0ib2np2gm9YFwTnCukPIpYT9GnZyweg9Iw5zIaweZ8/0?wx_fmt=jpeg",
+      "status": "poster-and-link-only; video-not-downloaded"
+    }
+  ],
+  "publisher": "机器之心",
+  "authorNote": "文章未署个人作者；以发布公众号机器之心作为机构作者，不把文内介绍的研究者当作文章作者。",
+  "layoutAdaptation": "保留正文全部内联样式；还原标题和公众号日期；不包含平台界面CSS；为离线阅读及A4分页补充基础排版，非像素级复刻。",
+  "artifacts": {
+    "source.html": {
+      "bytes": 3550137,
+      "sha256": "6b81ad8731e6731a42ac9f0daa6d61bb42e635c9de1a2c3a0bb182a7e3f7b119"
+    },
+    "extraction.html": {
+      "bytes": 26898,
+      "sha256": "642c8eba527c7480abf98955fc4e95e141b147c5891aa3eeee150a0fe27f6fcc"
+    },
+    "index.html": {
+      "bytes": 28849,
+      "sha256": "f01e26714d5cfbcf507b80440c3a7752488ae5422d8120b0b378ec06be5366ec"
+    },
+    "article.md": {
+      "bytes": 9105,
+      "sha256": "3238231e0de1e85842de78396598103aa639dd6cd1448e7f08cfdb4daf4741ea"
+    },
+    "article.pdf": {
+      "bytes": 3485357,
+      "sha256": "64e8ace9eed13993d6cf9b0e7a2eb31be1ae5b605ba1bc26f9cc6a6c146a5da9"
+    }
+  },
+  "gifNote": "原文3张GIF的原始字节保留于assets，HTML可播放；PDF仅保存静态帧。"
+}

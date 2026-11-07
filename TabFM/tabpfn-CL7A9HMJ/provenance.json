@@ -1,0 +1,198 @@
+{
+  "generated_on": "2026-10-19",
+  "zotero_collection_key": "FLT4H9RN",
+  "zotero_item_key": "CL7A9HMJ",
+  "zotero_attachment_key": "YZG4DEQU",
+  "source_pdf_path": "/home/lyh/Zotero/storage/YZG4DEQU/Hollmann 等 - 2023 - TABPFN A TRANSFORMER THAT SOLVES SMALL TABULAR CLASSIFICATION PROBLEMS IN A SECOND.pdf",
+  "source_pdf_sha256": "c7f8dff9efdb3d6f9f071bfa959a35974b6fffc1ec727f742246aa136ed406fe",
+  "source_pdf_pages": 36,
+  "source_version": "Byte-identical duplicate of KRQBT2RP, ICLR 2023 PDF, 36 pages",
+  "central_source_pages_inspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30
+  ],
+  "source_pdf_modified": false,
+  "duplicate_of": null,
+  "reading_language": "zh-CN",
+  "mode": "DEEP READ",
+  "lens": "understanding-first",
+  "skill_source": "https://github.com/xiaofengShi/paper-reading-skill",
+  "skill_commit": "eadd0cd61d276d082938d80eb0d3fbb85614f2e1",
+  "renderer_sha256": "3ed818344cd402297240d51553c0c6ab7eb599017a51380cb437d37283f5598c",
+  "rebuild_command": "node /repo/paper-web/.opencode/skills/paper-reading/scripts/render-reading.cjs /repo/paper-web/TabFM/tabpfn-CL7A9HMJ/reading.md /repo/paper-web/TabFM/tabpfn-CL7A9HMJ/index.html",
+  "audit_source_sha256": "2dd20aaf88458c74230711a0db8d9c9ba5a884359bc46df123f4af9d0eedfe68",
+  "html_sha256": "e496c3eb61b2db11f849dbafc2f9f4711cb033d3286bf3bfc6b4d74a37365cea",
+  "figures": [
+    {
+      "file": "assets/tabpfn-fig1-architecture.png",
+      "pdf_page_1based": 3,
+      "crop_rectangle_pdf_points": [
+        105,
+        65,
+        508,
+        177
+      ],
+      "render_scale": 2.5,
+      "sha256": "804ce05e905ea498cd5a83806e44f74aaa368992a5519d16b9f161fa7d92a827"
+    },
+    {
+      "file": "assets/tabpfn-table1-main.png",
+      "pdf_page_1based": 8,
+      "crop_rectangle_pdf_points": [
+        100,
+        60,
+        540,
+        184
+      ],
+      "render_scale": 2.5,
+      "sha256": "1f2450d685ee2c33601e9c96ddc4314d904ba232ecba11d70b57cb2232259c54"
+    },
+    {
+      "file": "assets/tabpfn-table4-prior.png",
+      "pdf_page_1based": 19,
+      "crop_rectangle_pdf_points": [
+        130,
+        565,
+        490,
+        628
+      ],
+      "render_scale": 2.5,
+      "sha256": "9e30e05757eb197947bd97c0e7f05889606dc3bd6cdf6aeb1de60385de127a6a"
+    }
+  ],
+  "validation_scope": "Manual narrative and source review plus renderer/browser checks; no independent reader study or scientific reproduction",
+  "deduplicated_aliases": [
+    {
+      "item_key": "KRQBT2RP",
+      "removed_output": "tabpfn-KRQBT2RP",
+      "reason": "Identical source PDF; retain current collection item CL7A9HMJ",
+      "removed_on": "2026-10-17"
+    }
+  ],
+  "skill_base_commit": "eadd0cd61d276d082938d80eb0d3fbb85614f2e1",
+  "skill_revision": "narrative-logic-v1",
+  "skill_definition_sha256": "8d086cb16b69e68d4517e538cc25b651e929a37599e60f0f909794e5a17b267b",
+  "historical_context": {
+    "status": "pass",
+    "horizon": "2022-07-05",
+    "horizon_basis": "first-publication",
+    "date_evidence_url": "https://arxiv.org/abs/2207.01848",
+    "predecessor_rows": 4,
+    "chapter": "00 / 发表时的研究背景",
+    "source_review": "核对TabPFN的7月5日早于树/NN分析的7月18日；当前会议版引用后者不等于首发时已受其影响。",
+    "review_scope": "Target introduction/background/related work plus selected primary abstracts and official submission histories; not comprehensive full-text review of all predecessors",
+    "source_urls": [
+      "https://arxiv.org/abs/2003.06505",
+      "https://arxiv.org/abs/2112.10510",
+      "https://arxiv.org/abs/2207.01848",
+      "https://arxiv.org/abs/2207.08815"
+    ]
+  },
+  "local_revisions": [
+    {
+      "revision": "historical-context-v1",
+      "date": "2026-10-17",
+      "action": "Insert publication-time background; preserve prior method, evidence, assets and paths",
+      "before": {
+        "audit_source_sha256": "fae8da2f99d15a0c4f58c7d647aba6970ccc82a5e617b514174a4096761b3be2",
+        "html_sha256": "ef436840730b3e4cf6366a45204e7133752ec49083f5c2c9435c7dad9cbd7ba6"
+      }
+    },
+    {
+      "revision": "narrative-logic-v1",
+      "date": "2026-10-19",
+      "action": "Paper-specific prose refactor: problem/value, prior-only idea reconstruction, intuition, running instance, accessible mathematics, question/test/answer evidence and takeaways; preserve original evidence and visuals",
+      "archive_directory": "revisions/pre-narrative-logic-20261019",
+      "before": {
+        "audit_source_sha256": "16a1efabb8380a236ebf668e9056e18c2c68d96d54ad98598b2422708ae0ac7f",
+        "html_sha256": "0a985c3940bccc0ec43cbc5015251f3a65d819b7e98bc50d377d8c10a28f70ea"
+      }
+    }
+  ],
+  "preserved_skill_extensions": [
+    "historical-context-v1"
+  ],
+  "narrative_protocol_sha256": "25a89f7a1b55037132b049163ecb82d2ea7fa9106bbd729652fcf8a4b124a483",
+  "quality_check_sha256": "7514d2167f5f158737e6ed4911f02b2a1c4b72fd0902ee3c0eff3c1cb22d3aa4",
+  "manual_narrative_review": {
+    "title": "TabPFN: A Transformer That Solves Small Tabular Classification Problems in a Second",
+    "problem": "§00：用新表context代替逐表拟合/搜索，在小表质量与在线成本之间取得折中",
+    "prior_gap": "§00：PFN已建立接口，缺的是适合真实小表的任务先验；7月18日树/NN分析不是7月5日前作",
+    "idea": "§01：从既有任务生成器接口与SCM/简单性偏好走向改善练习任务的假设，不以消融胜负为前提",
+    "intuition": "§01：生成器决定统计偏好，context条件化当前任务，在线参数不更新",
+    "example": "§02：UCI Iris真实记录139/128/71/79与查询150，讲解全局context而非kNN，网络输出不编造",
+    "math": "§03：贝叶斯归一化→同机制抽样→条件交叉熵/KL的教学展开，不为新SCM混合添加普适定理",
+    "evidence": "§06–07：18表主结果、30表边界、先验/无关列/长度对照，OVO与集成成本保留",
+    "takeaways": "§08：以任务设计算法、输入适应与参数学习不同、强结果有工作区间",
+    "source_pages_rechecked": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "cautions": [
+      "Iris为教学选取，不是论文fold或实测预测",
+      "沿用原有附录与原图的来源审计，不声称本次重新跑实验"
+    ]
+  },
+  "manual_review_type": "Generator source-based semantic self-check; not independent reader study",
+  "source_pages_rechecked_this_revision": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "reused_source_audit": "Unchanged PDF and existing equation/figure/number source audits retained from archived reading; full text accessible, not claimed to have independently rerun experiments or read every appendix table anew",
+  "delivery_status": "completed",
+  "browser_validation_this_revision": {
+    "ok": true,
+    "viewports": [
+      1280,
+      390
+    ],
+    "images_loaded": 3,
+    "images_total": 3,
+    "math": 24,
+    "math_errors": 0,
+    "sections": 9,
+    "source_count": 41,
+    "anchors_valid": true,
+    "source_toggle": true,
+    "page_overflow_default_or_sources": false,
+    "figures_have_context": true,
+    "external_resources": 0,
+    "scripts": 0
+  }
+}

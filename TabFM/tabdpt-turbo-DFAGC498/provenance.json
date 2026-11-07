@@ -1,0 +1,212 @@
+{
+  "generated_on": "2026-10-26",
+  "zotero_collection_key": "FLT4H9RN",
+  "zotero_item_key": "DFAGC498",
+  "zotero_attachment_key": "FMN7AKYM",
+  "source_pdf_path": "/home/lyh/Zotero/storage/FMN7AKYM/Hosseinzadeh 等 - 2026 - TabDPT-Turbo Efficient In-Context Learning for Tabular Prediction.pdf",
+  "source_pdf_sha256": "ce6c969a9591305afc101e6042c5713195e3bb0a68a84bade802e75bffbef366",
+  "source_pdf_pages": 9,
+  "source_version": "TabDPT-Turbo, arXiv:2608.01400v2, 2026-08-25, 9 pages",
+  "covered_sections_and_scope": "完整9页正文/附录A重读，13问重构；首次公开边界修正为2026-06-17官方软件release，区分08-02 arXiv及08-25修订。新增真实任务、解析共享成本交互、predict重绘、脆弱性/方案/反例、实际后续与近邻检索、候选提案。",
+  "source_pdf_modified": false,
+  "duplicate_of": null,
+  "standalone_pdf_item": false,
+  "reading_language": "zh-CN",
+  "mode": "DEEP READ",
+  "lens": "understanding-first with mandatory 13-question research extension",
+  "skill_source": "https://github.com/xiaofengShi/paper-reading-skill",
+  "skill_commit": "eadd0cd61d276d082938d80eb0d3fbb85614f2e1",
+  "renderer_sha256": "3ed818344cd402297240d51553c0c6ab7eb599017a51380cb437d37283f5598c",
+  "rebuild_command": "node /repo/paper-web/.opencode/skills/paper-reading/scripts/render-reading.cjs /repo/paper-web/TabFM/tabdpt-turbo-DFAGC498/reading.md /repo/paper-web/TabFM/tabdpt-turbo-DFAGC498/index.html",
+  "audit_source_sha256": "4aa2822d69ebcd7714284a055a93e121431c92cd6b10f8865080a8e7056378c5",
+  "html_sha256": "247f684cbbf16150fb7dd119791df6ff6662072bb2acae9331c02828ee8f4784",
+  "figures": [
+    {
+      "file": "assets/turbo-fig3-architecture.png",
+      "pdf_page_1based": 7,
+      "crop_rectangle_pdf_points": [
+        150,
+        156,
+        450,
+        327
+      ],
+      "render_scale": 2.5,
+      "sha256": "ad8bbcf63d101312b0c94e9b4b0a887a9cf7a659133ab5b6efa1385aefd36ec6"
+    },
+    {
+      "file": "assets/turbo-fig1-speed.png",
+      "pdf_page_1based": 4,
+      "crop_rectangle_pdf_points": [
+        50,
+        236,
+        295,
+        340
+      ],
+      "render_scale": 2.5,
+      "sha256": "783589ee575804136e0243bf95ab2413f8b29c349c9f9b7929bf8113706931ea"
+    },
+    {
+      "file": "assets/turbo-fig2-retrieval.png",
+      "pdf_page_1based": 4,
+      "crop_rectangle_pdf_points": [
+        303,
+        236,
+        548,
+        359
+      ],
+      "render_scale": 2.5,
+      "sha256": "7a2cbb1b8fa001c7c8e0c7cf9f1dd25f1ce9b6aff270ede3d6921262de1aefab"
+    },
+    {
+      "file": "assets/turbo-table1-speed.png",
+      "pdf_page_1based": 4,
+      "crop_rectangle_pdf_points": [
+        50,
+        630,
+        295,
+        725
+      ],
+      "render_scale": 2.5,
+      "sha256": "f0898c410507cd2beabd64913efd24aa70a217b50722022e1d8189ed319bcbaa"
+    }
+  ],
+  "validation_scope": "Full 9-page source reread and 13-question semantic self-check, actual literature/novelty search and official chronology correction, strict render/offline checks, desktop/narrow-frame and keyboard/DOM functionality. No model run, independent reader study or novelty proof; true pointer/screenshot acceptance not claimed.",
+  "skill_base_commit": "eadd0cd61d276d082938d80eb0d3fbb85614f2e1",
+  "skill_revision": "research-prompt-v1",
+  "skill_definition_sha256": "14e8ac8e44a931d2cae3213ad4086e61514b35b1268f04fcb5f032d92923fed7",
+  "historical_context": {
+    "status": "pass",
+    "horizon": "2026-06-17",
+    "horizon_basis": "first-official-software-release",
+    "date_evidence_url": "https://github.com/layer6ai-labs/TabDPT-inference/releases/tag/v1.2.0",
+    "predecessor_rows": 5,
+    "chapter": "00 / 发表时的研究背景",
+    "source_review": "官方v1.2.0软件2026-06-17早于arXiv08-02；CRUMB06-09为已知已有路线，不推断作者影响。8月Shaheen解释为发布后/同期研究，后文实验仍按本地08-25 v2。",
+    "review_scope": "Target introduction/background/related work plus selected primary abstracts and official submission histories; not comprehensive full-text review of all predecessors",
+    "source_urls": [
+      "https://arxiv.org/abs/2406.05207",
+      "https://arxiv.org/abs/2602.11139v1",
+      "https://arxiv.org/abs/2608.01400",
+      "https://github.com/layer6ai-labs/TabDPT-inference/releases/tag/v1.2.0",
+      "https://arxiv.org/abs/2606.11473"
+    ]
+  },
+  "local_revisions": [
+    {
+      "revision": "historical-context-v1",
+      "date": "2026-10-17",
+      "action": "Insert publication-time background; preserve prior method, evidence, assets and paths",
+      "before": {
+        "audit_source_sha256": "908da2cf875a68d53710b10dbef23dc97612e3b75beecaec19cb27e4c317dcfb",
+        "html_sha256": "9602c4f92a3fbe7e1a4752211990a944ac03fecfcff042d4628ac568e0089343"
+      }
+    },
+    {
+      "revision": "narrative-logic-v1",
+      "date": "2026-10-19",
+      "action": "Paper-specific prose refactor: problem/value, prior-only idea reconstruction, intuition, running instance, accessible mathematics, question/test/answer evidence and takeaways; preserve original evidence and visuals",
+      "archive_directory": "revisions/pre-narrative-logic-20261019",
+      "before": {
+        "audit_source_sha256": "1dd7cf6bed377930b4540d9276f2577d081c0a919b46eddc8939f01f3e6bbfdd",
+        "html_sha256": "df052673071f152652fc19ac8953222bd44326914a13cab08a1796d327edd34f"
+      }
+    },
+    {
+      "revision": "research-prompt-v1",
+      "date": "2026-10-26",
+      "archive_directory": "revisions/pre-research-prompt-20261026",
+      "action": "Refactor 13 questions, correct earliest verified public release, add source-qualified research sections, original-table redraw and offline analytical/state-flow interaction.",
+      "before": {
+        "audit_source_sha256": "f42c325a17cee419095d7ca23217f58bb167d7844ca79e96063c0fa23bc9ceae",
+        "html_sha256": "ad835a858d7beff95175b43b07b07d6aecb5a9fab88cd597bf8e69a0a0b46b5d"
+      }
+    }
+  ],
+  "preserved_skill_extensions": [
+    "historical-context-v1",
+    "narrative-logic-v1"
+  ],
+  "narrative_protocol_sha256": "cbdd037a540292a5f6ed62e188b6797f9805cbee62bdf1ba8fb8d5b29fe9bbab",
+  "quality_check_sha256": "8cfe43e61308ae7333c4f5d859a4ea1cf3a4e22371ab2cc97eba64e9d269f00c",
+  "manual_narrative_review_recorded_on": "2026-10-19",
+  "manual_narrative_review": {
+    "title": "TabDPT-Turbo: Efficient In-Context Learning for Tabular Prediction",
+    "problem": "§00：许多query的局部context重复计算是否仍值得，目标为质量/成本而非纯精度第一",
+    "prior_gap": "§00：搜索库之外的模型计算复用瓶颈，长context能力改变检索账单",
+    "idea": "§01：既有局部模型代价和共享attention路线提示重训练后比较边际收益，不以新速度结果倒推",
+    "intuition": "§01：先练会共享长context，再减少逐query局部前向，内部仍选择信息",
+    "example": "§02：构造10K训练/1K查询/20特征回归表，贯穿标准化、thinking rows、逐层V标签、共享读取与2048-bin期望",
+    "math": "§03、06：共享/局部配对量条件、CRPS定义、对称两点分布CRPS=4的手算，不造温度实参或新保证",
+    "evidence": "§07–08：新旧系统、同Turbo检索对照、等结构长短课程、同硬件fit/predict分别回答问题",
+    "takeaways": "§08：瓶颈在检索之后、删除组件以新训练能力为条件、同负载读时间",
+    "source_pages_rechecked": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "cautions": [
+      "同期解释不倒写成首发前已确立定论",
+      "0.76总体与0.44/0.19分项口径不同",
+      "没有新增模型运行或查漏实验"
+    ]
+  },
+  "manual_review_type": "Generator source-based semantic self-check; not independent reader study",
+  "source_pages_rechecked_this_revision": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "reused_source_audit": "Unchanged 9-page PDF fully reread, all four original crops visually rechecked and retained; Table1 predict column redrawn exactly, no new model timing or precision measurement.",
+  "delivery_status": "completed-with-disclosed-validation-limits",
+  "browser_validation_this_revision": {
+    "render_and_functional_checks": "pass",
+    "viewports": [
+      1000,
+      390
+    ],
+    "images_loaded": 4,
+    "images_total": 4,
+    "math": 42,
+    "math_errors": 0,
+    "sections": 14,
+    "anchors_valid": true,
+    "source_toggle": true,
+    "page_overflow_default_or_sources": false,
+    "figures_have_context": true,
+    "external_resources": 0,
+    "embedded_interactions": 1,
+    "interaction_type": "N/K/Q analytical attention-pair counts plus target/query routing stages, not wall-clock simulation",
+    "interaction_external_resources": 0,
+    "narrow_test_type": "390px outer iframe, 339px inner interaction; no page overflow, not physical mobile",
+    "keyboard": "pass: Enter activates output stage and updates aria-pressed",
+    "dom_controls": "pass: 110000000 vs 4196352000 pairs at N10000/K2048/Q1000; Q1 reverses relative count",
+    "actual_pointer_and_screenshot": "not claimed; known desktop visibility/tool limitation"
+  },
+  "research_extension_review": {
+    "date": "2026-10-26",
+    "search_cutoff": "2026-10-26",
+    "search_audit_file": "search-audit.md",
+    "search_audit_sha256": "947e2d6997ef5d7406851343ab2d4f05b6953af41644efa9d24dee461c817e0f",
+    "fragile_assumption": "§09: enough queries and stable useful shared context to amortize full processing",
+    "one_week_plan": "§10: frozen v1.2 N/K/Q speed-quality and batching semantics, not executed",
+    "code_reference_commit_v1_2": "9cfb05e0a6bc380ae6c99c08adc8d50dacd4f246",
+    "later_software_commit_v1_3": "97e5494431e9527c7edb31cb4dcfc5f00b232fdf",
+    "counterexamples": "§11: singleton arrivals, rare-subgroup interference, companion-query sensitivity; not executed",
+    "subsequent_sources": ["https://github.com/layer6ai-labs/TabDPT-inference/releases/tag/v1.3.0", "https://arxiv.org/html/2608.17957v1", "https://arxiv.org/html/2609.37959v1", "https://arxiv.org/html/2610.05352v1"],
+    "follow_up": "§13: per-query semantic contract before shared-context scheduling; CRUMB/LoGIC already share local contexts and are not claimed novel",
+    "novelty_status": "provisional/unknown; task-memory primary text inaccessible, exact reuse may be infeasible"
+  },
+  "new_visual_assets": [{"file": "assets/mechanism-explorer.html", "type": "offline analytical/state-flow interaction embedded in final HTML", "sha256": "8c69e4853dbe665666b16641d559540fb307df093e7d29de83f69cab2319b914"}]
+}

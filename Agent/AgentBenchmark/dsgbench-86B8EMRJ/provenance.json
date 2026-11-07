@@ -1,0 +1,26 @@
+{
+  "title": "DSGBench: A Diverse Strategic Game Benchmark for Evaluating LLM-based Agents in Complex Decision-Making Environments",
+  "zoteroItemKey": "86B8EMRJ",
+  "sourceAttachmentKey": "8ARKQ834",
+  "collectionKey": "D4LMQ8XJ",
+  "collectionPath": "人工智能/Agent/AgentBenchmark",
+  "sourceURL": "https://arxiv.org/abs/2503.06047v2",
+  "firstSubmitted": "2025-03-08",
+  "versionDate": "2026-05-09",
+  "sourceSha256": "aeb53c8dda50161ea590512436bcfb7d2049261b54e196bff9c0cf048f9949e2",
+  "sourcePages": 65,
+  "bilingualAttachmentKey": "RXNGB3ME",
+  "bilingualFilename": "DSGBench-2503.06047v2-English-Chinese-bilingual.pdf",
+  "outputSha256": "2cb158d424def400c69d84289a7819e9496bcec584f26b8f2d164089b82bacb5",
+  "outputPages": 65,
+  "engineVersion": "2.9.0",
+  "service": "openaicompatible",
+  "originalConfigUnchanged": true,
+  "originalZoteroPDFUnchanged": true,
+  "verifiedZoteroAttachments": [
+    "8ARKQ834",
+    "RXNGB3ME"
+  ],
+  "status": "completed-verified-and-imported",
+  "verification": "bilingual/verification.json"
+}

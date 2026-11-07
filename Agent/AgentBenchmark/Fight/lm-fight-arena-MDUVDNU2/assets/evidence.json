@@ -1,0 +1,36 @@
+{
+  "source": "arXiv:2510.08928v2, PDF p.4 Fig.3a; raster cells visually checked at 4x; not raw match logs",
+  "models": [
+    {"id":"claude","name":"Claude 3.5 Sonnet","wins":5},
+    {"id":"gemini","name":"Gemini 2.5 Pro","wins":4},
+    {"id":"q72","name":"Qwen2.5-VL-72B","wins":3},
+    {"id":"q32","name":"Qwen2.5-VL-32B","wins":2},
+    {"id":"intern","name":"InternVL3-78B","wins":1},
+    {"id":"gpt","name":"GPT-4o","wins":0}
+  ],
+  "matches": [
+    {"winner":"claude","loser":"gpt","health":0.758,"note":"图示 0.758；§4.1 后句把这对写成 0.775。0.775 实际位于 Qwen32B/GPT-4o 格。"},
+    {"winner":"claude","loser":"gemini","health":0.708,"note":"图示 0.708；§4.1 写 Gemini 输给 Claude 为 0.200。0.200 实际位于 InternVL/GPT-4o 格。"},
+    {"winner":"claude","loser":"intern","health":1.000,"note":"本格数字与正文所述上限相容；但不能据此称 Claude 的所有胜局都接近满血。"},
+    {"winner":"claude","loser":"q32","health":0.383,"note":"本格 0.383 与 §4.1 声称 Claude 全部胜局范围 0.758–1.000 冲突。"},
+    {"winner":"claude","loser":"q72","health":0.550,"note":"本格 0.550 与 §4.1 声称 Claude 全部胜局范围 0.758–1.000 冲突。"},
+    {"winner":"gemini","loser":"gpt","health":0.750,"note":"图读数；没有对应的原始逐场日志供独立校验。"},
+    {"winner":"gemini","loser":"intern","health":0.858,"note":"图读数；不把镜像的两个矩阵格算作两场。"},
+    {"winner":"gemini","loser":"q32","health":0.100,"note":"图示胜者剩 10% 满血。胜负为 1 次胜利，不是 10% 获胜概率。"},
+    {"winner":"gemini","loser":"q72","health":0.858,"note":"图读数；每个模型只与五个不同对手各打一场。"},
+    {"winner":"q72","loser":"gpt","health":0.683,"note":"图示与 §4.1 对该配对的 0.683 相容。"},
+    {"winner":"q72","loser":"intern","health":1.000,"note":"图示与 §4.1 对该配对的 1.000 相容。"},
+    {"winner":"q72","loser":"q32","health":0.025,"note":"图示与 §4.1 相容：胜者仅剩 2.5% 满血。单场险胜不能证明长期稳定优势。"},
+    {"winner":"q32","loser":"gpt","health":0.775,"note":"0.775 位于这一对；不要按 §4.1 的错配把它移到 Claude/GPT-4o。"},
+    {"winner":"q32","loser":"intern","health":0.700,"note":"图读数；统计为 Qwen32B 的一场胜利。"},
+    {"winner":"intern","loser":"gpt","health":0.200,"note":"0.200 位于这一对；不要按 §4.1 的错配把它移到 Claude/Gemini。"}
+  ],
+  "steps": [
+    {"title":"1 · 固定镜像环境","known":"双方使用 Liu Kang；共同提示；模型不做游戏专门微调。","example":"构造实例：我在左边，对手接近。未提供真实轨迹或坐标。","missing":"左右站位交换、完整提示与 API 日期快照未给全。"},
+    {"title":"2 · 视觉支路","known":"每隔 4 游戏帧抽样，共 10 帧，叠加玩家标记并编码。","example":"同一实例：序列提供接近趋势，标记帮助区分我方和对手。","missing":"不是精确复原模型视觉表征；实际窗口时长依赖未披露帧率。"},
+    {"title":"3 · 内存与历史支路","known":"血量、坐标、朝向、最近 5 次已执行动作变成文本，与图像并行汇入。","example":"同一实例：状态补充双方位置，历史说明先前执行过什么。","missing":"没有独立通道消融；对齐时间戳、历史详细格式未给全。"},
+    {"title":"4 · 模型返回语言动作","known":"固定权重模型基于共同提示和双路观察生成动作字符串。","example":"教学假设返回 Left + A；字符串格式来自原文，但此选择未运行。","missing":"不声称某个具体模型确实给出了该响应，也不假造内部推理。"},
+    {"title":"5 · 解析与按键执行","known":"Translate Word to Button 解析组合／序列并注入模拟器。","example":"Left + A 表达组合意图；执行器仍须决定持键和释放规则。","missing":"语法、逐步时长、朝向更新、非法输出回退和等待调度未知。"},
+    {"title":"6 · 新局势反馈与终局","known":"画面、状态、动作历史更新，再调用模型；终局计输赢和胜者血量。","example":"同一实例的命中与掉血未知；不显示虚构后果。","missing":"每帧执行输入不等于每帧完成一次大模型推理；频率未核实。"}
+  ]
+}

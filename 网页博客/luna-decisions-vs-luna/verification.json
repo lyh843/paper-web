@@ -1,0 +1,83 @@
+{
+  "imageCount": 1,
+  "images": [
+    {
+      "src": "assets/00d3ac38db18-poster.jpg",
+      "width": 1600,
+      "height": 610
+    }
+  ],
+  "mathCount": 0,
+  "mathErrors": [],
+  "status": "verified",
+  "pdfPages": 4,
+  "pdfImageObjects": 2,
+  "missingHeadingsInPDF": [],
+  "unsupportedMedia": [],
+  "sourceTextCharacters": 4422,
+  "sourceTextPreservedBeforeMath": true,
+  "offlineRemoteRequests": [],
+  "javascriptErrors": [],
+  "finalOfflineChecks": {
+    "images": [
+      {
+        "src": "assets/00d3ac38db18-poster.jpg",
+        "width": 1600,
+        "height": 610
+      }
+    ],
+    "videoReady": 4,
+    "videoWidth": 1600,
+    "tables": 2,
+    "headings": [
+      "GPT-6 Luna vs. GPT-6 Luna Decisions: four times faster",
+      "The game",
+      "Results",
+      "Is the chat version just a worse fighter?",
+      "What we take from it",
+      "Caveats",
+      "Play it yourself"
+    ]
+  },
+  "mediaPreservation": {
+    "video": "assets/6889d83fbf71-luna-sbs.mp4",
+    "poster": "assets/00d3ac38db18-poster.jpg",
+    "pdf": "poster-only; video is playable in offline HTML"
+  },
+  "fullContentAudit": {
+    "originalBlocks": 61,
+    "missingBlocksInHTML": [],
+    "missingBlocksInPDF": [],
+    "tableCount": 2,
+    "tableRows": [
+      6,
+      3
+    ],
+    "sourceHasMath": false,
+    "pdfPages": 4
+  },
+  "manualReview": {
+    "metadata": "verified against article header and JSON-LD",
+    "pdfPagesVisuallyReviewed": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "content": "61 original text blocks found in HTML and PDF; 6 sections and 2 complete tables",
+    "images": "video poster visible; original MP4 downloaded and loaded offline",
+    "formulaReview": "not applicable: no mathematical formulas",
+    "offline": "Chromium offline context, no remote requests",
+    "limitations": [
+      "PDF contains a still poster, not playable video. External game links remain online links."
+    ]
+  },
+  "offlineVideoPlayback": {
+    "remoteRequests": [],
+    "duration": 18,
+    "currentTime": 0.268063,
+    "decodedWidth": 1600,
+    "decodedHeight": 610,
+    "error": null
+  }
+}

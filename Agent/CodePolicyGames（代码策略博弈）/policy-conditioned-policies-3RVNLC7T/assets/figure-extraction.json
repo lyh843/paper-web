@@ -1,0 +1,24 @@
+[
+  {
+    "page": 10,
+    "file": "paper-fig1-matrices.png",
+    "clip": [
+      103,
+      117,
+      510,
+      210
+    ],
+    "text": "aj\n2\n0\n0\nai\n0\n1\n0\n0\n0\n3\n(a) Vanilla Coordination Game\naj\n11\n−30\n0\nai\n−30\n7\n0\n0\n6\n5\n(b) Climbing Game\naj\np\n0\n10\nai\n0\n2\n0\n10\n0\np\n(c) Penalty Game (p < 0)i\n"
+  },
+  {
+    "page": 11,
+    "file": "paper-fig2-results.png",
+    "clip": [
+      105,
+      55,
+      510,
+      291
+    ],
+    "text": "(a) Vanilla Coordination Game\n(b) Climbing Game\n(c) Penalty Game (p = −2)\n(d) Cooperative Foraging\n"
+  }
+]

@@ -1,0 +1,231 @@
+{
+  "generated_on": "2026-10-18",
+  "zotero_collection_key": "FLT4H9RN",
+  "zotero_item_key": "5QV5CK9L",
+  "zotero_attachment_key": "5YXPDPRD",
+  "source_pdf_path": "/home/lyh/Zotero/storage/5YXPDPRD/Thomas 等 - 2024 - Retrieval & Fine-Tuning for In-Context Tabular Models.pdf",
+  "source_pdf_sha256": "8d15fa6019cfc4f32a7295dc8d57a0691e77a614ff7a4b88cd2286f2db31b875",
+  "source_pdf_pages": 29,
+  "source_version": "NeurIPS 2024 official conference PDF, 29 pages, byte-identical to Zotero attachment; PDF metadata 2024-10-31 is not the first-publication date",
+  "official_pdf_verification": {
+    "url": "https://proceedings.neurips.cc/paper_files/paper/2024/file/c40daf14d7a6469e65116507c21faeb7-Paper-Conference.pdf",
+    "downloaded_on": "2026-10-18",
+    "sha256": "8d15fa6019cfc4f32a7295dc8d57a0691e77a614ff7a4b88cd2286f2db31b875",
+    "matches_local_attachment": true
+  },
+  "central_source_pages_inspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29
+  ],
+  "source_pdf_modified": false,
+  "duplicate_of": null,
+  "reading_language": "zh-CN",
+  "mode": "DEEP READ",
+  "lens": "understanding-first",
+  "skill_source": "https://github.com/xiaofengShi/paper-reading-skill",
+  "skill_commit": "eadd0cd61d276d082938d80eb0d3fbb85614f2e1",
+  "renderer_sha256": "3ed818344cd402297240d51553c0c6ab7eb599017a51380cb437d37283f5598c",
+  "rebuild_command": "node /repo/paper-web/.opencode/skills/paper-reading/scripts/render-reading.cjs /repo/paper-web/TabFM/retrieval-finetuning-5QV5CK9L/reading.md /repo/paper-web/TabFM/retrieval-finetuning-5QV5CK9L/index.html",
+  "audit_source_sha256": "d01a589b18111d4e81278ef95fa184e70e6dd570bdff1bb8e53b89d603ea116d",
+  "html_sha256": "27a53b625c0a7b508144f9197c568219eddc2ad305dbb00c08217c132b11d311",
+  "quality_check_sha256": "e5bb5d0b6f2f18b01f47e96c20054e55e6e7bdc28a59fe6d73ba1f0813b4ea4b",
+  "figures_catalog_scope": "Retained original crops, including assets used by the archived reading; current embedded figures are listed separately",
+  "current_embedded_figures": [
+    "assets/localpfn-fig1-circles.png",
+    "assets/localpfn-fig3-architecture.png",
+    "assets/localpfn-fig2-scaling.png"
+  ],
+  "figures": [
+    {
+      "file": "assets/localpfn-fig1-circles.png",
+      "pdf_page_1based": 2,
+      "crop_rectangle_pdf_points": [
+        105,
+        50,
+        508,
+        207
+      ],
+      "render_scale": 2.5,
+      "sha256": "f406166404fb60e141782188d1d97f272feaef43c018104dd46b601c841ef79b"
+    },
+    {
+      "file": "assets/localpfn-fig3-architecture.png",
+      "pdf_page_1based": 5,
+      "crop_rectangle_pdf_points": [
+        105,
+        50,
+        508,
+        235
+      ],
+      "render_scale": 2.5,
+      "sha256": "a60864e775804ab5afeaeb46520640cd2b48bd578b4717ad7fff66117c7f58f1"
+    },
+    {
+      "file": "assets/localpfn-table1-main.png",
+      "pdf_page_1based": 7,
+      "crop_rectangle_pdf_points": [
+        105,
+        432,
+        508,
+        575
+      ],
+      "render_scale": 2.5,
+      "sha256": "fd6f3c565c3a9928a3bcb709df5958dd7657a6fc930f5501f971c1c7062445a6"
+    },
+    {
+      "file": "assets/localpfn-fig5-ablations.png",
+      "pdf_page_1based": 9,
+      "crop_rectangle_pdf_points": [
+        105,
+        45,
+        508,
+        208
+      ],
+      "render_scale": 2.5,
+      "sha256": "686c8bcd025d3135cd1975f247398ae2840b983a93be7290ec99b10c38a2227a"
+    },
+    {
+      "file": "assets/localpfn-table9-joint.png",
+      "pdf_page_1based": 21,
+      "crop_rectangle_pdf_points": [
+        105,
+        499,
+        530,
+        607
+      ],
+      "render_scale": 2.5,
+      "sha256": "02ee5c10dd79fc33e80ff67e1d66a1d6ffa4917cc4a469a5550503d80544d1b7"
+    },
+    {
+      "file": "assets/localpfn-fig2-scaling.png",
+      "pdf_page_1based": 4,
+      "crop_rectangle_pdf_points": [108, 170, 506, 273],
+      "render_scale": 3,
+      "sha256": "75ca3075c493995eeecedadd2e7e4599a62386b3734766794682dd13718b57b9"
+    }
+  ],
+  "validation_scope": "Full source reread, manual eight-question prose-logic self-check, real-data normalization/retrieval illustration, and browser delivery checks; no independent reader study, model forward pass, fine-tuning, or experimental reproduction",
+  "skill_base_commit": "eadd0cd61d276d082938d80eb0d3fbb85614f2e1",
+  "skill_revision": "narrative-logic-v1",
+  "preserved_skill_extensions": ["historical-context-v1"],
+  "skill_definition_sha256": "8d086cb16b69e68d4517e538cc25b651e929a37599e60f0f909794e5a17b267b",
+  "narrative_protocol_sha256": "25a89f7a1b55037132b049163ecb82d2ea7fa9106bbd729652fcf8a4b124a483",
+  "historical_context": {
+    "status": "pass",
+    "horizon": "2024-06-07",
+    "horizon_basis": "first-publication",
+    "date_evidence_url": "https://arxiv.org/abs/2406.05207",
+    "predecessor_rows": 6,
+    "chapter": "01 / 问题与研究背景",
+    "source_review": "TabPFN、TabZilla、TabR、ICD、TuneTables早期版本与RAG分别说明先前能力和缺口；新诊断不作为提出idea的先验，ModernNCA不进入首发动机；作者私人发现史不作声称。",
+    "review_scope": "Target introduction/background/related work plus selected primary abstracts and official submission histories; not comprehensive full-text review of all predecessors",
+    "source_urls": [
+      "https://arxiv.org/abs/2207.01848v6",
+      "https://arxiv.org/abs/2305.02997v3",
+      "https://arxiv.org/abs/2307.14338v2",
+      "https://arxiv.org/abs/2402.06971v1",
+      "https://arxiv.org/abs/2402.11137v2",
+      "https://arxiv.org/abs/2005.11401",
+      "https://arxiv.org/abs/2406.05207"
+    ]
+  },
+  "real_data_example": {
+    "dataset": "Iris",
+    "source_url": "https://archive.ics.uci.edu/ml/machine-learning-databases/iris/iris.data",
+    "citation": "Fisher, R. (1936). Iris [Dataset]. UCI Machine Learning Repository. https://doi.org/10.24432/C56C76",
+    "license": "CC BY 4.0, per UCI dataset page",
+    "source_file": "assets/iris.data",
+    "source_sha256": "6f608b71a7317216319b4d27b4d9bc84e6abd734eda7872b71a458569e2656c0",
+    "version_note": "Historical iris.data, not corrected bezdekIris.data; no claim of byte identity with TabZilla's copy",
+    "script": "assets/compute-iris-example.py",
+    "script_sha256": "e68bf7f3719df5028a8a331018fa952fa81eb2f9a97fd7de28a8a118204af56f",
+    "computed_output": "assets/iris-example.json",
+    "computed_output_sha256": "cfde9e6cd821169902432cec6a4139fa5a393ca907e2195e2d1f64bdc2272748",
+    "split_is_pedagogical_not_paper_fold": true,
+    "test_query_row_1based": 150,
+    "k4_neighbor_rows_1based": [139, 128, 71, 79],
+    "training_anchor_row_1based": 139,
+    "training_anchor_selection": "Chosen for explanation; actual training samples random anchors",
+    "shared_context_rows_1based": [62, 127, 64, 128],
+    "training_query_rows_1based": [79, 71],
+    "normalization_and_exact_retrieval_executed": true,
+    "model_forward_executed": false,
+    "fine_tuning_executed": false
+  },
+  "mathematics": {
+    "paper_has_theoretical_proofs": false,
+    "evidence": "PDF p.24, Checklist item 3: The paper does not contain proofs",
+    "teaching_derivations": "Standardized Euclidean distance; softmax; likelihood to mean cross-entropy; logit gradient; interpretation of local task sampling",
+    "implementation_checked_url": "https://raw.githubusercontent.com/layer6ai-labs/LoCalPFN/main/methods/ftknn.py",
+    "implementation_checked_on": "2026-10-18",
+    "implementation_scope": "Current public code confirms cross_entropy/mean and AdamW; not claimed to be the exact first-release snapshot"
+  },
+  "delivery_checks": {
+    "background_structure": "pass; manual chronology review separate",
+    "manual_eight_question_logic": "pass; generator self-check, not independent comprehension study",
+    "skill_regression_tests": "29/29 pass",
+    "skill_doctor": "pass",
+    "chapter_links": 7,
+    "decoded_embedded_images": "3/3",
+    "rendered_katex_expressions": 32,
+    "katex_errors": 0,
+    "source_reference_elements": 76,
+    "source_toggle_mouse_and_space_key": "pass",
+    "external_presentation_resources": 0,
+    "page_scripts": 0,
+    "desktop_viewport_width": 1272,
+    "narrow_layout_check": "390px iframe of the same page; not a physical device test",
+    "page_level_horizontal_overflow": false,
+    "tables_and_display_math_locally_scrollable": true,
+    "independent_reader_study": "unknown / not performed",
+    "experimental_reproduction": "unknown / not performed"
+  },
+  "local_revisions": [
+    {
+      "revision": "historical-context-v1",
+      "date": "2026-10-17",
+      "action": "Insert publication-time background; preserve prior method, evidence, assets and paths",
+      "before": {
+        "audit_source_sha256": "9366c0b5f1eb4d470f91199cff5eba633810886c6b2421be31e22ab011b5ab13",
+        "html_sha256": "7f244827e667cf8245d8f6f7634dab8d955414a8951c47da3681a8e16038d47b"
+      }
+    },
+    {
+      "revision": "narrative-logic-v1",
+      "date": "2026-10-18",
+      "action": "Full source-based rewrite using the optimized eight-question skill; preserve the old self-contained HTML, audit source, provenance, quality record, and five figure assets",
+      "archive_directory": "revisions/pre-narrative-logic-20261018",
+      "before": {
+        "audit_source_sha256": "dbce893f593c4791fb3a0330fbb8db2a612323172098e7b5c2fea6b37917a959",
+        "html_sha256": "58b2b28a8e8410b6246ad5f2862bc22e68a33ec23ef83274a89b7b3ed64b3f2d"
+      }
+    }
+  ]
+}

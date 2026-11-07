@@ -1,0 +1,1053 @@
+[11/05/26 19:44:35] INFO     INFO:pdf2zh_next.config.model:Using    model.py:275
+                             translation engine: OpenAICompatible               
+                    INFO     INFO:pdf2zh_next.config.model:Transfor model.py:282
+                             med translate_engine_settings:                     
+                             OpenAICompatible -> OpenAI                         
+                    INFO     INFO:pdf2zh_next.main:Warmup babeldoc    main.py:88
+                             assets...                                          
+[11/05/26 19:44:36] INFO     INFO:babeldoc.assets.assets:Downloadi assets.py:450
+                             ng all assets...                                   
+                    INFO     INFO:pdf2zh_next.high_level:trans high_level.py:710
+                             late file:                                         
+                             /tmp/opencode/zotero-translate-y9                  
+                             6fabqn/arxiv_2610.12341.pdf                        
+                    INFO     INFO:pdf2zh_next.config.model:Using    model.py:275
+                             translation engine: OpenAICompatible               
+                    INFO     INFO:pdf2zh_next.config.model:Transfor model.py:282
+                             med translate_engine_settings:                     
+                             OpenAICompatible -> OpenAI                         
+                    INFO     INFO:pdf2zh_next.high_level:trans high_level.py:659
+                             late in subprocess                                 
+                    INFO     INFO:pdf2zh_next.translator.utils:Using utils.py:46
+                             OpenAI translator                                  
+[11/05/26 19:44:40] INFO     INFO:pdf2zh_next.translator.utils:Using utils.py:46
+                             OpenAI translator                                  
+[11/05/26 19:44:48] INFO     INFO:babeldoc.docvision.base_d base_doclayout.py:43
+                             oclayout:Loading ONNX model...                     
+                    INFO     INFO:babeldoc.docvision.doclayout:A doclayout.py:72
+                             vailable Provider:                                 
+                             CPUExecutionProvider                               
+[11/05/26 19:44:49] INFO     INFO:babeldoc.format.pdf.high_lev high_level.py:473
+                             el:start to translate:                             
+                             /tmp/opencode/zotero-translate-y9                  
+                             6fabqn/arxiv_2610.12341.pdf                        
+[11/05/26 19:45:30] INFO     INFO:babeldoc.forma automatic_term_extractor.py:358
+                             t.pdf.document_il.m                                
+                             idend.automatic_ter                                
+                             m_extractor:Automat                                
+                             ic Term Extraction:                                
+                             Starting term                                      
+                             extraction for                                     
+                             document.                                          
+                    INFO     INFO:babeldoc.forma automatic_term_extractor.py:369
+                             t.pdf.document_il.m                                
+                             idend.automatic_ter                                
+                             m_extractor:Using                                  
+                             16 worker threads                                  
+                             for automatic term                                 
+                             extraction.                                        
+[11/05/26 19:47:07] WARNING  WARNING:pdf2zh_next.translator.t before_sleep.py:64
+                             ranslator_impl.openai:Retrying                     
+                             pdf2zh_next.translator.translato                   
+                             r_impl.openai.OpenAITranslator.d                   
+                             o_llm_translate in 1 seconds as                    
+                             it raised RateLimitError: Error                    
+                             code: 429 - {'error': {'code':                     
+                             'gateway_concurrency_limit',                       
+                             'message': 'Concurrency limit                      
+                             exceeded for user, please retry                    
+                             later', 'type':                                    
+                             'rate_limit_error'}}.                              
+                    WARNING  WARNING:pdf2zh_next.translator.t before_sleep.py:64
+                             ranslator_impl.openai:Retrying                     
+                             pdf2zh_next.translator.translato                   
+                             r_impl.openai.OpenAITranslator.d                   
+                             o_llm_translate in 1 seconds as                    
+                             it raised RateLimitError: Error                    
+                             code: 429 - {'error': {'code':                     
+                             'gateway_concurrency_limit',                       
+                             'message': 'Concurrency limit                      
+                             exceeded for user, please retry                    
+                             later', 'type':                                    
+                             'rate_limit_error'}}.                              
+[11/05/26 19:48:43] WARNING  WARNING:pdf2zh_next.translator.t before_sleep.py:64
+                             ranslator_impl.openai:Retrying                     
+                             pdf2zh_next.translator.translato                   
+                             r_impl.openai.OpenAITranslator.d                   
+                             o_llm_translate in 1 seconds as                    
+                             it raised RateLimitError: Error                    
+                             code: 429 - {'error': {'code':                     
+                             'gateway_concurrency_limit',                       
+                             'message': 'Concurrency limit                      
+                             exceeded for user, please retry                    
+                             later', 'type':                                    
+                             'rate_limit_error'}}.                              
+[11/05/26 19:50:21] WARNING  WARNING:pdf2zh_next.translator.t before_sleep.py:64
+                             ranslator_impl.openai:Retrying                     
+                             pdf2zh_next.translator.translato                   
+                             r_impl.openai.OpenAITranslator.d                   
+                             o_llm_translate in 1 seconds as                    
+                             it raised RateLimitError: Error                    
+                             code: 429 - {'error': {'code':                     
+                             'gateway_concurrency_limit',                       
+                             'message': 'Concurrency limit                      
+                             exceeded for user, please retry                    
+                             later', 'type':                                    
+                             'rate_limit_error'}}.                              
+[11/05/26 19:51:26] INFO     INFO:babeldoc.format. il_translator_llm_only.py:171
+                             pdf.document_il.miden                              
+                             d.il_translator_llm_o                              
+                             nly:Found title                                    
+                             paragraph: Can AI                                  
+                             Agents Learn Their                                 
+                             Way to the Top?                                    
+                             Evaluating Heuristic                               
+                             Learning in                                        
+                             aLong-Running Game                                 
+                             Agent Competition                                  
+                    INFO     INFO:babeldoc.format. il_translator_llm_only.py:192
+                             pdf.document_il.miden                              
+                             d.il_translator_llm_o                              
+                             nly:Found first title                              
+                             paragraph: Can AI                                  
+                             Agents Learn Their                                 
+                             Way to the Top?                                    
+                             Evaluating Heuristic                               
+                             Learning in                                        
+                             aLong-Running Game                                 
+                             Agent Competition                                  
+                    WARNING  WARNING:babeldoc.format.pdf.do il_translator.py:725
+                             cument_il.midend.il_translator                     
+                             :Too many placeholders (41) in                     
+                             paragraph[kZoWj], disabling                        
+                             rich text translation for this                     
+                             paragraph                                          
+[11/05/26 19:52:03] WARNING  WARNING:babeldoc.format.pdf.do il_translator.py:725
+                             cument_il.midend.il_translator                     
+                             :Too many placeholders (41) in                     
+                             paragraph[weKTL], disabling                        
+                             rich text translation for this                     
+                             paragraph                                          
+[11/05/26 19:52:12] WARNING  WARNING:babeldoc.form il_translator_llm_only.py:801
+                             at.pdf.document_il.mi                              
+                             dend.il_translator_ll                              
+                             m_only:Translation                                 
+                             result edit distance                               
+                             is too small.                                      
+                             distance: 4, input:                                
+                             <style                                             
+                             id='1'>URL</style><st                              
+                             yle                                                
+                             id='3'>https://arxiv.                              
+                             org/abs/2504.11442</s                              
+                             tyle><style                                        
+                             id='5'>.</style>,                                  
+                             output: <style                                     
+                             id='1'>网址</style><s                              
+                             tyle                                               
+                             id='3'>https://arxiv.                              
+                             org/abs/2504.11442</s                              
+                             tyle><style                                        
+                             id='5'>。</style>                                  
+                    WARNING  WARNING:babeldoc.form il_translator_llm_only.py:828
+                             at.pdf.document_il.mi                              
+                             dend.il_translator_ll                              
+                             m_only:Fallback to                                 
+                             simple translation.                                
+                             paragraph id: A1Zog                                
+[11/05/26 19:52:13] WARNING  WARNING:babeldoc.form il_translator_llm_only.py:778
+                             at.pdf.document_il.mi                              
+                             dend.il_translator_ll                              
+                             m_only:Translation                                 
+                             result is the same as                              
+                             input, fallback.                                   
+                    WARNING  WARNING:babeldoc.form il_translator_llm_only.py:828
+                             at.pdf.document_il.mi                              
+                             dend.il_translator_ll                              
+                             m_only:Fallback to                                 
+                             simple translation.                                
+                             paragraph id: weKTL                                
+                    WARNING  WARNING:babeldoc.format.pdf.do il_translator.py:725
+                             cument_il.midend.il_translator                     
+                             :Too many placeholders (41) in                     
+                             paragraph[oHhts], disabling                        
+                             rich text translation for this                     
+                             paragraph                                          
+                    WARNING  WARNING:babeldoc.format.pdf.do il_translator.py:725
+                             cument_il.midend.il_translator                     
+                             :Too many placeholders (41) in                     
+                             paragraph[weKTL], disabling                        
+                             rich text translation for this                     
+                             paragraph                                          
+[11/05/26 19:52:37] WARNING  WARNING:babeldoc.form il_translator_llm_only.py:787
+                             at.pdf.document_il.mi                              
+                             dend.il_translator_ll                              
+                             m_only:Translation                                 
+                             result is too long or                              
+                             too short. Input: 1,                               
+                             Output: 3                                          
+                    WARNING  WARNING:babeldoc.form il_translator_llm_only.py:828
+                             at.pdf.document_il.mi                              
+                             dend.il_translator_ll                              
+                             m_only:Fallback to                                 
+                             simple translation.                                
+                             paragraph id: ucRb3                                
+[11/05/26 19:53:04] WARNING  WARNING:pdf2zh_next.translator.t before_sleep.py:64
+                             ranslator_impl.openai:Retrying                     
+                             pdf2zh_next.translator.translato                   
+                             r_impl.openai.OpenAITranslator.d                   
+                             o_llm_translate in 1 seconds as                    
+                             it raised RateLimitError: Error                    
+                             code: 429 - {'error': {'code':                     
+                             'gateway_concurrency_limit',                       
+                             'message': 'Concurrency limit                      
+                             exceeded for user, please retry                    
+                             later', 'type':                                    
+                             'rate_limit_error'}}.                              
+[11/05/26 19:53:10] WARNING  WARNING:babeldoc.form il_translator_llm_only.py:787
+                             at.pdf.document_il.mi                              
+                             dend.il_translator_ll                              
+                             m_only:Translation                                 
+                             result is too long or                              
+                             too short. Input: 1,                               
+                             Output: 3                                          
+                    WARNING  WARNING:babeldoc.form il_translator_llm_only.py:828
+                             at.pdf.document_il.mi                              
+                             dend.il_translator_ll                              
+                             m_only:Fallback to                                 
+                             simple translation.                                
+                             paragraph id: cEX9T                                
+                    WARNING  WARNING:pdf2zh_next.translator.t before_sleep.py:64
+                             ranslator_impl.openai:Retrying                     
+                             pdf2zh_next.translator.translato                   
+                             r_impl.openai.OpenAITranslator.d                   
+                             o_llm_translate in 1 seconds as                    
+                             it raised RateLimitError: Error                    
+                             code: 429 - {'error': {'code':                     
+                             'gateway_concurrency_limit',                       
+                             'message': 'Concurrency limit                      
+                             exceeded for user, please retry                    
+                             later', 'type':                                    
+                             'rate_limit_error'}}.                              
+[11/05/26 19:53:24] WARNING  WARNING:babeldoc.format.pdf.do il_translator.py:725
+                             cument_il.midend.il_translator                     
+                             :Too many placeholders (41) in                     
+                             paragraph[tBx8v], disabling                        
+                             rich text translation for this                     
+                             paragraph                                          
+                    WARNING  WARNING:pdf2zh_next.translator.t before_sleep.py:64
+                             ranslator_impl.openai:Retrying                     
+                             pdf2zh_next.translator.translato                   
+                             r_impl.openai.OpenAITranslator.d                   
+                             o_llm_translate in 1 seconds as                    
+                             it raised RateLimitError: Error                    
+                             code: 429 - {'error': {'code':                     
+                             'gateway_concurrency_limit',                       
+                             'message': 'Concurrency limit                      
+                             exceeded for user, please retry                    
+                             later', 'type':                                    
+                             'rate_limit_error'}}.                              
+                    WARNING  WARNING:babeldoc.format.pdf.do il_translator.py:725
+                             cument_il.midend.il_translator                     
+                             :Too many placeholders (41) in                     
+                             paragraph[AUtD8], disabling                        
+                             rich text translation for this                     
+                             paragraph                                          
+[11/05/26 19:53:40] WARNING  WARNING:babeldoc.format.pdf.do il_translator.py:725
+                             cument_il.midend.il_translator                     
+                             :Too many placeholders (41) in                     
+                             paragraph[8xF1V], disabling                        
+                             rich text translation for this                     
+                             paragraph                                          
+[11/05/26 19:53:47] WARNING  WARNING:babeldoc.format.pdf.do il_translator.py:725
+                             cument_il.midend.il_translator                     
+                             :Too many placeholders (41) in                     
+                             paragraph[ro8aq], disabling                        
+                             rich text translation for this                     
+                             paragraph                                          
+[11/05/26 19:53:48] WARNING  WARNING:babeldoc.format.pdf.do il_translator.py:725
+                             cument_il.midend.il_translator                     
+                             :Too many placeholders (41) in                     
+                             paragraph[j4oyQ], disabling                        
+                             rich text translation for this                     
+                             paragraph                                          
+[11/05/26 19:54:06] WARNING  WARNING:babeldoc.form il_translator_llm_only.py:778
+                             at.pdf.document_il.mi                              
+                             dend.il_translator_ll                              
+                             m_only:Translation                                 
+                             result is the same as                              
+                             input, fallback.                                   
+                    WARNING  WARNING:babeldoc.form il_translator_llm_only.py:828
+                             at.pdf.document_il.mi                              
+                             dend.il_translator_ll                              
+                             m_only:Fallback to                                 
+                             simple translation.                                
+                             paragraph id: 4Uxqb                                
+                    WARNING  WARNING:babeldoc.form il_translator_llm_only.py:778
+                             at.pdf.document_il.mi                              
+                             dend.il_translator_ll                              
+                             m_only:Translation                                 
+                             result is the same as                              
+                             input, fallback.                                   
+                    WARNING  WARNING:babeldoc.form il_translator_llm_only.py:828
+                             at.pdf.document_il.mi                              
+                             dend.il_translator_ll                              
+                             m_only:Fallback to                                 
+                             simple translation.                                
+                             paragraph id: 7LbiV                                
+[11/05/26 19:54:58] WARNING  WARNING:pdf2zh_next.translator.t before_sleep.py:64
+                             ranslator_impl.openai:Retrying                     
+                             pdf2zh_next.translator.translato                   
+                             r_impl.openai.OpenAITranslator.d                   
+                             o_llm_translate in 1 seconds as                    
+                             it raised RateLimitError: Error                    
+                             code: 429 - {'error': {'code':                     
+                             'gateway_concurrency_limit',                       
+                             'message': 'Concurrency limit                      
+                             exceeded for user, please retry                    
+                             later', 'type':                                    
+                             'rate_limit_error'}}.                              
+[11/05/26 19:55:25] WARNING  WARNING:babeldoc.form il_translator_llm_only.py:778
+                             at.pdf.document_il.mi                              
+                             dend.il_translator_ll                              
+                             m_only:Translation                                 
+                             result is the same as                              
+                             input, fallback.                                   
+                    WARNING  WARNING:babeldoc.form il_translator_llm_only.py:828
+                             at.pdf.document_il.mi                              
+                             dend.il_translator_ll                              
+                             m_only:Fallback to                                 
+                             simple translation.                                
+                             paragraph id: Zwd3w                                
+                    WARNING  WARNING:babeldoc.form il_translator_llm_only.py:778
+                             at.pdf.document_il.mi                              
+                             dend.il_translator_ll                              
+                             m_only:Translation                                 
+                             result is the same as                              
+                             input, fallback.                                   
+                    WARNING  WARNING:babeldoc.form il_translator_llm_only.py:828
+                             at.pdf.document_il.mi                              
+                             dend.il_translator_ll                              
+                             m_only:Fallback to                                 
+                             simple translation.                                
+                             paragraph id: C8Sy5                                
+                    WARNING  WARNING:babeldoc.form il_translator_llm_only.py:778
+                             at.pdf.document_il.mi                              
+                             dend.il_translator_ll                              
+                             m_only:Translation                                 
+                             result is the same as                              
+                             input, fallback.                                   
+                    WARNING  WARNING:babeldoc.form il_translator_llm_only.py:828
+                             at.pdf.document_il.mi                              
+                             dend.il_translator_ll                              
+                             m_only:Fallback to                                 
+                             simple translation.                                
+                             paragraph id: bUKXx                                
+                    WARNING  WARNING:babeldoc.form il_translator_llm_only.py:778
+                             at.pdf.document_il.mi                              
+                             dend.il_translator_ll                              
+                             m_only:Translation                                 
+                             result is the same as                              
+                             input, fallback.                                   
+                    WARNING  WARNING:babeldoc.form il_translator_llm_only.py:828
+                             at.pdf.document_il.mi                              
+                             dend.il_translator_ll                              
+                             m_only:Fallback to                                 
+                             simple translation.                                
+                             paragraph id: kHqMm                                
+[11/05/26 19:55:49] WARNING  WARNING:pdf2zh_next.translator.t before_sleep.py:64
+                             ranslator_impl.openai:Retrying                     
+                             pdf2zh_next.translator.translato                   
+                             r_impl.openai.OpenAITranslator.d                   
+                             o_llm_translate in 1 seconds as                    
+                             it raised RateLimitError: Error                    
+                             code: 429 - {'error': {'code':                     
+                             'gateway_concurrency_limit',                       
+                             'message': 'Concurrency limit                      
+                             exceeded for user, please retry                    
+                             later', 'type':                                    
+                             'rate_limit_error'}}.                              
+[11/05/26 19:56:00] WARNING  WARNING:pdf2zh_next.translator.t before_sleep.py:64
+                             ranslator_impl.openai:Retrying                     
+                             pdf2zh_next.translator.translato                   
+                             r_impl.openai.OpenAITranslator.d                   
+                             o_llm_translate in 1 seconds as                    
+                             it raised RateLimitError: Error                    
+                             code: 429 - {'error': {'code':                     
+                             'gateway_concurrency_limit',                       
+                             'message': 'Concurrency limit                      
+                             exceeded for user, please retry                    
+                             later', 'type':                                    
+                             'rate_limit_error'}}.                              
+[11/05/26 19:56:13] WARNING  WARNING:babeldoc.form il_translator_llm_only.py:778
+                             at.pdf.document_il.mi                              
+                             dend.il_translator_ll                              
+                             m_only:Translation                                 
+                             result is the same as                              
+                             input, fallback.                                   
+                    WARNING  WARNING:babeldoc.form il_translator_llm_only.py:828
+                             at.pdf.document_il.mi                              
+                             dend.il_translator_ll                              
+                             m_only:Fallback to                                 
+                             simple translation.                                
+                             paragraph id: QSQsC                                
+                    WARNING  WARNING:babeldoc.form il_translator_llm_only.py:778
+                             at.pdf.document_il.mi                              
+                             dend.il_translator_ll                              
+                             m_only:Translation                                 
+                             result is the same as                              
+                             input, fallback.                                   
+                    WARNING  WARNING:babeldoc.form il_translator_llm_only.py:828
+                             at.pdf.document_il.mi                              
+                             dend.il_translator_ll                              
+                             m_only:Fallback to                                 
+                             simple translation.                                
+                             paragraph id: SJWXb                                
+[11/05/26 19:56:32] WARNING  WARNING:babeldoc.form il_translator_llm_only.py:778
+                             at.pdf.document_il.mi                              
+                             dend.il_translator_ll                              
+                             m_only:Translation                                 
+                             result is the same as                              
+                             input, fallback.                                   
+                    WARNING  WARNING:babeldoc.form il_translator_llm_only.py:828
+                             at.pdf.document_il.mi                              
+                             dend.il_translator_ll                              
+                             m_only:Fallback to                                 
+                             simple translation.                                
+                             paragraph id: StUas                                
+[11/05/26 19:56:33] WARNING  WARNING:pdf2zh_next.translator.t before_sleep.py:64
+                             ranslator_impl.openai:Retrying                     
+                             pdf2zh_next.translator.translato                   
+                             r_impl.openai.OpenAITranslator.d                   
+                             o_llm_translate in 2 seconds as                    
+                             it raised RateLimitError: Error                    
+                             code: 429 - {'error': {'code':                     
+                             'gateway_concurrency_limit',                       
+                             'message': 'Concurrency limit                      
+                             exceeded for user, please retry                    
+                             later', 'type':                                    
+                             'rate_limit_error'}}.                              
+                    WARNING  WARNING:babeldoc.form il_translator_llm_only.py:778
+                             at.pdf.document_il.mi                              
+                             dend.il_translator_ll                              
+                             m_only:Translation                                 
+                             result is the same as                              
+                             input, fallback.                                   
+                    WARNING  WARNING:babeldoc.form il_translator_llm_only.py:828
+                             at.pdf.document_il.mi                              
+                             dend.il_translator_ll                              
+                             m_only:Fallback to                                 
+                             simple translation.                                
+                             paragraph id: RVJmC                                
+[11/05/26 19:56:46] WARNING  WARNING:babeldoc.form il_translator_llm_only.py:778
+                             at.pdf.document_il.mi                              
+                             dend.il_translator_ll                              
+                             m_only:Translation                                 
+                             result is the same as                              
+                             input, fallback.                                   
+                    WARNING  WARNING:babeldoc.form il_translator_llm_only.py:828
+                             at.pdf.document_il.mi                              
+                             dend.il_translator_ll                              
+                             m_only:Fallback to                                 
+                             simple translation.                                
+                             paragraph id: xYGQo                                
+                    WARNING  WARNING:babeldoc.form il_translator_llm_only.py:778
+                             at.pdf.document_il.mi                              
+                             dend.il_translator_ll                              
+                             m_only:Translation                                 
+                             result is the same as                              
+                             input, fallback.                                   
+                    WARNING  WARNING:babeldoc.form il_translator_llm_only.py:828
+                             at.pdf.document_il.mi                              
+                             dend.il_translator_ll                              
+                             m_only:Fallback to                                 
+                             simple translation.                                
+                             paragraph id: 5BF2V                                
+                    WARNING  WARNING:babeldoc.form il_translator_llm_only.py:778
+                             at.pdf.document_il.mi                              
+                             dend.il_translator_ll                              
+                             m_only:Translation                                 
+                             result is the same as                              
+                             input, fallback.                                   
+                    WARNING  WARNING:babeldoc.form il_translator_llm_only.py:828
+                             at.pdf.document_il.mi                              
+                             dend.il_translator_ll                              
+                             m_only:Fallback to                                 
+                             simple translation.                                
+                             paragraph id: sLNMG                                
+                    WARNING  WARNING:babeldoc.form il_translator_llm_only.py:778
+                             at.pdf.document_il.mi                              
+                             dend.il_translator_ll                              
+                             m_only:Translation                                 
+                             result is the same as                              
+                             input, fallback.                                   
+                    WARNING  WARNING:babeldoc.form il_translator_llm_only.py:828
+                             at.pdf.document_il.mi                              
+                             dend.il_translator_ll                              
+                             m_only:Fallback to                                 
+                             simple translation.                                
+                             paragraph id: d81eK                                
+[11/05/26 19:57:07] WARNING  WARNING:babeldoc.form il_translator_llm_only.py:778
+                             at.pdf.document_il.mi                              
+                             dend.il_translator_ll                              
+                             m_only:Translation                                 
+                             result is the same as                              
+                             input, fallback.                                   
+                    WARNING  WARNING:babeldoc.form il_translator_llm_only.py:828
+                             at.pdf.document_il.mi                              
+                             dend.il_translator_ll                              
+                             m_only:Fallback to                                 
+                             simple translation.                                
+                             paragraph id: KcGYm                                
+                    WARNING  WARNING:babeldoc.form il_translator_llm_only.py:778
+                             at.pdf.document_il.mi                              
+                             dend.il_translator_ll                              
+                             m_only:Translation                                 
+                             result is the same as                              
+                             input, fallback.                                   
+                    WARNING  WARNING:babeldoc.form il_translator_llm_only.py:828
+                             at.pdf.document_il.mi                              
+                             dend.il_translator_ll                              
+                             m_only:Fallback to                                 
+                             simple translation.                                
+                             paragraph id: r26Az                                
+[11/05/26 19:57:29] WARNING  WARNING:babeldoc.form il_translator_llm_only.py:778
+                             at.pdf.document_il.mi                              
+                             dend.il_translator_ll                              
+                             m_only:Translation                                 
+                             result is the same as                              
+                             input, fallback.                                   
+                    WARNING  WARNING:babeldoc.form il_translator_llm_only.py:828
+                             at.pdf.document_il.mi                              
+                             dend.il_translator_ll                              
+                             m_only:Fallback to                                 
+                             simple translation.                                
+                             paragraph id: x89nF                                
+                    WARNING  WARNING:babeldoc.form il_translator_llm_only.py:778
+                             at.pdf.document_il.mi                              
+                             dend.il_translator_ll                              
+                             m_only:Translation                                 
+                             result is the same as                              
+                             input, fallback.                                   
+                    WARNING  WARNING:babeldoc.form il_translator_llm_only.py:828
+                             at.pdf.document_il.mi                              
+                             dend.il_translator_ll                              
+                             m_only:Fallback to                                 
+                             simple translation.                                
+                             paragraph id: bkjb5                                
+[11/05/26 19:57:34] WARNING  WARNING:babeldoc.form il_translator_llm_only.py:778
+                             at.pdf.document_il.mi                              
+                             dend.il_translator_ll                              
+                             m_only:Translation                                 
+                             result is the same as                              
+                             input, fallback.                                   
+                    WARNING  WARNING:babeldoc.form il_translator_llm_only.py:828
+                             at.pdf.document_il.mi                              
+                             dend.il_translator_ll                              
+                             m_only:Fallback to                                 
+                             simple translation.                                
+                             paragraph id: wCttd                                
+                    WARNING  WARNING:babeldoc.form il_translator_llm_only.py:778
+                             at.pdf.document_il.mi                              
+                             dend.il_translator_ll                              
+                             m_only:Translation                                 
+                             result is the same as                              
+                             input, fallback.                                   
+                    WARNING  WARNING:babeldoc.form il_translator_llm_only.py:828
+                             at.pdf.document_il.mi                              
+                             dend.il_translator_ll                              
+                             m_only:Fallback to                                 
+                             simple translation.                                
+                             paragraph id: hff3Q                                
+[11/05/26 19:57:35] WARNING  WARNING:babeldoc.form il_translator_llm_only.py:778
+                             at.pdf.document_il.mi                              
+                             dend.il_translator_ll                              
+                             m_only:Translation                                 
+                             result is the same as                              
+                             input, fallback.                                   
+                    WARNING  WARNING:babeldoc.form il_translator_llm_only.py:828
+                             at.pdf.document_il.mi                              
+                             dend.il_translator_ll                              
+                             m_only:Fallback to                                 
+                             simple translation.                                
+                             paragraph id: 6sPA7                                
+                    WARNING  WARNING:babeldoc.form il_translator_llm_only.py:778
+                             at.pdf.document_il.mi                              
+                             dend.il_translator_ll                              
+                             m_only:Translation                                 
+                             result is the same as                              
+                             input, fallback.                                   
+                    WARNING  WARNING:babeldoc.form il_translator_llm_only.py:828
+                             at.pdf.document_il.mi                              
+                             dend.il_translator_ll                              
+                             m_only:Fallback to                                 
+                             simple translation.                                
+                             paragraph id: Sy3Vg                                
+                    WARNING  WARNING:babeldoc.form il_translator_llm_only.py:778
+                             at.pdf.document_il.mi                              
+                             dend.il_translator_ll                              
+                             m_only:Translation                                 
+                             result is the same as                              
+                             input, fallback.                                   
+                    WARNING  WARNING:babeldoc.form il_translator_llm_only.py:828
+                             at.pdf.document_il.mi                              
+                             dend.il_translator_ll                              
+                             m_only:Fallback to                                 
+                             simple translation.                                
+                             paragraph id: vdDvC                                
+[11/05/26 19:57:38] WARNING  WARNING:babeldoc.form il_translator_llm_only.py:778
+                             at.pdf.document_il.mi                              
+                             dend.il_translator_ll                              
+                             m_only:Translation                                 
+                             result is the same as                              
+                             input, fallback.                                   
+                    WARNING  WARNING:babeldoc.form il_translator_llm_only.py:828
+                             at.pdf.document_il.mi                              
+                             dend.il_translator_ll                              
+                             m_only:Fallback to                                 
+                             simple translation.                                
+                             paragraph id: gwReu                                
+                    WARNING  WARNING:babeldoc.form il_translator_llm_only.py:778
+                             at.pdf.document_il.mi                              
+                             dend.il_translator_ll                              
+                             m_only:Translation                                 
+                             result is the same as                              
+                             input, fallback.                                   
+                    WARNING  WARNING:babeldoc.form il_translator_llm_only.py:828
+                             at.pdf.document_il.mi                              
+                             dend.il_translator_ll                              
+                             m_only:Fallback to                                 
+                             simple translation.                                
+                             paragraph id: wi1KB                                
+                    WARNING  WARNING:babeldoc.form il_translator_llm_only.py:778
+                             at.pdf.document_il.mi                              
+                             dend.il_translator_ll                              
+                             m_only:Translation                                 
+                             result is the same as                              
+                             input, fallback.                                   
+                    WARNING  WARNING:babeldoc.form il_translator_llm_only.py:828
+                             at.pdf.document_il.mi                              
+                             dend.il_translator_ll                              
+                             m_only:Fallback to                                 
+                             simple translation.                                
+                             paragraph id: VoRgN                                
+                    WARNING  WARNING:babeldoc.form il_translator_llm_only.py:778
+                             at.pdf.document_il.mi                              
+                             dend.il_translator_ll                              
+                             m_only:Translation                                 
+                             result is the same as                              
+                             input, fallback.                                   
+                    WARNING  WARNING:babeldoc.form il_translator_llm_only.py:828
+                             at.pdf.document_il.mi                              
+                             dend.il_translator_ll                              
+                             m_only:Fallback to                                 
+                             simple translation.                                
+                             paragraph id: BELCj                                
+[11/05/26 19:57:40] WARNING  WARNING:babeldoc.form il_translator_llm_only.py:778
+                             at.pdf.document_il.mi                              
+                             dend.il_translator_ll                              
+                             m_only:Translation                                 
+                             result is the same as                              
+                             input, fallback.                                   
+                    WARNING  WARNING:babeldoc.form il_translator_llm_only.py:828
+                             at.pdf.document_il.mi                              
+                             dend.il_translator_ll                              
+                             m_only:Fallback to                                 
+                             simple translation.                                
+                             paragraph id: MML2K                                
+[11/05/26 19:57:43] WARNING  WARNING:pdf2zh_next.translator.t before_sleep.py:64
+                             ranslator_impl.openai:Retrying                     
+                             pdf2zh_next.translator.translato                   
+                             r_impl.openai.OpenAITranslator.d                   
+                             o_llm_translate in 1 seconds as                    
+                             it raised RateLimitError: Error                    
+                             code: 429 - {'error': {'code':                     
+                             'gateway_queue_full', 'message':                   
+                             'Too many pending requests,                        
+                             please retry later', 'type':                       
+                             'rate_limit_error'}}.                              
+[11/05/26 19:57:44] WARNING  WARNING:babeldoc.form il_translator_llm_only.py:787
+                             at.pdf.document_il.mi                              
+                             dend.il_translator_ll                              
+                             m_only:Translation                                 
+                             result is too long or                              
+                             too short. Input: 1,                               
+                             Output: 3                                          
+                    WARNING  WARNING:babeldoc.form il_translator_llm_only.py:828
+                             at.pdf.document_il.mi                              
+                             dend.il_translator_ll                              
+                             m_only:Fallback to                                 
+                             simple translation.                                
+                             paragraph id: TWPtz                                
+[11/05/26 19:57:47] WARNING  WARNING:pdf2zh_next.translator.t before_sleep.py:64
+                             ranslator_impl.openai:Retrying                     
+                             pdf2zh_next.translator.translato                   
+                             r_impl.openai.OpenAITranslator.d                   
+                             o_llm_translate in 1 seconds as                    
+                             it raised RateLimitError: Error                    
+                             code: 429 - {'error': {'code':                     
+                             'gateway_queue_full', 'message':                   
+                             'Too many pending requests,                        
+                             please retry later', 'type':                       
+                             'rate_limit_error'}}.                              
+[11/05/26 19:57:54] WARNING  WARNING:babeldoc.form il_translator_llm_only.py:778
+                             at.pdf.document_il.mi                              
+                             dend.il_translator_ll                              
+                             m_only:Translation                                 
+                             result is the same as                              
+                             input, fallback.                                   
+                    WARNING  WARNING:babeldoc.form il_translator_llm_only.py:828
+                             at.pdf.document_il.mi                              
+                             dend.il_translator_ll                              
+                             m_only:Fallback to                                 
+                             simple translation.                                
+                             paragraph id: d1287                                
+                    WARNING  WARNING:babeldoc.form il_translator_llm_only.py:778
+                             at.pdf.document_il.mi                              
+                             dend.il_translator_ll                              
+                             m_only:Translation                                 
+                             result is the same as                              
+                             input, fallback.                                   
+                    WARNING  WARNING:babeldoc.form il_translator_llm_only.py:828
+                             at.pdf.document_il.mi                              
+                             dend.il_translator_ll                              
+                             m_only:Fallback to                                 
+                             simple translation.                                
+                             paragraph id: u1Jxo                                
+[11/05/26 19:58:05] WARNING  WARNING:pdf2zh_next.translator.t before_sleep.py:64
+                             ranslator_impl.openai:Retrying                     
+                             pdf2zh_next.translator.translato                   
+                             r_impl.openai.OpenAITranslator.d                   
+                             o_llm_translate in 1 seconds as                    
+                             it raised RateLimitError: Error                    
+                             code: 429 - {'error': {'code':                     
+                             'gateway_queue_full', 'message':                   
+                             'Too many pending requests,                        
+                             please retry later', 'type':                       
+                             'rate_limit_error'}}.                              
+[11/05/26 19:58:09] WARNING  WARNING:babeldoc.form il_translator_llm_only.py:778
+                             at.pdf.document_il.mi                              
+                             dend.il_translator_ll                              
+                             m_only:Translation                                 
+                             result is the same as                              
+                             input, fallback.                                   
+                    WARNING  WARNING:babeldoc.form il_translator_llm_only.py:828
+                             at.pdf.document_il.mi                              
+                             dend.il_translator_ll                              
+                             m_only:Fallback to                                 
+                             simple translation.                                
+                             paragraph id: EpH6j                                
+[11/05/26 19:58:12] WARNING  WARNING:pdf2zh_next.translator.t before_sleep.py:64
+                             ranslator_impl.openai:Retrying                     
+                             pdf2zh_next.translator.translato                   
+                             r_impl.openai.OpenAITranslator.d                   
+                             o_llm_translate in 1 seconds as                    
+                             it raised RateLimitError: Error                    
+                             code: 429 - {'error': {'code':                     
+                             'gateway_concurrency_limit',                       
+                             'message': 'Concurrency limit                      
+                             exceeded for user, please retry                    
+                             later', 'type':                                    
+                             'rate_limit_error'}}.                              
+                    WARNING  WARNING:babeldoc.form il_translator_llm_only.py:778
+                             at.pdf.document_il.mi                              
+                             dend.il_translator_ll                              
+                             m_only:Translation                                 
+                             result is the same as                              
+                             input, fallback.                                   
+                    WARNING  WARNING:babeldoc.form il_translator_llm_only.py:828
+                             at.pdf.document_il.mi                              
+                             dend.il_translator_ll                              
+                             m_only:Fallback to                                 
+                             simple translation.                                
+                             paragraph id: YicJL                                
+                    WARNING  WARNING:babeldoc.form il_translator_llm_only.py:778
+                             at.pdf.document_il.mi                              
+                             dend.il_translator_ll                              
+                             m_only:Translation                                 
+                             result is the same as                              
+                             input, fallback.                                   
+                    WARNING  WARNING:babeldoc.form il_translator_llm_only.py:828
+                             at.pdf.document_il.mi                              
+                             dend.il_translator_ll                              
+                             m_only:Fallback to                                 
+                             simple translation.                                
+                             paragraph id: yud3A                                
+[11/05/26 19:58:17] WARNING  WARNING:pdf2zh_next.translator.t before_sleep.py:64
+                             ranslator_impl.openai:Retrying                     
+                             pdf2zh_next.translator.translato                   
+                             r_impl.openai.OpenAITranslator.d                   
+                             o_llm_translate in 1 seconds as                    
+                             it raised RateLimitError: Error                    
+                             code: 429 - {'error': {'code':                     
+                             'gateway_concurrency_limit',                       
+                             'message': 'Concurrency limit                      
+                             exceeded for user, please retry                    
+                             later', 'type':                                    
+                             'rate_limit_error'}}.                              
+[11/05/26 19:58:24] WARNING  WARNING:babeldoc.form il_translator_llm_only.py:778
+                             at.pdf.document_il.mi                              
+                             dend.il_translator_ll                              
+                             m_only:Translation                                 
+                             result is the same as                              
+                             input, fallback.                                   
+                    WARNING  WARNING:babeldoc.form il_translator_llm_only.py:828
+                             at.pdf.document_il.mi                              
+                             dend.il_translator_ll                              
+                             m_only:Fallback to                                 
+                             simple translation.                                
+                             paragraph id: mE4vk                                
+[11/05/26 19:58:28] WARNING  WARNING:pdf2zh_next.translator.t before_sleep.py:64
+                             ranslator_impl.openai:Retrying                     
+                             pdf2zh_next.translator.translato                   
+                             r_impl.openai.OpenAITranslator.d                   
+                             o_llm_translate in 1 seconds as                    
+                             it raised RateLimitError: Error                    
+                             code: 429 - {'error': {'code':                     
+                             'gateway_concurrency_limit',                       
+                             'message': 'Concurrency limit                      
+                             exceeded for user, please retry                    
+                             later', 'type':                                    
+                             'rate_limit_error'}}.                              
+[11/05/26 19:58:33] WARNING  WARNING:babeldoc.form il_translator_llm_only.py:778
+                             at.pdf.document_il.mi                              
+                             dend.il_translator_ll                              
+                             m_only:Translation                                 
+                             result is the same as                              
+                             input, fallback.                                   
+                    WARNING  WARNING:babeldoc.form il_translator_llm_only.py:828
+                             at.pdf.document_il.mi                              
+                             dend.il_translator_ll                              
+                             m_only:Fallback to                                 
+                             simple translation.                                
+                             paragraph id: qyKE6                                
+                    WARNING  WARNING:babeldoc.form il_translator_llm_only.py:778
+                             at.pdf.document_il.mi                              
+                             dend.il_translator_ll                              
+                             m_only:Translation                                 
+                             result is the same as                              
+                             input, fallback.                                   
+                    WARNING  WARNING:babeldoc.form il_translator_llm_only.py:828
+                             at.pdf.document_il.mi                              
+                             dend.il_translator_ll                              
+                             m_only:Fallback to                                 
+                             simple translation.                                
+                             paragraph id: LjuYP                                
+                    WARNING  WARNING:babeldoc.form il_translator_llm_only.py:787
+                             at.pdf.document_il.mi                              
+                             dend.il_translator_ll                              
+                             m_only:Translation                                 
+                             result is too long or                              
+                             too short. Input: 3,                               
+                             Output: 10                                         
+                    WARNING  WARNING:babeldoc.form il_translator_llm_only.py:828
+                             at.pdf.document_il.mi                              
+                             dend.il_translator_ll                              
+                             m_only:Fallback to                                 
+                             simple translation.                                
+                             paragraph id: QCb4Q                                
+[11/05/26 19:58:44] WARNING  WARNING:babeldoc.form il_translator_llm_only.py:778
+                             at.pdf.document_il.mi                              
+                             dend.il_translator_ll                              
+                             m_only:Translation                                 
+                             result is the same as                              
+                             input, fallback.                                   
+                    WARNING  WARNING:babeldoc.form il_translator_llm_only.py:828
+                             at.pdf.document_il.mi                              
+                             dend.il_translator_ll                              
+                             m_only:Fallback to                                 
+                             simple translation.                                
+                             paragraph id: hTTkL                                
+[11/05/26 19:58:54] WARNING  WARNING:babeldoc.form il_translator_llm_only.py:778
+                             at.pdf.document_il.mi                              
+                             dend.il_translator_ll                              
+                             m_only:Translation                                 
+                             result is the same as                              
+                             input, fallback.                                   
+                    WARNING  WARNING:babeldoc.form il_translator_llm_only.py:828
+                             at.pdf.document_il.mi                              
+                             dend.il_translator_ll                              
+                             m_only:Fallback to                                 
+                             simple translation.                                
+                             paragraph id: T1Rw4                                
+                    WARNING  WARNING:babeldoc.form il_translator_llm_only.py:778
+                             at.pdf.document_il.mi                              
+                             dend.il_translator_ll                              
+                             m_only:Translation                                 
+                             result is the same as                              
+                             input, fallback.                                   
+                    WARNING  WARNING:babeldoc.form il_translator_llm_only.py:828
+                             at.pdf.document_il.mi                              
+                             dend.il_translator_ll                              
+                             m_only:Fallback to                                 
+                             simple translation.                                
+                             paragraph id: zKVTB                                
+[11/05/26 19:59:03] WARNING  WARNING:babeldoc.form il_translator_llm_only.py:778
+                             at.pdf.document_il.mi                              
+                             dend.il_translator_ll                              
+                             m_only:Translation                                 
+                             result is the same as                              
+                             input, fallback.                                   
+                    WARNING  WARNING:babeldoc.form il_translator_llm_only.py:828
+                             at.pdf.document_il.mi                              
+                             dend.il_translator_ll                              
+                             m_only:Fallback to                                 
+                             simple translation.                                
+                             paragraph id: 9XNWH                                
+[11/05/26 20:00:27] WARNING  WARNING:babeldoc.form il_translator_llm_only.py:801
+                             at.pdf.document_il.mi                              
+                             dend.il_translator_ll                              
+                             m_only:Translation                                 
+                             result edit distance                               
+                             is too small.                                      
+                             distance: 3, input:                                
+                             <style id='1'>GACL                                 
+                             (</style><style                                    
+                             id='3'>Game Agent                                  
+                             Coding                                             
+                             League</style><style                               
+                             id='5'>,</style>,                                  
+                             output: <style                                     
+                             id='1'>GACL（</style>                              
+                             <style id='3'>Game                                 
+                             Agent Coding                                       
+                             League</style><style                               
+                             id='5'>，</style>                                  
+                    WARNING  WARNING:babeldoc.form il_translator_llm_only.py:828
+                             at.pdf.document_il.mi                              
+                             dend.il_translator_ll                              
+                             m_only:Fallback to                                 
+                             simple translation.                                
+                             paragraph id: b2jQQ                                
+[11/05/26 20:01:06] WARNING  WARNING:babeldoc.form il_translator_llm_only.py:787
+                             at.pdf.document_il.mi                              
+                             dend.il_translator_ll                              
+                             m_only:Translation                                 
+                             result is too long or                              
+                             too short. Input: 4,                               
+                             Output: 12                                         
+                    WARNING  WARNING:babeldoc.form il_translator_llm_only.py:828
+                             at.pdf.document_il.mi                              
+                             dend.il_translator_ll                              
+                             m_only:Fallback to                                 
+                             simple translation.                                
+                             paragraph id: fkGfN                                
+[11/05/26 20:01:29] WARNING  WARNING:babeldoc.form il_translator_llm_only.py:787
+                             at.pdf.document_il.mi                              
+                             dend.il_translator_ll                              
+                             m_only:Translation                                 
+                             result is too long or                              
+                             too short. Input: 1,                               
+                             Output: 3                                          
+                    WARNING  WARNING:babeldoc.form il_translator_llm_only.py:828
+                             at.pdf.document_il.mi                              
+                             dend.il_translator_ll                              
+                             m_only:Fallback to                                 
+                             simple translation.                                
+                             paragraph id: 1xjwF                                
+[11/05/26 20:01:30] WARNING  WARNING:babeldoc.form il_translator_llm_only.py:787
+                             at.pdf.document_il.mi                              
+                             dend.il_translator_ll                              
+                             m_only:Translation                                 
+                             result is too long or                              
+                             too short. Input: 1,                               
+                             Output: 3                                          
+                    WARNING  WARNING:babeldoc.form il_translator_llm_only.py:828
+                             at.pdf.document_il.mi                              
+                             dend.il_translator_ll                              
+                             m_only:Fallback to                                 
+                             simple translation.                                
+                             paragraph id: tRuNL                                
+[11/05/26 20:01:43] INFO     INFO:babeldoc.format. il_translator_llm_only.py:255
+                             pdf.document_il.miden                              
+                             d.il_translator_llm_o                              
+                             nly:Translation                                    
+                             completed. Total:                                  
+                             2039, Successful:                                  
+                             1989, Fallback: 50                                 
+MuPDF error: format error: Invalid offsize in CFF
+
+[11/05/26 20:01:48] INFO     INFO:babeldoc.format.pdf.docume pdf_creater.py:1194
+                             nt_il.backend.pdf_creater:Font                     
+                             subsetting completed                               
+                             successfully                                       
+[11/05/26 20:01:49] INFO     INFO:babeldoc.format.pdf.docume pdf_creater.py:1309
+                             nt_il.backend.pdf_creater:PDF                      
+                             save with clean=True completed                     
+                             successfully                                       
+                    INFO     INFO:babeldoc.format.pdf.docume pdf_creater.py:1519
+                             nt_il.backend.pdf_creater:save                     
+                             auto extracted glossary to                         
+                             /repo/paper-web/Agent/CodePolic                    
+                             yGames（代码策略博弈）/can-ai-a                    
+                             gents-learn-their-way-to-the-to                    
+                             p-3UP5TTIW/bilingual-20261105-1                    
+                             91944/arxiv_2610.12341.no_water                    
+                             mark.zh-CN.glossary.csv                            
+                    INFO     INFO:babeldoc.format.pdf.high_lev high_level.py:351
+                             el:Peak memory usage: 4968.96 MB                   
+                    INFO     INFO:babeldoc.format.pdf.high_lev high_level.py:628
+                             el:finish translate:                               
+                             /tmp/opencode/zotero-translate-y9                  
+                             6fabqn/arxiv_2610.12341.pdf,                       
+                             cost: 1020.5609269142151 s                         
+[11/05/26 20:01:51] INFO     INFO:babeldoc.format.pdf.docume pdf_creater.py:1309
+                             nt_il.backend.pdf_creater:PDF                      
+                             save with clean=True completed                     
+                             successfully                                       
+                    INFO     INFO:babeldoc.format.pdf.high_lev high_level.py:315
+                             el:Waiting for translation to                      
+                             finish...                                          
+[11/05/26 20:01:51] INFO     INFO:pdf2zh_next.high_level:Trans high_level.py:720
+                             lation Result:                                     
+                    INFO     INFO:pdf2zh_next.high_level:      high_level.py:721
+                             Original PDF:                                      
+                             /tmp/opencode/zotero-translate-y9                  
+                             6fabqn/arxiv_2610.12341.pdf                        
+                    INFO     INFO:pdf2zh_next.high_level:      high_level.py:722
+                             Time Cost: 1020.56s                                
+                    INFO     INFO:pdf2zh_next.high_level:      high_level.py:723
+                             Mono PDF: None                                     
+                    INFO     INFO:pdf2zh_next.high_level:      high_level.py:724
+                             Dual PDF:                                          
+                             /repo/paper-web/Agent/CodePolicyG                  
+                             ames（代码策略博弈）/can-ai-agent                  
+                             s-learn-their-way-to-the-top-3UP5                  
+                             TTIW/bilingual-20261105-191944/ar                  
+                             xiv_2610.12341.no_watermark.zh-CN                  
+                             .dual.pdf                                          
+                    INFO     INFO:pdf2zh_next.high_level:Token high_level.py:728
+                             Usage:                                             
+                    INFO     INFO:pdf2zh_next.high_level:      high_level.py:737
+                             Main Translator: Total 491306,                     
+                             Prompt 385648, Cache Hit Prompt                    
+                             0, Completion 105658                               
+                    INFO     INFO:pdf2zh_next.high_level:      high_level.py:748
+                             Term Translator: Total 152309,                     
+                             Prompt 91424, Cache Hit Prompt 0,                  
+                             Completion 60885                                   
+                    INFO     INFO:pdf2zh_next.high_level:      high_level.py:757
+                             Total Token Usage: Total 643615,                   
+                             Prompt 477072, Cache Hit Prompt                    
+                             0, Completion 166543                               
+translate                                              ━━━━━ 100/… 0:17:… 0:00:…
+Parse PDF and Create Intermediate Representation (1/1) ━━━━━ 26/26 0:00:… 0:00:…
+DetectScannedFile (1/1)                                ━━━━━ 26/26 0:00:… 0:00:…
+Parse Page Layout (1/1)                                ━━━━━ 52/52 0:00:… 0:00:…
+Parse Paragraphs (1/1)                                 ━━━━━ 26/26 0:00:… 0:00:…
+Parse Formulas and Styles (1/1)                        ━━━━━ 26/26 0:00:… 0:00:…
+Automatic Term Extraction (1/1)                        ━━━━━ 3589… 0:05:… 0:00:…
+Translate Paragraphs (1/1)                             ━━━━━ 3589… 0:10:… 0:00:…
+Typesetting (1/1)                                      ━━━━━ 52/52 0:00:… 0:00:…
+Add Fonts (1/1)                                        ━━━━━ 1582… 0:00:… 0:00:…
+Generate drawing instructions (1/1)                    ━━━━━ 26/26 0:00:… 0:00:…
+Subset font (1/1)                                      ━━━━━ 1/1   0:00:… 0:00:…
+Save PDF (1/1)                                         ━━━━━ 2/2   0:00:… 0:00:…
+                    INFO     INFO:babeldoc.format.pdf. translation_config.py:472
+                             translation_config:cleanu                          
+                             p temp files:                                      
+                             /tmp/tmpbxp_fkuh                                   
+                    INFO     INFO:babeldoc.progress_moni progress_monitor.py:258
+                             tor:Translation canceled                           
+                    INFO     INFO:pdf2zh_next.high_level:Liste high_level.py:397
+                             ner stopped.                                       

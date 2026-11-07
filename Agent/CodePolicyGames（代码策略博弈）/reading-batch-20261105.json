@@ -1,0 +1,91 @@
+{
+  "date": "2026-11-05",
+  "collection": "N32ZMEPM",
+  "language": "zh-CN",
+  "succeeded": [
+    {
+      "title": "Policy-Conditioned Policies for Multi-Agent Task Solving",
+      "itemKey": "3RVNLC7T",
+      "pages": 25,
+      "sourceSha256": "653b53b765a30f2ea2bbc5365a70c3fc43eefdc6b8158bb897f5f9887a71a1fc",
+      "reading": "/repo/paper-web/Agent/CodePolicyGames（代码策略博弈）/policy-conditioned-policies-3RVNLC7T/reading.md",
+      "html": "/repo/paper-web/Agent/CodePolicyGames（代码策略博弈）/policy-conditioned-policies-3RVNLC7T/index.html",
+      "qualityReport": "/repo/paper-web/Agent/CodePolicyGames（代码策略博弈）/policy-conditioned-policies-3RVNLC7T/reading-quality.md",
+      "status": "complete-with-stated-evidence-limitations",
+      "backgroundStructure": "pass",
+      "manualSemanticSelfReview": "pass within explicitly qualified source/access limits",
+      "offlineBrowserCheck": "pass",
+      "independentReaderStudy": "not performed",
+      "sourceUnchanged": true,
+      "limitations": [
+        "LBF精确奖励/辅助函数和完整作者实现未核实可复现",
+        "FairBot附录的一致性与可靠性术语、无界证明搜索边界已明确",
+        "仅有福利曲线，非PIBR均衡证书"
+      ]
+    },
+    {
+      "title": "Code-Space Response Oracles: Generating Interpretable Multi-Agent Policies with Large Language Models",
+      "itemKey": "KD862EQK",
+      "pages": 34,
+      "sourceSha256": "e5b566610d0e1d182cf0b81dced29f3e0e4609e2de8a9887546e045a44a163c4",
+      "reading": "/repo/paper-web/Agent/CodePolicyGames（代码策略博弈）/code-space-response-oracles-KD862EQK/reading.md",
+      "html": "/repo/paper-web/Agent/CodePolicyGames（代码策略博弈）/code-space-response-oracles-KD862EQK/index.html",
+      "qualityReport": "/repo/paper-web/Agent/CodePolicyGames（代码策略博弈）/code-space-response-oracles-KD862EQK/reading-quality.md",
+      "status": "complete-with-stated-evidence-limitations",
+      "backgroundStructure": "pass",
+      "manualSemanticSelfReview": "pass within explicitly qualified source/access limits",
+      "offlineBrowserCheck": "pass",
+      "independentReaderStudy": "not performed",
+      "sourceUnchanged": true,
+      "limitations": [
+        "Table1与Table7种子说明不完全一致，AlphaEvolve按Table7的3种子限制解读",
+        "最佳实例分数与元均衡跨种子均值分开",
+        "AlphaEvolve完整访问/等计算预算/最早AAMAS上传时间未知"
+      ]
+    },
+    {
+      "title": "Evaluating LLMs in Open-Source Games",
+      "itemKey": "HSDVNEPH",
+      "pages": 32,
+      "sourceSha256": "e979e2f44b81edc1f024211c59975d7d9439bc0b1aef5cc86f22e6b7ad6f3d4b",
+      "reading": "/repo/paper-web/Agent/CodePolicyGames（代码策略博弈）/evaluating-llms-open-source-games-HSDVNEPH/reading.md",
+      "html": "/repo/paper-web/Agent/CodePolicyGames（代码策略博弈）/evaluating-llms-open-source-games-HSDVNEPH/index.html",
+      "qualityReport": "/repo/paper-web/Agent/CodePolicyGames（代码策略博弈）/evaluating-llms-open-source-games-HSDVNEPH/reading-quality.md",
+      "status": "complete-with-stated-evidence-limitations",
+      "backgroundStructure": "pass",
+      "manualSemanticSelfReview": "pass within explicitly qualified source/access limits",
+      "offlineBrowserCheck": "pass",
+      "independentReaderStudy": "not performed",
+      "sourceUnchanged": true,
+      "limitations": [
+        "PDF p10复制子公式与标准方程不一致，已视觉核验原式；绘图代码未知",
+        "随机标签的全称/采样量词细节不足，未宣称形式验证",
+        "仓库raw404/API403与OpenReview验证阻挡均有记录"
+      ]
+    },
+    {
+      "title": "Can AI Agents Learn Their Way to the Top? Evaluating Heuristic Learning in a Long-Running Game Agent Competition",
+      "itemKey": "3UP5TTIW",
+      "pages": 26,
+      "sourceSha256": "d4f88e99f52f3da80ec0206ac16801c9fb2a7adea882c305e71097139629b180",
+      "reading": "/repo/paper-web/Agent/CodePolicyGames（代码策略博弈）/can-ai-agents-learn-their-way-to-the-top-3UP5TTIW/reading.md",
+      "html": "/repo/paper-web/Agent/CodePolicyGames（代码策略博弈）/can-ai-agents-learn-their-way-to-the-top-3UP5TTIW/index.html",
+      "qualityReport": "/repo/paper-web/Agent/CodePolicyGames（代码策略博弈）/can-ai-agents-learn-their-way-to-the-top-3UP5TTIW/reading-quality.md",
+      "status": "complete-with-stated-evidence-limitations",
+      "backgroundStructure": "pass",
+      "manualSemanticSelfReview": "pass within explicitly qualified source/access limits",
+      "offlineBrowserCheck": "pass",
+      "independentReaderStudy": "not performed",
+      "sourceUnchanged": true,
+      "limitations": [
+        "正式完整池需要认证；909公开包不等于1920完整池",
+        "主表3次中位与不同消融运行分开；模型/harness/计算量混杂明示",
+        "原协议不测未见对手泛化；当前README不倒写为首发资源状态"
+      ]
+    }
+  ],
+  "failed": [],
+  "skipped": [],
+  "experimentsExecuted": false,
+  "zoteroModified": false
+}

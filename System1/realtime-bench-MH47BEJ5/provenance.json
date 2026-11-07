@@ -1,0 +1,172 @@
+{
+  "generated_at": "2026-10-17",
+  "language": "zh-CN",
+  "depth": "DEEP READ",
+  "zotero": {
+    "collection_key": "G2VDMDFY",
+    "collection_path": [
+      "人工智能",
+      "System1"
+    ],
+    "item_key": "MH47BEJ5",
+    "attachment_key": "ARQ84L7M",
+    "read_only": true
+  },
+  "source": {
+    "local_pdf": "/home/lyh/Zotero/storage/ARQ84L7M/Tang 等 - 2026 - Realtime-Bench Can Frontier Models Solve Real-time Interactive Problems.pdf",
+    "sha256": "ed562a58aa01bbb86388c50aded121426d5e00df9d5c4630a7fd6949368eadc8",
+    "pages": 26,
+    "arxiv_id": "2610.22155",
+    "version": "v1",
+    "first_publication": "2026-10-15",
+    "version_source": "https://arxiv.org/abs/2610.22155",
+    "official_history_checked": true,
+    "pdf_identity_verified": true
+  },
+  "skill": {
+    "name": "paper-reading",
+    "local_revision": "historical-context-v1",
+    "upstream": "https://github.com/xiaofengShi/paper-reading-skill",
+    "upstream_commit": "eadd0cd61d276d082938d80eb0d3fbb85614f2e1",
+    "local_enhancements_preserved": true,
+    "fingerprints": {
+      "SKILL.md": "a795c8d00b90632ef0eaada455415b555acc6c0e6dc101bce4cddc26de8315a4",
+      "references/historical-context.md": "992233f756d28a0d65ddec1618496704f8c7918011b5777e7940f089346a6a73",
+      "scripts/check-background.cjs": "e7fe305907333fd90264e0efffa711ce82bf36b3464642c1d3080f87b6ee3571",
+      "scripts/render-reading.cjs": "3ed818344cd402297240d51553c0c6ab7eb599017a51380cb437d37283f5598c",
+      "evals/reading-quality.md": "44a2383edc73a4f65462775e5a85ef2c11c49e51431e867b727073b254cba002"
+    }
+  },
+  "coverage": {
+    "main_text": true,
+    "methods": true,
+    "decisive_tables_and_figures": true,
+    "relevant_appendices": true,
+    "historical_context": "Target introduction/related work and references plus selected primary abstracts and official release dates; not exhaustive predecessor full-text rereads",
+    "independent_replication": false,
+    "independent_reader_testing": false
+  },
+  "checks": {
+    "background_structure": {
+      "pass": true,
+      "stdout": "/repo/paper-web/System1/realtime-bench-MH47BEJ5/reading.md: background structure present (cutoff 2026-10-15); chronology and content still require source review.",
+      "not_historical_truth_verification": true
+    },
+    "source_content_review": true,
+    "html_offline_resource_check": true,
+    "browser_report": "../browser-validation.json",
+    "regression_tests": 29,
+    "quality_report": "quality-check.md"
+  },
+  "outputs": {
+    "reading.md": {
+      "sha256": "2815852b2ce5226fb952c0af9cd3b1c5ce98a78b176dd74a058cbe6dbd0a4eeb",
+      "bytes": 26312
+    },
+    "index.html": {
+      "sha256": "44df4868d786000d1bd5d8ec1c9d4a3f53eb8e956f85fe7968ca7772885b3691",
+      "bytes": 2388578
+    },
+    "quality-check.md": {
+      "sha256": "b4ba7aab7eda3b8ca2f2c6161fc37fbc9fbeddfa49f7b040471efd2da332ed47",
+      "bytes": 5036
+    }
+  },
+  "assets": [
+    {
+      "path": "assets/realtime-fig2-clocks.png",
+      "sha256": "6afc99f88bcbe733eca0ca715ecdb97e324df2772513342d7de3c26363c1f870",
+      "kind": "original-paper-crop",
+      "pdf_page": 2,
+      "crop_points": [
+        104,
+        442,
+        510,
+        609
+      ],
+      "zoom": 3,
+      "caption_visually_checked": true
+    },
+    {
+      "path": "assets/realtime-fig4-windows.png",
+      "sha256": "72e6be2a430a797549c66400ee461c9ddb27fba12257e8ea5b6ed4340c1a9216",
+      "kind": "original-paper-crop",
+      "pdf_page": 5,
+      "crop_points": [
+        104,
+        350,
+        510,
+        530
+      ],
+      "zoom": 3,
+      "caption_visually_checked": true
+    },
+    {
+      "path": "assets/realtime-fig5-results.png",
+      "sha256": "aa4935252c12e5c1955905d78f448aebf3f55f025ff3e861c9443eadb84c015c",
+      "kind": "original-paper-crop",
+      "pdf_page": 7,
+      "crop_points": [
+        104,
+        60,
+        510,
+        214
+      ],
+      "zoom": 3,
+      "caption_visually_checked": true
+    },
+    {
+      "path": "assets/realtime-table2-runs.png",
+      "sha256": "1449167ff7e4a8da940c98e4822d4cb407762755569bf64356acab06858bb40d",
+      "kind": "original-paper-crop",
+      "pdf_page": 18,
+      "crop_points": [
+        104,
+        128,
+        510,
+        430
+      ],
+      "zoom": 3,
+      "caption_visually_checked": true
+    },
+    {
+      "path": "assets/realtime-table3-4-reliability.png",
+      "sha256": "47cf5dd070606c1b419391fecc700837a0b14c32276a084f765e4213a7a8e0e9",
+      "kind": "original-paper-crop",
+      "pdf_page": 19,
+      "crop_points": [
+        104,
+        90,
+        510,
+        732
+      ],
+      "zoom": 3,
+      "caption_visually_checked": true
+    },
+    {
+      "path": "assets/realtime-fig8-failures.png",
+      "sha256": "d0b9f008d45b75e3cfbd151d90fc7097e29f6fda2902c0effba448a7411ec3b6",
+      "kind": "original-paper-crop",
+      "pdf_page": 9,
+      "crop_points": [
+        104,
+        335,
+        510,
+        696
+      ],
+      "zoom": 3,
+      "caption_visually_checked": true
+    },
+    {
+      "path": "assets/token-clock-lab.html",
+      "sha256": "93d8fb7db28a91322f59001227a9e36e0d8a9655b19e54ec946bf39e931d0971",
+      "kind": "reader-authored-formula-exploration",
+      "source": "PDF §3.2, Fig.4; not game performance data"
+    }
+  ],
+  "known_uncertainties": [
+    "Gemini Wall prose24→32 conflicts with Fig.5/Table2 28→24; kept visible",
+    "Jev web-only coverage but unified result-table denominator unexplained; no equal-coverage ranking",
+    "Fig.5 aggregation scope less explicit than Appendix B.1"
+  ]
+}

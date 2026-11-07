@@ -1,0 +1,193 @@
+{
+  "generated_on": "2026-10-19",
+  "zotero_collection_key": "FLT4H9RN",
+  "zotero_item_key": "VHVYYSMP",
+  "zotero_attachment_key": "VHVYYSMP",
+  "source_pdf_path": "/home/lyh/Zotero/storage/VHVYYSMP/2112.10510v7.pdf",
+  "source_pdf_sha256": "9736e7789e7f4b7dd7401b6017602be87410eb15c1b11f94065d88ba7fec5a9b",
+  "source_pdf_pages": 24,
+  "source_version": "ICLR 2022 paper, arXiv:2112.10510v7, 2024-08-13, 24 pages",
+  "covered_sections_and_scope": "独立PDF确认为PFN原始论文而非其他条目的子附件；全文核心§§2–7及Appendix A/B/C证明、D/E实现、F比较协议可访问。",
+  "source_pdf_modified": false,
+  "duplicate_of": null,
+  "standalone_pdf_item": true,
+  "reading_language": "zh-CN",
+  "mode": "DEEP READ",
+  "lens": "understanding-first",
+  "skill_source": "https://github.com/xiaofengShi/paper-reading-skill",
+  "skill_commit": "eadd0cd61d276d082938d80eb0d3fbb85614f2e1",
+  "renderer_sha256": "3ed818344cd402297240d51553c0c6ab7eb599017a51380cb437d37283f5598c",
+  "rebuild_command": "node /repo/paper-web/.opencode/skills/paper-reading/scripts/render-reading.cjs /repo/paper-web/TabFM/pfn-bayesian-inference-VHVYYSMP/reading.md /repo/paper-web/TabFM/pfn-bayesian-inference-VHVYYSMP/index.html",
+  "audit_source_sha256": "0bd8a5b7008b7a8ae99567c44daad6180ecdda95a934bba5e5f45003e9b040f8",
+  "html_sha256": "67e469e5be88682aa7dcc0f645c018f3493c691522528adf60eacb909ef247bc",
+  "figures": [
+    {
+      "file": "assets/pfn-fig1-overview.png",
+      "pdf_page_1based": 1,
+      "crop_rectangle_pdf_points": [
+        105,
+        565,
+        510,
+        695
+      ],
+      "render_scale": 2.5,
+      "sha256": "804c409b811e8ea3f03206f86ce3404ccc1b475b464459373b20d8485cf35787"
+    },
+    {
+      "file": "assets/pfn-fig2-architecture-density.png",
+      "pdf_page_1based": 4,
+      "crop_rectangle_pdf_points": [
+        105,
+        65,
+        510,
+        201
+      ],
+      "render_scale": 2.5,
+      "sha256": "8e24c9556139fcb84f60b3cbbf9fa475a2707e00e5161d9ff69b8333118e0c7c"
+    },
+    {
+      "file": "assets/pfn-fig3-gp.png",
+      "pdf_page_1based": 5,
+      "crop_rectangle_pdf_points": [
+        105,
+        65,
+        510,
+        228
+      ],
+      "render_scale": 2.5,
+      "sha256": "f611645fc85ae654d377861c3bb2d2825b337b17932d4d7efc7f30e39b9a5844"
+    },
+    {
+      "file": "assets/pfn-table1-small-data.png",
+      "pdf_page_1based": 9,
+      "crop_rectangle_pdf_points": [
+        105,
+        60,
+        510,
+        168
+      ],
+      "render_scale": 2.5,
+      "sha256": "45409dae18cffca828d58187c9ce392ad99d8ebe97d3525350ba255a191b1943"
+    }
+  ],
+  "validation_scope": "Manual narrative and source review plus renderer/browser checks; no independent reader study or scientific reproduction",
+  "skill_base_commit": "eadd0cd61d276d082938d80eb0d3fbb85614f2e1",
+  "skill_revision": "narrative-logic-v1",
+  "skill_definition_sha256": "8d086cb16b69e68d4517e538cc25b651e929a37599e60f0f909794e5a17b267b",
+  "historical_context": {
+    "status": "pass",
+    "horizon": "2021-12-20",
+    "horizon_basis": "first-publication",
+    "date_evidence_url": "https://arxiv.org/abs/2112.10510",
+    "predecessor_rows": 4,
+    "chapter": "00 / 发表时的研究背景",
+    "source_review": "2021首发与ICLR2022/2024修订分开；解释GP/BNN、近似推断、CNP/ANP和GPT-3的已有贡献，不把后来的TabPFN倒写成前作。",
+    "review_scope": "Target introduction/background/related work plus selected primary abstracts and official submission histories; not comprehensive full-text review of all predecessors",
+    "source_urls": [
+      "https://arxiv.org/abs/1807.01613",
+      "https://arxiv.org/abs/1901.05761",
+      "https://arxiv.org/abs/2005.14165",
+      "https://arxiv.org/abs/2112.10510"
+    ]
+  },
+  "local_revisions": [
+    {
+      "revision": "historical-context-v1",
+      "date": "2026-10-17",
+      "action": "Insert publication-time background; preserve prior method, evidence, assets and paths",
+      "before": {
+        "audit_source_sha256": "e5d8854531a6d79e9bc9575037e1b32874cbeb4a777631f3ac557911c6cddc8f",
+        "html_sha256": "b6ac4d9c9954e02fe4a5507428079b50ded50a6b70b8b2dd22cda78949a886a5"
+      }
+    },
+    {
+      "revision": "narrative-logic-v1",
+      "date": "2026-10-19",
+      "action": "Paper-specific prose refactor: problem/value, prior-only idea reconstruction, intuition, running instance, accessible mathematics, question/test/answer evidence and takeaways; preserve original evidence and visuals",
+      "archive_directory": "revisions/pre-narrative-logic-20261019",
+      "before": {
+        "audit_source_sha256": "9c57bec0565a0474eb76bfe401b0f9dae5e29ec36b4fab4ff37c9bb131f6f100",
+        "html_sha256": "552ec0255de22c57c4dc2529fbf1d0e05da17ac61cf99ee568de12beb011255a"
+      }
+    }
+  ],
+  "preserved_skill_extensions": [
+    "historical-context-v1"
+  ],
+  "narrative_protocol_sha256": "25a89f7a1b55037132b049163ecb82d2ea7fa9106bbd729652fcf8a4b124a483",
+  "quality_check_sha256": "f1f2deeb768dcabbfb799b5c92ebcb2d5fabe09535dbe237ee96dc68ad2298ae",
+  "manual_narrative_review": {
+    "title": "Transformers Can Do Bayesian Inference",
+    "problem": "§00：小任务预测分布、摊销逐任务推断成本，区分近似误差与先验失配",
+    "prior_gap": "§00：GP/BNN、近似推断、Neural Processes、ICL，不能把后来的TabPFN倒写成前提",
+    "idea": "§01：可模拟联合样本→不必先显式估计参数后验→直接条件预测的待证假设；不先假定本文KL恒等式",
+    "intuition": "§01：用离线任务学习替代反复在线求预测分布",
+    "example": "§02：明确构造Beta-Bernoulli任务，3正1反→Beta(4,2)→目标预测2/3；未运行PFN",
+    "math": "§04–05：条件分解、交叉熵/KL逐步解释，输出密度质量与高度分开；原文有正式命题，KL方向保留",
+    "evidence": "§06–07：可解GP→难积分超先验/BNN→真实30标签小表，保留20/21口径差异和2024归属脚注",
+    "takeaways": "§08：监督来源、预测/参数后验接口、先验/容量/优化的三层条件",
+    "source_pages_rechecked": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20
+    ],
+    "cautions": [
+      "不声称有限网络已经精确贝叶斯推断",
+      "理论特例手算不是新模型实验",
+      "原有图像与事实锚点沿用已核验版本"
+    ]
+  },
+  "manual_review_type": "Generator source-based semantic self-check; not independent reader study",
+  "source_pages_rechecked_this_revision": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "reused_source_audit": "Unchanged PDF and existing equation/figure/number source audits retained from archived reading; full text accessible, not claimed to have independently rerun experiments or read every appendix table anew",
+  "delivery_status": "completed",
+  "browser_validation_this_revision": {
+    "ok": true,
+    "viewports": [
+      1280,
+      390
+    ],
+    "images_loaded": 4,
+    "images_total": 4,
+    "math": 32,
+    "math_errors": 0,
+    "sections": 9,
+    "source_count": 37,
+    "anchors_valid": true,
+    "source_toggle": true,
+    "page_overflow_default_or_sources": false,
+    "figures_have_context": true,
+    "external_resources": 0,
+    "scripts": 0
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "sourcePages": 23,
+  "sourceImagePlacements": 18,
+  "documents": [
+    {
+      "file": "harness-engineering-for-self-improvement.en-zh.pdf",
+      "pages": 23,
+      "bytes": 7094278,
+      "sha256": "f6b07168174fbd681847404e1b6f74799f26ede10afbb579d522565036aee8b6",
+      "chineseCharactersByPage": [
+        694,
+        607,
+        486,
+        691,
+        441,
+        269,
+        310,
+        389,
+        336,
+        212,
+        178,
+        388,
+        425,
+        405,
+        920,
+        436,
+        601,
+        568,
+        1043,
+        677,
+        694,
+        470,
+        455
+      ],
+      "totalChineseCharacters": 11695,
+      "imagePlacements": 36,
+      "firstPageTextExcerpt": "Harness Engineering for Self-Improvement\nDate: July 4, 2026 | Estimated Reading Time: 31 min | Author: Lilian Weng\nOriginal: https://lilianweng.github.io/posts/2026-07-04-harness/\nTable of Contents\nHarness Design Patterns\nPattern 1: Workflow Automation\nPattern 2: File System as Persistent Memory\nPattern 3: Sub-agent and Backend Jobs\nCase study: Coding Agent Harness\nHarness Layer vs Core Intelligence?\nHarness Optimization\nContext Engineering\nWorkflow Design\nSelf-Improving Harness\nEvolutionary Search\nJoint Optimization with Model Weights\nFuture Challenges\nCitation\nAppendix: Some useful benchmarks\nReferences\nThe concept of recursive self-improvement (RSI) dates back to I. J. Good (1965), where he defined an\n“ultraintelligent machine” as a system that can surpass humans in all intellectual activities and design better\nmachines to improve itself. Yudkowsky (2008) used the phrase “recursive self-improvement” for a specific\nfeedback loop: an AI uses its current intelligence to improve the cognitive machinery that produces its intelligence.\nThis feedback loop in modern AI may indicate the model rewriting its own weights directly, or more broadly the\nmodel improves the training pipeline and",
+      "pageSizes": [
+        [
+          1190,
+          842
+        ]
+      ]
+    }
+  ],
+  "originalEnglishUnchangedByPage": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true
+  ],
+  "retainedOnlyBilingualPDF": true
+}

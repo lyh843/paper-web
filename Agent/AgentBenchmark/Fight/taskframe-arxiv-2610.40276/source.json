@@ -1,0 +1,20 @@
+{
+  "title": "TaskFrame: Connecting Task-Level Planning with Frame-Level Control for Game Agents",
+  "arxivId": "2610.40276v1",
+  "abstractURL": "https://arxiv.org/abs/2610.40276",
+  "pdfURL": "https://arxiv.org/pdf/2610.40276v1",
+  "submittedDate": "2026-10-29",
+  "datePrintedOnPDF": "2026-10-30",
+  "authors": ["Guangzhi Wang", "Junfu Pu", "Yiran Wang", "Xingyilang Yin", "Honghao Chen", "Cheng Cheng", "Lingen Li", "Yinan Zhou", "Jiarui Wu", "Yinuo Jiang", "Hongbo Jin", "Xiaodong Cun", "Ying Shan"],
+  "pages": 20,
+  "sourcePDF": "TaskFrame-2610.40276v1.pdf",
+  "sourceSha256": "291e0d94d6d47676a94615c0f057690b8d684b4d7c68b34cc3508a4bd396e993",
+  "zoteroTargetCollection": "人工智能/System1",
+  "zoteroTargetCollectionKey": "G2VDMDFY",
+  "zoteroItemKey": "IGN5D6CY",
+  "zoteroSourceAttachmentKey": "XHNSL6MK",
+  "zoteroBilingualAttachmentKey": "F7TU7CM9",
+  "zoteroImportStatus": "verified-imported-with-bilingual",
+  "zoteroImportError": null,
+  "duplicateCheck": "No matches for arXiv ID or TaskFrame title before import attempt."
+}

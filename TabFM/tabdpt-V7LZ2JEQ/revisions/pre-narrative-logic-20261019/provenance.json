@@ -1,0 +1,124 @@
+{
+  "generated_on": "2026-10-17",
+  "zotero_collection_key": "FLT4H9RN",
+  "zotero_item_key": "V7LZ2JEQ",
+  "zotero_attachment_key": "2DK9WH64",
+  "source_pdf_path": "/home/lyh/Zotero/storage/2DK9WH64/Ma 等 - 2026 - TabDPT Scaling Tabular Foundation Models on Real Data.pdf",
+  "source_pdf_sha256": "5f7c0778290a9170bcc328294fcd2ef1179d465c14501ae8dc0655d509eb914f",
+  "source_pdf_pages": 31,
+  "source_version": "NeurIPS 2025 PDF including Jan 2026 update, 31 pages, PDF metadata 2026-01-15",
+  "central_source_pages_inspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31
+  ],
+  "source_pdf_modified": false,
+  "duplicate_of": null,
+  "reading_language": "zh-CN",
+  "mode": "DEEP READ",
+  "lens": "understanding-first",
+  "skill_source": "https://github.com/xiaofengShi/paper-reading-skill",
+  "skill_commit": "eadd0cd61d276d082938d80eb0d3fbb85614f2e1",
+  "renderer_sha256": "3ed818344cd402297240d51553c0c6ab7eb599017a51380cb437d37283f5598c",
+  "rebuild_command": "node /repo/paper-web/.opencode/skills/paper-reading/scripts/render-reading.cjs /repo/paper-web/TabFM/tabdpt-V7LZ2JEQ/reading.md /repo/paper-web/TabFM/tabdpt-V7LZ2JEQ/index.html",
+  "audit_source_sha256": "f0a40c619f19812247d07d11e5543a95a933966ab44f774ebd8cd7957c9569c9",
+  "html_sha256": "72cf598755fe1ba35cfe0238ecb3bd25f64e1944fe3c23d308fe0fcc5ca57242",
+  "figures": [
+    {
+      "file": "assets/tabdpt-fig2-architecture.png",
+      "pdf_page_1based": 5,
+      "crop_rectangle_pdf_points": [
+        105,
+        52,
+        535,
+        174
+      ],
+      "render_scale": 2.5,
+      "sha256": "e1e37af192862debd2665f050d3c36652d31ee4db715175be5a99bf84fbcd4e2"
+    },
+    {
+      "file": "assets/tabdpt-table1-main.png",
+      "pdf_page_1based": 7,
+      "crop_rectangle_pdf_points": [
+        105,
+        50,
+        508,
+        249
+      ],
+      "render_scale": 2.5,
+      "sha256": "85b02259a97a10df3d6192141193834c9700bd8c3be0e3315c0c99c404700f99"
+    },
+    {
+      "file": "assets/tabdpt-fig4-ablations.png",
+      "pdf_page_1based": 8,
+      "crop_rectangle_pdf_points": [
+        105,
+        305,
+        508,
+        459
+      ],
+      "render_scale": 2.5,
+      "sha256": "8d7525f09ad46bab04acfb77c6764606b76e4ed5554f0b14eac0015e318376cd"
+    },
+    {
+      "file": "assets/tabdpt-fig1-scaling.png",
+      "pdf_page_1based": 1,
+      "crop_rectangle_pdf_points": [
+        305,
+        490,
+        508,
+        633
+      ],
+      "render_scale": 2.5,
+      "sha256": "e1d65fee9169375e3cb0e37668d9993d20f27674a2746219dd7da3aaa76e39e3"
+    }
+  ],
+  "validation_scope": "Source-based author self-check and browser delivery checks; no independent reader study or experimental reproduction",
+  "skill_base_commit": "eadd0cd61d276d082938d80eb0d3fbb85614f2e1",
+  "skill_revision": "historical-context-v1",
+  "skill_definition_sha256": "a795c8d00b90632ef0eaada455415b555acc6c0e6dc101bce4cddc26de8315a4",
+  "historical_context": {
+    "status": "pass",
+    "horizon": "2024-10-23",
+    "horizon_basis": "first-publication",
+    "date_evidence_url": "https://arxiv.org/abs/2410.18164",
+    "predecessor_rows": 4,
+    "chapter": "00 / 发表时的研究背景",
+    "source_review": "2024-10首发与2026-01本地修订分开，较新的TabICL/2.5比较不作为原始动机；真实表SSL与局部任务构造的缺口明确。",
+    "review_scope": "Target introduction/background/related work plus selected primary abstracts and official submission histories; not comprehensive full-text review of all predecessors",
+    "source_urls": [
+      "https://arxiv.org/abs/2112.10510",
+      "https://arxiv.org/abs/2207.01848",
+      "https://arxiv.org/abs/2406.05207",
+      "https://arxiv.org/abs/2410.18164"
+    ]
+  },
+  "local_revisions": [
+    {
+      "revision": "historical-context-v1",
+      "date": "2026-10-17",
+      "action": "Insert publication-time background; preserve prior method, evidence, assets and paths",
+      "before": {
+        "audit_source_sha256": "5cb84070d54d6142280472195f06e39d353040cbbe5fc46cdd3667c7e56613be",
+        "html_sha256": "ac06881af26f70768728ad3382e20d58152fc85d4ae7fc80b1823e34fd8c3ba8"
+      }
+    }
+  ]
+}

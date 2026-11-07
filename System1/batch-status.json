@@ -1,0 +1,54 @@
+{
+  "generated_at": "2026-10-17",
+  "collection": {
+    "name": "System1",
+    "key": "G2VDMDFY",
+    "path": [
+      "人工智能",
+      "System1"
+    ],
+    "direct_items_only": true,
+    "enumeration": {
+      "offset": 0,
+      "limit": 100,
+      "items": 2,
+      "terminal_offset": 2,
+      "terminal_items": 0,
+      "confirmed_via": "Zotero MCP"
+    }
+  },
+  "total_unique_papers": 2,
+  "succeeded": 2,
+  "failed": [],
+  "skipped": [],
+  "duplicates": [],
+  "pdf_hashes_distinct": true,
+  "zotero_modified": false,
+  "original_pdfs_unchanged": true,
+  "papers": [
+    {
+      "item_key": "XRRV4TN9",
+      "title": "The World Won't Wait: Evaluating and Teaching Agents Under a Live Clock",
+      "status": "completed",
+      "first_publication": "2026-10-14",
+      "source_pdf_sha256": "a323d0c279f3392becebd6305c7a8012d00cac6d95f847fb5f78a19c2d7360f6",
+      "directory": "System1/world-wont-wait-XRRV4TN9",
+      "html": "System1/world-wont-wait-XRRV4TN9/index.html",
+      "quality_gates": "7/7 self-check pass; uncertainties retained",
+      "html_sha256": "99c43adbd57752dd6e0551c37b0d6b20ebf84d9831aaa2da30392ff207350cda"
+    },
+    {
+      "item_key": "MH47BEJ5",
+      "title": "Realtime-Bench: Can Frontier Models Solve Real-time Interactive Problems?",
+      "status": "completed",
+      "first_publication": "2026-10-15",
+      "source_pdf_sha256": "ed562a58aa01bbb86388c50aded121426d5e00df9d5c4630a7fd6949368eadc8",
+      "directory": "System1/realtime-bench-MH47BEJ5",
+      "html": "System1/realtime-bench-MH47BEJ5/index.html",
+      "quality_gates": "7/7 self-check pass; uncertainties retained",
+      "html_sha256": "44df4868d786000d1bd5d8ec1c9d4a3f53eb8e956f85fe7968ca7772885b3691"
+    }
+  ],
+  "catalogue": "System1/index.html",
+  "validation": "System1/browser-validation.json"
+}

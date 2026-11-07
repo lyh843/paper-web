@@ -1,0 +1,35 @@
+[
+  {
+    "page": 3,
+    "file": "paper-fig2-loop.png",
+    "clip": [
+      70,
+      167,
+      544,
+      365
+    ],
+    "text": "Agent for Agent Iteration Loop\nRead\nWrite\nReplay\nRule\nReplay Dictionary\nSDK & Demo\nLeaderboard\nGame Pack\nReplays\nHistory\nAgent\nCode Policy Evolves\nEnvironment\nValidator\nFast legality and runtime check\nFrozen Pool\nAgent’s Gaming Agent  \nVs\nHuman’s Gaming Agent \nRun on AI9 / Saiblo Platform \nNotes\nCodes\nStatic\nIterating\nRun with persistent session\nLed by Goal\n·    Learn from replays\n·    Code as policy / gaming agent\n·    Keep code explainable & editable\nx   No internet searching\nx   No reading rivals’ code\nPrinciples\n𝝅𝝅𝒕𝒕−𝟏𝟏→𝝅𝝅𝒕𝒕\nSelect\nAction\n1.\nSmall\nMatch\n2.\nFull Eval\n> > > > \nPassed Code\nSelected Rival(s)\nDense     if  Small Match\nBinary   if   Full  Eval\nUpdate\nRead\n"
+  },
+  {
+    "page": 8,
+    "file": "paper-table3-dorado.png",
+    "clip": [
+      69,
+      60,
+      545,
+      320
+    ],
+    "text": "Table 3 Dorado champion milestones. Mechanism descriptions with added (+) and deleted (-) C++ diff excerpts.\nEllipses omit context.\nFull-pool\neval.\nElo\nRank\nPolicy adjustment\nCode excerpt\n2\n1782.0\n36\nKeep mining; attack only a vulnerable\nenemy base.\n+232 enemyBase != NULL && enemyBase->hp < 1800\n&& (int)myHeroes.size() >= 4;\n4\n1800.7\n35\nUse all living heroes to defend a serious\nthreat.\n+245 int count = seriousThreat\n? (int)defenders.size() : 2;\n6\n1802.8\n35\nTrigger full defence for active threats or\nrecent damage.\n+228 const bool seriousThreat = ...\n|| baseThreat || recentBaseHit;\n8\n1862.8\n29\nExclude dead miners from occupancy;\nspread assignments.\n+343 if (alive && mineUsable(it->second, round))\nocc[it->second]++;\n-477 ... + 600LL * occ[m];\n+472 ... + 2000LL * occ[m];\n9\n1977.9\n18\nPenalize duplicate mine assignments\nmore strongly.\n-472 ... + 2000LL * occ[m];\n+472 ... + 5000LL * occ[m];\n10\n2040.1\n14\nTrack mine opening windows and\nprioritize open mines.\n+217 s_mineExistUntil[i] =\nround + exist->val[0] - 1;\n+ 36 #define MINE_OPEN_OCCUPANCY_PENALTY 50000LL\n11\n2187.8\n3\nConcentrate upgrades on a two-hero\ncore; preserve mining income.\n+296 if (s_dutyId < 0\n&& (int)s_leveledCore.size() < 2 ...)\n+316 if (!coreHammerguard &&\ntype == \"hammerguard\") priority = 0;\n16\n2210.3\n2\nAllow one-hero counterattacks only\nafter sustained aggression.\n+410 s_aggressionRounds = tightAggression\n? s_aggressionRounds + 1 : 0;\n+412 const bool corePush =\nactiveCoreHeroes >= 2 && aggressionThreat;\n"
+  },
+  {
+    "page": 10,
+    "file": "paper-fig7-feedback.png",
+    "clip": [
+      69,
+      545,
+      545,
+      678
+    ],
+    "text": "Dense\nBinary\n0\n500\n1000\n1500\n2000\n2500\n3000\n2236\n#1\n1710\n#11\nElo\nPacman\nDense\nBinary\n0\n500\n1000\n1500\n2000\n2500\n3000\n1119\n#9\n881\n#22\nElo\nAntWar\nDense\nBinary\n0\n500\n1000\n1500\n2000\n2500\n3000\n1528\n#15\n1461\n#23\nElo\nMiracle\n"
+  }
+]

@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>TabFM · 论文深读目录</title>
+  <style>
+    :root{color-scheme:light;--ink:#19382f;--muted:#596b64;--line:#dce4df;--accent:#31705a}
+    *{box-sizing:border-box}body{margin:0;background:#f7f9f6;color:var(--ink);font:16px/1.8 system-ui,-apple-system,"Noto Sans CJK SC",sans-serif}
+    main{max-width:1080px;margin:auto;padding:64px 24px 80px}.eyebrow{font-size:12px;font-weight:700;letter-spacing:.16em;color:var(--accent)}
+    h1{font-size:clamp(32px,6vw,56px);line-height:1.2;margin:16px 0}h2{font-size:22px;margin:0 0 12px}p{margin:0 0 18px}.lede{max-width:780px;color:var(--muted)}
+    .stats{display:flex;flex-wrap:wrap;gap:12px;margin:24px 0 32px}.stats span{padding:5px 14px;border:1px solid var(--line);border-radius:24px;background:white;font-size:14px}
+    .grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}.card{background:white;border:1px solid var(--line);border-radius:16px;padding:26px;display:flex;flex-direction:column}
+    .tag{font-size:12px;color:var(--muted);margin-bottom:10px}.desc{color:var(--muted);flex:1}.links{display:flex;flex-wrap:wrap;gap:16px;margin-top:10px}
+    a{color:var(--accent);text-underline-offset:4px}a:focus-visible{outline:3px solid #d29932;outline-offset:4px}code{font-size:.84em;overflow-wrap:anywhere}
+    .note{border-left:3px solid var(--accent);padding:16px 22px;background:#edf3ef;margin:32px 0}.footer{font-size:13px;color:var(--muted);margin-top:32px}
+    @media(max-width:640px){main{padding:36px 16px}.grid{grid-template-columns:1fr}.card{padding:22px}}
+    @media print{body{background:white}main{padding:10px}.card{break-inside:avoid}.grid{display:block}.card{margin:14px 0}}
+  </style>
+</head>
+<body>
+<main>
+  <div class="eyebrow">ZOTERO / 人工智能 / TABFM</div>
+  <h1>表格基础模型 · 深读图谱</h1>
+  <p class="lede">保留原有论文顺序与路径，使用当前 paper-reading 重新组织正文：研究问题与价值 → 前作及缺口 → 基于当时知识的思路重建 → 核心直觉 → 贯穿实例与方法 → 数学理解 → 实验问题与答案 → 有依据的启示。可视化服务于解释，不替代正文；首发背景与后期修订分开，作者陈述、实验观察和教学推断也分开。正文中文，原始图表保留原语言。</p>
+  <div class="stats"><span>13 篇不同论文</span><span>12 篇本轮逻辑重构</span><span>1 篇当前新版保留</span><span>13 篇交付检查通过</span></div>
+  <div class="grid">
+    <article class="card">
+      <div class="tag">已重构 · ICLR 2022 · arXiv v7 · 24 页 · VHVYYSMP</div>
+      <h2>Transformers Can Do Bayesian Inference</h2>
+      <p class="desc">从贝叶斯推断与集合条件预测的前作出发，用可手算的硬币任务走完先验、context 与预测，再逐步解释 NLL—交叉熵—KL，以及 GP、BNN 和少样本证据。</p>
+      <div class="links"><a href="pfn-bayesian-inference-VHVYYSMP/index.html">打开深读 →</a><a href="pfn-bayesian-inference-VHVYYSMP/reading.md">Markdown 源</a><a href="pfn-bayesian-inference-VHVYYSMP/quality-check.md">质量记录</a></div>
+    </article>
+    <article class="card">
+      <div class="tag">已重构 · 2022 预印本 v1 · 33 页 · BKDZDVHC</div>
+      <h2>树模型为何擅长表格</h2>
+      <p class="desc">以 electricity 真实任务追踪评测与三种干预，解释为什么要从排行榜走向偏置检验；补足核平滑和旋转数学，不虚构一条新模型流水线。</p>
+      <div class="links"><a href="trees-vs-deep-learning-BKDZDVHC/index.html">打开深读 →</a><a href="trees-vs-deep-learning-BKDZDVHC/reading.md">Markdown 源</a><a href="trees-vs-deep-learning-BKDZDVHC/quality-check.md">质量记录</a></div>
+    </article>
+    <article class="card">
+      <div class="tag">已重构 · ICLR 2023 · 36 页 · CL7A9HMJ</div>
+      <h2>TabPFN 第一代</h2>
+      <p class="desc">从 PFN 原型为何还不足走向小表任务先验，以真实 Iris 行说明固定权重怎样使用新标签，区分在线预测、离线训练与置换集成。</p>
+      <div class="links"><a href="tabpfn-CL7A9HMJ/index.html">打开深读 →</a><a href="tabpfn-CL7A9HMJ/reading.md">Markdown 源</a><a href="tabpfn-CL7A9HMJ/quality-check.md">质量记录</a></div>
+    </article>
+    <article class="card">
+      <div class="tag">当前新版保留 · NeurIPS 2024 · 29 页 · 5QV5CK9L</div>
+      <h2>LoCalPFN</h2>
+      <p class="desc">检索查询附近的行，再在局部上下文中微调。追踪共享近邻训练如何节省计算，以及联合训练为什么不同于先微调、再临时加检索。</p>
+      <div class="links"><a href="retrieval-finetuning-5QV5CK9L/index.html">打开深读 →</a><a href="retrieval-finetuning-5QV5CK9L/reading.md">Markdown 源</a><a href="retrieval-finetuning-5QV5CK9L/quality-check.md">质量记录</a></div>
+    </article>
+    <article class="card">
+      <div class="tag">已重构 · Nature 2025 · 23 页 · KGSUGZNB</div>
+      <h2>TabPFN 第二代</h2>
+      <p class="desc">沿原图的回归示意表追踪二维计算和分布输出，解释任务覆盖、表示与缓存各自解决什么；分类、回归和默认/PHE 证据分别回答问题。</p>
+      <div class="links"><a href="tabpfn-v2-KGSUGZNB/index.html">打开深读 →</a><a href="tabpfn-v2-KGSUGZNB/reading.md">Markdown 源</a><a href="tabpfn-v2-KGSUGZNB/quality-check.md">质量记录</a></div>
+    </article>
+    <article class="card">
+      <div class="tag">已重构 · ICML 2025 · 31 页 · XKRXCPY2</div>
+      <h2>TabICL</h2>
+      <p class="desc">用天平任务说明同分布列为何仍需身份，从计算瓶颈推导压缩方向，连接两次集合 attention、行表示、层级概率与长表证据。</p>
+      <div class="links"><a href="tabicl-XKRXCPY2/index.html">打开深读 →</a><a href="tabicl-XKRXCPY2/reading.md">Markdown 源</a><a href="tabicl-XKRXCPY2/quality-check.md">质量记录</a></div>
+    </article>
+    <article class="card">
+      <div class="tag">已重构 · 2025 报告 / 2026-02 v2 · 35 页 · SA9FC8Q4</div>
+      <h2>TabPFN-2.5</h2>
+      <p class="desc">以宽表教学任务区分纯合成/Real teacher、直接 ICL、cache 与任务学生。说明为何将通用预测和低延迟服务分层，未披露蒸馏细节不补造。</p>
+      <div class="links"><a href="tabpfn-2-5-SA9FC8Q4/index.html">打开深读 →</a><a href="tabpfn-2-5-SA9FC8Q4/reading.md">Markdown 源</a><a href="tabpfn-2-5-SA9FC8Q4/quality-check.md">质量记录</a></div>
+    </article>
+    <article class="card">
+      <div class="tag">已重构 · NeurIPS 2025 · 本地含 2026-01 更新 · 31 页 · V7LZ2JEQ</div>
+      <h2>TabDPT</h2>
+      <p class="desc">从真实表任务稀缺走向随机列 SSL，以收入预测实例追踪目标隐藏、局部批次与损失。解释 no-val、SSL/检索消融和经验 scaling law 的不同答案。</p>
+      <div class="links"><a href="tabdpt-V7LZ2JEQ/index.html">打开深读 →</a><a href="tabdpt-V7LZ2JEQ/reading.md">Markdown 源</a><a href="tabdpt-V7LZ2JEQ/quality-check.md">质量记录</a></div>
+    </article>
+    <article class="card">
+      <div class="tag">已重构 · NeurIPS 2025 · arXiv v4 · 66 页 · SAZSYEMX</div>
+      <h2>TabArena</h2>
+      <p class="desc">用真实 credit-g 任务走完外层测试、内层 OOF、配置选择和集成，解释榜单为何应是可维护的测量系统，而非永久的算法胜负表。</p>
+      <div class="links"><a href="tabarena-SAZSYEMX/index.html">打开深读 →</a><a href="tabarena-SAZSYEMX/reading.md">Markdown 源</a><a href="tabarena-SAZSYEMX/quality-check.md">质量记录</a></div>
+    </article>
+    <article class="card">
+      <div class="tag">已重构 · 2026-05 报告 v2 · 83 页 · 4ZXDEDKZ</div>
+      <h2>TabPFN-3</h2>
+      <p class="desc">追踪一条查询经过全局摘要、行压缩、缓存和软标签解码，手算输出归一化；分开理解结构、160 类 checkpoint、形状前沿和 Thinking 预算。</p>
+      <div class="links"><a href="tabpfn-3-4ZXDEDKZ/index.html">打开深读 →</a><a href="tabpfn-3-4ZXDEDKZ/reading.md">Markdown 源</a><a href="tabpfn-3-4ZXDEDKZ/quality-check.md">质量记录</a></div>
+    </article>
+    <article class="card">
+      <div class="tag">已重构 · ICML 2026 / arXiv v2 · 79 页 · 2PKI4VVL</div>
+      <h2>TabICLv2</h2>
+      <p class="desc">从信息瓶颈和长序列失焦走向设计假设，以原文寻针任务追踪目标注入与 QASSMax；逐步推导 pinball 为何学习分位数，并保留消融预算边界。</p>
+      <div class="links"><a href="tabicl-v2-2PKI4VVL/index.html">打开深读 →</a><a href="tabicl-v2-2PKI4VVL/reading.md">Markdown 源</a><a href="tabicl-v2-2PKI4VVL/quality-check.md">质量记录</a></div>
+    </article>
+    <article class="card">
+      <div class="tag">已重构 · 2026-08 报告 v2 · 9 页 · DFAGC498</div>
+      <h2>TabDPT-Turbo</h2>
+      <p class="desc">以一批查询的共享计算解释为何重新训练后可去检索，手算同均值不同分布的 CRPS；分别读系统升级、检索对照和同硬件计时。</p>
+      <div class="links"><a href="tabdpt-turbo-DFAGC498/index.html">打开深读 →</a><a href="tabdpt-turbo-DFAGC498/reading.md">Markdown 源</a><a href="tabdpt-turbo-DFAGC498/quality-check.md">质量记录</a></div>
+    </article>
+    <article class="card">
+      <div class="tag">已重构 · 2026-09 报告 v1 · 15 页 · KZJI8QQR</div>
+      <h2>TabFM · Google Research</h2>
+      <p class="desc">沿真实 airfoil_self_noise 任务区分冻结基座、32 视图和 LLM 程序搜索的信息边界；讲清 Fourier 数值映射及“冻结权重”并非“没有任务学习”。</p>
+      <div class="links"><a href="tabfm-zero-shot-KZJI8QQR/index.html">打开深读 →</a><a href="tabfm-zero-shot-KZJI8QQR/reading.md">Markdown 源</a><a href="tabfm-zero-shot-KZJI8QQR/quality-check.md">质量记录</a></div>
+    </article>
+  </div>
+  <aside class="note"><strong>使用说明</strong><br>先读问题与发表时背景，再沿思路、直觉、实例、数学和实验问答深入。思路重建是基于公开知识的教学解释，不冒充作者真实发现史；没有原文理论证明或未披露的实现时，会明确说明。每篇 <code>index.html</code> 自包含图片、样式和数学字体，可复制为单个文件离线打开。“显示原文定位”可核对 PDF 页码和图表，审计 Markdown、素材与质量记录同目录保留。旧版位于各篇 <code>revisions/</code>；目录页链接需要保留文件夹层级。<br><a href="narrative-upgrade.md">本轮重构与检查报告 →</a> · <a href="narrative-upgrade.json">机器可读状态</a></aside>
+  <p class="footer">更新日期：2026-10-19 · 本轮重构 12 篇，保留已使用当前 skill 的 LoCalPFN，13 篇交付检查通过，原有顺序和路径不变。使用 narrative-logic-v1（保留 historical-context-v1）。Zotero 只读，未修改原论文或条目。数字按各自版本与协议解释，不直接跨论文拼榜。正文逻辑检查为生成者语义自查，浏览器检查不等于独立读者研究，也没有重新训练模型或复现实验。</p>
+</main>
+</body>
+</html>

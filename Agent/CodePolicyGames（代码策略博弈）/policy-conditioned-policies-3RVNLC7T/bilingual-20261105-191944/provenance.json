@@ -1,0 +1,13 @@
+{
+  "title": "Policy-Conditioned Policies for Multi-Agent Task Solving",
+  "zoteroItemKey": "3RVNLC7T",
+  "zoteroAttachmentKey": "HVMXABJ9",
+  "sourceURL": "https://arxiv.org/abs/2512.21024",
+  "sourceSha256": "653b53b765a30f2ea2bbc5365a70c3fc43eefdc6b8158bb897f5f9887a71a1fc",
+  "engineVersion": "2.9.0",
+  "model": "gpt-6.1-sol",
+  "configSha256Before": "311c68b0c55cfdf199eba7d78ddfd9662fd209c96cad245d66890c2adf73fb2c",
+  "configUnchanged": true,
+  "sourceUnchanged": true,
+  "zoteroModified": false
+}

@@ -1,0 +1,225 @@
+{
+  "generated_on": "2026-10-26",
+  "zotero_collection_key": "FLT4H9RN",
+  "zotero_item_key": "SA9FC8Q4",
+  "zotero_attachment_key": "9IIFU5YD",
+  "source_pdf_path": "/home/lyh/Zotero/storage/9IIFU5YD/Grinsztajn 等 - 2025 - TabPFN-2.5 Advancing the State of the Art in Tabular Foundation Models.pdf",
+  "source_pdf_sha256": "21f3cb0e28e587aef164a79a8ada9e942da51b052f55e6f366d5744a8b97f90f",
+  "source_pdf_pages": 35,
+  "source_version": "TabPFN-2.5 report, arXiv:2511.08667v2, 2026-02-05; internal date 2025-11-06, 35 pages",
+  "covered_sections_and_scope": "13问重构：正文pp.1–11与C/D/F/G/H相关方法/评价说明重读，5张原图核对；新增真实任务、缓存机制交互、脆弱假设、复现/反例、实际后续及近邻检索和候选提案。访问限制见search-audit.md。",
+  "source_pdf_modified": false,
+  "duplicate_of": null,
+  "standalone_pdf_item": false,
+  "reading_language": "zh-CN",
+  "mode": "DEEP READ",
+  "lens": "understanding-first with mandatory 13-question research extension",
+  "skill_source": "https://github.com/xiaofengShi/paper-reading-skill",
+  "skill_commit": "eadd0cd61d276d082938d80eb0d3fbb85614f2e1",
+  "renderer_sha256": "3ed818344cd402297240d51553c0c6ab7eb599017a51380cb437d37283f5598c",
+  "rebuild_command": "node /repo/paper-web/.opencode/skills/paper-reading/scripts/render-reading.cjs /repo/paper-web/TabFM/tabpfn-2-5-SA9FC8Q4/reading.md /repo/paper-web/TabFM/tabpfn-2-5-SA9FC8Q4/index.html",
+  "audit_source_sha256": "dd54f027b2290ec324b43f151b28fe484a41ca0241ed226371525885aef73469",
+  "html_sha256": "9ffdd698031766a4cf83bf6497434efff3b85eeda34732f1e4252b2e8ebe3b48",
+  "figures": [
+    {
+      "file": "assets/tabpfn25-fig3-small.png",
+      "pdf_page_1based": 7,
+      "crop_rectangle_pdf_points": [
+        68,
+        65,
+        528,
+        275
+      ],
+      "render_scale": 2.5,
+      "sha256": "230a6d3a939ff9726df5f0212c7b4578bbe6b4ad3aed4927ecb3ac48187790c7"
+    },
+    {
+      "file": "assets/tabpfn25-fig4-all.png",
+      "pdf_page_1based": 8,
+      "crop_rectangle_pdf_points": [
+        68,
+        65,
+        528,
+        280
+      ],
+      "render_scale": 2.5,
+      "sha256": "f7f2b11fb7a93c6088f5aca84a3fe2084304e1f5084e11fa3649143ec24273cb"
+    },
+    {
+      "file": "assets/tabpfn25-fig7-distillation.png",
+      "pdf_page_1based": 9,
+      "crop_rectangle_pdf_points": [
+        68,
+        65,
+        528,
+        221
+      ],
+      "render_scale": 2.5,
+      "sha256": "31504adc0f9655954e6c078fe5bd349e365d76d51a0f9683d3e2c33e5c405c35"
+    },
+    {
+      "file": "assets/tabpfn25-fig8-speed.png",
+      "pdf_page_1based": 9,
+      "crop_rectangle_pdf_points": [
+        68,
+        280,
+        528,
+        417
+      ],
+      "render_scale": 2.5,
+      "sha256": "f006bf6813c9906503cf468f3a02e27a081e7c6151dd494444089edd03cf83ff"
+    },
+    {
+      "file": "assets/tabpfn25-fig9-causal.png",
+      "pdf_page_1based": 10,
+      "crop_rectangle_pdf_points": [
+        68,
+        65,
+        528,
+        243
+      ],
+      "render_scale": 2.5,
+      "sha256": "10bb8dbbf9356b424472fe50607e745a29506c2294aa56813ed5a067a846490f"
+    }
+  ],
+  "validation_scope": "13-question source-based semantic self-check, actual literature/novelty search, background/render checks, offline static checks, browser desktop/narrow-frame and keyboard/DOM interaction checks. No independent reader study or model experiment; true pointer/screenshot acceptance not claimed.",
+  "skill_base_commit": "eadd0cd61d276d082938d80eb0d3fbb85614f2e1",
+  "skill_revision": "research-prompt-v1",
+  "skill_definition_sha256": "14e8ac8e44a931d2cae3213ad4086e61514b35b1268f04fcb5f032d92923fed7",
+  "historical_context": {
+    "status": "pass",
+    "horizon": "2025-11-11",
+    "horizon_basis": "first-arxiv-publication",
+    "date_evidence_url": "https://arxiv.org/abs/2511.08667",
+    "predecessor_rows": 4,
+    "chapter": "00 / 发表时的研究背景",
+    "source_review": "区分2025-11报告/首发与2026-02修订；说明Real续训、TabArena和任务蒸馏的不同来源，不混合训练含义。",
+    "review_scope": "Target introduction/background/related work plus selected primary abstracts and official submission histories; not comprehensive full-text review of all predecessors",
+    "source_urls": [
+      "https://arxiv.org/abs/2506.16791",
+      "https://arxiv.org/abs/2507.03971",
+      "https://arxiv.org/abs/2511.08667"
+    ]
+  },
+  "local_revisions": [
+    {
+      "revision": "historical-context-v1",
+      "date": "2026-10-17",
+      "action": "Insert publication-time background; preserve prior method, evidence, assets and paths",
+      "before": {
+        "audit_source_sha256": "afdf6559435ea21542f369d8824d9fe7b7472149975a07be186145d229b266d2",
+        "html_sha256": "fabc0ac5f29507889a1fe3b0ddca2dc21cae0bdd50f0fe40253c25d85bd9d1b0"
+      }
+    },
+    {
+      "revision": "narrative-logic-v1",
+      "date": "2026-10-19",
+      "action": "Paper-specific prose refactor: problem/value, prior-only idea reconstruction, intuition, running instance, accessible mathematics, question/test/answer evidence and takeaways; preserve original evidence and visuals",
+      "archive_directory": "revisions/pre-narrative-logic-20261019",
+      "before": {
+        "audit_source_sha256": "3fd04375eb4ba29f61dc6361d4d09afe1cc2be5f84e8d47cad531d13b8a27e80",
+        "html_sha256": "b20ce4093ae9fc0e9f19c703d538b0edf3332133fc87b57bf6fb361132c79fd1"
+      }
+    },
+    {
+      "revision": "research-prompt-v1",
+      "date": "2026-10-26",
+      "archive_directory": "revisions/pre-research-prompt-20261026",
+      "action": "Refactor using updated 13-question paper-reading prompt; preserve existing source-grounded explanation, deepen examples/math, add five research sections and self-contained meaningful interaction.",
+      "before": {
+        "audit_source_sha256": "500bc63c24afb65469dc6e79ed02c6eabf9c1cf4ad33bdf46a4d710776a77609",
+        "html_sha256": "d7166797134739e2f97a93a41c020c87aa3103f449379a53f2b537d5f336c71e"
+      }
+    }
+  ],
+  "preserved_skill_extensions": [
+    "historical-context-v1",
+    "narrative-logic-v1"
+  ],
+  "narrative_protocol_sha256": "cbdd037a540292a5f6ed62e188b6797f9805cbee62bdf1ba8fb8d5b29fe9bbab",
+  "quality_check_sha256": "6deeebca8f40fd577dbf45027b90f38da902175e20bad6ec044125d3f14f9b0b",
+  "manual_narrative_review_recorded_on": "2026-10-19",
+  "manual_narrative_review": {
+    "title": "TabPFN-2.5: Advancing the State of the Art in Tabular Foundation Models",
+    "problem": "§00：更大更宽新表的通用预测与固定任务长期低延迟服务是两种目标",
+    "prior_gap": "§00：任务覆盖/容量、缓存/窗口和服务方式不能由一个更深模型自动解决",
+    "idea": "§01：从已有PFN、真实续训、视图集成和蒸馏经验推出分层设计需求，不虚构闭源蒸馏目标",
+    "intuition": "§01：强teacher与任务学生分工，不将多个版本成本合并",
+    "example": "§02：构造5000×600混合二分类，说明每成员选列、纯合成/Real身份、ICL/cache/学生分岔，未披露接口明确停止",
+    "math": "§03、06–07：PFN目标继承、双轴配对量推导、缓存乘法与CATE差分；没有新增完整核心证明",
+    "evidence": "§05、08：公开小表/全表与内部、default/HPO/Real、蒸馏和计时分开，矩阵回答对应问题",
+    "takeaways": "§08：先问checkpoint、部署路径和评估范围，再读精度速度规模",
+    "source_pages_rechecked": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "cautions": [
+      "未披露完整先验和专有蒸馏引擎，不补造实现",
+      "实例是教学配置",
+      "许可按PDF快照而非实时法律判断"
+    ]
+  },
+  "manual_review_type": "Generator source-based semantic self-check; not independent reader study",
+  "source_pages_rechecked_this_revision": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "reused_source_audit": "Unchanged PDF and five original crops retained and visually rechecked. Main text and relevant appendices reread; application directory/bibliography not exhaustively reread. New examples, formulas and searches independently documented; no model execution.",
+  "source_pages_rechecked_this_revision_scope": "Listed main pages plus relevant Appendix C/D/F/G/H text and captions; see search-audit.md for limits",
+  "delivery_status": "completed-with-disclosed-validation-limits",
+  "browser_validation_this_revision": {
+    "render_and_functional_checks": "pass",
+    "viewports": [
+      1000,
+      390
+    ],
+    "images_loaded": 5,
+    "images_total": 5,
+    "math": 24,
+    "math_errors": 0,
+    "sections": 14,
+    "anchors_valid": true,
+    "source_toggle": true,
+    "page_overflow_default_or_sources": false,
+    "figures_have_context": true,
+    "external_resources": 0,
+    "embedded_interactions": 1,
+    "interaction_type": "checkpoint/service branching plus source-formula cache budget",
+    "interaction_external_resources": 0,
+    "narrow_test_type": "390px outer iframe, 339px inner interaction; no page overflow, not physical mobile",
+    "keyboard": "pass: ArrowDown changed cache to student with updated explanation",
+    "dom_controls": "pass: Real identity, cache path, classification/regression memory arithmetic",
+    "actual_pointer_and_screenshot": "not claimed; known desktop visibility/tool limitation"
+  },
+  "research_extension_review": {
+    "date": "2026-10-26",
+    "search_cutoff": "2026-10-26",
+    "search_audit_file": "search-audit.md",
+    "search_audit_sha256": "fe7a1f6641b1a37a3dee5eb5c7a73a7f71975e941b7b53572f57a16f5d55e2c5",
+    "fragile_assumption": "§09: joint feature coverage under synthetic priors and finite views; separate Real-data and static-student limits",
+    "one_week_plan": "§10: version-locked cached/uncached prediction equivalence and cost, not executed",
+    "counterexamples": "§11: controlled interaction coverage and context edits, not executed",
+    "subsequent_sources": ["https://arxiv.org/html/2605.13986v2", "https://arxiv.org/html/2609.17895v1", "https://arxiv.org/html/2608.10837v1", "https://arxiv.org/html/2610.01435v1"],
+    "follow_up": "§13: explicit context-edit semantics and composable task-state patches, contrasted with TACTICL and activation alignment",
+    "novelty_status": "provisional/unknown; actual targeted search, not exhaustive proof; task-memory primary text inaccessible"
+  },
+  "new_visual_assets": [{"file": "assets/mechanism-explorer.html", "type": "offline interaction embedded as srcdoc; no model execution", "sha256": "8a3c7f4ed20ef211477559ad4e81a62af98c0ef77602b2b0756b60dd93435b9d"}]
+}

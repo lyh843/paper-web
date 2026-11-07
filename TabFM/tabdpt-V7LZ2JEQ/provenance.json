@@ -1,0 +1,209 @@
+{
+  "generated_on": "2026-10-19",
+  "zotero_collection_key": "FLT4H9RN",
+  "zotero_item_key": "V7LZ2JEQ",
+  "zotero_attachment_key": "2DK9WH64",
+  "source_pdf_path": "/home/lyh/Zotero/storage/2DK9WH64/Ma 等 - 2026 - TabDPT Scaling Tabular Foundation Models on Real Data.pdf",
+  "source_pdf_sha256": "5f7c0778290a9170bcc328294fcd2ef1179d465c14501ae8dc0655d509eb914f",
+  "source_pdf_pages": 31,
+  "source_version": "NeurIPS 2025 PDF including Jan 2026 update, 31 pages, PDF metadata 2026-01-15",
+  "central_source_pages_inspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31
+  ],
+  "source_pdf_modified": false,
+  "duplicate_of": null,
+  "reading_language": "zh-CN",
+  "mode": "DEEP READ",
+  "lens": "understanding-first",
+  "skill_source": "https://github.com/xiaofengShi/paper-reading-skill",
+  "skill_commit": "eadd0cd61d276d082938d80eb0d3fbb85614f2e1",
+  "renderer_sha256": "3ed818344cd402297240d51553c0c6ab7eb599017a51380cb437d37283f5598c",
+  "rebuild_command": "node /repo/paper-web/.opencode/skills/paper-reading/scripts/render-reading.cjs /repo/paper-web/TabFM/tabdpt-V7LZ2JEQ/reading.md /repo/paper-web/TabFM/tabdpt-V7LZ2JEQ/index.html",
+  "audit_source_sha256": "13b776efa397e9071c62066a5a9e40d320081a3d2b5e7e50aa6c65b896dd4c3c",
+  "html_sha256": "ecc9fb785e99a5a91fe5f831d8a259771813002e605cbdb0de828cef91db4275",
+  "figures": [
+    {
+      "file": "assets/tabdpt-fig2-architecture.png",
+      "pdf_page_1based": 5,
+      "crop_rectangle_pdf_points": [
+        105,
+        52,
+        535,
+        174
+      ],
+      "render_scale": 2.5,
+      "sha256": "e1e37af192862debd2665f050d3c36652d31ee4db715175be5a99bf84fbcd4e2"
+    },
+    {
+      "file": "assets/tabdpt-table1-main.png",
+      "pdf_page_1based": 7,
+      "crop_rectangle_pdf_points": [
+        105,
+        50,
+        508,
+        249
+      ],
+      "render_scale": 2.5,
+      "sha256": "85b02259a97a10df3d6192141193834c9700bd8c3be0e3315c0c99c404700f99"
+    },
+    {
+      "file": "assets/tabdpt-fig4-ablations.png",
+      "pdf_page_1based": 8,
+      "crop_rectangle_pdf_points": [
+        105,
+        305,
+        508,
+        459
+      ],
+      "render_scale": 2.5,
+      "sha256": "8d7525f09ad46bab04acfb77c6764606b76e4ed5554f0b14eac0015e318376cd"
+    },
+    {
+      "file": "assets/tabdpt-fig1-scaling.png",
+      "pdf_page_1based": 1,
+      "crop_rectangle_pdf_points": [
+        305,
+        490,
+        508,
+        633
+      ],
+      "render_scale": 2.5,
+      "sha256": "e1d65fee9169375e3cb0e37668d9993d20f27674a2746219dd7da3aaa76e39e3"
+    }
+  ],
+  "validation_scope": "Manual narrative and source review plus renderer/browser checks; no independent reader study or scientific reproduction",
+  "skill_base_commit": "eadd0cd61d276d082938d80eb0d3fbb85614f2e1",
+  "skill_revision": "narrative-logic-v1",
+  "skill_definition_sha256": "8d086cb16b69e68d4517e538cc25b651e929a37599e60f0f909794e5a17b267b",
+  "historical_context": {
+    "status": "pass",
+    "horizon": "2024-10-23",
+    "horizon_basis": "first-publication",
+    "date_evidence_url": "https://arxiv.org/abs/2410.18164",
+    "predecessor_rows": 4,
+    "chapter": "00 / 发表时的研究背景",
+    "source_review": "2024-10首发与2026-01本地修订分开，较新的TabICL/2.5比较不作为原始动机；真实表SSL与局部任务构造的缺口明确。",
+    "review_scope": "Target introduction/background/related work plus selected primary abstracts and official submission histories; not comprehensive full-text review of all predecessors",
+    "source_urls": [
+      "https://arxiv.org/abs/2112.10510",
+      "https://arxiv.org/abs/2207.01848",
+      "https://arxiv.org/abs/2406.05207",
+      "https://arxiv.org/abs/2410.18164"
+    ]
+  },
+  "local_revisions": [
+    {
+      "revision": "historical-context-v1",
+      "date": "2026-10-17",
+      "action": "Insert publication-time background; preserve prior method, evidence, assets and paths",
+      "before": {
+        "audit_source_sha256": "5cb84070d54d6142280472195f06e39d353040cbbe5fc46cdd3667c7e56613be",
+        "html_sha256": "ac06881af26f70768728ad3382e20d58152fc85d4ae7fc80b1823e34fd8c3ba8"
+      }
+    },
+    {
+      "revision": "narrative-logic-v1",
+      "date": "2026-10-19",
+      "action": "Paper-specific prose refactor: problem/value, prior-only idea reconstruction, intuition, running instance, accessible mathematics, question/test/answer evidence and takeaways; preserve original evidence and visuals",
+      "archive_directory": "revisions/pre-narrative-logic-20261019",
+      "before": {
+        "audit_source_sha256": "f0a40c619f19812247d07d11e5543a95a933966ab44f774ebd8cd7957c9569c9",
+        "html_sha256": "72cf598755fe1ba35cfe0238ecb3bd25f64e1944fe3c23d308fe0fcc5ca57242"
+      }
+    }
+  ],
+  "preserved_skill_extensions": [
+    "historical-context-v1"
+  ],
+  "narrative_protocol_sha256": "25a89f7a1b55037132b049163ecb82d2ea7fa9106bbd729652fcf8a4b124a483",
+  "quality_check_sha256": "465c7bd42b29c0b7766743faaf58d3970c4529960b2439214586cfc0da586862",
+  "manual_narrative_review": {
+    "title": "TabDPT: Scaling Tabular Foundation Models on Real Data",
+    "problem": "§00：有限真实表中挖掘跨表任务，并使新表只依赖context无需更新参数",
+    "prior_gap": "§00：原始监督任务少与窗口有限是不同缺口，首发与2026本地修订分开",
+    "idea": "§01：既有掩码SSL、列间可预测关系与LoCalPFN给出任务扩充/局部对齐的候选路线",
+    "intuition": "§01：真实表轮换目标、局部训练、固定共享行网络分工",
+    "example": "§02：构造年龄/收入/地区/风险任务，收入作目标时从输入删去，检索query目标遮零，不捏造近邻或预测收入",
+    "math": "§04、09：CE/MSE定义与query分母、MSE梯度、经验幂律的分项解释；不把scaling评估损失当训练MSE",
+    "evidence": "§07–09：107表、no-val、SSL/检索/合成对照与参数数据扩展各自回答问题",
+    "takeaways": "§10：行数与任务数、预训练部署对齐、扩展规律不是无界承诺",
+    "source_pages_rechecked": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      24,
+      25,
+      26,
+      27
+    ],
+    "cautions": [
+      "附录伪代码遮查询目标，不误称每次重建删除目标的新索引",
+      "构造实例不是原始语料或实际模型执行",
+      "去重是作者报告而非独立复现"
+    ]
+  },
+  "manual_review_type": "Generator source-based semantic self-check; not independent reader study",
+  "source_pages_rechecked_this_revision": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    24,
+    25,
+    26,
+    27
+  ],
+  "reused_source_audit": "Unchanged PDF and existing equation/figure/number source audits retained from archived reading; full text accessible, not claimed to have independently rerun experiments or read every appendix table anew",
+  "delivery_status": "completed",
+  "browser_validation_this_revision": {
+    "ok": true,
+    "viewports": [
+      1280,
+      390
+    ],
+    "images_loaded": 4,
+    "images_total": 4,
+    "math": 26,
+    "math_errors": 0,
+    "sections": 11,
+    "source_count": 48,
+    "anchors_valid": true,
+    "source_toggle": true,
+    "page_overflow_default_or_sources": false,
+    "figures_have_context": true,
+    "external_resources": 0,
+    "scripts": 0
+  }
+}

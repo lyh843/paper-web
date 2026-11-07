@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>代码策略博弈 · 四篇论文深读</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#f5f5ef;color:#233630;font:17px/1.8 system-ui,sans-serif}main{max-width:1120px;margin:auto;padding:60px 28px}header{max-width:850px;margin-bottom:38px}.eyebrow{letter-spacing:.12em;font-size:13px;color:#637970}h1{font-size:clamp(30px,5vw,54px);line-height:1.25;margin:15px 0 24px}h2{font-size:23px;line-height:1.5}p{margin:12px 0}a{color:#17694e;text-underline-offset:4px}a:focus-visible{outline:3px solid #c97e33;outline-offset:4px}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}.card{padding:25px;background:white;border:1px solid #d9e0d7;border-top:5px solid var(--accent);border-radius:8px}.card h2{margin:8px 0 14px}.tag{font-size:13px;font-weight:700;color:var(--accent)}.links{display:flex;gap:20px;flex-wrap:wrap;font-size:15px;font-weight:650}.tablewrap{overflow:auto;margin:28px 0}table{border-collapse:collapse;width:100%;background:#fff;font-size:15px}th,td{border:1px solid #d9e0d7;text-align:left;padding:12px;min-width:120px}th{background:#e6eee5}.note{border-left:4px solid #aa7743;padding:14px 20px;background:#fff9eb}.fine{font-size:14px;color:#62736d}footer{margin-top:40px;padding-top:20px;border-top:1px solid #d9e0d7}@media(max-width:700px){main{padding:30px 18px}.grid{grid-template-columns:1fr}.card{padding:20px}}
+</style>
+</head>
+<body><main>
+<header><div class="eyebrow">PAPER READING / 中文完整深读 / 2026-11-05</div>
+<h1>代码是策略<br>学习发生在哪里</h1>
+<p>四篇论文共享“生成可执行游戏程序”这一对象，却对源码可见性、响应对象和学习证据提出不同问题。每份阅读均为可独立复制、离线打开的HTML，包含背景、方法、数学、原图、实验、交互与研究延展。</p></header>
+<section class="grid" aria-label="四篇阅读">
+<article class="card" style="--accent:#27755a"><div class="tag">01 / 对当前源码求响应</div><h2>Policy-Conditioned Policies</h2><p>LLM在生成阶段读取固定对手的策略，用测试与轨迹反馈修订响应；交替更新后取历史最高社会福利组合。重点看：高福利为何不等于程序均衡。</p><div class="links"><a href="policy-conditioned-policies-3RVNLC7T/index.html">打开深读 →</a><a href="policy-conditioned-policies-3RVNLC7T/reading.md">审计源</a><a href="policy-conditioned-policies-3RVNLC7T/reading-quality.md">自检记录</a></div></article>
+<article class="card" style="--accent:#23598e"><div class="tag">02 / 对策略池的混合求响应</div><h2>Code-Space Response Oracles</h2><p>保留PSRO策略池，将RL响应器换成代码生成与闭环细化。重点看：上下文过滤、进化搜索，以及平均分与最差损失的取舍。</p><div class="links"><a href="code-space-response-oracles-KD862EQK/index.html">打开深读 →</a><a href="code-space-response-oracles-KD862EQK/reading.md">审计源</a><a href="code-space-response-oracles-KD862EQK/reading-quality.md">自检记录</a></div></article>
+<article class="card" style="--accent:#705186"><div class="tag">03 / 程序运行时也可读对手源码</div><h2>Evaluating LLMs in Open-Source Games</h2><p>从SPARC代码理解，到合作／欺骗程序生成，再到有限类型的演化分析。重点看：当前源码与旧源码的信息流，以及有限合作标签的边界。</p><div class="links"><a href="evaluating-llms-open-source-games-HSDVNEPH/index.html">打开深读 →</a><a href="evaluating-llms-open-source-games-HSDVNEPH/reading.md">审计源</a><a href="evaluating-llms-open-source-games-HSDVNEPH/reading-quality.md">自检记录</a></div></article>
+<article class="card" style="--accent:#976335"><div class="tag">04 / 对手源码不公开，从经验改程序</div><h2>Can AI Agents Learn Their Way to the Top?</h2><p>AAArena用12款游戏的冻结人类梯队，测固定模型驱动长期软件修订的能力。重点看：双预算、保留冠军、反馈消融，以及完整池复现权限。</p><div class="links"><a href="can-ai-agents-learn-their-way-to-the-top-3UP5TTIW/index.html">打开深读 →</a><a href="can-ai-agents-learn-their-way-to-the-top-3UP5TTIW/reading.md">审计源</a><a href="can-ai-agents-learn-their-way-to-the-top-3UP5TTIW/reading-quality.md">自检记录</a></div></article>
+</section>
+<h2>先分清四种“适应”</h2>
+<div class="tablewrap"><table><thead><tr><th>论文</th><th>生成时看到什么</th><th>执行时的关键输入</th><th>主要证据</th></tr></thead><tbody>
+<tr><td>PCP</td><td>当前固定对手源码、规则与反馈</td><td>生成策略接收游戏历史，不必读源码</td><td>协作任务社会福利</td></tr>
+<tr><td>CSRO</td><td>策略池混合、源码或摘要</td><td>游戏观察与程序自身状态</td><td>外部群体平均收益与最差损失</td></tr>
+<tr><td>Open-Source Games</td><td>上一元轮源码与历史</td><td>当前对手源码、游戏状态和历史</td><td>分类、双边行为、有限类型演化</td></tr>
+<tr><td>AAArena</td><td>允许材料、重放、排名反馈</td><td>按规则允许的观察；其他对手源码不可见</td><td>冻结人类程序梯队上的开发成绩</td></tr>
+</tbody></table></div>
+<aside class="note"><strong>阅读时保留的三个限定</strong><p>高合作回报不自动证明均衡；有限对手群体内低可利用性不等于全局稳健；在同一冻结池上持续开发和评分，不测未见对手泛化。</p><p>Open-Source Games原PDF的复制子公式存在印刷一致性疑点，已在对应阅读中展示原式并与标准式分开，未据此断言绘图代码错误。</p></aside>
+<footer><p>四篇均覆盖13项阅读问题，包含最脆弱假设、一周最小复现、公平反例、实际后续检索及经近邻检索限定的新想法。后续文献和idea首创性不保证穷尽；所有拟议实验均未执行。</p><p class="fine">已通过背景结构检查、人工内容自检及阻断HTTP(S)的离线Chromium检查；自检不等于独立复现或专家认证。原始PDF与既有译文保留，未修改Zotero条目。<a href="reading-batch-20261105.json">批次清单</a> · <a href="reading-browser-check-20261105.json">离线浏览器检查</a></p></footer>
+</main></body></html>

@@ -1,0 +1,61 @@
+{
+  "date": "2026-11-05",
+  "tools": [
+    "websearch",
+    "webfetch"
+  ],
+  "queriesActuallyRun": [
+    "\"Can AI Agents Learn Their Way to the Top\" AAArena",
+    "\"AAArena\" \"2610.12341\" replication critique",
+    "\"agent\" \"replay\" \"active learning\" \"AAArena\"",
+    "\"opponent selection\" \"causal\" \"code\" agent learning",
+    "\"game agent\" \"replay\" \"value of information\" code learning",
+    "\"AAArena\" \"hypothesis\" \"causal\"",
+    "\"code agents\" \"replay selection\" \"information gain\""
+  ],
+  "scope": "bounded search, not exhaustive; paper relationships verified only at the access level stated",
+  "sources": {
+    "https://aclanthology.org/2025.acl-long.694.pdf": "search discovery only; not claimed full-text verified",
+    "https://aclanthology.org/2026.acl-long.1987/": "official abstract + publication metadata checked; VoI precedent, not AAArena follow-up",
+    "https://arxiv.org/abs/2510.26852": "Paper/source link cited in reading; see locally accessible PDF or declared access level in prose",
+    "https://arxiv.org/abs/2510.26852v1": "primary v1 abstract checked; first title differs from v2; not a 2026-first-release work",
+    "https://arxiv.org/abs/2511.00839": "Paper/source link cited in reading; see locally accessible PDF or declared access level in prose",
+    "https://arxiv.org/abs/2511.00839v1": "primary v1 abstract/version history checked; no v2 findings backdated",
+    "https://arxiv.org/html/2607.02440v1": "primary HTML methods/visibility/experiment protocols inspected; used only for qualified nearby protocol claims",
+    "https://github.com/THU-CST-SAST/AAArena": "Paper/source link cited in reading; see locally accessible PDF or declared access level in prose",
+    "https://rlj.cs.umass.edu/2025/papers/RLJ_RLC_2025_45.pdf": "search discovery, webfetch PDF parse unsupported; no detailed technical findings asserted",
+    "https://trinkle23897.github.io/learning-beyond-gradients/": "primary author essay inspected; exact initial posting date not independently established"
+  },
+  "additionalAccessRecords": {
+    "https://arxiv.org/abs/2512.21024": "primary metadata + full local English PDF, v1",
+    "https://arxiv.org/abs/2603.10098": "primary metadata + full local English PDF, v1; printed header date 2026-3-12 separately recorded",
+    "https://arxiv.org/abs/2512.00371": "primary metadata + full local English PDF, v1; NeurIPS2025",
+    "https://arxiv.org/abs/2610.12341": "primary metadata + full local English PDF, v1",
+    "https://arxiv.org/abs/1401.5577": "primary abstract + version history: v1 2014-01-22, v2 2021-04-05; bounded analogues caveat verified",
+    "https://arxiv.org/abs/1711.00832": "primary abstract + version history; PSRO",
+    "https://arxiv.org/abs/2406.07496": "primary abstract + date; TextGrad",
+    "https://arxiv.org/abs/2012.02671": "primary abstract + version history; transparent RL conditional findings",
+    "https://www.ijcai.org/proceedings/2025/1249": "primary proceedings abstract: code-generation self-play/PSRO antecedent",
+    "https://ifaamas.csc.liv.ac.uk/Proceedings/aamas2026/pdfs/IKJF6607.pdf": "official CSRO extended-abstract discovered via search; earliest upload date not verified; not treated as follow-up",
+    "https://arxiv.org/html/2607.02440v1": "primary HTML methods/visibility/experiment protocols inspected; used only for qualified nearby protocol claims",
+    "https://arxiv.org/html/2608.18389v1": "primary HTML transformation definition, validation, paired experiment methods inspected; not a direct replication of game papers",
+    "https://aclanthology.org/2026.findings-eacl.70/": "official abstract and metadata checked; no detailed effect transplanted into strategic-judge setting",
+    "https://ojs.aaai.org/index.php/AAAI/article/view/32046": "primary abstract accessible in actual search output; CEGIS program-repair precedent; full paper not claimed read",
+    "https://arxiv.org/abs/2505.03818": "primary abstract and version history checked; v3 2026-08-12 not projected backward to v1 2025-05-02",
+    "https://arxiv.org/abs/2603.13173": "primary abstract and version history checked; natural-language semantic invariance, not program-game replication",
+    "https://arxiv.org/abs/2510.26852v1": "primary v1 abstract checked; first title differs from v2; not a 2026-first-release work",
+    "https://arxiv.org/abs/2511.00839v1": "primary v1 abstract/version history checked; no v2 findings backdated",
+    "https://trinkle23897.github.io/learning-beyond-gradients/": "primary author essay inspected; exact initial posting date not independently established",
+    "https://raw.githubusercontent.com/THU-CST-SAST/AAArena/main/README.md": "primary current README checked: 909 public packages, authenticated full pool, local subset vs official scope, runtime prerequisites, off-policy catalog access",
+    "https://aclanthology.org/2026.acl-long.1987/": "official abstract + publication metadata checked; VoI precedent, not AAArena follow-up",
+    "https://aclanthology.org/2025.acl-long.694.pdf": "search discovery only; not claimed full-text verified",
+    "https://rlj.cs.umass.edu/2025/papers/RLJ_RLC_2025_45.pdf": "search discovery, webfetch PDF parse unsupported; no detailed technical findings asserted",
+    "https://openreview.net/forum?id=X9SNL203cV": "browser verification blocked; reviews not treated as evidence",
+    "https://raw.githubusercontent.com/swadeshs/llm-osgt/main/README.md": "404 during this access; does not establish permanent absence",
+    "https://raw.githubusercontent.com/swadeshs/llm-osgt/master/README.md": "404 during this access; does not establish permanent absence",
+    "https://api.github.com/repos/swadeshs/llm-osgt": "403 during this access; code and plotted replicator equation not independently checked"
+  },
+  "directFollowupConclusion": "See chapter11; no unverified replication or rebuttal asserted",
+  "novelty": "Provisional, not guaranteed; see chapter12",
+  "experimentsExecuted": false
+}

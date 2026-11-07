@@ -1,0 +1,13 @@
+{
+  "title": "Evaluating LLMs in Open-Source Games",
+  "zoteroItemKey": "HSDVNEPH",
+  "zoteroAttachmentKey": "7XVCIG4J",
+  "sourceURL": "https://arxiv.org/abs/2512.00371",
+  "sourceSha256": "e979e2f44b81edc1f024211c59975d7d9439bc0b1aef5cc86f22e6b7ad6f3d4b",
+  "engineVersion": "2.9.0",
+  "model": "gpt-6.1-sol",
+  "configSha256Before": "311c68b0c55cfdf199eba7d78ddfd9662fd209c96cad245d66890c2adf73fb2c",
+  "configUnchanged": true,
+  "sourceUnchanged": true,
+  "zoteroModified": false
+}

@@ -1,0 +1,150 @@
+{
+  "generated_on": "2026-10-17",
+  "zotero_collection_key": "FLT4H9RN",
+  "zotero_item_key": "XKRXCPY2",
+  "zotero_attachment_key": "D8WAEM3H",
+  "source_pdf_path": "/home/lyh/Zotero/storage/D8WAEM3H/Qu 等 - 2025 - TabICL A Tabular Foundation Model for In-Context Learning on Large Data.pdf",
+  "source_pdf_sha256": "0a8b2b370f55a93af346ab889dd699256def80ef967740cfa876277ff9ae8617",
+  "source_pdf_pages": 31,
+  "source_version": "ICML 2025 PMLR PDF, 31 pages, PDF metadata 2025-05-24",
+  "central_source_pages_inspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31
+  ],
+  "source_pdf_modified": false,
+  "duplicate_of": null,
+  "reading_language": "zh-CN",
+  "mode": "DEEP READ",
+  "lens": "understanding-first",
+  "skill_source": "https://github.com/xiaofengShi/paper-reading-skill",
+  "skill_commit": "eadd0cd61d276d082938d80eb0d3fbb85614f2e1",
+  "renderer_sha256": "3ed818344cd402297240d51553c0c6ab7eb599017a51380cb437d37283f5598c",
+  "rebuild_command": "node /repo/paper-web/.opencode/skills/paper-reading/scripts/render-reading.cjs /repo/paper-web/TabFM/tabicl-XKRXCPY2/reading.md /repo/paper-web/TabFM/tabicl-XKRXCPY2/index.html",
+  "audit_source_sha256": "292cdc13333bee7c697f364410d526fa72962fd8f721a00a09adf7754e99d588",
+  "html_sha256": "dfeec1cf4af2bc5caa7e8bacc3d2c45ed8e2c0b1dced7dc3c93e0d1ceb0e4e6a",
+  "figures": [
+    {
+      "file": "assets/tabicl-fig1-architecture.png",
+      "pdf_page_1based": 3,
+      "crop_rectangle_pdf_points": [
+        50,
+        45,
+        547,
+        324
+      ],
+      "render_scale": 2.5,
+      "sha256": "a8ac5389b1a7d5e05130b1c55da3004d3e876bced98b1516ca9ea609171b8c63"
+    },
+    {
+      "file": "assets/tabicl-fig2-embedding.png",
+      "pdf_page_1based": 5,
+      "crop_rectangle_pdf_points": [
+        50,
+        45,
+        547,
+        170
+      ],
+      "render_scale": 2.5,
+      "sha256": "9cbc8b7af42dda48255f737529d427aff0b72cd1e64f29611129f266370c5c9a"
+    },
+    {
+      "file": "assets/tabicl-fig4-collapse.png",
+      "pdf_page_1based": 5,
+      "crop_rectangle_pdf_points": [
+        307,
+        207,
+        545,
+        362
+      ],
+      "render_scale": 2.5,
+      "sha256": "4e54c4514140359716679c86446818dba662c2e3d547a7031de7d56d36e8b0cf"
+    },
+    {
+      "file": "assets/tabicl-fig9-tree-ablation.png",
+      "pdf_page_1based": 9,
+      "crop_rectangle_pdf_points": [
+        50,
+        235,
+        293,
+        382
+      ],
+      "render_scale": 2.5,
+      "sha256": "a3b22c6697a34556437a717e1711815b6f3c7850a36f453a04d9a8bba56c77a7"
+    },
+    {
+      "file": "assets/tabicl-fig10-curriculum.png",
+      "pdf_page_1based": 9,
+      "crop_rectangle_pdf_points": [
+        307,
+        60,
+        545,
+        216
+      ],
+      "render_scale": 2.5,
+      "sha256": "5fe38c6073becd9f1a499ea8c4bebcb923de3dce8f4a7f339b728b761cc439f9"
+    },
+    {
+      "file": "assets/tabicl-figE2-curriculum.png",
+      "pdf_page_1based": 21,
+      "crop_rectangle_pdf_points": "whole page",
+      "render_scale": 2.5,
+      "sha256": "0b025dba88fea97ea92f7d8dddcb98cb57a75888429d9a1cbef0890e3c0c9cab"
+    }
+  ],
+  "validation_scope": "Source-based author self-check and browser delivery checks; no independent reader study or experimental reproduction",
+  "skill_base_commit": "eadd0cd61d276d082938d80eb0d3fbb85614f2e1",
+  "skill_revision": "historical-context-v1",
+  "skill_definition_sha256": "a795c8d00b90632ef0eaada455415b555acc6c0e6dc101bce4cddc26de8315a4",
+  "historical_context": {
+    "status": "pass",
+    "horizon": "2025-02-08",
+    "horizon_basis": "first-publication",
+    "date_evidence_url": "https://arxiv.org/abs/2502.05564",
+    "predecessor_rows": 5,
+    "chapter": "00 / 发表时的研究背景",
+    "source_review": "2025-02首发时Nature第二代已经公开；结构压缩与此前context压缩/检索路线分开，排除2026后续模型。",
+    "review_scope": "Target introduction/background/related work plus selected primary abstracts and official submission histories; not comprehensive full-text review of all predecessors",
+    "source_urls": [
+      "https://arxiv.org/abs/2402.06971",
+      "https://arxiv.org/abs/2406.05207",
+      "https://arxiv.org/abs/2410.18164",
+      "https://arxiv.org/abs/2502.05564"
+    ]
+  },
+  "local_revisions": [
+    {
+      "revision": "historical-context-v1",
+      "date": "2026-10-17",
+      "action": "Insert publication-time background; preserve prior method, evidence, assets and paths",
+      "before": {
+        "audit_source_sha256": "27d994cc478f3d7b9f52bce550073fac701a3f607bd86a94b302c01d3edb03a5",
+        "html_sha256": "48a9f6a91e542cba5787403bbae25a73df9842113c4d2164cc5d07887a209e48"
+      }
+    }
+  ]
+}

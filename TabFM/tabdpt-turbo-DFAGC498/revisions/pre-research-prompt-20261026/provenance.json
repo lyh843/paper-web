@@ -1,0 +1,178 @@
+{
+  "generated_on": "2026-10-19",
+  "zotero_collection_key": "FLT4H9RN",
+  "zotero_item_key": "DFAGC498",
+  "zotero_attachment_key": "FMN7AKYM",
+  "source_pdf_path": "/home/lyh/Zotero/storage/FMN7AKYM/Hosseinzadeh 等 - 2026 - TabDPT-Turbo Efficient In-Context Learning for Tabular Prediction.pdf",
+  "source_pdf_sha256": "ce6c969a9591305afc101e6042c5713195e3bb0a68a84bade802e75bffbef366",
+  "source_pdf_pages": 9,
+  "source_version": "TabDPT-Turbo, arXiv:2608.01400v2, 2026-08-25, 9 pages",
+  "covered_sections_and_scope": "按当前主条目DFAGC498及附件FMN7AKYM确认；完整9页正文和附录A全部可访问。",
+  "source_pdf_modified": false,
+  "duplicate_of": null,
+  "standalone_pdf_item": false,
+  "reading_language": "zh-CN",
+  "mode": "DEEP READ",
+  "lens": "understanding-first",
+  "skill_source": "https://github.com/xiaofengShi/paper-reading-skill",
+  "skill_commit": "eadd0cd61d276d082938d80eb0d3fbb85614f2e1",
+  "renderer_sha256": "3ed818344cd402297240d51553c0c6ab7eb599017a51380cb437d37283f5598c",
+  "rebuild_command": "node /repo/paper-web/.opencode/skills/paper-reading/scripts/render-reading.cjs /repo/paper-web/TabFM/tabdpt-turbo-DFAGC498/reading.md /repo/paper-web/TabFM/tabdpt-turbo-DFAGC498/index.html",
+  "audit_source_sha256": "f42c325a17cee419095d7ca23217f58bb167d7844ca79e96063c0fa23bc9ceae",
+  "html_sha256": "ad835a858d7beff95175b43b07b07d6aecb5a9fab88cd597bf8e69a0a0b46b5d",
+  "figures": [
+    {
+      "file": "assets/turbo-fig3-architecture.png",
+      "pdf_page_1based": 7,
+      "crop_rectangle_pdf_points": [
+        150,
+        156,
+        450,
+        327
+      ],
+      "render_scale": 2.5,
+      "sha256": "ad8bbcf63d101312b0c94e9b4b0a887a9cf7a659133ab5b6efa1385aefd36ec6"
+    },
+    {
+      "file": "assets/turbo-fig1-speed.png",
+      "pdf_page_1based": 4,
+      "crop_rectangle_pdf_points": [
+        50,
+        236,
+        295,
+        340
+      ],
+      "render_scale": 2.5,
+      "sha256": "783589ee575804136e0243bf95ab2413f8b29c349c9f9b7929bf8113706931ea"
+    },
+    {
+      "file": "assets/turbo-fig2-retrieval.png",
+      "pdf_page_1based": 4,
+      "crop_rectangle_pdf_points": [
+        303,
+        236,
+        548,
+        359
+      ],
+      "render_scale": 2.5,
+      "sha256": "7a2cbb1b8fa001c7c8e0c7cf9f1dd25f1ce9b6aff270ede3d6921262de1aefab"
+    },
+    {
+      "file": "assets/turbo-table1-speed.png",
+      "pdf_page_1based": 4,
+      "crop_rectangle_pdf_points": [
+        50,
+        630,
+        295,
+        725
+      ],
+      "render_scale": 2.5,
+      "sha256": "f0898c410507cd2beabd64913efd24aa70a217b50722022e1d8189ed319bcbaa"
+    }
+  ],
+  "validation_scope": "Manual narrative and source review plus renderer/browser checks; no independent reader study or scientific reproduction",
+  "skill_base_commit": "eadd0cd61d276d082938d80eb0d3fbb85614f2e1",
+  "skill_revision": "narrative-logic-v1",
+  "skill_definition_sha256": "8d086cb16b69e68d4517e538cc25b651e929a37599e60f0f909794e5a17b267b",
+  "historical_context": {
+    "status": "pass",
+    "horizon": "2026-08-02",
+    "horizon_basis": "first-publication",
+    "date_evidence_url": "https://arxiv.org/abs/2608.01400",
+    "predecessor_rows": 4,
+    "chapter": "00 / 发表时的研究背景",
+    "source_review": "以2026-08首发为边界；LoCalPFN/TabDPT检索成本与已有行压缩/cache进展并列，不把效率问题写成此前所有模型都没有解决。",
+    "review_scope": "Target introduction/background/related work plus selected primary abstracts and official submission histories; not comprehensive full-text review of all predecessors",
+    "source_urls": [
+      "https://arxiv.org/abs/2406.05207",
+      "https://arxiv.org/abs/2602.11139v1",
+      "https://arxiv.org/abs/2608.01400"
+    ]
+  },
+  "local_revisions": [
+    {
+      "revision": "historical-context-v1",
+      "date": "2026-10-17",
+      "action": "Insert publication-time background; preserve prior method, evidence, assets and paths",
+      "before": {
+        "audit_source_sha256": "908da2cf875a68d53710b10dbef23dc97612e3b75beecaec19cb27e4c317dcfb",
+        "html_sha256": "9602c4f92a3fbe7e1a4752211990a944ac03fecfcff042d4628ac568e0089343"
+      }
+    },
+    {
+      "revision": "narrative-logic-v1",
+      "date": "2026-10-19",
+      "action": "Paper-specific prose refactor: problem/value, prior-only idea reconstruction, intuition, running instance, accessible mathematics, question/test/answer evidence and takeaways; preserve original evidence and visuals",
+      "archive_directory": "revisions/pre-narrative-logic-20261019",
+      "before": {
+        "audit_source_sha256": "1dd7cf6bed377930b4540d9276f2577d081c0a919b46eddc8939f01f3e6bbfdd",
+        "html_sha256": "df052673071f152652fc19ac8953222bd44326914a13cab08a1796d327edd34f"
+      }
+    }
+  ],
+  "preserved_skill_extensions": [
+    "historical-context-v1"
+  ],
+  "narrative_protocol_sha256": "25a89f7a1b55037132b049163ecb82d2ea7fa9106bbd729652fcf8a4b124a483",
+  "quality_check_sha256": "ef8c6a8fe4a84daa3ec79d304faa79b8e9f48d3bff3774ae70bab19acb06cd6a",
+  "manual_narrative_review": {
+    "title": "TabDPT-Turbo: Efficient In-Context Learning for Tabular Prediction",
+    "problem": "§00：许多query的局部context重复计算是否仍值得，目标为质量/成本而非纯精度第一",
+    "prior_gap": "§00：搜索库之外的模型计算复用瓶颈，长context能力改变检索账单",
+    "idea": "§01：既有局部模型代价和共享attention路线提示重训练后比较边际收益，不以新速度结果倒推",
+    "intuition": "§01：先练会共享长context，再减少逐query局部前向，内部仍选择信息",
+    "example": "§02：构造10K训练/1K查询/20特征回归表，贯穿标准化、thinking rows、逐层V标签、共享读取与2048-bin期望",
+    "math": "§03、06：共享/局部配对量条件、CRPS定义、对称两点分布CRPS=4的手算，不造温度实参或新保证",
+    "evidence": "§07–08：新旧系统、同Turbo检索对照、等结构长短课程、同硬件fit/predict分别回答问题",
+    "takeaways": "§08：瓶颈在检索之后、删除组件以新训练能力为条件、同负载读时间",
+    "source_pages_rechecked": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "cautions": [
+      "同期解释不倒写成首发前已确立定论",
+      "0.76总体与0.44/0.19分项口径不同",
+      "没有新增模型运行或查漏实验"
+    ]
+  },
+  "manual_review_type": "Generator source-based semantic self-check; not independent reader study",
+  "source_pages_rechecked_this_revision": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "reused_source_audit": "Unchanged PDF and existing equation/figure/number source audits retained from archived reading; full text accessible, not claimed to have independently rerun experiments or read every appendix table anew",
+  "delivery_status": "completed",
+  "browser_validation_this_revision": {
+    "ok": true,
+    "viewports": [
+      1280,
+      390
+    ],
+    "images_loaded": 4,
+    "images_total": 4,
+    "math": 19,
+    "math_errors": 0,
+    "sections": 9,
+    "source_count": 39,
+    "anchors_valid": true,
+    "source_toggle": true,
+    "page_overflow_default_or_sources": false,
+    "figures_have_context": true,
+    "external_resources": 0,
+    "scripts": 0
+  }
+}

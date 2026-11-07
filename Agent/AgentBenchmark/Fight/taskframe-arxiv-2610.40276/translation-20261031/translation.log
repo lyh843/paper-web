@@ -1,0 +1,346 @@
+[10/31/26 10:59:49] INFO     INFO:pdf2zh_next.config.model:Using    model.py:275
+                             translation engine: OpenAICompatible               
+                    INFO     INFO:pdf2zh_next.config.model:Transfor model.py:282
+                             med translate_engine_settings:                     
+                             OpenAICompatible -> OpenAI                         
+                    INFO     INFO:pdf2zh_next.main:Warmup babeldoc    main.py:88
+                             assets...                                          
+                    INFO     INFO:babeldoc.assets.assets:Downloadi assets.py:450
+                             ng all assets...                                   
+[10/31/26 10:59:50] INFO     INFO:pdf2zh_next.high_level:trans high_level.py:710
+                             late file:                                         
+                             /tmp/opencode/zotero-translate-dw                  
+                             uqcfjl/TaskFrame-2610.40276v1.pdf                  
+                    INFO     INFO:pdf2zh_next.config.model:Using    model.py:275
+                             translation engine: OpenAICompatible               
+                    INFO     INFO:pdf2zh_next.config.model:Transfor model.py:282
+                             med translate_engine_settings:                     
+                             OpenAICompatible -> OpenAI                         
+                    INFO     INFO:pdf2zh_next.high_level:trans high_level.py:659
+                             late in subprocess                                 
+                    INFO     INFO:pdf2zh_next.translator.utils:Using utils.py:46
+                             OpenAI translator                                  
+[10/31/26 10:59:54] INFO     INFO:pdf2zh_next.translator.utils:Using utils.py:46
+                             OpenAI translator                                  
+[10/31/26 10:59:57] INFO     INFO:babeldoc.docvision.base_d base_doclayout.py:43
+                             oclayout:Loading ONNX model...                     
+                    INFO     INFO:babeldoc.docvision.doclayout:A doclayout.py:72
+                             vailable Provider:                                 
+                             CPUExecutionProvider                               
+[10/31/26 10:59:58] INFO     INFO:babeldoc.format.pdf.high_lev high_level.py:473
+                             el:start to translate:                             
+                             /tmp/opencode/zotero-translate-dw                  
+                             uqcfjl/TaskFrame-2610.40276v1.pdf                  
+[10/31/26 11:00:20] INFO     INFO:babeldoc.forma automatic_term_extractor.py:358
+                             t.pdf.document_il.m                                
+                             idend.automatic_ter                                
+                             m_extractor:Automat                                
+                             ic Term Extraction:                                
+                             Starting term                                      
+                             extraction for                                     
+                             document.                                          
+                    INFO     INFO:babeldoc.forma automatic_term_extractor.py:369
+                             t.pdf.document_il.m                                
+                             idend.automatic_ter                                
+                             m_extractor:Using                                  
+                             16 worker threads                                  
+                             for automatic term                                 
+                             extraction.                                        
+[10/31/26 11:01:43] INFO     INFO:babeldoc.format. il_translator_llm_only.py:171
+                             pdf.document_il.miden                              
+                             d.il_translator_llm_o                              
+                             nly:Found title                                    
+                             paragraph: TaskFrame:                              
+                             Connecting Task-Level                              
+                             Planning with                                      
+                             Frame-Level Control                                
+                             for Game Agents                                    
+                    INFO     INFO:babeldoc.format. il_translator_llm_only.py:192
+                             pdf.document_il.miden                              
+                             d.il_translator_llm_o                              
+                             nly:Found first title                              
+                             paragraph: TaskFrame:                              
+                             Connecting Task-Level                              
+                             Planning with                                      
+                             Frame-Level Control                                
+                             for Game Agents                                    
+                    WARNING  WARNING:babeldoc.format.pdf.do il_translator.py:725
+                             cument_il.midend.il_translator                     
+                             :Too many placeholders (41) in                     
+                             paragraph[7SAuW], disabling                        
+                             rich text translation for this                     
+                             paragraph                                          
+                    WARNING  WARNING:babeldoc.format.pdf.do il_translator.py:725
+                             cument_il.midend.il_translator                     
+                             :Too many placeholders (41) in                     
+                             paragraph[LgpZi], disabling                        
+                             rich text translation for this                     
+                             paragraph                                          
+                    WARNING  WARNING:babeldoc.format.pdf.do il_translator.py:725
+                             cument_il.midend.il_translator                     
+                             :Too many placeholders (41) in                     
+                             paragraph[Usvfr], disabling                        
+                             rich text translation for this                     
+                             paragraph                                          
+[10/31/26 11:01:47] WARNING  WARNING:babeldoc.form il_translator_llm_only.py:778
+                             at.pdf.document_il.mi                              
+                             dend.il_translator_ll                              
+                             m_only:Translation                                 
+                             result is the same as                              
+                             input, fallback.                                   
+                    WARNING  WARNING:babeldoc.form il_translator_llm_only.py:828
+                             at.pdf.document_il.mi                              
+                             dend.il_translator_ll                              
+                             m_only:Fallback to                                 
+                             simple translation.                                
+                             paragraph id: md9z5                                
+[10/31/26 11:01:48] WARNING  WARNING:babeldoc.format.pdf.do il_translator.py:725
+                             cument_il.midend.il_translator                     
+                             :Too many placeholders (41) in                     
+                             paragraph[SwdNP], disabling                        
+                             rich text translation for this                     
+                             paragraph                                          
+[10/31/26 11:01:52] WARNING  WARNING:babeldoc.format.pdf.do il_translator.py:725
+                             cument_il.midend.il_translator                     
+                             :Too many placeholders (41) in                     
+                             paragraph[vTLfd], disabling                        
+                             rich text translation for this                     
+                             paragraph                                          
+[10/31/26 11:02:09] WARNING  WARNING:babeldoc.format.pdf.do il_translator.py:725
+                             cument_il.midend.il_translator                     
+                             :Too many placeholders (41) in                     
+                             paragraph[Y67sN], disabling                        
+                             rich text translation for this                     
+                             paragraph                                          
+[10/31/26 11:02:21] WARNING  WARNING:babeldoc.form il_translator_llm_only.py:778
+                             at.pdf.document_il.mi                              
+                             dend.il_translator_ll                              
+                             m_only:Translation                                 
+                             result is the same as                              
+                             input, fallback.                                   
+                    WARNING  WARNING:babeldoc.form il_translator_llm_only.py:828
+                             at.pdf.document_il.mi                              
+                             dend.il_translator_ll                              
+                             m_only:Fallback to                                 
+                             simple translation.                                
+                             paragraph id: F3kE4                                
+                    WARNING  WARNING:babeldoc.form il_translator_llm_only.py:801
+                             at.pdf.document_il.mi                              
+                             dend.il_translator_ll                              
+                             m_only:Translation                                 
+                             result edit distance                               
+                             is too small.                                      
+                             distance: 4, input:                                
+                             Yide Shentu, Philipp                               
+                             Wu, Aravind                                        
+                             Rajeswaran, and                                    
+                             Pieter Abbeel,                                     
+                             output: Yide Shentu,                               
+                             Philipp Wu, Aravind                                
+                             Rajeswaran 和 Pieter                               
+                             Abbeel                                             
+                    WARNING  WARNING:babeldoc.form il_translator_llm_only.py:828
+                             at.pdf.document_il.mi                              
+                             dend.il_translator_ll                              
+                             m_only:Fallback to                                 
+                             simple translation.                                
+                             paragraph id: o9Wda                                
+[10/31/26 11:02:35] WARNING  WARNING:babeldoc.form il_translator_llm_only.py:787
+                             at.pdf.document_il.mi                              
+                             dend.il_translator_ll                              
+                             m_only:Translation                                 
+                             result is too long or                              
+                             too short. Input: 2,                               
+                             Output: 6                                          
+                    WARNING  WARNING:babeldoc.form il_translator_llm_only.py:828
+                             at.pdf.document_il.mi                              
+                             dend.il_translator_ll                              
+                             m_only:Fallback to                                 
+                             simple translation.                                
+                             paragraph id: QhXPZ                                
+[10/31/26 11:02:47] WARNING  WARNING:babeldoc.form il_translator_llm_only.py:801
+                             at.pdf.document_il.mi                              
+                             dend.il_translator_ll                              
+                             m_only:Translation                                 
+                             result edit distance                               
+                             is too small.                                      
+                             distance: 1, input:                                
+                             <style id='1'>GPT-4o                               
+                             (</style><style                                    
+                             id='3'>OpenAI</style>                              
+                             <style id='5'>,                                    
+                             </style><style                                     
+                             id='7'>2024</style><s                              
+                             tyle                                               
+                             id='9'>)</style>,                                  
+                             output: <style                                     
+                             id='1'>GPT-4o                                      
+                             (</style><style                                    
+                             id='3'>OpenAI</style>                              
+                             <style id='5'>,                                    
+                             </style><style                                     
+                             id='7'>2024年</style>                              
+                             <style                                             
+                             id='9'>)</style>                                   
+                    WARNING  WARNING:babeldoc.form il_translator_llm_only.py:828
+                             at.pdf.document_il.mi                              
+                             dend.il_translator_ll                              
+                             m_only:Fallback to                                 
+                             simple translation.                                
+                             paragraph id: HCF5q                                
+[10/31/26 11:03:03] WARNING  WARNING:babeldoc.form il_translator_llm_only.py:787
+                             at.pdf.document_il.mi                              
+                             dend.il_translator_ll                              
+                             m_only:Translation                                 
+                             result is too long or                              
+                             too short. Input: 1,                               
+                             Output: 4                                          
+                    WARNING  WARNING:babeldoc.form il_translator_llm_only.py:828
+                             at.pdf.document_il.mi                              
+                             dend.il_translator_ll                              
+                             m_only:Fallback to                                 
+                             simple translation.                                
+                             paragraph id: BzGeW                                
+[10/31/26 11:03:06] WARNING  WARNING:babeldoc.form il_translator_llm_only.py:787
+                             at.pdf.document_il.mi                              
+                             dend.il_translator_ll                              
+                             m_only:Translation                                 
+                             result is too long or                              
+                             too short. Input: 2,                               
+                             Output: 6                                          
+                    WARNING  WARNING:babeldoc.form il_translator_llm_only.py:828
+                             at.pdf.document_il.mi                              
+                             dend.il_translator_ll                              
+                             m_only:Fallback to                                 
+                             simple translation.                                
+                             paragraph id: JBkbC                                
+                    WARNING  WARNING:babeldoc.form il_translator_llm_only.py:787
+                             at.pdf.document_il.mi                              
+                             dend.il_translator_ll                              
+                             m_only:Translation                                 
+                             result is too long or                              
+                             too short. Input: 1,                               
+                             Output: 3                                          
+                    WARNING  WARNING:babeldoc.form il_translator_llm_only.py:828
+                             at.pdf.document_il.mi                              
+                             dend.il_translator_ll                              
+                             m_only:Fallback to                                 
+                             simple translation.                                
+                             paragraph id: AnQmk                                
+[10/31/26 11:03:08] WARNING  WARNING:babeldoc.form il_translator_llm_only.py:787
+                             at.pdf.document_il.mi                              
+                             dend.il_translator_ll                              
+                             m_only:Translation                                 
+                             result is too long or                              
+                             too short. Input: 1,                               
+                             Output: 3                                          
+                    WARNING  WARNING:babeldoc.form il_translator_llm_only.py:828
+                             at.pdf.document_il.mi                              
+                             dend.il_translator_ll                              
+                             m_only:Fallback to                                 
+                             simple translation.                                
+                             paragraph id: 2yqNg                                
+[10/31/26 11:03:17] WARNING  WARNING:babeldoc.form il_translator_llm_only.py:787
+                             at.pdf.document_il.mi                              
+                             dend.il_translator_ll                              
+                             m_only:Translation                                 
+                             result is too long or                              
+                             too short. Input: 1,                               
+                             Output: 3                                          
+                    WARNING  WARNING:babeldoc.form il_translator_llm_only.py:828
+                             at.pdf.document_il.mi                              
+                             dend.il_translator_ll                              
+                             m_only:Fallback to                                 
+                             simple translation.                                
+                             paragraph id: exUW1                                
+[10/31/26 11:03:19] INFO     INFO:babeldoc.format. il_translator_llm_only.py:255
+                             pdf.document_il.miden                              
+                             d.il_translator_llm_o                              
+                             nly:Translation                                    
+                             completed. Total:                                  
+                             403, Successful: 393,                              
+                             Fallback: 10                                       
+MuPDF error: format error: Invalid offsize in CFF
+
+[10/31/26 11:03:23] INFO     INFO:babeldoc.format.pdf.docume pdf_creater.py:1194
+                             nt_il.backend.pdf_creater:Font                     
+                             subsetting completed                               
+                             successfully                                       
+[10/31/26 11:03:24] INFO     INFO:babeldoc.format.pdf.docume pdf_creater.py:1309
+                             nt_il.backend.pdf_creater:PDF                      
+                             save with clean=True completed                     
+                             successfully                                       
+                    INFO     INFO:babeldoc.format.pdf.docume pdf_creater.py:1519
+                             nt_il.backend.pdf_creater:save                     
+                             auto extracted glossary to                         
+                             /repo/paper-web/Agent/AgentBenc                    
+                             hmark/Fight/taskframe-arxiv-261                    
+                             0.40276/translation-20261031/Ta                    
+                             skFrame-2610.40276v1.no_waterma                    
+                             rk.zh-CN.glossary.csv                              
+                    INFO     INFO:babeldoc.format.pdf.high_lev high_level.py:351
+                             el:Peak memory usage: 4556.65 MB                   
+                    INFO     INFO:babeldoc.format.pdf.high_lev high_level.py:628
+                             el:finish translate:                               
+                             /tmp/opencode/zotero-translate-dw                  
+                             uqcfjl/TaskFrame-2610.40276v1.pdf                  
+                             , cost: 205.9278256893158 s                        
+                    INFO     INFO:babeldoc.format.pdf.docume pdf_creater.py:1309
+                             nt_il.backend.pdf_creater:PDF                      
+                             save with clean=True completed                     
+                             successfully                                       
+                    INFO     INFO:babeldoc.format.pdf.high_lev high_level.py:315
+                             el:Waiting for translation to                      
+                             finish...                                          
+[10/31/26 11:03:24] INFO     INFO:pdf2zh_next.high_level:Trans high_level.py:720
+                             lation Result:                                     
+                    INFO     INFO:pdf2zh_next.high_level:      high_level.py:721
+                             Original PDF:                                      
+                             /tmp/opencode/zotero-translate-dw                  
+                             uqcfjl/TaskFrame-2610.40276v1.pdf                  
+                    INFO     INFO:pdf2zh_next.high_level:      high_level.py:722
+                             Time Cost: 205.93s                                 
+                    INFO     INFO:pdf2zh_next.high_level:      high_level.py:723
+                             Mono PDF: None                                     
+                    INFO     INFO:pdf2zh_next.high_level:      high_level.py:724
+                             Dual PDF:                                          
+                             /repo/paper-web/Agent/AgentBenchm                  
+                             ark/Fight/taskframe-arxiv-2610.40                  
+                             276/translation-20261031/TaskFram                  
+                             e-2610.40276v1.no_watermark.zh-CN                  
+                             .dual.pdf                                          
+                    INFO     INFO:pdf2zh_next.high_level:Token high_level.py:728
+                             Usage:                                             
+                    INFO     INFO:pdf2zh_next.high_level:      high_level.py:737
+                             Main Translator: Total 143848,                     
+                             Prompt 112887, Cache Hit Prompt                    
+                             0, Completion 30961                                
+                    INFO     INFO:pdf2zh_next.high_level:      high_level.py:748
+                             Term Translator: Total 64324,                      
+                             Prompt 33200, Cache Hit Prompt 0,                  
+                             Completion 31124                                   
+                    INFO     INFO:pdf2zh_next.high_level:      high_level.py:757
+                             Total Token Usage: Total 208172,                   
+                             Prompt 146087, Cache Hit Prompt                    
+                             0, Completion 62085                                
+translate                                              ━━━━━ 100/… 0:03:… 0:00:…
+Parse PDF and Create Intermediate Representation (1/1) ━━━━━ 20/20 0:00:… 0:00:…
+DetectScannedFile (1/1)                                ━━━━━ 20/20 0:00:… 0:00:…
+Parse Page Layout (1/1)                                ━━━━━ 40/40 0:00:… 0:00:…
+Parse Paragraphs (1/1)                                 ━━━━━ 20/20 0:00:… 0:00:…
+Parse Formulas and Styles (1/1)                        ━━━━━ 20/20 0:00:… 0:00:…
+Automatic Term Extraction (1/1)                        ━━━━━ 588/… 0:01:… 0:00:…
+Translate Paragraphs (1/1)                             ━━━━━ 588/… 0:01:… 0:00:…
+Typesetting (1/1)                                      ━━━━━ 40/40 0:00:… 0:00:…
+Add Fonts (1/1)                                        ━━━━━ 923/… 0:00:… 0:00:…
+Generate drawing instructions (1/1)                    ━━━━━ 20/20 0:00:… 0:00:…
+Subset font (1/1)                                      ━━━━━ 1/1   0:00:… 0:00:…
+Save PDF (1/1)                                         ━━━━━ 2/2   0:00:… 0:00:…
+                    INFO     INFO:babeldoc.progress_moni progress_monitor.py:258
+                             tor:Translation canceled                           
+                    INFO     INFO:babeldoc.format.pdf. translation_config.py:472
+                             translation_config:cleanu                          
+                             p temp files:                                      
+                             /tmp/tmphssy6rv7                                   
+                    INFO     INFO:pdf2zh_next.high_level:Liste high_level.py:397
+                             ner stopped.                                       

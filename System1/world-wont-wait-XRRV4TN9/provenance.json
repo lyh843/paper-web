@@ -1,0 +1,179 @@
+{
+  "generated_at": "2026-10-17",
+  "language": "zh-CN",
+  "depth": "DEEP READ",
+  "zotero": {
+    "collection_key": "G2VDMDFY",
+    "collection_path": [
+      "人工智能",
+      "System1"
+    ],
+    "item_key": "XRRV4TN9",
+    "attachment_key": "G2YTQPUM",
+    "read_only": true
+  },
+  "source": {
+    "local_pdf": "/home/lyh/Zotero/storage/G2YTQPUM/Pan 等 - 2026 - The World Won't Wait Evaluating and Teaching Agents Under a Live Clock.pdf",
+    "sha256": "a323d0c279f3392becebd6305c7a8012d00cac6d95f847fb5f78a19c2d7360f6",
+    "pages": 22,
+    "arxiv_id": "2610.20665",
+    "version": "v1",
+    "first_publication": "2026-10-14",
+    "version_source": "https://arxiv.org/abs/2610.20665",
+    "official_history_checked": true,
+    "pdf_identity_verified": true
+  },
+  "skill": {
+    "name": "paper-reading",
+    "local_revision": "historical-context-v1",
+    "upstream": "https://github.com/xiaofengShi/paper-reading-skill",
+    "upstream_commit": "eadd0cd61d276d082938d80eb0d3fbb85614f2e1",
+    "local_enhancements_preserved": true,
+    "fingerprints": {
+      "SKILL.md": "a795c8d00b90632ef0eaada455415b555acc6c0e6dc101bce4cddc26de8315a4",
+      "references/historical-context.md": "992233f756d28a0d65ddec1618496704f8c7918011b5777e7940f089346a6a73",
+      "scripts/check-background.cjs": "e7fe305907333fd90264e0efffa711ce82bf36b3464642c1d3080f87b6ee3571",
+      "scripts/render-reading.cjs": "3ed818344cd402297240d51553c0c6ab7eb599017a51380cb437d37283f5598c",
+      "evals/reading-quality.md": "44a2383edc73a4f65462775e5a85ef2c11c49e51431e867b727073b254cba002"
+    }
+  },
+  "coverage": {
+    "main_text": true,
+    "methods": true,
+    "decisive_tables_and_figures": true,
+    "relevant_appendices": true,
+    "historical_context": "Target introduction/related work and references plus selected primary abstracts and official release dates; not exhaustive predecessor full-text rereads",
+    "independent_replication": false,
+    "independent_reader_testing": false
+  },
+  "checks": {
+    "background_structure": {
+      "pass": true,
+      "stdout": "/repo/paper-web/System1/world-wont-wait-XRRV4TN9/reading.md: background structure present (cutoff 2026-10-14); chronology and content still require source review.",
+      "not_historical_truth_verification": true
+    },
+    "source_content_review": true,
+    "html_offline_resource_check": true,
+    "browser_report": "../browser-validation.json",
+    "regression_tests": 29,
+    "quality_report": "quality-check.md"
+  },
+  "outputs": {
+    "reading.md": {
+      "sha256": "bc71e41652c6256b859052cf9c0f2263aaa8cc69776bf36f194a788d381f669c",
+      "bytes": 23969
+    },
+    "index.html": {
+      "sha256": "99c43adbd57752dd6e0551c37b0d6b20ebf84d9831aaa2da30392ff207350cda",
+      "bytes": 1800374
+    },
+    "quality-check.md": {
+      "sha256": "4e9826a288ff60b09cb784eabcd532632230e5d305d997ba0763006d7a32dd13",
+      "bytes": 4403
+    }
+  },
+  "assets": [
+    {
+      "path": "assets/world-fig1-action-age.png",
+      "sha256": "a54a5a8c03772852cebf2a98e174a61e3533db6f8e1c39702875f425fc5ac2c5",
+      "kind": "original-paper-crop",
+      "pdf_page": 2,
+      "crop_points": [
+        104,
+        65,
+        510,
+        342
+      ],
+      "zoom": 3,
+      "caption_visually_checked": true
+    },
+    {
+      "path": "assets/world-fig5-torsi.png",
+      "sha256": "7a25a034e9600f62d1983f09e67c62e6e493fd61b0de4a890347c77fd9b37d93",
+      "kind": "original-paper-crop",
+      "pdf_page": 6,
+      "crop_points": [
+        104,
+        245,
+        510,
+        476
+      ],
+      "zoom": 3,
+      "caption_visually_checked": true
+    },
+    {
+      "path": "assets/world-table1-baselines.png",
+      "sha256": "a5b46d13195c5d8d2c3d9a4534946f96539646370c1ae2b83a412596ecdced11",
+      "kind": "original-paper-crop",
+      "pdf_page": 8,
+      "crop_points": [
+        104,
+        60,
+        510,
+        230
+      ],
+      "zoom": 3,
+      "caption_visually_checked": true
+    },
+    {
+      "path": "assets/world-table2-rounds.png",
+      "sha256": "001353839b01dc56f992e948a2c1383e40e1ca85bff817412d274a0716cf7d6f",
+      "kind": "original-paper-crop",
+      "pdf_page": 8,
+      "crop_points": [
+        104,
+        304,
+        510,
+        434
+      ],
+      "zoom": 3,
+      "caption_visually_checked": true
+    },
+    {
+      "path": "assets/world-table3-practice.png",
+      "sha256": "2381cc7682e8a2f615c120de3486e4067c747901fe73c600bdb31ff9bf829092",
+      "kind": "original-paper-crop",
+      "pdf_page": 8,
+      "crop_points": [
+        104,
+        491,
+        510,
+        573
+      ],
+      "zoom": 3,
+      "caption_visually_checked": true
+    },
+    {
+      "path": "assets/world-table4-adaptation.png",
+      "sha256": "b5cf3e16cdb1568c84078739cc89d052044a4447d16f7fefd44887cb5d12c2e8",
+      "kind": "original-paper-crop",
+      "pdf_page": 9,
+      "crop_points": [
+        104,
+        65,
+        510,
+        174
+      ],
+      "zoom": 3,
+      "caption_visually_checked": true
+    },
+    {
+      "path": "assets/world-fig6-practice.png",
+      "sha256": "721d6a093a1f7fe4b1920b5f33979eb93c15dea516753f6b59cc2aec9082375f",
+      "kind": "original-paper-crop",
+      "pdf_page": 16,
+      "crop_points": [
+        104,
+        434,
+        510,
+        620
+      ],
+      "zoom": 3,
+      "caption_visually_checked": true
+    }
+  ],
+  "known_uncertainties": [
+    "PDF header February conflicts with official October first release; no earlier publication inferred",
+    "No matched practice/search budgets or confidence intervals"
+  ]
+}

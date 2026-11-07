@@ -1,0 +1,224 @@
+{
+  "generated_on": "2026-10-19",
+  "zotero_collection_key": "FLT4H9RN",
+  "zotero_item_key": "4ZXDEDKZ",
+  "zotero_attachment_key": "TKSSHVPE",
+  "source_pdf_path": "/home/lyh/Zotero/storage/TKSSHVPE/Grinsztajn 等 - 2026 - TabPFN-3 Technical Report.pdf",
+  "source_pdf_sha256": "68825024d264813f2f094769cbfac5ad9e887883472a50f0c73e1558c6ac4bc7",
+  "source_pdf_pages": 83,
+  "source_version": "TabPFN-3 report, arXiv:2605.13986v2, 2026-05-28; internal date 2026-05-12, 83 pages",
+  "covered_sections_and_scope": "正文主结构及各任务证据、Appendix C配置、E.2全TabArena协议与表8、E.3及F归一化/统计等相关内容可访问。",
+  "source_pdf_modified": false,
+  "duplicate_of": null,
+  "standalone_pdf_item": false,
+  "reading_language": "zh-CN",
+  "mode": "DEEP READ",
+  "lens": "understanding-first",
+  "skill_source": "https://github.com/xiaofengShi/paper-reading-skill",
+  "skill_commit": "eadd0cd61d276d082938d80eb0d3fbb85614f2e1",
+  "renderer_sha256": "3ed818344cd402297240d51553c0c6ab7eb599017a51380cb437d37283f5598c",
+  "rebuild_command": "node /repo/paper-web/.opencode/skills/paper-reading/scripts/render-reading.cjs /repo/paper-web/TabFM/tabpfn-3-4ZXDEDKZ/reading.md /repo/paper-web/TabFM/tabpfn-3-4ZXDEDKZ/index.html",
+  "audit_source_sha256": "08c3dcc1c603e35add3d501eb3ed7d16763d912587a4e126b248cdb7f39b8916",
+  "html_sha256": "c311c1b52a5fab9fe6ecc353d7fa1e4a08a1e4411c29e645fac301a84dbdf57b",
+  "figures": [
+    {
+      "file": "assets/tabpfn3-fig5-architecture.png",
+      "pdf_page_1based": 6,
+      "crop_rectangle_pdf_points": [
+        68,
+        65,
+        528,
+        611
+      ],
+      "render_scale": 2.5,
+      "sha256": "8e0eda3c9127ee17309abf9599609f7215c47c6442c3cb5e94f7eebc29b2d736"
+    },
+    {
+      "file": "assets/tabpfn3-fig7-cache.png",
+      "pdf_page_1based": 9,
+      "crop_rectangle_pdf_points": [
+        68,
+        65,
+        528,
+        437
+      ],
+      "render_scale": 2.5,
+      "sha256": "63af35436ca63f84d2049426c8c40c3d31240d3dbd131a66f8140dedbd82f464"
+    },
+    {
+      "file": "assets/tabpfn3-fig10-leaderboard.png",
+      "pdf_page_1based": 13,
+      "crop_rectangle_pdf_points": [
+        68,
+        65,
+        528,
+        234
+      ],
+      "render_scale": 2.5,
+      "sha256": "13fba7d7a28b5c5c5640568534979498057688ec5fe8f42b65a2b13e635e422d"
+    },
+    {
+      "file": "assets/tabpfn3-fig15-large.png",
+      "pdf_page_1based": 16,
+      "crop_rectangle_pdf_points": [
+        68,
+        65,
+        528,
+        234
+      ],
+      "render_scale": 2.5,
+      "sha256": "c628c3d686073b59211a1308f0bc67ec2d66b6644b68ae4b171952615b713ef1"
+    },
+    {
+      "file": "assets/tabpfn3-table1-timeseries.png",
+      "pdf_page_1based": 19,
+      "crop_rectangle_pdf_points": [
+        68,
+        179,
+        528,
+        333
+      ],
+      "render_scale": 2.5,
+      "sha256": "dd4844ec83864e29b9f1662dfa3ac54bb6947cdf87a7b3532f6aa2cfe444d853"
+    },
+    {
+      "file": "assets/tabpfn3-fig21-relational.png",
+      "pdf_page_1based": 20,
+      "crop_rectangle_pdf_points": [
+        68,
+        337,
+        528,
+        506
+      ],
+      "render_scale": 2.5,
+      "sha256": "aebc69e0f221afec8430c755a9fc0b876d920e1ab5f13717b8d54220d55ef388"
+    }
+  ],
+  "validation_scope": "Manual narrative and source review plus renderer/browser checks; no independent reader study or scientific reproduction",
+  "skill_base_commit": "eadd0cd61d276d082938d80eb0d3fbb85614f2e1",
+  "skill_revision": "narrative-logic-v1",
+  "skill_definition_sha256": "8d086cb16b69e68d4517e538cc25b651e929a37599e60f0f909794e5a17b267b",
+  "historical_context": {
+    "status": "pass",
+    "horizon": "2026-05-13",
+    "horizon_basis": "first-arxiv-publication",
+    "date_evidence_url": "https://arxiv.org/abs/2605.13986",
+    "predecessor_rows": 5,
+    "chapter": "00 / 发表时的研究背景",
+    "source_review": "截至2026-05，TabICLv2只有早期版本可作前作，不能将9月修订实验倒推为已知；解释行压缩/缓存/分块各自历史问题。",
+    "review_scope": "Target introduction/background/related work plus selected primary abstracts and official submission histories; not comprehensive full-text review of all predecessors",
+    "source_urls": [
+      "https://arxiv.org/abs/2502.05564",
+      "https://arxiv.org/abs/2602.11139v1",
+      "https://arxiv.org/abs/2605.13986"
+    ]
+  },
+  "local_revisions": [
+    {
+      "revision": "historical-context-v1",
+      "date": "2026-10-17",
+      "action": "Insert publication-time background; preserve prior method, evidence, assets and paths",
+      "before": {
+        "audit_source_sha256": "0c0892bc711ec315302b2ff6180e8dcdf846c8cf367172f49862a4cbdd0ed41d",
+        "html_sha256": "cc8d041e3940d54f1b1c2f28711ea26baa59b85aea2f8d514ea4f31bb7cc06e9"
+      }
+    },
+    {
+      "revision": "narrative-logic-v1",
+      "date": "2026-10-19",
+      "action": "Paper-specific prose refactor: problem/value, prior-only idea reconstruction, intuition, running instance, accessible mathematics, question/test/answer evidence and takeaways; preserve original evidence and visuals",
+      "archive_directory": "revisions/pre-narrative-logic-20261019",
+      "before": {
+        "audit_source_sha256": "13c115b1117c7c7ea7a1f99a794df8e0f504e09ceb8e3f79f4acbe84c7f42097",
+        "html_sha256": "2d0298b12cafe4223c3b60e8d834bc466db098c8b0f45aec29eff9795dd83037"
+      }
+    }
+  ],
+  "preserved_skill_extensions": [
+    "historical-context-v1"
+  ],
+  "narrative_protocol_sha256": "25a89f7a1b55037132b049163ecb82d2ea7fa9106bbd729652fcf8a4b124a483",
+  "quality_check_sha256": "8fa9c8e4020d8764e8556f468bf11f133f3a19489c7be7bcc14a44c2e58b97ad",
+  "manual_narrative_review": {
+    "title": "TabPFN-3: Technical Report",
+    "problem": "§00：更长context、多类与重复服务分别受激活、缓存和输出接口限制",
+    "prior_gap": "§00：已有行压缩和cache不自动消除压缩前峰值或类别槽位限制",
+    "idea": "§01：由已有诱导摘要、流式计算、multi-query与软检索推候选方案，不预设新系统成绩",
+    "intuition": "§01：全局统计与同时物化分开，结构可扩展性与checkpoint容量分开",
+    "example": "§02：构造三条A/B/A训练记录和一query，贯穿预处理、全局摘要、行ICL、标签聚合与cache；指定权重为教学演算",
+    "math": "§04：沿训练行softmax和one-hot归一化推导、类别等变与160上限，非全系统泛化定理",
+    "evidence": "§07–09：default/Thinking/AutoML、不同形状前沿、时间/关系/因果各有协议和分母，中心值不升级成全显著",
+    "takeaways": "§10：分块保持语义、cache摊销、结构/checkpoint/API三层边界",
+    "source_pages_rechecked": [
+      1,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21
+    ],
+    "cautions": [
+      "Thinking未完整披露，不虚构内部搜索",
+      "单头手算不是模型attention实测",
+      "原有53页Table8数值沿用已核验来源及完整图表审计"
+    ]
+  },
+  "manual_review_type": "Generator source-based semantic self-check; not independent reader study",
+  "source_pages_rechecked_this_revision": [
+    1,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21
+  ],
+  "reused_source_audit": "Unchanged PDF and existing equation/figure/number source audits retained from archived reading; full text accessible, not claimed to have independently rerun experiments or read every appendix table anew",
+  "delivery_status": "completed",
+  "browser_validation_this_revision": {
+    "ok": true,
+    "viewports": [
+      1280,
+      390
+    ],
+    "images_loaded": 6,
+    "images_total": 6,
+    "math": 9,
+    "math_errors": 0,
+    "sections": 11,
+    "source_count": 52,
+    "anchors_valid": true,
+    "source_toggle": true,
+    "page_overflow_default_or_sources": false,
+    "figures_have_context": true,
+    "external_resources": 0,
+    "scripts": 0
+  }
+}
