@@ -1,0 +1,39 @@
+# Keep paper HTML, Markdown, PDFs, assets, audit records and skill source tracked.
+
+# Installed dependencies and local Python environments
+node_modules/
+.venv/
+venv/
+env/
+
+# Python bytecode and tool caches
+__pycache__/
+*.py[cod]
+.cache/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+
+# Runtime logs and temporary files
+*.log
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+
+# Local secrets (keep shareable configuration templates)
+.env
+.env.*
+!.env.example
+!.env.sample
+!.env.template
+
+# Operating-system metadata
+.DS_Store
+._*
+Thumbs.db
+Desktop.ini
